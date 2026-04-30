@@ -1,0 +1,102 @@
+---
+import "../styles/global.css";
+import Seo from "../components/Seo.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import items from "../data/generated/portal-items.json";
+import links from "../data/links.json";
+
+const eventItems = items.filter((item) => ["live", "event", "music"].includes(item.category));
+const pageDescription = "ホロライブのライブ、イベント、音楽リリース情報を整理する非公式ページです。";
+
+function formatDate(value) {
+  return new Intl.DateTimeFormat("ja-JP", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(new Date(value));
+}
+
+const labelMap = {
+  live: "ライブ",
+  event: "イベント",
+  music: "音楽"
+};
+---
+
+<html lang="ja">
+  <head>
+    <Seo
+      title="ライブ/イベント"
+      description={pageDescription}
+      path="events/"
+      image={eventItems.find((item) => item.imageUrl)?.imageUrl}
+      schemaType="CollectionPage"
+      jsonLd={{
+        about: "hololive live events and announcements",
+        numberOfItems: eventItems.length
+      }}
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark"><img src="../favicon.svg" alt="" /></span>
+          <span>Holo Portal</span>
+        </a>
+        <nav class="nav" aria-label="主要ナビゲーション">
+          <a href="../">ホーム</a>
+          <a href="../streams/">配信</a>
+          <a href="../goods/">グッズ</a>
+          <a href="../events/" aria-current="page">ライブ/イベント</a>
+          <a href="../talents/">タレント</a>
+        </nav>
+        <ThemeToggle />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">公式ニュース整理</p>
+            <h1>ライブ/イベント</h1>
+            <p class="lead">ライブ、イベント、音楽リリース、キャンペーン系の公式発表をまとめています。</p>
+          </div>
+          <aside class="status-panel">
+            <div class="status-row"><span>掲載件数</span><strong>{eventItems.length}</strong></div>
+            <p class="notice">{links.disclosure}</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="list">
+            {eventItems.map((item) => (
+              <a class="list-item card-link" href={item.normalUrl} target="_blank" rel="noopener noreferrer">
+                {item.imageUrl && <img class="list-thumb" src={item.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />}
+                <div class="date">{formatDate(item.startAt)}</div>
+                <div>
+                  <h3 class="title">{item.title}</h3>
+                  <p class="summary">{item.summary}</p>
+                  <div class="meta">
+                    <span class={`pill ${item.category}`}>{labelMap[item.category] || item.category}</span>
+                    {item.talents.slice(0, 3).map((talent) => <span class="pill">{talent}</span>)}
+                  </div>
+                </div>
+                <span class="button">公式へ</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <p>Holo Portal は非公式ファンサイトです。開催情報・チケット情報は公式発表をご確認ください。</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Holo Portal">
+  <defs>
+    <linearGradient id="sky" x1="8" y1="5" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8fbff"/>
+      <stop offset=".52" stop-color="#fbfdff"/>
+      <stop offset="1" stop-color="#d8f2ff"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="12" y1="45" x2="53" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00b7e8"/>
+      <stop offset="1" stop-color="#0076c8"/>
+    </linearGradient>
+    <linearGradient id="fin" x1="22" y1="12" x2="37" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#263446"/>
+      <stop offset="1" stop-color="#0f1720"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#sky)"/>
+  <path d="M11 43c8.2 5.5 21.5 6.8 34.3 3.7 5.5-1.3 8.3-3.8 9.8-6.2-8.4 3.2-17.2 3.5-26 2.2-6.4-.9-12.5-1.2-18.1.3z" fill="url(#sea)" opacity=".95"/>
+  <path d="M10.7 38.2c4.6-9.7 14.2-16.6 25.9-16.6 9.4 0 16.1 4 19.7 10.5-4.8-1.5-8.4-.7-11 2.8-4.7 6.4-12 10.1-20.6 10.1-5.9 0-10.8-2.1-14-6.8z" fill="#ffffff"/>
+  <path d="M10.7 38.2c4.6-9.7 14.2-16.6 25.9-16.6 9.4 0 16.1 4 19.7 10.5-4.8-1.5-8.4-.7-11 2.8-4.7 6.4-12 10.1-20.6 10.1-5.9 0-10.8-2.1-14-6.8z" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M11.5 36.7c4.8-9.1 14-15.1 25.1-15.1 9.4 0 16.1 4 19.7 10.5-4.8-1.5-8.4-.7-11 2.8-2.9 4-6.8 6.9-11.4 8.6-.3-4.9-4.4-8.6-10.2-9.2-4.8-.5-8.7.4-12.2 2.4z" fill="url(#fin)"/>
+  <path d="M27.2 22.9c1-5.1 3.3-9.2 7.3-12.5 1.8 5.7 1.5 10.4-.9 14.2z" fill="url(#fin)"/>
+  <path d="M45.7 35.2c4.5 1 7.8 3.6 9.9 7.7-4.8.1-8.7-1.5-11.7-4.7z" fill="#0f1720"/>
+  <path d="M46 35.2c4.6-2 8.3-1.5 11.2 1.5-3 1.8-6.4 2.2-10.2 1.3z" fill="#263446"/>
+  <path d="M17.3 39.5c3.5 1.9 8.2 2.2 13.7 1.2-1.9 2.4-5.1 4-9.2 4.4-4.6-.7-8.1-2.9-11.1-6.9 2.1-.4 4.2.1 6.6 1.3z" fill="#ffffff"/>
+  <circle cx="42.5" cy="28.9" r="2.2" fill="#ffffff"/>
+  <circle cx="43.1" cy="28.4" r="1.1" fill="#0f1720"/>
+  <path d="M16.5 17.8c2.2-.8 3.7-2.4 4.5-4.6.9 2.2 2.4 3.8 4.6 4.6-2.2.8-3.7 2.3-4.6 4.5-.8-2.2-2.3-3.7-4.5-4.5z" fill="#38cfff"/>
+  <path d="M47.2 13l1.2 2.5 2.7.4-2 1.9.5 2.7-2.4-1.3-2.4 1.3.5-2.7-2-1.9 2.8-.4z" fill="#ffd45e"/>
+</svg>

@@ -1,0 +1,257 @@
+---
+import "../../styles/global.css";
+import Seo from "../../components/Seo.astro";
+import ThemeToggle from "../../components/ThemeToggle.astro";
+import items from "../../data/generated/portal-items.json";
+import streams from "../../data/generated/streams.json";
+import officialTalents from "../../data/generated/official-talents.json";
+import { buildTalentProfiles, formatDate, formatDateTime, itemLabels } from "../../lib/talent-data.mjs";
+
+export function getStaticPaths() {
+  const profiles = buildTalentProfiles(items, streams, officialTalents);
+  return profiles.map((profile) => ({
+    params: { slug: profile.slug },
+    props: { profile }
+  }));
+}
+
+const { profile } = Astro.props;
+const liveStreams = profile.streams.filter((stream) => stream.status === "live");
+const upcomingStreams = profile.streams.filter((stream) => stream.status === "upcoming");
+const archiveStreams = profile.streams.filter((stream) => stream.status !== "live" && stream.status !== "upcoming").slice(0, 12);
+const goodsItems = profile.items.filter((item) => item.category === "goods").slice(0, 12);
+const announcementItems = profile.items.filter((item) => item.category !== "goods").slice(0, 12);
+const recentItems = [...profile.streams, ...profile.items]
+  .sort((a, b) => (b.startAt || "").localeCompare(a.startAt || ""))
+  .slice(0, 8);
+const pageDescription = `${profile.name} の配信、グッズ、公式発表を整理する非公式ページです。`;
+
+function streamStatusLabel(status) {
+  if (status === "live") return "配信中";
+  if (status === "upcoming") return "予定";
+  return "アーカイブ";
+}
+---
+
+<html lang="ja">
+  <head>
+    <Seo
+      title={profile.name}
+      description={pageDescription}
+      path={`talents/${profile.slug}/`}
+      image={profile.displayImage}
+      schemaType="ProfilePage"
+      jsonLd={{
+        mainEntity: {
+          "@type": "Thing",
+          name: profile.name,
+          alternateName: profile.aliases,
+          image: profile.displayImage
+        }
+      }}
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="../../">
+          <span class="brand-mark"><img src="../../favicon.svg" alt="" /></span>
+          <span>Holo Portal</span>
+        </a>
+        <nav class="nav" aria-label="主要ナビゲーション">
+          <a href="../../">ホーム</a>
+          <a href="../../streams/">配信</a>
+          <a href="../../goods/">グッズ</a>
+          <a href="../../events/">ライブ/イベント</a>
+          <a href="../" aria-current="page">タレント</a>
+        </nav>
+        <ThemeToggle />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-catalog">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">タレント別まとめ</p>
+            <h1>{profile.name}</h1>
+            <p class="lead">配信予定、アーカイブ、公式グッズ、公式ニュースをひとつのページに束ねています。</p>
+            <div class="hero-actions" aria-label="掲載件数">
+              <span>配信 {profile.counts.streams}件</span>
+              <span>グッズ {profile.counts.goods}件</span>
+              <span>発表 {profile.counts.events + profile.counts.news}件</span>
+              {profile.aliases.slice(0, 2).map((alias) => <span>{alias}</span>)}
+            </div>
+          </div>
+          <aside class="status-panel">
+            {profile.officialImage && (
+              <div class="profile-image">
+                <img src={profile.officialImage} alt={`${profile.name} 公式プロフィール画像`} loading="lazy" referrerpolicy="no-referrer" />
+                {profile.officialUrl && <a href={profile.officialUrl} target="_blank" rel="noopener noreferrer">公式プロフィール</a>}
+              </div>
+            )}
+            <div class="status-row"><span>配信中</span><strong>{liveStreams.length}</strong></div>
+            <div class="status-row"><span>配信予定</span><strong>{upcomingStreams.length}</strong></div>
+            <div class="status-row"><span>最新更新</span><strong>{formatDate(profile.latestAt)}</strong></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <h2>最近の更新</h2>
+            <span class="section-note">{recentItems.length}件</span>
+          </div>
+          <div class="list">
+            {recentItems.map((item) => (
+              <a class="list-item card-link" href={item.youtubeUrl || item.normalUrl || item.officialUrl} target="_blank" rel="noopener noreferrer">
+                {(item.thumbnailUrl || item.imageUrl || item.channelPhoto) && (
+                  <img class="list-thumb" src={item.thumbnailUrl || item.imageUrl || item.channelPhoto} alt="" loading="lazy" referrerpolicy="no-referrer" />
+                )}
+                <div class="date">{item.youtubeUrl ? formatDateTime(item.startAt) : formatDate(item.startAt)}</div>
+                <div>
+                  <h3 class="title">{item.title}</h3>
+                  <p class="summary">{item.channelName || item.summary}</p>
+                  <div class="meta">
+                    <span class={`pill ${item.category || item.status}`}>{item.youtubeUrl ? streamStatusLabel(item.status) : itemLabels[item.category] || item.category}</span>
+                    {item.topic && <span class="pill">{item.topic}</span>}
+                    {item.sourceLabel && <span class="pill">{item.sourceLabel}</span>}
+                  </div>
+                </div>
+                <span class="button">{item.youtubeUrl ? "YouTubeで見る" : "公式へ"}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {(liveStreams.length > 0 || upcomingStreams.length > 0) && (
+        <section class="section">
+          <div class="shell">
+            <div class="section-head">
+              <h2>配信中・配信予定</h2>
+              <span class="section-note">{liveStreams.length + upcomingStreams.length}件</span>
+            </div>
+            <div class="grid">
+              {[...liveStreams, ...upcomingStreams].map((stream) => (
+                <a class="card card-link" href={stream.youtubeUrl} target="_blank" rel="noopener noreferrer">
+                  <div class="thumb-wrap">
+                    <img class="thumb" src={stream.thumbnailUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />
+                    <span class={`image-credit ${stream.status === "live" ? "is-live" : ""}`}>{streamStatusLabel(stream.status)}</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="date">{formatDateTime(stream.startAt)}</div>
+                    <h3 class="title">{stream.title}</h3>
+                    <p class="summary">{stream.channelName}</p>
+                    <div class="meta">
+                      <span class="pill live">{streamStatusLabel(stream.status)}</span>
+                      {stream.liveViewers && <span class="pill">{stream.liveViewers.toLocaleString("ja-JP")}人が視聴中</span>}
+                      {stream.topic && <span class="pill">{stream.topic}</span>}
+                      <span class="button">YouTubeで見る</span>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {goodsItems.length > 0 && (
+        <section class="section">
+          <div class="shell">
+            <div class="section-head">
+              <h2>グッズ</h2>
+              <span class="section-note">{profile.counts.goods}件</span>
+            </div>
+            <div class="grid">
+              {goodsItems.map((item) => (
+                <a class="card card-link" href={item.normalUrl} target="_blank" rel="noopener noreferrer">
+                  {item.imageUrl && (
+                    <div class="thumb-wrap">
+                      <img class="thumb" src={item.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />
+                      <span class="image-credit">公式</span>
+                    </div>
+                  )}
+                  <div class="card-body">
+                    <div class="date">{formatDate(item.startAt)}</div>
+                    <h3 class="title">{item.title}</h3>
+                    <p class="summary">{item.summary}</p>
+                    <div class="meta">
+                      <span class="pill goods">グッズ</span>
+                      <span class="button">公式ショップ</span>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {announcementItems.length > 0 && (
+        <section class="section">
+          <div class="shell">
+            <div class="section-head">
+              <h2>公式発表</h2>
+              <span class="section-note">{announcementItems.length}件</span>
+            </div>
+            <div class="list">
+              {announcementItems.map((item) => (
+                <a class="list-item card-link" href={item.normalUrl} target="_blank" rel="noopener noreferrer">
+                  {item.imageUrl && <img class="list-thumb" src={item.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />}
+                  <div class="date">{formatDate(item.startAt)}</div>
+                  <div>
+                    <h3 class="title">{item.title}</h3>
+                    <p class="summary">{item.summary}</p>
+                    <div class="meta">
+                      <span class={`pill ${item.category}`}>{itemLabels[item.category] || item.category}</span>
+                    </div>
+                  </div>
+                  <span class="button">公式へ</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {archiveStreams.length > 0 && (
+        <section class="section">
+          <div class="shell">
+            <div class="section-head">
+              <h2>アーカイブ</h2>
+              <span class="section-note">{archiveStreams.length}件</span>
+            </div>
+            <div class="grid">
+              {archiveStreams.map((stream) => (
+                <a class="card card-link" href={stream.youtubeUrl} target="_blank" rel="noopener noreferrer">
+                  <div class="thumb-wrap">
+                    <img class="thumb" src={stream.thumbnailUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />
+                    <span class="image-credit">{streamStatusLabel(stream.status)}</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="date">{formatDateTime(stream.startAt)}</div>
+                    <h3 class="title">{stream.title}</h3>
+                    <p class="summary">{stream.channelName}</p>
+                    <div class="meta">
+                      <span class="pill">{stream.sourceLabel || stream.source}</span>
+                      <span class="button">YouTubeで見る</span>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <p>Holo Portal は非公式ファンサイトです。タレント画像は公式プロフィールページの画像URLを参照し、保存・再配布はしていません。タレント関連付けは自動処理のため、抜けや重複が出る場合があります。</p>
+      </div>
+    </footer>
+  </body>
+</html>

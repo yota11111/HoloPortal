@@ -1,0 +1,265 @@
+---
+import "../styles/global.css";
+import Seo from "../components/Seo.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import products from "../data/generated/products.json";
+import links from "../data/links.json";
+import { talentSearchTerms } from "../lib/talent-aliases.mjs";
+
+const categoryLabels = {
+  birthday: "誕生日記念",
+  anniversary: "周年/記念",
+  voice: "ボイス",
+  live_goods: "ライブ/イベント物販",
+  friends: "hololive friends",
+  series: "シリーズ/アパレル",
+  card_book: "カード/書籍",
+  resale: "復刻/再販売",
+  goods: "グッズ"
+};
+
+const filterCategories = [
+  ["all", "すべて"],
+  ["birthday", "誕生日"],
+  ["anniversary", "周年"],
+  ["live_goods", "ライブ物販"],
+  ["voice", "ボイス"],
+  ["series", "シリーズ"],
+  ["card_book", "カード/書籍"]
+];
+
+const heroProducts = products.slice(0, 4);
+const pageDescription = "ホロライブ公式ショップの商品情報を月別に整理する非公式ページです。";
+
+const grouped = Object.entries(
+  products.reduce((acc, product) => {
+    const key = product.month;
+    acc[key] ||= [];
+    acc[key].push(product);
+    return acc;
+  }, {})
+).sort((a, b) => b[0].localeCompare(a[0]));
+
+function formatDate(value) {
+  return new Intl.DateTimeFormat("ja-JP", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(new Date(value));
+}
+
+function price(product) {
+  if (product.priceMin == null) return "価格情報なし";
+  if (product.priceMin === product.priceMax) return `${product.priceMin.toLocaleString("ja-JP")}円`;
+  return `${product.priceMin.toLocaleString("ja-JP")}円 - ${product.priceMax.toLocaleString("ja-JP")}円`;
+}
+
+function productSearchText(product) {
+  const talentTerms = talentSearchTerms(product.talents || []);
+  return `${product.title} ${(product.talents || []).join(" ")} ${talentTerms.join(" ")} ${(product.tags || []).join(" ")}`.toLowerCase();
+}
+---
+
+<html lang="ja">
+  <head>
+    <Seo
+      title="グッズ"
+      description={pageDescription}
+      path="goods/"
+      image={heroProducts[0]?.imageUrl}
+      schemaType="CollectionPage"
+      jsonLd={{
+        about: "hololive official shop goods",
+        numberOfItems: products.length
+      }}
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark"><img src="../favicon.svg" alt="" /></span>
+          <span>Holo Portal</span>
+        </a>
+        <nav class="nav" aria-label="主要ナビゲーション">
+          <a href="../">ホーム</a>
+          <a href="../streams/">配信</a>
+          <a href="../goods/" aria-current="page">グッズ</a>
+          <a href="../events/">ライブ/イベント</a>
+          <a href="../talents/">タレント</a>
+        </nav>
+        <ThemeToggle />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-catalog">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">グッズ一覧 / 2025</p>
+            <h1>公式グッズを月ごとに眺める。</h1>
+            <p class="lead">
+              販売ページを開く前に、ざっと見比べるための非公式インデックスです。検索とカテゴリで、目的のグッズまで短く辿れます。
+            </p>
+            <div class="hero-actions" aria-label="このページの要点">
+              <span>{products.length}件のグッズ</span>
+              <span>公式ショップ由来</span>
+              <span>アフィリエイト未使用</span>
+            </div>
+          </div>
+          <aside class="hero-showcase" aria-label="最新グッズ画像">
+            <div class="showcase-grid">
+              {heroProducts.map((product, index) => (
+                <a class={`showcase-tile tile-${index + 1}`} href={product.officialUrl} target="_blank" rel="noopener noreferrer">
+                  <img src={product.imageUrl} alt="" loading={index === 0 ? "eager" : "lazy"} referrerpolicy="no-referrer" />
+                </a>
+              ))}
+            </div>
+            <div class="showcase-caption">
+              <span>最新アイテム</span>
+              <strong>{heroProducts[0]?.title}</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <p class="source-note">{links.disclosure}</p>
+          <div class="catalog-tools" aria-label="グッズ絞り込み">
+            <input class="search-input" type="search" placeholder="タイトル、タレント、シリーズで検索" data-product-search />
+            <div class="filter-group" aria-label="カテゴリ">
+              {filterCategories.map(([value, label], index) => (
+                <button class={`filter-chip ${index === 0 ? "is-active" : ""}`} type="button" data-filter={value}>
+                  {label}
+                </button>
+              ))}
+            </div>
+            <div class="result-count" data-result-count>{products.length}件</div>
+          </div>
+          <div class="empty-state" data-empty-state>該当するグッズが見つかりませんでした。</div>
+        </div>
+      </section>
+
+      <section class="section search-results-section" data-product-results-section hidden>
+        <div class="shell">
+          <div class="section-head">
+            <h2>検索結果</h2>
+            <span class="section-note" data-product-results-note></span>
+          </div>
+          <div class="grid" data-product-results-grid></div>
+        </div>
+      </section>
+
+      {grouped.map(([month, monthProducts]) => (
+        <section class="section" data-month-section>
+          <div class="shell">
+            <div class="section-head">
+              <h2>{month}</h2>
+              <span class="section-note">{monthProducts.length}件</span>
+            </div>
+            <div class="grid">
+              {monthProducts.map((product) => (
+                <a
+                  class="card card-link"
+                  href={product.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-product-card
+                  data-category={product.category}
+                  data-search={productSearchText(product)}
+                >
+                  {product.imageUrl && (
+                    <div class="thumb-wrap">
+                      <img class="thumb" src={product.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />
+                      <span class="image-credit">公式</span>
+                    </div>
+                  )}
+                  <div class="card-body">
+                    <div class="date">{formatDate(product.createdAt)}</div>
+                    <h3 class="title">{product.title}</h3>
+                    <p class="summary">{price(product)}</p>
+                    <div class="meta">
+                      <span class="pill goods">{categoryLabels[product.category] || product.category}</span>
+                      {product.talents.slice(0, 1).map((talent) => <span class="pill">{talent}</span>)}
+                      <span class="pill">{product.variants}種類</span>
+                      <span class="button">公式ショップ</span>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      ))}
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <p>Holo Portal は非公式ファンサイトです。商品情報・価格は取得時点のもので、最新情報は公式ショップをご確認ください。</p>
+      </div>
+    </footer>
+    <script>
+      const searchInput = document.querySelector("[data-product-search]");
+      const filterButtons = [...document.querySelectorAll("[data-filter]")];
+      const cards = [...document.querySelectorAll("[data-product-card]")];
+      const monthSections = [...document.querySelectorAll("[data-month-section]")];
+      const resultCount = document.querySelector("[data-result-count]");
+      const emptyState = document.querySelector("[data-empty-state]");
+      const resultsSection = document.querySelector("[data-product-results-section]");
+      const resultsGrid = document.querySelector("[data-product-results-grid]");
+      const resultsNote = document.querySelector("[data-product-results-note]");
+      let activeCategory = "all";
+
+      function applyFilters() {
+        const query = searchInput.value.trim().toLowerCase();
+        const filteredMode = Boolean(query) || activeCategory !== "all";
+        let visible = 0;
+        const matchingCards = [];
+
+        for (const card of cards) {
+          const matchesCategory = activeCategory === "all" || card.dataset.category === activeCategory;
+          const matchesText = !query || card.dataset.search.includes(query);
+          const show = matchesCategory && matchesText;
+          card.hidden = !show;
+          if (show) {
+            visible += 1;
+            matchingCards.push(card);
+          }
+        }
+
+        if (filteredMode) {
+          resultsGrid.replaceChildren(
+            ...matchingCards.map((card) => {
+              const clone = card.cloneNode(true);
+              clone.hidden = false;
+              return clone;
+            })
+          );
+          resultsSection.hidden = visible === 0;
+          resultsNote.textContent = `${visible}件`;
+          for (const section of monthSections) section.hidden = true;
+        } else {
+          resultsGrid.replaceChildren();
+          resultsSection.hidden = true;
+          for (const section of monthSections) {
+            const visibleCards = section.querySelectorAll("[data-product-card]:not([hidden])").length;
+            section.hidden = visibleCards === 0;
+          }
+        }
+
+        resultCount.textContent = `${visible}件`;
+        emptyState.style.display = visible === 0 ? "block" : "none";
+      }
+
+      searchInput.addEventListener("input", applyFilters);
+      for (const button of filterButtons) {
+        button.addEventListener("click", () => {
+          activeCategory = button.dataset.filter;
+          for (const current of filterButtons) current.classList.toggle("is-active", current === button);
+          applyFilters();
+        });
+      }
+    </script>
+  </body>
+</html>

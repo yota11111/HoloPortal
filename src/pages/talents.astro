@@ -1,0 +1,156 @@
+---
+import "../styles/global.css";
+import Seo from "../components/Seo.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import items from "../data/generated/portal-items.json";
+import streams from "../data/generated/streams.json";
+import officialTalents from "../data/generated/official-talents.json";
+import { buildTalentProfiles, formatDate } from "../lib/talent-data.mjs";
+import { talentCategories, talentCategoryLabel, talentCategoryValue } from "../lib/talent-categories.mjs";
+
+const talents = buildTalentProfiles(items, streams, officialTalents).map((talent) => {
+  const category = talentCategoryValue(talent);
+  return {
+    ...talent,
+    category,
+    categoryLabel: talentCategoryLabel(category)
+  };
+});
+const categoryCounts = talents.reduce((acc, talent) => {
+  acc[talent.category] = (acc[talent.category] || 0) + 1;
+  return acc;
+}, {});
+const pageDescription = "ホロライブ関連情報をタレント別に整理する非公式ページです。";
+---
+
+<html lang="ja">
+  <head>
+    <Seo
+      title="タレント"
+      description={pageDescription}
+      path="talents/"
+      image={talents.find((talent) => talent.displayImage)?.displayImage}
+      schemaType="CollectionPage"
+      jsonLd={{
+        about: "hololive talents",
+        numberOfItems: talents.length
+      }}
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark"><img src="../favicon.svg" alt="" /></span>
+          <span>Holo Portal</span>
+        </a>
+        <nav class="nav" aria-label="主要ナビゲーション">
+          <a href="../">ホーム</a>
+          <a href="../streams/">配信</a>
+          <a href="../goods/">グッズ</a>
+          <a href="../events/">ライブ/イベント</a>
+          <a href="../talents/" aria-current="page">タレント</a>
+        </nav>
+        <ThemeToggle />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">推し別インデックス</p>
+            <h1>タレント別まとめ</h1>
+            <p class="lead">配信、公式ニュース、公式ショップ商品から名前を検出できた情報を、タレント・チャンネル別に整理しています。</p>
+          </div>
+          <aside class="status-panel">
+            <div class="status-row"><span>検出タレント/チャンネル</span><strong>{talents.length}</strong></div>
+            <div class="status-row"><span>配信データ</span><strong>{streams.length}</strong></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="catalog-tools talent-tools" aria-label="タレント検索">
+            <input class="search-input" type="search" placeholder="タレント名・チャンネル名で検索" data-talent-search />
+            <label class="select-wrap">
+              <span>カテゴリ</span>
+              <select class="select-input" data-talent-category>
+                {talentCategories.map((category) => (
+                  <option value={category.value}>
+                    {category.label} ({category.value === "all" ? talents.length : categoryCounts[category.value] || 0})
+                  </option>
+                ))}
+              </select>
+            </label>
+            <div class="result-count" data-talent-result-count>{talents.length}件</div>
+          </div>
+          <div class="empty-state" data-talent-empty-state>該当するタレントが見つかりませんでした。</div>
+          <div class="grid">
+            {talents.map((talent) => (
+              <a
+                class="card card-link"
+                href={`./${talent.slug}/`}
+                data-talent-card
+                data-category={talent.category}
+                data-search={`${talent.name} ${talent.aliases.join(" ")}`.toLowerCase()}
+              >
+                {talent.displayImage && (
+                  <div class="thumb-wrap">
+                    <img class="thumb talent-thumb" src={talent.displayImage} alt={`${talent.name} 公式プロフィール画像`} loading="lazy" referrerpolicy="no-referrer" />
+                    {talent.officialImage && <span class="image-credit">公式プロフィール</span>}
+                  </div>
+                )}
+                <div class="card-body">
+                  <div class="date">{talent.counts.total} 件 / 最新 {formatDate(talent.latestAt)}</div>
+                  <h2 class="title">{talent.name}</h2>
+                  {talent.aliases.length > 0 && <p class="summary">{talent.aliases.slice(0, 3).join(" / ")}</p>}
+                  <div class="meta">
+                    <span class="pill category">{talent.categoryLabel}</span>
+                    {talent.counts.streams > 0 && <span class="pill live">配信 {talent.counts.streams}</span>}
+                    {talent.counts.goods > 0 && <span class="pill goods">グッズ {talent.counts.goods}</span>}
+                    {talent.counts.events > 0 && <span class="pill event">発表 {talent.counts.events}</span>}
+                    {talent.counts.news > 0 && <span class="pill">ニュース {talent.counts.news}</span>}
+                    <span class="button">まとめを見る</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <p>Holo Portal は非公式ファンサイトです。タレント画像は公式プロフィールページの画像URLを参照し、保存・再配布はしていません。名前検出は自動処理のため、関連情報が抜ける場合があります。</p>
+      </div>
+    </footer>
+    <script>
+      const talentSearch = document.querySelector("[data-talent-search]");
+      const talentCategory = document.querySelector("[data-talent-category]");
+      const talentCards = [...document.querySelectorAll("[data-talent-card]")];
+      const talentResultCount = document.querySelector("[data-talent-result-count]");
+      const talentEmptyState = document.querySelector("[data-talent-empty-state]");
+
+      function applyTalentSearch() {
+        const query = talentSearch.value.trim().toLowerCase();
+        const category = talentCategory.value;
+        let visible = 0;
+        for (const card of talentCards) {
+          const matchesText = !query || card.dataset.search.includes(query);
+          const matchesCategory = category === "all" || card.dataset.category === category;
+          const show = matchesText && matchesCategory;
+          card.hidden = !show;
+          if (show) visible += 1;
+        }
+        talentResultCount.textContent = `${visible}件`;
+        talentEmptyState.style.display = visible === 0 ? "block" : "none";
+      }
+
+      talentSearch.addEventListener("input", applyTalentSearch);
+      talentCategory.addEventListener("change", applyTalentSearch);
+    </script>
+  </body>
+</html>

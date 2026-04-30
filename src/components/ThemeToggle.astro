@@ -1,0 +1,41 @@
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="表示テーマを切り替える" title="表示テーマを切り替える">
+  <span class="theme-toggle-icon" aria-hidden="true"></span>
+</button>
+
+<script is:inline>
+  (() => {
+    const storageKey = "holo-portal-theme";
+    const root = document.documentElement;
+    const button = document.querySelector("[data-theme-toggle]");
+    if (!button) return;
+
+    const systemQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function nextTheme(currentTheme) {
+      return currentTheme === "dark" ? "light" : "dark";
+    }
+
+    function applyTheme(theme, persist = true) {
+      root.dataset.theme = theme;
+      button.dataset.themeState = theme;
+      button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+      button.setAttribute("aria-label", theme === "dark" ? "ライトモードに切り替える" : "ダークモードに切り替える");
+      button.title = theme === "dark" ? "ライトモードに切り替える" : "ダークモードに切り替える";
+      if (persist) localStorage.setItem(storageKey, theme);
+    }
+
+    const stored = localStorage.getItem(storageKey);
+    const initialTheme = stored === "light" || stored === "dark" ? stored : systemQuery.matches ? "dark" : "light";
+    applyTheme(initialTheme, false);
+
+    button.addEventListener("click", () => {
+      applyTheme(nextTheme(root.dataset.theme || initialTheme));
+    });
+
+    systemQuery.addEventListener("change", (event) => {
+      const saved = localStorage.getItem(storageKey);
+      if (saved === "light" || saved === "dark") return;
+      applyTheme(event.matches ? "dark" : "light", false);
+    });
+  })();
+</script>

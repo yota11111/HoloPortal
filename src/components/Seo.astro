@@ -1,0 +1,66 @@
+---
+const {
+  title,
+  description,
+  path = "",
+  image = null,
+  type = "website",
+  schemaType = "WebPage",
+  jsonLd = {}
+} = Astro.props;
+
+const site = Astro.site || new URL("https://example.com");
+const base = process.env.BASE_PATH || "/";
+const cleanBase = base.endsWith("/") ? base : `${base}/`;
+const cleanPath = String(path).replace(/^\/+/, "");
+const canonical = new URL(`${cleanBase}${cleanPath}`, site).toString();
+const iconUrl = new URL(`${cleanBase}favicon.svg`, site).toString();
+const iconHref = `${cleanBase}favicon.svg`;
+const imageUrl = image ? (String(image).startsWith("http") ? image : new URL(`${cleanBase}${String(image).replace(/^\/+/, "")}`, site).toString()) : iconUrl;
+const fullTitle = title.includes("Holo Portal") ? title : `${title} | Holo Portal`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": schemaType,
+  name: fullTitle,
+  description,
+  url: canonical,
+  isPartOf: {
+    "@type": "WebSite",
+    name: "Holo Portal",
+    url: new URL(cleanBase, site).toString()
+  },
+  ...jsonLd
+};
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="color-scheme" content="light dark" />
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/svg+xml" href={iconHref} />
+<link rel="alternate" type="application/rss+xml" title="Holo Portal RSS" href={new URL(`${cleanBase}rss.xml`, site).toString()} />
+<meta property="og:site_name" content="Holo Portal" />
+<meta property="og:type" content={type} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={imageUrl} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+<script is:inline>
+  (() => {
+    const storageKey = "holo-portal-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    root.dataset.theme = stored === "light" || stored === "dark" ? stored : systemTheme;
+  })();
+</script>
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

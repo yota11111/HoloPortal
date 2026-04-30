@@ -1,0 +1,218 @@
+---
+import "../styles/global.css";
+import Seo from "../components/Seo.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import meta from "../data/generated/meta.json";
+import items from "../data/generated/portal-items.json";
+import links from "../data/links.json";
+import streams from "../data/generated/streams.json";
+
+const latest = items.slice(0, 9);
+const liveStreams = streams.filter((stream) => stream.status === "live").slice(0, 6);
+const upcomingStreams = streams.filter((stream) => stream.status === "upcoming").slice(0, 6);
+const liveItems = items.filter((item) => item.category === "live").slice(0, 6);
+const goodsItems = items.filter((item) => item.category === "goods").slice(0, 6);
+const hasStreams = streams.length > 0;
+const pageDescription = "ホロライブ関連の公式ニュース、ライブ、イベント、グッズ情報を整理する非公式ポータルです。";
+const pageImage = latest.find((item) => item.imageUrl)?.imageUrl || streams.find((stream) => stream.thumbnailUrl)?.thumbnailUrl;
+const site = Astro.site || new URL("https://example.com");
+const base = process.env.BASE_PATH || "/";
+const cleanBase = base.endsWith("/") ? base : `${base}/`;
+const talentSearchUrl = new URL(`${cleanBase}talents/?q={search_term_string}`, site).toString();
+
+const labelMap = {
+  live: "ライブ",
+  goods: "グッズ",
+  event: "イベント",
+  music: "音楽",
+  news: "ニュース",
+  stream: "配信"
+};
+
+function streamStatusLabel(status) {
+  if (status === "live") return "配信中";
+  if (status === "upcoming") return "予定";
+  return "アーカイブ";
+}
+
+function formatDate(value) {
+  return new Intl.DateTimeFormat("ja-JP", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(new Date(value));
+}
+---
+
+<html lang="ja">
+  <head>
+    <Seo
+      title="Holo Portal | 非公式ホロライブ情報ポータル"
+      description={pageDescription}
+      path=""
+      image={pageImage}
+      schemaType="WebSite"
+      jsonLd={{
+        potentialAction: {
+          "@type": "SearchAction",
+          target: talentSearchUrl,
+          "query-input": "required name=search_term_string"
+        }
+      }}
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="./">
+          <span class="brand-mark"><img src="./favicon.svg" alt="" /></span>
+          <span>Holo Portal</span>
+        </a>
+        <nav class="nav" aria-label="主要ナビゲーション">
+          <a href="./" aria-current="page">ホーム</a>
+          <a href="./streams/">配信</a>
+          <a href="./goods/">グッズ</a>
+          <a href="./events/">ライブ/イベント</a>
+          <a href="./talents/">タレント</a>
+        </nav>
+        <ThemeToggle />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">非公式ファンポータル</p>
+            <h1>ホロライブの予定と販売情報を、追いやすく。</h1>
+            <p class="lead">
+              公式ニュースと公式ショップ情報をもとに、ライブ、イベント、グッズ、音楽リリースを一覧化します。
+              収益化リンクは現在使っていません。
+            </p>
+          </div>
+          <aside class="status-panel" aria-label="データ状況">
+            <div class="status-row"><span>公式ニュース</span><strong>{meta.counts.news}</strong></div>
+            <div class="status-row"><span>公式ショップ商品</span><strong>{meta.counts.products}</strong></div>
+            <div class="status-row"><span>配信予定/ライブ</span><strong>{meta.counts.streams}</strong></div>
+            <div class="status-row"><span>最終更新</span><strong>{formatDate(meta.generatedAt)}</strong></div>
+            <p class="notice">{links.disclosure}</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <h2>配信</h2>
+            <a href="./streams/">すべて見る</a>
+          </div>
+          {!hasStreams ? (
+            <div class="empty-state visible">
+              配信データを取得できませんでした。Holodex APIキーを設定するか、次回の自動更新後に再確認してください。
+            </div>
+          ) : (
+            <div class="grid">
+              {[...liveStreams, ...upcomingStreams].slice(0, 6).map((stream) => (
+                <a class="card card-link" href={stream.youtubeUrl} target="_blank" rel="noopener noreferrer">
+                  <div class="thumb-wrap">
+                    <img class="thumb" src={stream.thumbnailUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />
+                    <span class={`image-credit ${stream.status === "live" ? "is-live" : ""}`}>{streamStatusLabel(stream.status)}</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="date">{formatDate(stream.startAt)}</div>
+                    <h3 class="title">{stream.title}</h3>
+                    <p class="summary">{stream.channelName}</p>
+                    <div class="meta">
+                      <span class="pill live">{streamStatusLabel(stream.status)}</span>
+                      {stream.topic && <span class="pill">{stream.topic}</span>}
+                      <span class="pill">{stream.sourceLabel || stream.source}</span>
+                      <span class="button">YouTubeで見る</span>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <h2>最新情報</h2>
+          </div>
+          <div class="grid">
+            {latest.map((item) => (
+              <a class="card card-link" href={item.normalUrl} target="_blank" rel="noopener noreferrer">
+                {item.imageUrl && <img class="thumb" src={item.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />}
+                <div class="card-body">
+                  <div class="date">{formatDate(item.startAt)}</div>
+                  <h3 class="title">{item.title}</h3>
+                  <p class="summary">{item.summary}</p>
+                  <div class="meta">
+                    <span class={`pill ${item.category}`}>{labelMap[item.category] || item.category}</span>
+                    {item.talents.slice(0, 2).map((talent) => <span class="pill">{talent}</span>)}
+                    <span class="button">公式へ</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <h2>ライブ/イベント</h2>
+            <a href="./events/">すべて見る</a>
+          </div>
+          <div class="list">
+            {liveItems.map((item) => (
+              <a class="list-item card-link" href={item.normalUrl} target="_blank" rel="noopener noreferrer">
+                {item.imageUrl && <img class="list-thumb" src={item.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />}
+                <div class="date">{formatDate(item.startAt)}</div>
+                <div>
+                  <h3 class="title">{item.title}</h3>
+                  <p class="summary">{item.summary}</p>
+                </div>
+                <span class="button">公式へ</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <h2>グッズ</h2>
+            <a href="./goods/">すべて見る</a>
+          </div>
+          <div class="list">
+            {goodsItems.map((item) => (
+              <a class="list-item card-link" href={item.normalUrl} target="_blank" rel="noopener noreferrer">
+                {item.imageUrl && <img class="list-thumb" src={item.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />}
+                <div class="date">{formatDate(item.startAt)}</div>
+                <div>
+                  <h3 class="title">{item.title}</h3>
+                  <p class="summary">{item.summary}</p>
+                </div>
+                <span class="button">公式へ</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <p>
+          Holo Portal は非公式ファンサイトです。カバー株式会社およびホロライブプロダクションとは関係ありません。
+          情報は公式発表をもとに自動整理しており、正確な最新情報は各公式リンクをご確認ください。
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

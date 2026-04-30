@@ -1,0 +1,995 @@
+[
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-tokino-sora",
+    "source": "official_talents",
+    "name": "ときのそら",
+    "englishName": "Tokino Sora",
+    "canonicalNames": [
+      "ときのそら"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2021/05/tokino_sora_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/tokino-sora/",
+    "fetchedAt": "2026-04-30T16:33:13.759Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-roboco-san",
+    "source": "official_talents",
+    "name": "ロボ子さん",
+    "englishName": "Robocosan",
+    "canonicalNames": [
+      "ロボ子さん"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Robocosan_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/roboco-san/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-aki-rosenthal",
+    "source": "official_talents",
+    "name": "アキ・ローゼンタール",
+    "englishName": "Aki Rosenthal",
+    "canonicalNames": [
+      "アキ・ローゼンタール",
+      "Aki Rosenthal"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Aki-Rosenthal_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/aki-rosenthal/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-akai-haato",
+    "source": "official_talents",
+    "name": "赤井はあと",
+    "englishName": "Akai Haato",
+    "canonicalNames": [
+      "赤井はあと",
+      "Akai Haato"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Akai-Haato_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/akai-haato/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-shirakami-fubuki",
+    "source": "official_talents",
+    "name": "白上フブキ",
+    "englishName": "Shirakami Fubuki",
+    "canonicalNames": [
+      "白上フブキ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/shirakami-fubuki/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-natsuiro-matsuri",
+    "source": "official_talents",
+    "name": "夏色まつり",
+    "englishName": "Natsuiro Matsuri",
+    "canonicalNames": [
+      "夏色まつり"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Natsuiro-Matsuri_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/natsuiro-matsuri/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-nakiri-ayame",
+    "source": "official_talents",
+    "name": "百鬼あやめ",
+    "englishName": "Nakiri Ayame",
+    "canonicalNames": [
+      "百鬼あやめ",
+      "Nakiri Ayame"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Nakiri-Ayame_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/nakiri-ayame/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-yuzuki-choco",
+    "source": "official_talents",
+    "name": "癒月ちょこ",
+    "englishName": "Yuzuki Choco",
+    "canonicalNames": [
+      "癒月ちょこ",
+      "Yuzuki Choco"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Yuzuki-Choco_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/yuzuki-choco/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-oozora-subaru",
+    "source": "official_talents",
+    "name": "大空スバル",
+    "englishName": "Oozora Subaru",
+    "canonicalNames": [
+      "大空スバル"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Oozora-Subaru_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/oozora-subaru/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-azki",
+    "source": "official_talents",
+    "name": "AZKi",
+    "englishName": "AZKi",
+    "canonicalNames": [
+      "AZKi"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/AZKi_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/azki/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-ookami-mio",
+    "source": "official_talents",
+    "name": "大神ミオ",
+    "englishName": "Ookami Mio",
+    "canonicalNames": [
+      "大神ミオ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Ookami-Mio_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/ookami-mio/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-sakuramiko",
+    "source": "official_talents",
+    "name": "さくらみこ",
+    "englishName": "Sakura Miko",
+    "canonicalNames": [
+      "さくらみこ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Sakura-Miko_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/sakuramiko/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-nekomata-okayu",
+    "source": "official_talents",
+    "name": "猫又おかゆ",
+    "englishName": "Nekomata Okayu",
+    "canonicalNames": [
+      "猫又おかゆ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Nekomata-Okayu_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/nekomata-okayu/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-inugami-korone",
+    "source": "official_talents",
+    "name": "戌神ころね",
+    "englishName": "Inugami Korone",
+    "canonicalNames": [
+      "戌神ころね"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Inugami-Korone_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/inugami-korone/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-hoshimachi-suisei",
+    "source": "official_talents",
+    "name": "星街すいせい",
+    "englishName": "Hoshimachi Suisei",
+    "canonicalNames": [
+      "星街すいせい"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Hoshimachi-Suisei_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/hoshimachi-suisei/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-usada-pekora",
+    "source": "official_talents",
+    "name": "兎田ぺこら",
+    "englishName": "Usada Pekora",
+    "canonicalNames": [
+      "兎田ぺこら"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Usada-Pekora_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/usada-pekora/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-shiranui-flare",
+    "source": "official_talents",
+    "name": "不知火フレア",
+    "englishName": "Shiranui Flare",
+    "canonicalNames": [
+      "不知火フレア",
+      "Shiranui Flare"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shiranui-Flare_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/shiranui-flare/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-shirogane-noel",
+    "source": "official_talents",
+    "name": "白銀ノエル",
+    "englishName": "Shirogane Noel",
+    "canonicalNames": [
+      "白銀ノエル"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirogane-Noel_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/shirogane-noel/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-houshou-marine",
+    "source": "official_talents",
+    "name": "宝鐘マリン",
+    "englishName": "Houshou Marine",
+    "canonicalNames": [
+      "宝鐘マリン"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Houshou-Marine_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/houshou-marine/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-tsunomaki-watame",
+    "source": "official_talents",
+    "name": "角巻わため",
+    "englishName": "Tsunomaki Watame",
+    "canonicalNames": [
+      "角巻わため"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Tsunomaki-Watame_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/tsunomaki-watame/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-tokoyami-towa",
+    "source": "official_talents",
+    "name": "常闇トワ",
+    "englishName": "Tokoyami Towa",
+    "canonicalNames": [
+      "常闇トワ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Tokoyami-Towa_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/tokoyami-towa/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-himemori-luna",
+    "source": "official_talents",
+    "name": "姫森ルーナ",
+    "englishName": "Himemori Luna",
+    "canonicalNames": [
+      "姫森ルーナ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Himemori-Luna_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/himemori-luna/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-yukihana-lamy",
+    "source": "official_talents",
+    "name": "雪花ラミィ",
+    "englishName": "Yukihana Lamy",
+    "canonicalNames": [
+      "雪花ラミィ",
+      "Yukihana Lamy"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Yukihana-Lamy_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/yukihana-lamy/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-momosuzu-nene",
+    "source": "official_talents",
+    "name": "桃鈴ねね",
+    "englishName": "Momosuzu Nene",
+    "canonicalNames": [
+      "桃鈴ねね",
+      "Momosuzu Nene"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Momosuzu-Nene_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/momosuzu-nene/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-shishiro-botan",
+    "source": "official_talents",
+    "name": "獅白ぼたん",
+    "englishName": "Shishiro Botan",
+    "canonicalNames": [
+      "獅白ぼたん"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Shishiro-Botan_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/shishiro-botan/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-omaru-polka",
+    "source": "official_talents",
+    "name": "尾丸ポルカ",
+    "englishName": "Omaru Polka",
+    "canonicalNames": [
+      "尾丸ポルカ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Omaru-Polka_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/omaru-polka/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-la-darknesss",
+    "source": "official_talents",
+    "name": "ラプラス・ダークネス",
+    "englishName": "La+ Darknesss",
+    "canonicalNames": [
+      "ラプラス・ダークネス",
+      "La+ Darknesss"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/La-Darknesss_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/la-darknesss/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-takane-lui",
+    "source": "official_talents",
+    "name": "鷹嶺ルイ",
+    "englishName": "Takane Lui",
+    "canonicalNames": [
+      "鷹嶺ルイ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Takane-Lui_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/takane-lui/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-hakui-koyori",
+    "source": "official_talents",
+    "name": "博衣こより",
+    "englishName": "Hakui Koyori",
+    "canonicalNames": [
+      "博衣こより"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Hakui-Koyori_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/hakui-koyori/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-kazama-iroha",
+    "source": "official_talents",
+    "name": "風真いろは",
+    "englishName": "Kazama Iroha",
+    "canonicalNames": [
+      "風真いろは"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Kazama-Iroha_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/kazama-iroha/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-sakamata-chloe",
+    "source": "official_talents",
+    "name": "【配信活動終了】 沙花叉クロヱ",
+    "englishName": "Sakamata Chloe",
+    "canonicalNames": [
+      "【配信活動終了】 沙花叉クロヱ",
+      "Sakamata Chloe"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Sakamata-Chloe_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/sakamata-chloe/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-ayunda-risu",
+    "source": "official_talents",
+    "name": "アユンダ・リス",
+    "englishName": "Ayunda Risu",
+    "canonicalNames": [
+      "アユンダ・リス",
+      "Ayunda Risu"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Ayunda-Risu_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/ayunda-risu/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-moona-hoshinova",
+    "source": "official_talents",
+    "name": "ムーナ・ホシノヴァ",
+    "englishName": "Moona Hoshinova",
+    "canonicalNames": [
+      "ムーナ・ホシノヴァ",
+      "Moona Hoshinova"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Moona-Hoshinova_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/moona-hoshinova/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-airani-iofifteen",
+    "source": "official_talents",
+    "name": "アイラニ・イオフィフティーン",
+    "englishName": "Airani Iofifteen",
+    "canonicalNames": [
+      "アイラニ・イオフィフティーン",
+      "Airani Iofifteen"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Airani-Iofifteen_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/airani-iofifteen/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-kureiji-ollie",
+    "source": "official_talents",
+    "name": "クレイジー・オリー",
+    "englishName": "Kureiji Ollie",
+    "canonicalNames": [
+      "クレイジー・オリー",
+      "Kureiji Ollie"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Kureiji-Ollie_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/kureiji-ollie/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-anya-melfissa",
+    "source": "official_talents",
+    "name": "アーニャ・メルフィッサ",
+    "englishName": "Anya Melfissa",
+    "canonicalNames": [
+      "アーニャ・メルフィッサ",
+      "Anya Melfissa"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Anya-Melfissa_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/anya-melfissa/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-pavolia-reine",
+    "source": "official_talents",
+    "name": "パヴォリア・レイネ",
+    "englishName": "Pavolia Reine",
+    "canonicalNames": [
+      "パヴォリア・レイネ",
+      "Pavolia Reine"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Pavolia-Reine_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/pavolia-reine/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-vestia-zeta",
+    "source": "official_talents",
+    "name": "ベスティア・ゼータ",
+    "englishName": "Vestia Zeta",
+    "canonicalNames": [
+      "ベスティア・ゼータ",
+      "Vestia Zeta"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Vestia-Zeta_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/vestia-zeta/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-kaela-kovalskia",
+    "source": "official_talents",
+    "name": "カエラ・コヴァルスキア",
+    "englishName": "Kaela Kovalskia",
+    "canonicalNames": [
+      "カエラ・コヴァルスキア",
+      "Kaela Kovalskia"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Kaela-Kovalskia_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/kaela-kovalskia/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-kobo-kanaeru",
+    "source": "official_talents",
+    "name": "こぼ・かなえる",
+    "englishName": "Kobo Kanaeru",
+    "canonicalNames": [
+      "こぼ・かなえる",
+      "Kobo Kanaeru"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Kobo-Kanaeru_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/kobo-kanaeru/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-mori-calliope",
+    "source": "official_talents",
+    "name": "森カリオペ",
+    "englishName": "Mori Calliope",
+    "canonicalNames": [
+      "森カリオペ",
+      "Mori Calliope"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Mori-Calliope_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/mori-calliope/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-takanashi-kiara",
+    "source": "official_talents",
+    "name": "小鳥遊キアラ",
+    "englishName": "Takanashi Kiara",
+    "canonicalNames": [
+      "小鳥遊キアラ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Takanashi-Kiara_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/takanashi-kiara/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-ninomae-inanis",
+    "source": "official_talents",
+    "name": "一伊那尓栖",
+    "englishName": "Ninomae Ina'nis",
+    "canonicalNames": [
+      "一伊那尓栖"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Ninomae-Inanis_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/ninomae-inanis/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-watson-amelia",
+    "source": "official_talents",
+    "name": "【配信活動終了】 ワトソン・アメリア",
+    "englishName": "Watson Amelia",
+    "canonicalNames": [
+      "【配信活動終了】 ワトソン・アメリア",
+      "Watson Amelia"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Watson-Amelia_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/watson-amelia/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-irys",
+    "source": "official_talents",
+    "name": "IRyS",
+    "englishName": "IRyS",
+    "canonicalNames": [
+      "IRyS"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/IRyS_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/irys/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-ouro-kronii",
+    "source": "official_talents",
+    "name": "オーロ・クロニー",
+    "englishName": "Ouro Kronii",
+    "canonicalNames": [
+      "オーロ・クロニー",
+      "Ouro Kronii"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Ouro-Kronii_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/ouro-kronii/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-hakos-baelz",
+    "source": "official_talents",
+    "name": "ハコス・ベールズ",
+    "englishName": "Hakos Baelz",
+    "canonicalNames": [
+      "ハコス・ベールズ",
+      "Hakos Baelz"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Hakos-Baelz_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/hakos-baelz/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-shiori-novella",
+    "source": "official_talents",
+    "name": "シオリ・ノヴェラ",
+    "englishName": "Shiori Novella",
+    "canonicalNames": [
+      "シオリ・ノヴェラ",
+      "Shiori Novella"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2021/07/Shiori-Novella_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/shiori-novella/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-koseki-bijou",
+    "source": "official_talents",
+    "name": "古石ビジュー",
+    "englishName": "Koseki Bijou",
+    "canonicalNames": [
+      "古石ビジュー",
+      "Koseki Bijou"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2021/07/Koseki-Bijou_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/koseki-bijou/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-nerissa-ravencroft",
+    "source": "official_talents",
+    "name": "ネリッサ・レイヴンクロフト",
+    "englishName": "Nerissa Ravencroft",
+    "canonicalNames": [
+      "ネリッサ・レイヴンクロフト",
+      "Nerissa Ravencroft"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2021/07/Nerissa-Ravencroft_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/nerissa-ravencroft/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-fuwawa-abyssgard",
+    "source": "official_talents",
+    "name": "フワワ・アビスガード",
+    "englishName": "Fuwawa Abyssgard",
+    "canonicalNames": [
+      "フワワ・アビスガード",
+      "FUWAMOCO"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2021/07/Fuwawa-Abyssgard_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/fuwawa-abyssgard/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-mococo-abyssgard",
+    "source": "official_talents",
+    "name": "モココ・アビスガード",
+    "englishName": "Mococo Abyssgard",
+    "canonicalNames": [
+      "モココ・アビスガード",
+      "FUWAMOCO"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2021/07/Mococo-Abyssgard_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/mococo-abyssgard/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-elizabeth-rose-bloodflame",
+    "source": "official_talents",
+    "name": "エリザベス・ローズ・ブラッドフレイム",
+    "englishName": "Elizabeth Rose Bloodflame",
+    "canonicalNames": [
+      "エリザベス・ローズ・ブラッドフレイム",
+      "Elizabeth Rose Bloodflame"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/07/Elizabeth-Rose-Bloodflame_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/elizabeth-rose-bloodflame/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-gigi-murin",
+    "source": "official_talents",
+    "name": "ジジ・ムリン",
+    "englishName": "Gigi Murin",
+    "canonicalNames": [
+      "ジジ・ムリン",
+      "Gigi Murin"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/07/Gigi-Murin_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/gigi-murin/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-cecilia-immergreen",
+    "source": "official_talents",
+    "name": "セシリア・イマーグリーン",
+    "englishName": "Cecilia Immergreen",
+    "canonicalNames": [
+      "セシリア・イマーグリーン",
+      "Cecilia Immergreen"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/07/Cecilia-Immergreen_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/cecilia-immergreen/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-raora-panthera",
+    "source": "official_talents",
+    "name": "ラオーラ・パンテーラ",
+    "englishName": "Raora Panthera",
+    "canonicalNames": [
+      "ラオーラ・パンテーラ",
+      "Raora Panthera"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/07/Raora-Panthera_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/raora-panthera/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-otonose-kanade",
+    "source": "official_talents",
+    "name": "音乃瀬奏",
+    "englishName": "Otonose Kanade",
+    "canonicalNames": [
+      "音乃瀬奏"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Otonose-Kanade_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/otonose-kanade/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-ichijou-ririka",
+    "source": "official_talents",
+    "name": "一条莉々華",
+    "englishName": "Ichijou Ririka",
+    "canonicalNames": [
+      "一条莉々華"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Ichijou-Ririka_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/ichijou-ririka/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-juufuutei-raden",
+    "source": "official_talents",
+    "name": "儒烏風亭らでん",
+    "englishName": "Juufuutei Raden",
+    "canonicalNames": [
+      "儒烏風亭らでん"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Juufuutei-Raden_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/juufuutei-raden/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-todoroki-hajime",
+    "source": "official_talents",
+    "name": "轟はじめ",
+    "englishName": "Todoroki Hajime",
+    "canonicalNames": [
+      "轟はじめ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Todoroki-Hajime_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/todoroki-hajime/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-isaki-riona",
+    "source": "official_talents",
+    "name": "響咲リオナ",
+    "englishName": "Isaki Riona",
+    "canonicalNames": [
+      "響咲リオナ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Isaki-Riona_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/isaki-riona/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-koganei-niko",
+    "source": "official_talents",
+    "name": "虎金妃笑虎",
+    "englishName": "Koganei Niko",
+    "canonicalNames": [
+      "虎金妃笑虎"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Koganei-Niko_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/koganei-niko/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-mizumiya-su",
+    "source": "official_talents",
+    "name": "水宮枢",
+    "englishName": "Mizumiya Su",
+    "canonicalNames": [
+      "水宮枢"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Mizumiya-Su_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/mizumiya-su/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-rindo-chihaya",
+    "source": "official_talents",
+    "name": "輪堂千速",
+    "englishName": "Rindo Chihaya",
+    "canonicalNames": [
+      "輪堂千速"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Rindo-Chihaya_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/rindo-chihaya/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-kikirara-vivi",
+    "source": "official_talents",
+    "name": "綺々羅々ヴィヴィ",
+    "englishName": "Kikirara Vivi",
+    "canonicalNames": [
+      "綺々羅々ヴィヴィ"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Kikirara-Vivi_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/kikirara-vivi/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-izuki-michiru",
+    "source": "official_talents",
+    "name": "井月みちる",
+    "englishName": "Izuki Michiru",
+    "canonicalNames": [
+      "井月みちる",
+      "Izuki Michiru"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2025/09/Izuki-Michiru_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/izuki-michiru/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-hanazono-sayaka",
+    "source": "official_talents",
+    "name": "花園さやか",
+    "englishName": "Hanazono Sayaka",
+    "canonicalNames": [
+      "花園さやか",
+      "Hanazono Sayaka"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Hanazono-Sayaka_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/hanazono-sayaka/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-kazeshiro-yuki",
+    "source": "official_talents",
+    "name": "風白ゆき",
+    "englishName": "Kazeshiro Yuki",
+    "canonicalNames": [
+      "風白ゆき",
+      "Kazeshiro Yuki"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Hanazono-Sayaka_list_thumb-1.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/kazeshiro-yuki/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-minato-aqua",
+    "source": "official_talents",
+    "name": "【卒業生】 湊あくあ",
+    "englishName": "Minato Aqua",
+    "canonicalNames": [
+      "【卒業生】 湊あくあ",
+      "Minato Aqua"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Minato-Aqua_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/minato-aqua/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-murasaki-shion",
+    "source": "official_talents",
+    "name": "【卒業生】 紫咲シオン",
+    "englishName": "Murasaki Shion",
+    "canonicalNames": [
+      "【卒業生】 紫咲シオン",
+      "Murasaki Shion"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Murasaki-Shion_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/murasaki-shion/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-amane-kanata",
+    "source": "official_talents",
+    "name": "【卒業生】 天音かなた",
+    "englishName": "Amane Kanata",
+    "canonicalNames": [
+      "【卒業生】 天音かなた",
+      "天音かなた"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Amane-Kanata_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/amane-kanata/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-kiryu-coco",
+    "source": "official_talents",
+    "name": "【卒業生】 桐生ココ",
+    "englishName": "Kiryu Coco",
+    "canonicalNames": [
+      "【卒業生】 桐生ココ",
+      "Kiryu Coco"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Kiryu-Coco_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/kiryu-coco/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-gawr-gura",
+    "source": "official_talents",
+    "name": "【卒業生】 がうる・ぐら",
+    "englishName": "Gawr Gura",
+    "canonicalNames": [
+      "【卒業生】 がうる・ぐら",
+      "Gawr Gura"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Gawr-Gura_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/gawr-gura/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-tsukumo-sana",
+    "source": "official_talents",
+    "name": "【卒業生】 九十九佐命",
+    "englishName": "Tsukumo Sana",
+    "canonicalNames": [
+      "【卒業生】 九十九佐命",
+      "Tsukumo Sana"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Tsukumo-Sana_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/tsukumo-sana/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-ceres-fauna",
+    "source": "official_talents",
+    "name": "【卒業生】 セレス・ファウナ",
+    "englishName": "Ceres Fauna",
+    "canonicalNames": [
+      "【卒業生】 セレス・ファウナ",
+      "Ceres Fauna"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Ceres-Fauna_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/ceres-fauna/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-nanashi-mumei",
+    "source": "official_talents",
+    "name": "【卒業生】 七詩ムメイ",
+    "englishName": "Nanashi Mumei",
+    "canonicalNames": [
+      "【卒業生】 七詩ムメイ",
+      "Nanashi Mumei"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/07/Nanashi-Mumei_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/nanashi-mumei/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-hiodoshi-ao",
+    "source": "official_talents",
+    "name": "【卒業生】 火威青",
+    "englishName": "Hiodoshi Ao",
+    "canonicalNames": [
+      "【卒業生】 火威青",
+      "火威青"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Hiodoshi-Ao_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/hiodoshi-ao/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-harusaki-nodoka",
+    "source": "official_talents",
+    "name": "【退職】 春先のどか",
+    "englishName": "Harusaki Nodoka",
+    "canonicalNames": [
+      "【退職】 春先のどか",
+      "Harusaki Nodoka"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Harusaki-Nodoka_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/harusaki-nodoka/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  },
+  {
+    "id": "official-talent-https-hololive-hololivepro-com-talents-friend-a",
+    "source": "official_talents",
+    "name": "【退職】 友人A（えーちゃん）",
+    "englishName": "Friend-A",
+    "canonicalNames": [
+      "【退職】 友人A（えーちゃん）",
+      "Friend-A"
+    ],
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2023/09/Friend-A_list_thumb.png",
+    "officialUrl": "https://hololive.hololivepro.com/talents/friend-a/",
+    "fetchedAt": "2026-04-30T16:33:13.760Z"
+  }
+]

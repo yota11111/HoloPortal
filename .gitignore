@@ -1,0 +1,12 @@
+node_modules
+dist
+.astro
+.DS_Store
+npm-debug.log*
+.env
+.env.*
+!.env.example
+*.swp
+*.swo
+*~
+src/styles/* 2.css
