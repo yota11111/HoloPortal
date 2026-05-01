@@ -213,6 +213,26 @@ function productSearchText(product) {
       const resultsNote = document.querySelector("[data-product-results-note]");
       let activeCategory = "all";
 
+      function setQueryParam(params, key, value, defaultValue = "") {
+        if (!value || value === defaultValue) params.delete(key);
+        else params.set(key, value);
+      }
+
+      function updateGoodsUrl() {
+        const url = new URL(window.location.href);
+        setQueryParam(url.searchParams, "q", searchInput.value.trim());
+        setQueryParam(url.searchParams, "category", activeCategory, "all");
+        window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+      }
+
+      function setActiveCategory(category) {
+        const nextCategory = filterButtons.some((button) => button.dataset.filter === category) ? category : "all";
+        activeCategory = nextCategory;
+        for (const current of filterButtons) {
+          current.classList.toggle("is-active", current.dataset.filter === activeCategory);
+        }
+      }
+
       function applyFilters() {
         const query = searchInput.value.trim().toLowerCase();
         const filteredMode = Boolean(query) || activeCategory !== "all";
@@ -254,14 +274,26 @@ function productSearchText(product) {
         emptyState.style.display = visible === 0 ? "block" : "none";
       }
 
-      searchInput.addEventListener("input", applyFilters);
+      function applyGoodsStateFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        searchInput.value = params.get("q") || "";
+        setActiveCategory(params.get("category") || "all");
+        applyFilters();
+      }
+
+      searchInput.addEventListener("input", () => {
+        applyFilters();
+        updateGoodsUrl();
+      });
       for (const button of filterButtons) {
         button.addEventListener("click", () => {
-          activeCategory = button.dataset.filter;
-          for (const current of filterButtons) current.classList.toggle("is-active", current === button);
+          setActiveCategory(button.dataset.filter);
           applyFilters();
+          updateGoodsUrl();
         });
       }
+      window.addEventListener("popstate", applyGoodsStateFromUrl);
+      applyGoodsStateFromUrl();
     </script>
   </body>
 </html>

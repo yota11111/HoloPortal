@@ -304,6 +304,32 @@ function talentFilterText(stream) {
       const streamResultsNote = document.querySelector("[data-stream-results-note]");
       let activeStatus = "all";
 
+      function setQueryParam(params, key, value, defaultValue = "") {
+        if (!value || value === defaultValue) params.delete(key);
+        else params.set(key, value);
+      }
+
+      function updateStreamsUrl() {
+        const url = new URL(window.location.href);
+        setQueryParam(url.searchParams, "q", streamSearch.value.trim());
+        setQueryParam(url.searchParams, "status", activeStatus, "all");
+        setQueryParam(url.searchParams, "talent", streamTalent.value, "all");
+        window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+      }
+
+      function setActiveStatus(status) {
+        const nextStatus = streamStatusButtons.some((button) => button.dataset.streamStatus === status) ? status : "all";
+        activeStatus = nextStatus;
+        for (const current of streamStatusButtons) {
+          current.classList.toggle("is-active", current.dataset.streamStatus === activeStatus);
+        }
+      }
+
+      function setTalentFilter(talent) {
+        const hasOption = [...streamTalent.options].some((option) => option.value === talent);
+        streamTalent.value = hasOption ? talent : "all";
+      }
+
       function applyStreamFilters() {
         const query = streamSearch.value.trim().toLowerCase();
         const talent = streamTalent.value;
@@ -347,15 +373,31 @@ function talentFilterText(stream) {
         streamEmptyState.style.display = visible === 0 ? "block" : "none";
       }
 
-      streamSearch.addEventListener("input", applyStreamFilters);
-      streamTalent.addEventListener("change", applyStreamFilters);
+      function applyStreamsStateFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        streamSearch.value = params.get("q") || "";
+        setActiveStatus(params.get("status") || "all");
+        setTalentFilter(params.get("talent") || "all");
+        applyStreamFilters();
+      }
+
+      streamSearch.addEventListener("input", () => {
+        applyStreamFilters();
+        updateStreamsUrl();
+      });
+      streamTalent.addEventListener("change", () => {
+        applyStreamFilters();
+        updateStreamsUrl();
+      });
       for (const button of streamStatusButtons) {
         button.addEventListener("click", () => {
-          activeStatus = button.dataset.streamStatus;
-          for (const current of streamStatusButtons) current.classList.toggle("is-active", current === button);
+          setActiveStatus(button.dataset.streamStatus);
           applyStreamFilters();
+          updateStreamsUrl();
         });
       }
+      window.addEventListener("popstate", applyStreamsStateFromUrl);
+      applyStreamsStateFromUrl();
     </script>
   </body>
 </html>

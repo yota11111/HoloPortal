@@ -135,6 +135,23 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
       const talentResultCount = document.querySelector("[data-talent-result-count]");
       const talentEmptyState = document.querySelector("[data-talent-empty-state]");
 
+      function setQueryParam(params, key, value, defaultValue = "") {
+        if (!value || value === defaultValue) params.delete(key);
+        else params.set(key, value);
+      }
+
+      function updateTalentsUrl() {
+        const url = new URL(window.location.href);
+        setQueryParam(url.searchParams, "q", talentSearch.value.trim());
+        setQueryParam(url.searchParams, "category", talentCategory.value, "all");
+        window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+      }
+
+      function setTalentCategory(category) {
+        const hasOption = [...talentCategory.options].some((option) => option.value === category);
+        talentCategory.value = hasOption ? category : "all";
+      }
+
       function applyTalentSearch() {
         const query = talentSearch.value.trim().toLowerCase();
         const category = talentCategory.value;
@@ -150,8 +167,23 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
         talentEmptyState.style.display = visible === 0 ? "block" : "none";
       }
 
-      talentSearch.addEventListener("input", applyTalentSearch);
-      talentCategory.addEventListener("change", applyTalentSearch);
+      function applyTalentStateFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        talentSearch.value = params.get("q") || "";
+        setTalentCategory(params.get("category") || "all");
+        applyTalentSearch();
+      }
+
+      talentSearch.addEventListener("input", () => {
+        applyTalentSearch();
+        updateTalentsUrl();
+      });
+      talentCategory.addEventListener("change", () => {
+        applyTalentSearch();
+        updateTalentsUrl();
+      });
+      window.addEventListener("popstate", applyTalentStateFromUrl);
+      applyTalentStateFromUrl();
     </script>
   </body>
 </html>
