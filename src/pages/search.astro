@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
+import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
 import items from "../data/generated/portal-items.json";
 import streams from "../data/generated/streams.json";
 import officialTalents from "../data/generated/official-talents.json";
@@ -175,6 +176,7 @@ const filterTypes = ["all", "stream", "goods", "live", "event", "music", "news",
             <div class="status-row"><span>配信</span><strong>{typeCounts.stream || 0}</strong></div>
             <div class="status-row"><span>グッズ</span><strong>{typeCounts.goods || 0}</strong></div>
             <div class="status-row"><span>タレント</span><strong>{typeCounts.talent || 0}</strong></div>
+            <AffiliateDisclosure />
           </aside>
         </div>
       </section>

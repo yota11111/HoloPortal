@@ -2,8 +2,8 @@
 import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
+import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
 import products from "../data/generated/products.json";
-import links from "../data/links.json";
 import { talentSearchTerms, talentSearchTermsFromText } from "../lib/talent-aliases.mjs";
 
 const categoryLabels = {
@@ -127,7 +127,7 @@ function productSearchText(product) {
 
       <section class="section">
         <div class="shell">
-          <p class="source-note">{links.disclosure}</p>
+          <AffiliateDisclosure class="source-note" />
           <div class="catalog-tools" aria-label="グッズ絞り込み">
             <input class="search-input" type="search" placeholder="タイトル、タレント、シリーズで検索" data-product-search />
             <div class="filter-group" aria-label="カテゴリ">

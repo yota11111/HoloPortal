@@ -2,6 +2,7 @@
 import "../../styles/global.css";
 import Seo from "../../components/Seo.astro";
 import ThemeToggle from "../../components/ThemeToggle.astro";
+import AffiliateDisclosure from "../../components/AffiliateDisclosure.astro";
 import items from "../../data/generated/portal-items.json";
 import streams from "../../data/generated/streams.json";
 import officialTalents from "../../data/generated/official-talents.json";
@@ -94,6 +95,7 @@ function streamStatusLabel(status) {
             <div class="status-row"><span>配信中</span><strong>{liveStreams.length}</strong></div>
             <div class="status-row"><span>配信予定</span><strong>{upcomingStreams.length}</strong></div>
             <div class="status-row"><span>最新更新</span><strong>{formatDate(profile.latestAt)}</strong></div>
+            <AffiliateDisclosure />
           </aside>
         </div>
       </section>

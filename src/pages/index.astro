@@ -2,9 +2,9 @@
 import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
+import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
 import meta from "../data/generated/meta.json";
 import items from "../data/generated/portal-items.json";
-import links from "../data/links.json";
 import streams from "../data/generated/streams.json";
 
 const latest = items.slice(0, 9);
@@ -96,7 +96,7 @@ function formatDate(value) {
             <div class="status-row"><span>公式ショップ商品</span><strong>{meta.counts.products}</strong></div>
             <div class="status-row"><span>配信予定/ライブ</span><strong>{meta.counts.streams}</strong></div>
             <div class="status-row"><span>最終更新</span><strong>{formatDate(meta.generatedAt)}</strong></div>
-            <p class="notice">{links.disclosure}</p>
+            <AffiliateDisclosure />
           </aside>
         </div>
       </section>
