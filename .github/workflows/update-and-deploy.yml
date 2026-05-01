@@ -53,6 +53,9 @@ jobs:
       - name: Search regression check
         run: npm run check:search
 
+      - name: Talent category check
+        run: npm run check:category
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

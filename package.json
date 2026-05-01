@@ -14,6 +14,7 @@
     "health": "node scripts/report-health.mjs",
     "check:data": "node scripts/check-data.mjs",
     "check:search": "node scripts/check-search.mjs",
+    "check:category": "node scripts/check-category.mjs",
     "check:links": "node scripts/check-links.mjs"
   },
   "dependencies": {
