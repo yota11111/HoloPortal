@@ -11,6 +11,8 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const metaPath = path.join(__dirname, "../src/data/generated/meta.json");
 const portalItemsPath = path.join(__dirname, "../src/data/generated/portal-items.json");
+const newsPath = path.join(__dirname, "../src/data/generated/news.json");
+const validNewsCategories = new Set(["live", "goods", "event", "music", "news"]);
 
 let failed = false;
 
@@ -68,6 +70,36 @@ if (portalItemsCount < minAcceptable && expectedMinimum > 0) {
   failed = true;
 } else if (portalItemsCount > 0) {
   console.log(`portalItems: ${portalItemsCount} items (sum of sources: ~${expectedMinimum})`);
+}
+
+// Check official news category shape
+try {
+  const newsContent = fs.readFileSync(newsPath, "utf-8");
+  const newsItems = JSON.parse(newsContent);
+  if (!Array.isArray(newsItems)) {
+    console.error("news.json is not an array");
+    failed = true;
+  } else {
+    const categoryCounts = {};
+    for (const item of newsItems) {
+      if (!Array.isArray(item.categories) || item.categories.length === 0) {
+        console.error(`News item has no categories: ${item.title || item.id}`);
+        failed = true;
+        continue;
+      }
+      for (const category of item.categories) {
+        categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+        if (!validNewsCategories.has(category)) {
+          console.error(`News item has invalid category '${category}': ${item.title || item.id}`);
+          failed = true;
+        }
+      }
+    }
+    console.log(`news categories: ${Object.entries(categoryCounts).map(([key, value]) => `${key}=${value}`).join(", ")}`);
+  }
+} catch (err) {
+  console.error(`Failed to read or parse news.json: ${err.message}`);
+  failed = true;
 }
 
 console.log("");

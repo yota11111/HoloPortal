@@ -93,21 +93,44 @@ function textMatches(text, pattern) {
   return pattern.test(text);
 }
 
+const newsCategoryRules = {
+  live: {
+    title: /ライブ|LIVE|Live|Concert|コンサート|fes\.|COUNTDOWN|3Dお披露目|生配信|配信チケット|現地会場チケット|有明アリーナ|ぴあアリーナ|Kアリーナ|武道館|ワールドツアー|SuperNova|Departure|SHINier|Flashpoint|Our Sparkle|All for One|Chromatic/i,
+    body: /ライブ開催|コンサート開催|配信チケット|現地会場チケット|ライブビューイング|アフター上映|3Dお披露目配信|YouTubeにて配信/i
+  },
+  goods: {
+    title: /グッズ|販売|発売|ショップ|SHOP|POP UP|ポップアップ|フェア|コミックマーケット|C10[0-9]|アパレル|カード|ホロカ|物販|商品|オフィシャルオンラインショップ|official shop/i,
+    body: /グッズ販売|販売開始|発売決定|受注販売|物販|商品ラインナップ|購入特典|オフィシャルショップ|official shop|オンラインショップ/i
+  },
+  event: {
+    title: /イベント|EXPO|展覧会|展示|キャンペーン|コラボ|コラボレーション|PARCO|万博|ドジャース|オフィシャルレポート|応援プロジェクト|企画|出展|開催決定/i,
+    body: /イベント開催|会場|出展|展示|展覧会|キャンペーン|コラボレーション|来場者特典|オフィシャルレポート/i
+  },
+  music: {
+    title: /アルバム|EP|シングル|リリース|楽曲|Music|RECORDS|主題歌|MV|デジタル配信|リスニングパーティー/i,
+    body: /アルバム|EP|シングル|楽曲|デジタル配信|音楽配信|MV公開|リリース決定|hololive RECORDS|リスニングパーティー/i
+  }
+};
+
+function hasNewsCategory(rule, titleText, bodyText) {
+  return textMatches(titleText, rule.title) || textMatches(bodyText, rule.body);
+}
+
 function classifyNews(title, body) {
-  const text = `${title} ${body.slice(0, 1200)}`.replace(/ホロライブ|hololive|HOLOLIVE/g, "");
+  const titleText = title.replace(/ホロライブ|hololive|HOLOLIVE/g, "");
+  const bodyText = body
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line && line !== title)
+    .slice(0, 8)
+    .join(" ")
+    .replace(/ホロライブ|hololive|HOLOLIVE/g, "");
   const categories = [];
-  if (textMatches(text, /ライブ|LIVE|Concert|fes\.|COUNTDOWN|ワールドツアー|有明アリーナ|ぴあアリーナ|武道館|Kアリーナ|配信チケット|現地会場チケット/)) {
-    categories.push("live");
+
+  for (const [category, rule] of Object.entries(newsCategoryRules)) {
+    if (hasNewsCategory(rule, titleText, bodyText)) categories.push(category);
   }
-  if (textMatches(text, /グッズ|販売|ショップ|POP UP|ポップアップ|フェア|コミックマーケット|C10[0-9]|アパレル|Seasonal|カード|ホロカ|official shop|物販|商品/i)) {
-    categories.push("goods");
-  }
-  if (textMatches(text, /イベント|交流戦|万博|展覧会|PARCO|ドジャース|コラボ|キャンペーン|オフィシャルレポート|POP UP|ポップアップ/i)) {
-    categories.push("event");
-  }
-  if (textMatches(text, /アルバム|EP|リリース|楽曲|Music|RECORDS|主題歌|MV/i)) {
-    categories.push("music");
-  }
+
   return categories.length ? categories : ["news"];
 }
 
