@@ -16,7 +16,8 @@ const cleanPath = String(path).replace(/^\/+/, "");
 const canonical = new URL(`${cleanBase}${cleanPath}`, site).toString();
 const iconUrl = new URL(`${cleanBase}favicon.svg`, site).toString();
 const iconHref = `${cleanBase}favicon.svg`;
-const imageUrl = image ? (String(image).startsWith("http") ? image : new URL(`${cleanBase}${String(image).replace(/^\/+/, "")}`, site).toString()) : iconUrl;
+const fallbackImageUrl = new URL(`${cleanBase}og-default.svg`, site).toString();
+const imageUrl = image ? (String(image).startsWith("http") ? image : new URL(`${cleanBase}${String(image).replace(/^\/+/, "")}`, site).toString()) : fallbackImageUrl;
 const fullTitle = title.includes("Holo Portal") ? title : `${title} | Holo Portal`;
 const schema = {
   "@context": "https://schema.org",
@@ -50,10 +51,12 @@ const schema = {
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={imageUrl} />
+<meta property="og:image:alt" content={title} />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={imageUrl} />
+<meta name="twitter:image:alt" content={title} />
 <script is:inline>
   (() => {
     const storageKey = "holo-portal-theme";
