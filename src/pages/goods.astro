@@ -4,7 +4,7 @@ import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
 import products from "../data/generated/products.json";
 import links from "../data/links.json";
-import { talentSearchTerms } from "../lib/talent-aliases.mjs";
+import { talentSearchTerms, talentSearchTermsFromText } from "../lib/talent-aliases.mjs";
 
 const categoryLabels = {
   birthday: "誕生日記念",
@@ -56,7 +56,8 @@ function price(product) {
 
 function productSearchText(product) {
   const talentTerms = talentSearchTerms(product.talents || []);
-  return `${product.title} ${(product.talents || []).join(" ")} ${talentTerms.join(" ")} ${(product.tags || []).join(" ")}`.toLowerCase();
+  const textTerms = talentSearchTermsFromText(`${product.title} ${(product.tags || []).join(" ")}`);
+  return `${product.title} ${(product.talents || []).join(" ")} ${talentTerms.join(" ")} ${textTerms.join(" ")} ${(product.tags || []).join(" ")}`.toLowerCase();
 }
 ---
 
