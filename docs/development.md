@@ -20,6 +20,7 @@ npm run fetch:data
 npm run dev
 npm run build
 npm run health
+npm run check:data
 npm run check:search
 npm run check:links
 ```

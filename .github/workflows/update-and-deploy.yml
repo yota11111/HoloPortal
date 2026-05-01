@@ -47,6 +47,9 @@ jobs:
       - name: Health check
         run: npm run health
 
+      - name: Data quality check
+        run: npm run check:data
+
       - name: Search regression check
         run: npm run check:search
 

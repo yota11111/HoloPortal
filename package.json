@@ -12,6 +12,7 @@
     "preview": "astro preview",
     "fetch:data": "node scripts/fetch-data.mjs",
     "health": "node scripts/report-health.mjs",
+    "check:data": "node scripts/check-data.mjs",
     "check:search": "node scripts/check-search.mjs",
     "check:links": "node scripts/check-links.mjs"
   },
