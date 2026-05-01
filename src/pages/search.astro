@@ -1,0 +1,280 @@
+---
+import "../styles/global.css";
+import Seo from "../components/Seo.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import items from "../data/generated/portal-items.json";
+import streams from "../data/generated/streams.json";
+import officialTalents from "../data/generated/official-talents.json";
+import { buildTalentProfiles, formatDate } from "../lib/talent-data.mjs";
+import { talentSearchTerms } from "../lib/talent-aliases.mjs";
+import { talentCategoryLabel, talentCategoryValue } from "../lib/talent-categories.mjs";
+
+const pageDescription = "ホロライブ関連の配信、グッズ、公式発表、タレントを横断検索する非公式ページです。";
+
+const typeLabels = {
+  all: "すべて",
+  stream: "配信",
+  goods: "グッズ",
+  live: "ライブ",
+  event: "イベント",
+  music: "音楽",
+  news: "ニュース",
+  talent: "タレント"
+};
+
+const streamStatusLabels = {
+  live: "配信中",
+  upcoming: "予定",
+  past: "アーカイブ"
+};
+
+function dateLabel(value) {
+  if (!value) return "日付未定";
+  return formatDate(value);
+}
+
+function compactText(parts) {
+  return parts
+    .flat()
+    .filter(Boolean)
+    .join(" ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function itemType(item) {
+  return item.category === "goods" ? "goods" : item.category;
+}
+
+const portalResults = items
+  .filter((item) => item.category !== "stream")
+  .map((item) => {
+    const type = itemType(item);
+    return {
+      id: item.id,
+      type,
+      typeLabel: typeLabels[type] || type,
+      title: item.title,
+      summary: item.summary,
+      date: item.startAt,
+      url: item.normalUrl || item.officialUrl,
+      external: true,
+      image: item.imageUrl,
+      tags: [typeLabels[type], ...(item.talents || []).slice(0, 3), item.source],
+      search: compactText([
+        item.title,
+        item.summary,
+        item.category,
+        item.subcategory,
+        item.source,
+        item.talents,
+        talentSearchTerms(item.talents || [])
+      ])
+    };
+  });
+
+const streamResults = streams.map((stream) => ({
+  id: stream.id,
+  type: "stream",
+  typeLabel: typeLabels.stream,
+  title: stream.title,
+  summary: `${stream.channelName} ${stream.topic || ""}`.trim(),
+  date: stream.startAt,
+  url: stream.youtubeUrl,
+  external: true,
+  image: stream.thumbnailUrl || stream.channelPhoto,
+  tags: [streamStatusLabels[stream.status] || "アーカイブ", stream.channelName, stream.sourceLabel || stream.source],
+  search: compactText([
+    stream.title,
+    stream.channelName,
+    stream.topic,
+    stream.status,
+    stream.sourceLabel,
+    stream.source,
+    stream.talents,
+    talentSearchTerms([stream.channelName, ...(stream.talents || [])])
+  ])
+}));
+
+const talentResults = buildTalentProfiles(items, streams, officialTalents).map((profile) => {
+  const category = talentCategoryValue(profile);
+  return {
+    id: `talent-${profile.slug}`,
+    type: "talent",
+    typeLabel: typeLabels.talent,
+    title: profile.name,
+    summary: `${profile.counts.total}件 / 配信 ${profile.counts.streams} / グッズ ${profile.counts.goods}`,
+    date: profile.latestAt,
+    url: `../talents/${profile.slug}/`,
+    external: false,
+    image: profile.displayImage,
+    tags: [talentCategoryLabel(category), ...profile.aliases.slice(0, 2)],
+    search: compactText([
+      profile.name,
+      profile.officialName,
+      profile.aliases,
+      talentCategoryLabel(category),
+      category,
+      talentSearchTerms([profile.name, profile.officialName, ...(profile.aliases || [])])
+    ])
+  };
+});
+
+const results = [...streamResults, ...portalResults, ...talentResults].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+const typeCounts = results.reduce((acc, result) => {
+  acc[result.type] = (acc[result.type] || 0) + 1;
+  return acc;
+}, {});
+const filterTypes = ["all", "stream", "goods", "live", "event", "music", "news", "talent"].filter((type) => type === "all" || typeCounts[type] > 0);
+---
+
+<html lang="ja">
+  <head>
+    <Seo
+      title="検索"
+      description={pageDescription}
+      path="search/"
+      image={results.find((result) => result.image)?.image}
+      schemaType="SearchResultsPage"
+      jsonLd={{
+        about: "hololive portal search",
+        numberOfItems: results.length
+      }}
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark"><img src="../favicon.svg" alt="" /></span>
+          <span>Holo Portal</span>
+        </a>
+        <nav class="nav" aria-label="主要ナビゲーション">
+          <a href="../">ホーム</a>
+          <a href="../streams/">配信</a>
+          <a href="../goods/">グッズ</a>
+          <a href="../events/">ライブ/イベント</a>
+          <a href="../talents/">タレント</a>
+          <a href="../search/" aria-current="page">検索</a>
+        </nav>
+        <ThemeToggle />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">横断検索</p>
+            <h1>配信、グッズ、発表、タレントをまとめて探す。</h1>
+            <p class="lead">公式ニュース、公式ショップ、配信データ、タレント別まとめを同じ検索欄から絞り込めます。</p>
+          </div>
+          <aside class="status-panel">
+            <div class="status-row"><span>検索対象</span><strong>{results.length}</strong></div>
+            <div class="status-row"><span>配信</span><strong>{typeCounts.stream || 0}</strong></div>
+            <div class="status-row"><span>グッズ</span><strong>{typeCounts.goods || 0}</strong></div>
+            <div class="status-row"><span>タレント</span><strong>{typeCounts.talent || 0}</strong></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="catalog-tools search-tools" aria-label="サイト内検索">
+            <input class="search-input" type="search" placeholder="キーワード、タレント名、カテゴリで検索" data-site-search />
+            <label class="select-wrap">
+              <span>種類</span>
+              <select class="select-input" data-site-type>
+                {filterTypes.map((type) => (
+                  <option value={type}>{typeLabels[type]} ({type === "all" ? results.length : typeCounts[type]})</option>
+                ))}
+              </select>
+            </label>
+            <div class="result-count" data-site-result-count>{results.length}件</div>
+          </div>
+          <div class="empty-state" data-site-empty-state>該当する情報が見つかりませんでした。</div>
+          <div class="list search-results">
+            {results.map((result) => (
+              <a
+                class="list-item card-link search-result"
+                href={result.url}
+                target={result.external ? "_blank" : undefined}
+                rel={result.external ? "noopener noreferrer" : undefined}
+                data-site-result
+                data-type={result.type}
+                data-search={result.search}
+              >
+                {result.image ? (
+                  <img class="list-thumb" src={result.image} alt="" loading="lazy" referrerpolicy="no-referrer" />
+                ) : (
+                  <span class="list-thumb search-thumb-placeholder" aria-hidden="true">{result.typeLabel.slice(0, 1)}</span>
+                )}
+                <div class="date">{dateLabel(result.date)}</div>
+                <div>
+                  <h2 class="title">{result.title}</h2>
+                  <p class="summary">{result.summary}</p>
+                  <div class="meta">
+                    <span class={`pill ${result.type}`}>{result.typeLabel}</span>
+                    {result.tags.filter(Boolean).slice(0, 4).map((tag) => <span class="pill">{tag}</span>)}
+                  </div>
+                </div>
+                <span class="button">{result.external ? "公式へ" : "開く"}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <p>Holo Portal は非公式ファンサイトです。検索結果から開く公式情報の内容・販売状況はリンク先で確認してください。</p>
+      </div>
+    </footer>
+    <script>
+      const searchInput = document.querySelector("[data-site-search]");
+      const typeSelect = document.querySelector("[data-site-type]");
+      const resultCards = [...document.querySelectorAll("[data-site-result]")];
+      const resultCount = document.querySelector("[data-site-result-count]");
+      const emptyState = document.querySelector("[data-site-empty-state]");
+
+      function applySearch({ updateUrl = true } = {}) {
+        const query = searchInput.value.trim().toLowerCase();
+        const type = typeSelect.value;
+        let visible = 0;
+
+        for (const card of resultCards) {
+          const matchesText = !query || card.dataset.search.includes(query);
+          const matchesType = type === "all" || card.dataset.type === type;
+          const show = matchesText && matchesType;
+          card.hidden = !show;
+          if (show) visible += 1;
+        }
+
+        resultCount.textContent = `${visible}件`;
+        emptyState.style.display = visible === 0 ? "block" : "none";
+
+        if (updateUrl) {
+          const params = new URLSearchParams();
+          if (query) params.set("q", query);
+          if (type !== "all") params.set("type", type);
+          const nextUrl = params.toString() ? `?${params}` : location.pathname;
+          history.replaceState(null, "", nextUrl);
+        }
+      }
+
+      const params = new URLSearchParams(location.search);
+      const initialQuery = params.get("q") || "";
+      const initialType = params.get("type") || "all";
+      searchInput.value = initialQuery;
+      if ([...typeSelect.options].some((option) => option.value === initialType)) {
+        typeSelect.value = initialType;
+      }
+      applySearch({ updateUrl: false });
+
+      searchInput.addEventListener("input", applySearch);
+      typeSelect.addEventListener("change", applySearch);
+    </script>
+  </body>
+</html>

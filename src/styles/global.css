@@ -535,6 +535,10 @@ h1 {
   justify-content: space-between;
 }
 
+.search-tools {
+  grid-template-columns: minmax(240px, 1fr) minmax(180px, 240px) auto;
+}
+
 .source-note {
   max-width: 720px;
   margin: 0;
@@ -762,6 +766,27 @@ h1 {
   height: 88px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
+}
+
+.search-thumb-placeholder {
+  display: grid;
+  place-items: center;
+  background: var(--blue-soft);
+  color: var(--blue-deep);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+:root[data-theme="dark"] .search-thumb-placeholder {
+  background: #0d3145;
+}
+
+.search-results .title {
+  min-height: auto;
+}
+
+.search-result[hidden] {
+  display: none;
 }
 
 .image-credit {

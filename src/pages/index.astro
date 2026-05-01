@@ -18,7 +18,7 @@ const pageImage = latest.find((item) => item.imageUrl)?.imageUrl || streams.find
 const site = Astro.site || new URL("https://example.com");
 const base = process.env.BASE_PATH || "/";
 const cleanBase = base.endsWith("/") ? base : `${base}/`;
-const talentSearchUrl = new URL(`${cleanBase}talents/?q={search_term_string}`, site).toString();
+const siteSearchUrl = new URL(`${cleanBase}search/?q={search_term_string}`, site).toString();
 
 const labelMap = {
   live: "ライブ",
@@ -55,7 +55,7 @@ function formatDate(value) {
       jsonLd={{
         potentialAction: {
           "@type": "SearchAction",
-          target: talentSearchUrl,
+          target: siteSearchUrl,
           "query-input": "required name=search_term_string"
         }
       }}
@@ -74,6 +74,7 @@ function formatDate(value) {
           <a href="./goods/">グッズ</a>
           <a href="./events/">ライブ/イベント</a>
           <a href="./talents/">タレント</a>
+          <a href="./search/">検索</a>
         </nav>
         <ThemeToggle />
       </div>
