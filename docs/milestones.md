@@ -2,7 +2,7 @@
 
 ## M1: 公開準備
 
-Status: in progress
+Status: done
 
 - GitHub Pages向けワークフローを用意する。
 - Repository Secret `HOLODEX_API_KEY` を設定できる形にする。
@@ -10,6 +10,15 @@ Status: in progress
 - 公開前の品質確認コマンドを固定する。
 - 不要な一時ファイルを除外・整理する。
 - 初回コミット可能な状態にする。
+
+## M1.5: Codex/Copilot併用体制
+
+Status: in progress
+
+- Codexを設計、レビュー、難所判断に寄せる。
+- GitHub Copilotに渡せる小粒タスクを整備する。
+- アーキテクチャ、開発手順、タスクキューをドキュメント化する。
+- 各タスクに受け入れ条件と検証コマンドを付ける。
 
 ## M2: データ品質改善
 

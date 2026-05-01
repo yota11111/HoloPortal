@@ -123,3 +123,11 @@ npm run health
 ## マイルストーン
 
 今後の開発方針は [docs/milestones.md](docs/milestones.md) を参照してください。
+
+## Codex / GitHub Copilot 併用
+
+トークン消費を抑えるため、実装はGitHub Copilotに小さく渡し、Codexは設計・レビュー・難所判断に寄せます。
+
+- 設計概要: [docs/architecture.md](docs/architecture.md)
+- 開発手順: [docs/development.md](docs/development.md)
+- Copilot向けタスク: [docs/copilot-tasks.md](docs/copilot-tasks.md)
