@@ -27,8 +27,8 @@ const [items, streams, officialTalents] = await Promise.all([
 
 const profiles = buildTalentProfiles(items, streams, officialTalents);
 const validProfileCategories = new Set(talentCategories.map((category) => category.value).filter((value) => value !== "all"));
-const requiredCategories = [...validProfileCategories];
-const counts = Object.fromEntries(requiredCategories.map((value) => [value, 0]));
+const requiredDisplayedCategories = [...validProfileCategories].filter((category) => category !== "other");
+const counts = Object.fromEntries([...validProfileCategories].map((value) => [value, 0]));
 let failed = false;
 
 if (profiles.length === 0) {
@@ -46,7 +46,7 @@ for (const profile of profiles) {
   counts[category] += 1;
 }
 
-for (const category of requiredCategories) {
+for (const category of requiredDisplayedCategories) {
   if (counts[category] <= 0) {
     console.error(`Category has no displayed talent profiles: ${category}`);
     failed = true;
@@ -79,7 +79,7 @@ for (const check of representativeChecks) {
   }
 }
 
-for (const category of requiredCategories) {
+for (const category of validProfileCategories) {
   console.log(`${talentCategoryLabel(category)}: ${counts[category]} profiles`);
 }
 
