@@ -14,8 +14,9 @@ const base = process.env.BASE_PATH || "/";
 const cleanBase = base.endsWith("/") ? base : `${base}/`;
 const cleanPath = String(path).replace(/^\/+/, "");
 const canonical = new URL(`${cleanBase}${cleanPath}`, site).toString();
-const iconUrl = new URL(`${cleanBase}favicon.svg`, site).toString();
-const iconHref = `${cleanBase}favicon.svg`;
+const iconUrl = new URL(`${cleanBase}favicon.png`, site).toString();
+const iconHref = `${cleanBase}favicon.png`;
+const icoHref = `${cleanBase}favicon.ico`;
 const fallbackImageUrl = new URL(`${cleanBase}og-default.svg`, site).toString();
 const imageUrl = image ? (String(image).startsWith("http") ? image : new URL(`${cleanBase}${String(image).replace(/^\/+/, "")}`, site).toString()) : fallbackImageUrl;
 const fullTitle = title.includes("Holo Portal") ? title : `${title} | Holo Portal`;
@@ -43,7 +44,8 @@ const schema = {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet" />
-<link rel="icon" type="image/svg+xml" href={iconHref} />
+<link rel="icon" type="image/png" href={iconHref} />
+<link rel="icon" type="image/x-icon" href={icoHref} />
 <link rel="alternate" type="application/rss+xml" title="Holo Portal RSS" href={new URL(`${cleanBase}rss.xml`, site).toString()} />
 <meta property="og:site_name" content="Holo Portal" />
 <meta property="og:type" content={type} />
