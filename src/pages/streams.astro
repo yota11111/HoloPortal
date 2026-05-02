@@ -59,10 +59,10 @@ function searchText(stream) {
 }
 
 function talentFilterText(stream) {
-  return talentSearchTerms([stream.channelName, ...(stream.talents || [])])
+  const talents = talentSearchTerms([stream.channelName, ...(stream.talents || [])])
     .map((name) => canonicalTalentName(name))
-    .filter(Boolean)
-    .join(" ");
+    .filter(Boolean);
+  return `|${[...new Set(talents)].join("|")}|`;
 }
 ---
 
@@ -339,7 +339,7 @@ function talentFilterText(stream) {
 
         for (const card of streamCards) {
           const matchesStatus = activeStatus === "all" || card.dataset.status === activeStatus;
-          const matchesTalent = talent === "all" || card.dataset.talents.includes(talent);
+          const matchesTalent = talent === "all" || card.dataset.talents.includes(`|${talent}|`);
           const matchesText = !query || card.dataset.search.includes(query);
           const show = matchesStatus && matchesTalent && matchesText;
           card.hidden = !show;

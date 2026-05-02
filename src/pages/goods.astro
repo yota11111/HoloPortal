@@ -4,7 +4,7 @@ import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
 import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
 import products from "../data/generated/products.json";
-import { talentSearchTerms, talentSearchTermsFromText } from "../lib/talent-aliases.mjs";
+import { canonicalTalentName, talentSearchTerms, talentSearchTermsFromText } from "../lib/talent-aliases.mjs";
 
 const categoryLabels = {
   birthday: "誕生日記念",
@@ -40,6 +40,15 @@ const grouped = Object.entries(
   }, {})
 ).sort((a, b) => b[0].localeCompare(a[0]));
 
+const talentOptions = Object.entries(
+  products.reduce((acc, product) => {
+    for (const talent of productTalentNames(product)) {
+      acc[talent] = (acc[talent] || 0) + 1;
+    }
+    return acc;
+  }, {})
+).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ja"));
+
 function formatDate(value) {
   return new Intl.DateTimeFormat("ja-JP", {
     year: "numeric",
@@ -58,6 +67,18 @@ function productSearchText(product) {
   const talentTerms = talentSearchTerms(product.talents || []);
   const textTerms = talentSearchTermsFromText(`${product.title} ${(product.tags || []).join(" ")}`);
   return `${product.title} ${(product.talents || []).join(" ")} ${talentTerms.join(" ")} ${textTerms.join(" ")} ${(product.tags || []).join(" ")}`.toLowerCase();
+}
+
+function productTalentNames(product) {
+  const terms = [
+    ...(product.talents || []),
+    ...talentSearchTermsFromText(`${product.title} ${(product.tags || []).join(" ")}`)
+  ];
+  return [...new Set(terms.map((name) => canonicalTalentName(name)).filter(Boolean))].sort((a, b) => a.localeCompare(b, "ja"));
+}
+
+function productTalentFilterText(product) {
+  return `|${productTalentNames(product).join("|")}|`;
 }
 ---
 
@@ -137,6 +158,15 @@ function productSearchText(product) {
                 </button>
               ))}
             </div>
+            <label class="select-wrap">
+              <span>タレント</span>
+              <select class="select-input" data-product-talent>
+                <option value="all">すべてのタレント</option>
+                {talentOptions.map(([talent, count]) => (
+                  <option value={talent}>{talent} ({count})</option>
+                ))}
+              </select>
+            </label>
             <div class="result-count" data-result-count>{products.length}件</div>
           </div>
           <div class="empty-state" data-empty-state>該当するグッズが見つかりませんでした。</div>
@@ -169,6 +199,7 @@ function productSearchText(product) {
                   rel="noopener noreferrer"
                   data-product-card
                   data-category={product.category}
+                  data-talents={productTalentFilterText(product)}
                   data-search={productSearchText(product)}
                 >
                   {product.imageUrl && (
@@ -204,6 +235,7 @@ function productSearchText(product) {
     <script>
       const searchInput = document.querySelector("[data-product-search]");
       const filterButtons = [...document.querySelectorAll("[data-filter]")];
+      const talentSelect = document.querySelector("[data-product-talent]");
       const cards = [...document.querySelectorAll("[data-product-card]")];
       const monthSections = [...document.querySelectorAll("[data-month-section]")];
       const resultCount = document.querySelector("[data-result-count]");
@@ -222,6 +254,7 @@ function productSearchText(product) {
         const url = new URL(window.location.href);
         setQueryParam(url.searchParams, "q", searchInput.value.trim());
         setQueryParam(url.searchParams, "category", activeCategory, "all");
+        setQueryParam(url.searchParams, "talent", talentSelect.value, "all");
         window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
       }
 
@@ -235,14 +268,16 @@ function productSearchText(product) {
 
       function applyFilters() {
         const query = searchInput.value.trim().toLowerCase();
-        const filteredMode = Boolean(query) || activeCategory !== "all";
+        const talent = talentSelect.value;
+        const filteredMode = Boolean(query) || activeCategory !== "all" || talent !== "all";
         let visible = 0;
         const matchingCards = [];
 
         for (const card of cards) {
           const matchesCategory = activeCategory === "all" || card.dataset.category === activeCategory;
+          const matchesTalent = talent === "all" || card.dataset.talents.includes(`|${talent}|`);
           const matchesText = !query || card.dataset.search.includes(query);
-          const show = matchesCategory && matchesText;
+          const show = matchesCategory && matchesTalent && matchesText;
           card.hidden = !show;
           if (show) {
             visible += 1;
@@ -278,6 +313,8 @@ function productSearchText(product) {
         const params = new URLSearchParams(window.location.search);
         searchInput.value = params.get("q") || "";
         setActiveCategory(params.get("category") || "all");
+        const talent = params.get("talent") || "all";
+        talentSelect.value = [...talentSelect.options].some((option) => option.value === talent) ? talent : "all";
         applyFilters();
       }
 
@@ -292,6 +329,10 @@ function productSearchText(product) {
           updateGoodsUrl();
         });
       }
+      talentSelect.addEventListener("change", () => {
+        applyFilters();
+        updateGoodsUrl();
+      });
       window.addEventListener("popstate", applyGoodsStateFromUrl);
       applyGoodsStateFromUrl();
     </script>
