@@ -13,7 +13,7 @@ Status: done
 
 ## M1.5: Codex/Copilot併用体制
 
-Status: in progress
+Status: done
 
 - Codexを設計、レビュー、難所判断に寄せる。
 - GitHub Copilotに渡せる小粒タスクを整備する。
@@ -22,7 +22,7 @@ Status: in progress
 
 ## M2: データ品質改善
 
-Status: next
+Status: done
 
 - タレント名、英語名、別名、ユニット名の検出辞書を拡充する。
 - ニュース、グッズ、配信のカテゴリ判定を改善する。
@@ -31,7 +31,7 @@ Status: next
 
 ## M3: 検索と回遊
 
-Status: planned
+Status: done
 
 - 全体検索ページを作る。
 - タレント詳細から関連グッズ、配信、ニュースへの導線を強める。
@@ -39,7 +39,7 @@ Status: planned
 
 ## M4: 運用自動化
 
-Status: planned
+Status: done
 
 - 定期更新の成功/失敗を確認する。
 - 失敗時の通知方法を決める。
@@ -47,7 +47,7 @@ Status: planned
 
 ## M5: SEOと集客
 
-Status: planned
+Status: done
 
 - タイトル、description、内部リンクを改善する。
 - Search Console登録後のインデックス状況を確認する。
@@ -55,8 +55,27 @@ Status: planned
 
 ## M6: 収益化準備
 
-Status: planned
+Status: done
 
 - アフィリエイトリンクの差し替え機構を有効化できる形にする。
 - `isAffiliate` と免責表示をページ上で明示する。
 - ASP、公式規約、表記ルールを確認してから有効化する。
+
+## M7: 公開後の品質確認
+
+Status: next
+
+- GitHub Actions の初回実行結果を確認する。
+- GitHub Pages の公開URLを確認する。
+- 公開URLで主要ページ、検索、絞り込み、RSS、sitemapを確認する。
+- Search Console に登録し、インデックス状況を追える状態にする。
+- READMEに公開URLと運用チェック手順を追記する。
+
+## M8: 継続改善
+
+Status: planned
+
+- 取得元ごとのデータ欠損やカテゴリ誤判定を実データで見直す。
+- 人気順、近日順、販売中のみなどの並び替えを追加する。
+- 管理者向けの運用レポートを作る。
+- 収益化を有効化する前にASP規約、公式ガイドライン、表示文言を再確認する。

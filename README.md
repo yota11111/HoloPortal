@@ -72,6 +72,12 @@ npm run build
 
 ## GitHub Pages公開
 
+Repository:
+
+- GitHub: https://github.com/yota11111/HoloPortal
+- Actions: https://github.com/yota11111/HoloPortal/actions
+- Pages URL: https://yota11111.github.io/HoloPortal/
+
 `.github/workflows/update-and-deploy.yml` が次のタイミングでビルドとデプロイを実行します。
 
 - `main` / `master` へのpush
