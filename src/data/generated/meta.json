@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T13:57:35.969Z",
+  "generatedAt": "2026-05-02T05:21:55.239Z",
   "sources": [
     "https://hololive.hololivepro.com/wp-sitemap-posts-news-1.xml",
     "https://shop.hololivepro.com/products.json",
@@ -7,25 +7,27 @@
     "https://schedule.hololive.tv/api/list"
   ],
   "fetch": {
-    "timeoutMs": 15000
+    "timeoutMs": 15000,
+    "newsLimit": 80,
+    "productLimit": 750
   },
   "datasets": {
     "news": {
       "status": "ok",
       "message": null,
-      "count": 59,
+      "count": 80,
       "source": "https://hololive.hololivepro.com/wp-sitemap-posts-news-1.xml"
     },
     "products": {
       "status": "ok",
       "message": null,
-      "count": 657,
+      "count": 750,
       "source": "https://shop.hololivepro.com/products.json"
     },
     "streams": {
       "status": "ok",
       "message": null,
-      "count": 167,
+      "count": 131,
       "source": "Holodex + Holo Schedule"
     },
     "officialTalents": {
@@ -56,9 +58,9 @@
     "requiresSecret": "HOLODEX_API_KEY"
   },
   "counts": {
-    "news": 59,
-    "products": 657,
-    "streams": 167,
-    "portalItems": 883
+    "news": 80,
+    "products": 750,
+    "streams": 131,
+    "portalItems": 961
   }
 }

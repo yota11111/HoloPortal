@@ -9,6 +9,8 @@ const HOLODEX_LIVE = "https://holodex.net/api/v2/live?org=Hololive&limit=50&max_
 const HOLO_SCHEDULE_LIST = "https://schedule.hololive.tv/api/list";
 const OFFICIAL_TALENTS = "https://hololive.hololivepro.com/talents/";
 const FETCH_TIMEOUT_MS = Number(process.env.FETCH_TIMEOUT_MS || 15000);
+const NEWS_LIMIT = Number(process.env.NEWS_LIMIT || 80);
+const PRODUCT_LIMIT = Number(process.env.PRODUCT_LIMIT || 750);
 
 const talentNames = [
   "ときのそら",
@@ -163,6 +165,12 @@ function productImage(product) {
   return product.images?.[0]?.src || product.variants?.find((variant) => variant.featured_image)?.featured_image?.src || null;
 }
 
+function newsDateFromUrl(url) {
+  const match = url.match(/\/news\/(\d{8})/);
+  if (!match) return "";
+  return `${match[1].slice(0, 4)}-${match[1].slice(4, 6)}-${match[1].slice(6, 8)}`;
+}
+
 function makeId(prefix, value) {
   return `${prefix}-${value}`
     .toLowerCase()
@@ -297,9 +305,11 @@ async function fetchHoloScheduleJson(url) {
 
 async function fetchNews() {
   const sitemap = await fetchText(NEWS_SITEMAP);
-  const urls = [...sitemap.matchAll(/<loc>(https:\/\/hololive\.hololivepro\.com\/news\/2025[^<]+)<\/loc>/g)]
+  const urls = [...sitemap.matchAll(/<loc>(https:\/\/hololive\.hololivepro\.com\/news\/[^<]+)<\/loc>/g)]
     .map((match) => match[1])
-    .filter((url) => !url.includes("/en/") && !url.includes("/id/"));
+    .filter((url) => !url.includes("/en/") && !url.includes("/id/"))
+    .sort((a, b) => newsDateFromUrl(b).localeCompare(newsDateFromUrl(a)))
+    .slice(0, NEWS_LIMIT);
 
   const items = [];
   for (const url of urls) {
@@ -356,7 +366,9 @@ async function fetchProducts() {
 
   const unique = new Map(products.map((product) => [product.id, product]));
   return [...unique.values()]
-    .filter((product) => product.created_at?.startsWith("2025"))
+    .filter((product) => product.created_at)
+    .sort((a, b) => b.created_at.localeCompare(a.created_at))
+    .slice(0, PRODUCT_LIMIT)
     .map((product) => {
       const prices = (product.variants || []).map((variant) => Number(variant.price || 0));
       const title = product.title;
@@ -379,8 +391,7 @@ async function fetchProducts() {
         tags: product.tags || [],
         fetchedAt: new Date().toISOString()
       };
-    })
-    .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    });
 }
 
 async function fetchOfficialTalents() {
@@ -642,7 +653,9 @@ async function main() {
     generatedAt: new Date().toISOString(),
     sources: [NEWS_SITEMAP, "https://shop.hololivepro.com/products.json", "https://holodex.net/api/v2/live", HOLO_SCHEDULE_LIST],
     fetch: {
-      timeoutMs: FETCH_TIMEOUT_MS
+      timeoutMs: FETCH_TIMEOUT_MS,
+      newsLimit: NEWS_LIMIT,
+      productLimit: PRODUCT_LIMIT
     },
     datasets: {
       news: {

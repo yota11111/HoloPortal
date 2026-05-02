@@ -1,5 +1,372 @@
 [
   {
+    "id": "news-https-hololive-hololivepro-com-news-20260427-01-386",
+    "source": "official_news",
+    "categories": [
+      "event"
+    ],
+    "title": "活動5年目を迎える「hololive Meet」2026年度アンバサダーおよび新企画のお知らせ",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、弊社が運営する「ホロライブプロダクション」の海外イベント企画プロジェクト「hololive Meet（ホロライブ ミート）」が、活動5年目を迎えることをお知らせいたします。 これまでの皆様の応援に感謝し、アニバーサリーイヤーを彩る「5周年記念ロゴ」の公開や「2026年度アンバサダー」の就任、そしてプロジェクトをより一層盛り上げる新たな企画について発表いたします。 hololive Meet 5周年記念ロゴ",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/04/26meet_00.jpg",
+    "talents": [
+      "角巻わため",
+      "輪堂千速",
+      "ホロライブEnglish",
+      "ホロライブインドネシア"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260427-01-386/",
+    "publishedAt": "2026-04-27",
+    "month": "2026-04",
+    "fetchedAt": "2026-05-02T05:21:50.414Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260420-01-385",
+    "source": "official_news",
+    "categories": [
+      "live",
+      "event",
+      "music"
+    ],
+    "title": "「ホロライブEnglish」4回目の全体ライブ『hololive English 4th Concert -Serendipity-』開催決定！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、弊社が運営する「ホロライブプロダクション」傘下の英語圏向けVTuberグループ「ホロライブEnglish」において、4回目の全体ライブイベント『hololive English 4th Concert -Serendipity-』を、現地時間2026年7月3～4日「Shrine Auditorium（アメリカ・ロサンゼルス）」にて開催する事をお知らせいたします。 本コンサートでは、7つのテーマに分かれたスペシャルユニット7組による楽曲披露を予定しており",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/04/EN4th_teaser.webp",
+    "talents": [
+      "小鳥遊キアラ",
+      "一伊那尓栖",
+      "ホロライブEnglish"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260420-01-385/",
+    "publishedAt": "2026-04-20",
+    "month": "2026-04",
+    "fetchedAt": "2026-05-02T05:21:50.449Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260402-01-384",
+    "source": "official_news",
+    "categories": [
+      "music"
+    ],
+    "title": "「AZKi」1st & 2nd Album ファン待望の復刻&全国流通リリース決定！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、弊社が運営する女性VTuberグループ「ホロライブ」所属の「AZKi」において、2026年7月1日（水）に1st Album『without U』CDと2nd Album『Re:Creating world』CD 復刻盤の全国流通リリースが決定したことをお知らせいたします。 AZKi 1st Album『without U』CD復刻盤販売決定！ AZKiが2019年にリリースした1st Album『without U』CDがファン待望の復刻！",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/04/260402_main.webp",
+    "talents": [
+      "AZKi"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260402-01-384/",
+    "publishedAt": "2026-04-02",
+    "month": "2026-04",
+    "fetchedAt": "2026-05-02T05:21:50.492Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260326-01-383",
+    "source": "official_news",
+    "categories": [
+      "event"
+    ],
+    "title": "1日限りのビデオスポットが渋谷に登場！「すいマリといっしょ！Chatter Chatter SPOT @SHIBUYA」3/31開催決定！",
+    "summary": "期間中、渋谷キャスト ガーデンに特設されたリアルビデオスポットで、宝鐘マリン&星街すいせいの新曲『Chatter Chatter』を使って動画を撮影し、その場でTikTokに投稿していただいたお客様へオリジナルノベルティをプレゼント！ 『Chatter Chatter』のエフェクトもご用意しておりますので是非ご利用ください！ ・ Chatter Effect ： https://vm.tiktok.com/ZMDSvxsLS",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/03/260326_main.webp",
+    "talents": [
+      "星街すいせい",
+      "宝鐘マリン"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260326-01-383/",
+    "publishedAt": "2026-03-26",
+    "month": "2026-03",
+    "fetchedAt": "2026-05-02T05:21:50.524Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260325-01-382",
+    "source": "official_news",
+    "categories": [
+      "live",
+      "event",
+      "music"
+    ],
+    "title": "Mori Calliope、Apple創立50周年記念東京ライブイベント出演決定！本日より先着受付開始",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、当社が運営するグループ「hololive English -Myth-」所属のタレント「Mori Calliope」が、Apple創立50周年を世界中で祝う「Apple 50th Anniversary Celebrations」の東京イベントに出演することをお知らせいたします。 「Apple 50th Anniversary Celebrations」は、Appleが1976年の創業から50周年を迎えることを記念し、ニューヨーク、東京、ロンドン、シド",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/03/260325_main2.webp",
+    "talents": [],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260325-01-382/",
+    "publishedAt": "2026-03-25",
+    "month": "2026-03",
+    "fetchedAt": "2026-05-02T05:21:50.558Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260322-01-381",
+    "source": "official_news",
+    "categories": [
+      "goods"
+    ],
+    "title": "星街すいせいのアーティスト活動強化を目的とした個人事務所「Studio STELLAR」設立および新支援体制への移行に関するお知らせ",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、VTuberカルチャーにおける「次なるステージ」へ挑戦すべく、星街すいせいのアーティスト活動強化を目的とした個人事務所「Studio STELLAR」の設立および新支援体制への移行について、以下の通りお知らせいたします。 星街すいせいは、2018年3月22日のデビュー以来アーティスト活動を軸に、様々な領域で活躍してまいりました。2019年にホロライブプロダクションに所属してからは、VTuberとして初となるYouTubeチャンネル「THE FIRST ",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/03/260322_main.webp",
+    "talents": [
+      "星街すいせい"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260322-01-381/",
+    "publishedAt": "2026-03-22",
+    "month": "2026-03",
+    "fetchedAt": "2026-05-02T05:21:50.586Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260313-01-380",
+    "source": "official_news",
+    "categories": [
+      "goods",
+      "event"
+    ],
+    "title": "東京キャラクターストリートで開催した「hololive production OFFICIAL POP UP SHOP」商品を大阪梅田店で販売開始",
+    "summary": "2026年1月に東京駅一番街にて展開した 「hololive production OFFICIAL POP UP SHOP」 の一部商品を、皆様のご要望にお応えし、大阪梅田店にてお取り扱いを開始いたします。 描き下ろしイラストを使用したオリジナル商品の一部販売に加え、等身大パネルの展示を行います。 開催概要",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/03/260313_main.webp",
+    "talents": [
+      "ときのそら",
+      "星街すいせい",
+      "小鳥遊キアラ",
+      "一伊那尓栖",
+      "AZKi"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260313-01-380/",
+    "publishedAt": "2026-03-13",
+    "month": "2026-03",
+    "fetchedAt": "2026-05-02T05:21:50.618Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260306-01-379",
+    "source": "official_news",
+    "categories": [
+      "live",
+      "event"
+    ],
+    "title": "幕張メッセで開催中の『hololive SUPER EXPO 2026』『hololive 7th fes. Ridin' on Dreams』の初日速報レポートが公開！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）が運営するVTuber事務所「ホロライブプロダクション」は、2026年3月6日（金）～8日（日）に千葉県・幕張メッセにて、事務所最大級の大型イベント『hololive SUPER EXPO 2026』と音楽ライブの『hololive 7th fes. Ridin' on Dreams』の様子を速報レポートとして公開しました。 初の３日間開催となる初日の6日（金）は、晴天に恵まれ、日中は春の訪れを感じさせる暖かな陽気となり、会場には国内、海外から多くのファン",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/03/260307_main.webp",
+    "talents": [
+      "白上フブキ",
+      "猫又おかゆ",
+      "兎田ぺこら",
+      "角巻わため",
+      "尾丸ポルカ",
+      "鷹嶺ルイ",
+      "博衣こより",
+      "一伊那尓栖"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260306-01-379/",
+    "publishedAt": "2026-03-06",
+    "month": "2026-03",
+    "fetchedAt": "2026-05-02T05:21:50.651Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260306-02-80",
+    "source": "official_news",
+    "categories": [
+      "news"
+    ],
+    "title": "QualiArtsとカバーが共同開発する「ホロライブ」初のスマホゲーム『hololive Dreams』（略称「ホロドリ」）が全世界同時*事前登録を開始",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、株式会社サイバーエージェント（本社：東京都渋谷区、代表取締役社長：山内隆裕）の連結子会社である株式会社QualiArts（本社：東京都渋谷区、代表取締役社長：辻岡義立）と共同で開発を行う、「ホロライブ」初の公式スマートフォン向けゲーム『hololive Dreams（ホロライブ ドリームス）』において、2026年3月6日（金）より全世界同時*事前登録を開始したことをお知らせいたします。 ■ 『hololive Dreams』事前登録受付ページ ・ Ap",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/03/260306_main2.webp",
+    "talents": [],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260306-02-80/",
+    "publishedAt": "2026-03-06",
+    "month": "2026-03",
+    "fetchedAt": "2026-05-02T05:21:50.685Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260304-01-378",
+    "source": "official_news",
+    "categories": [
+      "goods"
+    ],
+    "title": "hololive production official shop in Tokyo Station、Osaka Umedaの営業継続および、東京駅店移転のご案内",
+    "summary": "日頃よりhololive production official shopをご愛顧いただき、誠にありがとうございます。この度、2026年春までの期間限定営業を予定しておりました「Tokyo Station」および「Osaka Umeda」のショップにつきまして、皆様のご声援にお応えし、引き続き営業いたします。これに伴い、東京駅店は、4月17日（金）より新しい場所で期間限定で営業を継続いたします。その後、2026年秋以降に再度本営業を予定しています。 また、各店舗の情報を、より早く・見やすくお届けするため、公式ショッ",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2025/06/versatility_kv.png",
+    "talents": [],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260304-01-378/",
+    "publishedAt": "2026-03-04",
+    "month": "2026-03",
+    "fetchedAt": "2026-05-02T05:21:50.720Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260303-01-376",
+    "source": "official_news",
+    "categories": [
+      "goods"
+    ],
+    "title": "トレンドの発信地・原宿に新店舗オープン！ホロライブプロダクション公式ショップ「hololive production official shop in Harajuku」が2026年4月24日に出店決定！",
+    "summary": "実在感のある立体映像を裸眼で見られる「空間再現ディスプレイ」や等身大フィギュア設置など、スペシャルコンテンツも登場！ 世界中から注目を集めるカルチャーの発信地である原宿に、ホロライブプロダクション公式ショップが誕生します。本ショップでは、描き下ろしビジュアルを使用したオリジナル新商品の販売に加え、原宿店ならではの体験型スペシャルコンテンツをご用意いたしました。 店内では、期間限定で「等身大フィギュア」の設置や、裸眼で立体映像を楽しめる「空間再現ディスプレイ」による特別映像を放映。技術とエンターテインメントが融合した",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/03/officialshop_main_harajuku.webp",
+    "talents": [
+      "兎田ぺこら",
+      "角巻わため",
+      "ラプラス・ダークネス",
+      "響咲リオナ",
+      "虎金妃笑虎",
+      "水宮枢",
+      "輪堂千速",
+      "綺々羅々ヴィヴィ"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260303-01-376/",
+    "publishedAt": "2026-03-03",
+    "month": "2026-03",
+    "fetchedAt": "2026-05-02T05:21:50.761Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260302-01-377",
+    "source": "official_news",
+    "categories": [
+      "music"
+    ],
+    "title": "「桃鈴ねね」初となる全国流通アルバム『Peachful Story』リリース決定！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、弊社が運営する女性VTuberグループ「ホロライブ」所属の「桃鈴ねね」において、2026年7月8日（水）に1stアルバム『Peachful Story』の全国流通リリースが決定したことをお知らせいたします。 VTuber グループ「ホロライブ」所属の「桃鈴ねね」活動初となる全国流通アルバムのリリースが決定 ! これまでに配信リリースしてきた『ねねちのギラギラファンミーティング』『LOVE受信、ヒクツ発信』『カラカラ！』のほか、『Liminal』を含む新",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/03/260302_main.webp",
+    "talents": [
+      "一伊那尓栖"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260302-01-377/",
+    "publishedAt": "2026-03-02",
+    "month": "2026-03",
+    "fetchedAt": "2026-05-02T05:21:50.796Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260216-01-375",
+    "source": "official_news",
+    "categories": [
+      "event"
+    ],
+    "title": "hololive production Special Day with Albirex Niigata FC (S) 開催決定！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、2026年の日本・シンガポール外交関係樹立60周年（SJ60）記念事業の一環として、5月16日にシンガポールにおいて開催される「hololive production Special Day with Albirex Niigata FC (S)」 に協力します。本イベントには4人の「ホロライブプロダクション」傘下のさくらみこ、尾丸ポルカ、こぼ・かなえる、森カリオペが出演することをお知らせいたします。本イベントには在シンガポール日本大使のご臨席も予定し",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/02/KV1_-16th-Feb-2026.webp",
+    "talents": [
+      "尾丸ポルカ",
+      "ホロライブEnglish",
+      "ホロライブインドネシア"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260216-01-375/",
+    "publishedAt": "2026-02-16",
+    "month": "2026-02",
+    "fetchedAt": "2026-05-02T05:21:50.830Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260212-01-374",
+    "source": "official_news",
+    "categories": [
+      "live",
+      "event"
+    ],
+    "title": "「秘密結社holoX」初の単独ライブ＠ぴあアリーナMM 情報解禁！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、弊社が運営する女性VTuberグループ「ホロライブ」所属の「秘密結社holoX」（ラプラス・ダークネス / 鷹嶺ルイ / 博衣こより / 風真いろは）の1stライブ 秘密結社holoX Live 2026「First MISSION」が2026年4月29日（水・祝）に「ぴあアリーナMM」にて開催決定したことをお知らせいたします。 秘密結社holoX Live 2026「First MISSION」 開催決定！ 本ライブは、「ホロライブ」所属の「秘密結社",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/02/260213_main.jpg",
+    "talents": [
+      "ラプラス・ダークネス",
+      "鷹嶺ルイ",
+      "博衣こより",
+      "風真いろは",
+      "秘密結社holoX"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260212-01-374/",
+    "publishedAt": "2026-02-12",
+    "month": "2026-02",
+    "fetchedAt": "2026-05-02T05:21:50.936Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260206-02-79",
+    "source": "official_news",
+    "categories": [
+      "goods",
+      "event"
+    ],
+    "title": "東京駅と成田空港、2つのお店を巡ってオリジナルポストカードをもらおう！",
+    "summary": "このたび、成田空港での「hololive Meet Pop up Shop: Taking Off at Narita Airport!」開催を記念して、東京駅の「hololive production official shop in Tokyo Station」との連動キャンペーンを実施いたします。 本キャンペーンでは、期間中にそれぞれの店舗でお買い上げいただいたレシートをもう一方の店舗のレジにてご提示いただくことで、特典として本企画限定の「オリジナルポストカード（非売品）」をプレゼントいたします。 東京駅と成",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/02/260206_main2.webp",
+    "talents": [],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260206-02-79/",
+    "publishedAt": "2026-02-06",
+    "month": "2026-02",
+    "fetchedAt": "2026-05-02T05:21:50.972Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260202-01-373",
+    "source": "official_news",
+    "categories": [
+      "event"
+    ],
+    "title": "獅白ぼたん主催の「獅白杯」、初の現地イベント「獅白杯 &#8211; オフライン -」開催決定！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社⻑：⾕郷元昭）とGLOE株式会社（本社：東京都新宿区、代表取締役社長：谷田優也、古澤明仁、東証グロース：9565、以下「GLOE」）は、ホロライブ所属の獅白ぼたん主催による「獅白杯」のオフラインイベントを共同で、2026年4月11日（土）、12日 (日)の二日間開催することをお知らせいたします。 「獅白杯 &#8211; オフライン -」は2Daysで行われ、各日程で様々なコンテンツを実施します！ 4月11日（土）は「獅白杯4th」を開催、3人1チームで構成され、全8チ",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/02/260202_main-1.webp",
+    "talents": [
+      "獅白ぼたん",
+      "ラプラス・ダークネス"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260202-01-373/",
+    "publishedAt": "2026-02-02",
+    "month": "2026-02",
+    "fetchedAt": "2026-05-02T05:21:51.006Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260130-01-372",
+    "source": "official_news",
+    "categories": [
+      "goods"
+    ],
+    "title": "「さくらみこ」初の絵本が3月5日（木）に発売決定！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、弊社が運営する「ホロライブプロダクション」傘下の女性VTuberグループ「ホロライブ」所属の「さくらみこ」が、株式会社フレーベル館より初の絵本を2026年3月5日（木）より発売することをお知らせいたします。 女性VTuberグループ「ホロライブ」所属の「さくらみこ」初の絵本が、3月5日（木）に発売することが決定いたしました。 「さくらみこ」がずっと抱き続けてきた「絵本をつくりたい」という夢が、フレーベル館とのタッグによりついに実現。本人が描く、優しくも",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/02/260130_main.webp",
+    "talents": [],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260130-01-372/",
+    "publishedAt": "2026-01-30",
+    "month": "2026-01",
+    "fetchedAt": "2026-05-02T05:21:51.038Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260116-01-371",
+    "source": "official_news",
+    "categories": [
+      "goods",
+      "event",
+      "music"
+    ],
+    "title": "「hololive DEV_IS NEW WAVE POP UP STORE in OIOI」開催決定！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、弊社が運営する「ホロライブプロダクション」傘下のVTuberグループ「hololive DEV_IS」において、株式会社丸井（本社:東京都中野区、以下マルイ）が運営する、商業施設「マルイ」全国3会場にて、ポップアップストアを開催する事をお知らせいたします。 hololive DEV_IS のPOP UP STOREが渋谷モディを皮切りに、全3ヵ所での実施が決定いたしました。 今回のポップアップストアでは、新規描き下ろしイラストのグッズ販売や、過去のアル",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/01/260116_main.webp",
+    "talents": [],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260116-01-371/",
+    "publishedAt": "2026-01-16",
+    "month": "2026-01",
+    "fetchedAt": "2026-05-02T05:21:51.067Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260108-01-370",
+    "source": "official_news",
+    "categories": [
+      "music"
+    ],
+    "title": "QualiArtsとカバーが共同開発する 「ホロライブ」初のスマホゲーム『hololive Dreams』（略称「ホロドリ」）、 全世界同時*リリースが決定！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、株式会社サイバーエージェント（本社：東京都渋谷区、代表取締役社長：山内隆裕）の連結子会社である株式会社QualiArts（本社:東京都渋谷区、代表取締役社長:辻岡義立）と共同で開発を行う、「ホロライブ」初の公式スマートフォン向けゲーム『hololive Dreams（ホロライブ ドリームス）』を全世界同時*リリースすることをお知らせいたします。 * 一部エリアを除く 本作は、2025年3月に開催された「hololive 6th fes. Color R",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/01/260108_main.webp",
+    "talents": [],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260108-01-370/",
+    "publishedAt": "2026-01-08",
+    "month": "2026-01",
+    "fetchedAt": "2026-05-02T05:21:51.099Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20260103-01-369",
+    "source": "official_news",
+    "categories": [
+      "music"
+    ],
+    "title": "「常闇トワ」3月25日にアニメタイアップ全国流通シングルCDリリース決定！",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、弊社が運営する女性VTuberグループ「ホロライブ」所属の「常闇トワ」の全国流通シングルCD『シルベ』が2026年3月25日（水）に発売することをお知らせいたします。 全国流通シングルCD『シルベ』リリース決定！ 2026年1月放送開始のTVアニメ「勇者パーティを追い出された器用貧乏」OPテーマを収録した常闇トワの全国流通シングルCD。",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/01/260103_main.webp",
+    "talents": [
+      "常闇トワ"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20260103-01-369/",
+    "publishedAt": "2026-01-03",
+    "month": "2026-01",
+    "fetchedAt": "2026-05-02T05:21:51.130Z"
+  },
+  {
     "id": "news-https-hololive-hololivepro-com-news-20251215-01-367",
     "source": "official_news",
     "categories": [
@@ -15,7 +382,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251215-01-367/",
     "publishedAt": "2025-12-15",
     "month": "2025-12",
-    "fetchedAt": "2026-05-01T13:57:35.841Z"
+    "fetchedAt": "2026-05-02T05:21:51.164Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251212-01-368",
@@ -35,7 +402,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251212-01-368/",
     "publishedAt": "2025-12-12",
     "month": "2025-12",
-    "fetchedAt": "2026-05-01T13:57:35.878Z"
+    "fetchedAt": "2026-05-02T05:21:51.202Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251212-02-78",
@@ -56,7 +423,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251212-02-78/",
     "publishedAt": "2025-12-12",
     "month": "2025-12",
-    "fetchedAt": "2026-05-01T13:57:35.932Z"
+    "fetchedAt": "2026-05-02T05:21:51.233Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251210-01-365",
@@ -103,7 +470,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251210-01-365/",
     "publishedAt": "2025-12-10",
     "month": "2025-12",
-    "fetchedAt": "2026-05-01T13:57:35.804Z"
+    "fetchedAt": "2026-05-02T05:21:51.265Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251208-02-77",
@@ -119,7 +486,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251208-02-77/",
     "publishedAt": "2025-12-08",
     "month": "2025-12",
-    "fetchedAt": "2026-05-01T13:57:35.727Z"
+    "fetchedAt": "2026-05-02T05:21:51.324Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251208-01-366",
@@ -143,7 +510,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251208-01-366/",
     "publishedAt": "2025-12-08",
     "month": "2025-12",
-    "fetchedAt": "2026-05-01T13:57:35.778Z"
+    "fetchedAt": "2026-05-02T05:21:51.358Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251201-01-364",
@@ -161,7 +528,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251201-01-364/",
     "publishedAt": "2025-12-01",
     "month": "2025-12",
-    "fetchedAt": "2026-05-01T13:57:35.691Z"
+    "fetchedAt": "2026-05-02T05:21:51.457Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251127-01-363",
@@ -180,7 +547,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251127-01-363/",
     "publishedAt": "2025-11-27",
     "month": "2025-11",
-    "fetchedAt": "2026-05-01T13:57:35.654Z"
+    "fetchedAt": "2026-05-02T05:21:51.487Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251124-01-362",
@@ -200,7 +567,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251124-01-362/",
     "publishedAt": "2025-11-24",
     "month": "2025-11",
-    "fetchedAt": "2026-05-01T13:57:35.626Z"
+    "fetchedAt": "2026-05-02T05:21:51.522Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251114-01-361",
@@ -218,7 +585,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251114-01-361/",
     "publishedAt": "2025-11-14",
     "month": "2025-11",
-    "fetchedAt": "2026-05-01T13:57:33.080Z"
+    "fetchedAt": "2026-05-02T05:21:51.568Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251019-01-360",
@@ -240,7 +607,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251019-01-360/",
     "publishedAt": "2025-10-19",
     "month": "2025-10",
-    "fetchedAt": "2026-05-01T13:57:33.037Z"
+    "fetchedAt": "2026-05-02T05:21:51.612Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250924-01-359",
@@ -255,7 +622,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250924-01-359/",
     "publishedAt": "2025-09-24",
     "month": "2025-09",
-    "fetchedAt": "2026-05-01T13:57:30.610Z"
+    "fetchedAt": "2026-05-02T05:21:51.654Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250924-02-76",
@@ -272,7 +639,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250924-02-76/",
     "publishedAt": "2025-09-24",
     "month": "2025-09",
-    "fetchedAt": "2026-05-01T13:57:32.996Z"
+    "fetchedAt": "2026-05-02T05:21:51.697Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250913-01-358",
@@ -294,7 +661,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250913-01-358/",
     "publishedAt": "2025-09-13",
     "month": "2025-09",
-    "fetchedAt": "2026-05-01T13:57:30.581Z"
+    "fetchedAt": "2026-05-02T05:21:51.738Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250912-01-357",
@@ -312,7 +679,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250912-01-357/",
     "publishedAt": "2025-09-12",
     "month": "2025-09",
-    "fetchedAt": "2026-05-01T13:57:27.873Z"
+    "fetchedAt": "2026-05-02T05:21:51.778Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250829-01-356",
@@ -331,7 +698,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250829-01-356/",
     "publishedAt": "2025-08-29",
     "month": "2025-08",
-    "fetchedAt": "2026-05-01T13:57:25.259Z"
+    "fetchedAt": "2026-05-02T05:21:51.813Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250820-01-355",
@@ -348,7 +715,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250820-01-355/",
     "publishedAt": "2025-08-20",
     "month": "2025-08",
-    "fetchedAt": "2026-05-01T13:57:22.716Z"
+    "fetchedAt": "2026-05-02T05:21:51.855Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250808-01-354",
@@ -366,7 +733,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250808-01-354/",
     "publishedAt": "2025-08-08",
     "month": "2025-08",
-    "fetchedAt": "2026-05-01T13:57:20.210Z"
+    "fetchedAt": "2026-05-02T05:21:52.015Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250807-01-352",
@@ -384,7 +751,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250807-01-352/",
     "publishedAt": "2025-08-07",
     "month": "2025-08",
-    "fetchedAt": "2026-05-01T13:57:14.459Z"
+    "fetchedAt": "2026-05-02T05:21:52.126Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250807-02-75",
@@ -401,7 +768,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250807-02-75/",
     "publishedAt": "2025-08-07",
     "month": "2025-08",
-    "fetchedAt": "2026-05-01T13:57:17.268Z"
+    "fetchedAt": "2026-05-02T05:21:52.171Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250731-01-353",
@@ -419,7 +786,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250731-01-353/",
     "publishedAt": "2025-07-31",
     "month": "2025-07",
-    "fetchedAt": "2026-05-01T13:57:14.499Z"
+    "fetchedAt": "2026-05-02T05:21:52.244Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250716-01-351",
@@ -434,7 +801,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250716-01-351/",
     "publishedAt": "2025-07-16",
     "month": "2025-07",
-    "fetchedAt": "2026-05-01T13:57:11.532Z"
+    "fetchedAt": "2026-05-02T05:21:52.282Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250714-01-350",
@@ -453,7 +820,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250714-01-350/",
     "publishedAt": "2025-07-14",
     "month": "2025-07",
-    "fetchedAt": "2026-05-01T13:57:08.960Z"
+    "fetchedAt": "2026-05-02T05:21:52.330Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250711-01-349",
@@ -469,7 +836,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250711-01-349/",
     "publishedAt": "2025-07-11",
     "month": "2025-07",
-    "fetchedAt": "2026-05-01T13:57:06.285Z"
+    "fetchedAt": "2026-05-02T05:21:52.371Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250711-02-74",
@@ -485,7 +852,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250711-02-74/",
     "publishedAt": "2025-07-11",
     "month": "2025-07",
-    "fetchedAt": "2026-05-01T13:57:08.929Z"
+    "fetchedAt": "2026-05-02T05:21:52.506Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250709-01-345",
@@ -501,7 +868,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250709-01-345/",
     "publishedAt": "2025-07-09",
     "month": "2025-07",
-    "fetchedAt": "2026-05-01T13:56:58.075Z"
+    "fetchedAt": "2026-05-02T05:21:52.546Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250701-01-348",
@@ -519,7 +886,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250701-01-348/",
     "publishedAt": "2025-07-01",
     "month": "2025-07",
-    "fetchedAt": "2026-05-01T13:57:06.163Z"
+    "fetchedAt": "2026-05-02T05:21:52.592Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250628-01-346",
@@ -537,7 +904,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250628-01-346/",
     "publishedAt": "2025-06-28",
     "month": "2025-06",
-    "fetchedAt": "2026-05-01T13:57:00.738Z"
+    "fetchedAt": "2026-05-02T05:21:52.644Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250627-01-347",
@@ -561,7 +928,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250627-01-347/",
     "publishedAt": "2025-06-27",
     "month": "2025-06",
-    "fetchedAt": "2026-05-01T13:57:03.415Z"
+    "fetchedAt": "2026-05-02T05:21:52.690Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250620-01-344",
@@ -578,7 +945,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250620-01-344/",
     "publishedAt": "2025-06-20",
     "month": "2025-06",
-    "fetchedAt": "2026-05-01T13:56:58.043Z"
+    "fetchedAt": "2026-05-02T05:21:52.733Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250617-01-343",
@@ -593,7 +960,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250617-01-343/",
     "publishedAt": "2025-06-17",
     "month": "2025-06",
-    "fetchedAt": "2026-05-01T13:56:49.836Z"
+    "fetchedAt": "2026-05-02T05:21:52.852Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250616-02-73",
@@ -610,7 +977,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250616-02-73/",
     "publishedAt": "2025-06-16",
     "month": "2025-06",
-    "fetchedAt": "2026-05-01T13:56:52.682Z"
+    "fetchedAt": "2026-05-02T05:21:52.894Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250616-01-342",
@@ -630,7 +997,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250616-01-342/",
     "publishedAt": "2025-06-16",
     "month": "2025-06",
-    "fetchedAt": "2026-05-01T13:56:55.346Z"
+    "fetchedAt": "2026-05-02T05:21:52.936Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250609-01-341",
@@ -649,7 +1016,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250609-01-341/",
     "publishedAt": "2025-06-09",
     "month": "2025-06",
-    "fetchedAt": "2026-05-01T13:56:52.646Z"
+    "fetchedAt": "2026-05-02T05:21:53.067Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250531-01-340",
@@ -667,7 +1034,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250531-01-340/",
     "publishedAt": "2025-05-31",
     "month": "2025-05",
-    "fetchedAt": "2026-05-01T13:56:47.382Z"
+    "fetchedAt": "2026-05-02T05:21:53.128Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250529-01-339",
@@ -687,7 +1054,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250529-01-339/",
     "publishedAt": "2025-05-29",
     "month": "2025-05",
-    "fetchedAt": "2026-05-01T13:56:44.619Z"
+    "fetchedAt": "2026-05-02T05:21:53.177Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250504-01-338",
@@ -705,7 +1072,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250504-01-338/",
     "publishedAt": "2025-05-04",
     "month": "2025-05",
-    "fetchedAt": "2026-05-01T13:56:41.894Z"
+    "fetchedAt": "2026-05-02T05:21:53.231Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250502-01-337",
@@ -726,7 +1093,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250502-01-337/",
     "publishedAt": "2025-05-02",
     "month": "2025-05",
-    "fetchedAt": "2026-05-01T13:56:38.989Z"
+    "fetchedAt": "2026-05-02T05:21:53.281Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250430-01-336",
@@ -744,7 +1111,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250430-01-336/",
     "publishedAt": "2025-04-30",
     "month": "2025-04",
-    "fetchedAt": "2026-05-01T13:56:35.875Z"
+    "fetchedAt": "2026-05-02T05:21:53.328Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250429-01-335",
@@ -762,7 +1129,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250429-01-335/",
     "publishedAt": "2025-04-29",
     "month": "2025-04",
-    "fetchedAt": "2026-05-01T13:56:35.757Z"
+    "fetchedAt": "2026-05-02T05:21:53.380Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250423-01-333",
@@ -781,7 +1148,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250423-01-333/",
     "publishedAt": "2025-04-23",
     "month": "2025-04",
-    "fetchedAt": "2026-05-01T13:56:30.081Z"
+    "fetchedAt": "2026-05-02T05:21:53.421Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250422-01-334",
@@ -799,7 +1166,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250422-01-334/",
     "publishedAt": "2025-04-22",
     "month": "2025-04",
-    "fetchedAt": "2026-05-01T13:56:32.784Z"
+    "fetchedAt": "2026-05-02T05:21:53.466Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250410-01-332",
@@ -824,7 +1191,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250410-01-332/",
     "publishedAt": "2025-04-10",
     "month": "2025-04",
-    "fetchedAt": "2026-05-01T13:56:27.347Z"
+    "fetchedAt": "2026-05-02T05:21:53.675Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250320-01-331",
@@ -842,7 +1209,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250320-01-331/",
     "publishedAt": "2025-03-20",
     "month": "2025-03",
-    "fetchedAt": "2026-05-01T13:56:24.693Z"
+    "fetchedAt": "2026-05-02T05:21:53.883Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250317-01-329",
@@ -866,7 +1233,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250317-01-329/",
     "publishedAt": "2025-03-17",
     "month": "2025-03",
-    "fetchedAt": "2026-05-01T13:56:22.080Z"
+    "fetchedAt": "2026-05-02T05:21:53.986Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250314-01-330",
@@ -885,7 +1252,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250314-01-330/",
     "publishedAt": "2025-03-14",
     "month": "2025-03",
-    "fetchedAt": "2026-05-01T13:56:22.044Z"
+    "fetchedAt": "2026-05-02T05:21:54.233Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250313-01-328",
@@ -924,7 +1291,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250313-01-328/",
     "publishedAt": "2025-03-13",
     "month": "2025-03",
-    "fetchedAt": "2026-05-01T13:56:19.163Z"
+    "fetchedAt": "2026-05-02T05:21:54.282Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250313-02-72",
@@ -959,7 +1326,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250313-02-72/",
     "publishedAt": "2025-03-13",
     "month": "2025-03",
-    "fetchedAt": "2026-05-01T13:56:21.990Z"
+    "fetchedAt": "2026-05-02T05:21:54.329Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250308-01-327",
@@ -997,7 +1364,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250308-01-327/",
     "publishedAt": "2025-03-08",
     "month": "2025-03",
-    "fetchedAt": "2026-05-01T13:56:16.762Z"
+    "fetchedAt": "2026-05-02T05:21:54.374Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250307-01-326",
@@ -1017,7 +1384,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250307-01-326/",
     "publishedAt": "2025-03-07",
     "month": "2025-03",
-    "fetchedAt": "2026-05-01T13:56:14.167Z"
+    "fetchedAt": "2026-05-02T05:21:54.425Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250228-01-325",
@@ -1034,7 +1401,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250228-01-325/",
     "publishedAt": "2025-02-28",
     "month": "2025-02",
-    "fetchedAt": "2026-05-01T13:56:11.306Z"
+    "fetchedAt": "2026-05-02T05:21:54.476Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250222-01-324",
@@ -1052,7 +1419,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250222-01-324/",
     "publishedAt": "2025-02-22",
     "month": "2025-02",
-    "fetchedAt": "2026-05-01T13:56:08.589Z"
+    "fetchedAt": "2026-05-02T05:21:54.603Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250220-01-323",
@@ -1075,7 +1442,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250220-01-323/",
     "publishedAt": "2025-02-20",
     "month": "2025-02",
-    "fetchedAt": "2026-05-01T13:56:05.851Z"
+    "fetchedAt": "2026-05-02T05:21:54.661Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250212-01-322",
@@ -1094,7 +1461,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250212-01-322/",
     "publishedAt": "2025-02-12",
     "month": "2025-02",
-    "fetchedAt": "2026-05-01T13:56:02.877Z"
+    "fetchedAt": "2026-05-02T05:21:54.701Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250124-02-71",
@@ -1114,7 +1481,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250124-02-71/",
     "publishedAt": "2025-01-24",
     "month": "2025-01",
-    "fetchedAt": "2026-05-01T13:55:57.574Z"
+    "fetchedAt": "2026-05-02T05:21:54.746Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250122-01-321",
@@ -1137,7 +1504,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250122-01-321/",
     "publishedAt": "2025-01-22",
     "month": "2025-01",
-    "fetchedAt": "2026-05-01T13:56:00.220Z"
+    "fetchedAt": "2026-05-02T05:21:54.879Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250117-01-319",
@@ -1156,7 +1523,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250117-01-319/",
     "publishedAt": "2025-01-17",
     "month": "2025-01",
-    "fetchedAt": "2026-05-01T13:55:52.996Z"
+    "fetchedAt": "2026-05-02T05:21:55.004Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250117-01-320",
@@ -1173,7 +1540,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250117-01-320/",
     "publishedAt": "2025-01-17",
     "month": "2025-01",
-    "fetchedAt": "2026-05-01T13:55:55.231Z"
+    "fetchedAt": "2026-05-02T05:21:55.127Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250116-01-318",
@@ -1196,6 +1563,24 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250116-01-318/",
     "publishedAt": "2025-01-16",
     "month": "2025-01",
-    "fetchedAt": "2026-05-01T13:55:50.886Z"
+    "fetchedAt": "2026-05-02T05:21:55.171Z"
+  },
+  {
+    "id": "news-https-hololive-hololivepro-com-news-20241217-01-317",
+    "source": "official_news",
+    "categories": [
+      "event"
+    ],
+    "title": "SHIBUYA TSUTAYAにホロライブ公式ぬいぐるみ「ホロフレ」が大集合！イベント「hololive friends factory」開催決定",
+    "summary": "カバー株式会社（本社：東京都港区、代表取締役社⻑：⾕郷元昭）は、公式ぬいぐるみブランド「hololive friends」シリーズ開始2周年を祝して、SHIBUYA TSUTAYA（東京･渋谷）にて期間限定イベント「hololive friends factory」を12月23日(月)より開催いたします。 会場限定のフォトスポットなどが登場するほか、「hololive Seasonal Days ウィンターストリート」などの新商品も販売いたします。 2024年12月23日はホロライブ公式ぬいぐるみブランド「holo",
+    "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2024/12/20241217_main2-scaled.webp",
+    "talents": [
+      "ホロライブEnglish",
+      "ホロライブインドネシア"
+    ],
+    "officialUrl": "https://hololive.hololivepro.com/news/20241217-01-317/",
+    "publishedAt": "2024-12-17",
+    "month": "2024-12",
+    "fetchedAt": "2026-05-02T05:21:55.223Z"
   }
 ]
