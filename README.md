@@ -129,6 +129,7 @@ npm run health
 ## マイルストーン
 
 今後の開発方針は [docs/milestones.md](docs/milestones.md) を参照してください。
+公開後の確認手順は [docs/release-checklist.md](docs/release-checklist.md) を参照してください。
 
 ## Codex / GitHub Copilot 併用
 
