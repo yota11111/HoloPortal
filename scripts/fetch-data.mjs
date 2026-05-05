@@ -165,6 +165,12 @@ function productImage(product) {
   return product.images?.[0]?.src || product.variants?.find((variant) => variant.featured_image)?.featured_image?.src || null;
 }
 
+function productPrices(product) {
+  return (product.variants || [])
+    .map((variant) => Number.parseFloat(String(variant.price ?? "").replace(/,/g, "")))
+    .filter((price) => Number.isFinite(price) && price > 0);
+}
+
 function newsDateFromUrl(url) {
   const match = url.match(/\/news\/(\d{8})/);
   if (!match) return "";
@@ -370,7 +376,7 @@ async function fetchProducts() {
     .sort((a, b) => b.created_at.localeCompare(a.created_at))
     .slice(0, PRODUCT_LIMIT)
     .map((product) => {
-      const prices = (product.variants || []).map((variant) => Number(variant.price || 0));
+      const prices = productPrices(product);
       const title = product.title;
       const handle = product.handle;
       const imageUrl = productImage(product);

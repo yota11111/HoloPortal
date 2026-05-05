@@ -984,6 +984,30 @@ h1 {
     #c9edff;
 }
 
+.shop-label {
+  display: inline-flex;
+  min-height: 24px;
+  align-items: center;
+  margin-left: auto;
+  color: var(--blue-deep);
+  font-size: 11px;
+  font-weight: 780;
+}
+
+.shop-label::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-left: 6px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: translateY(-1px) rotate(45deg);
+}
+
+:root[data-theme="dark"] .shop-label {
+  color: var(--blue);
+}
+
 .talent-tools ~ .grid {
   grid-template-columns: 1fr;
   gap: 0;
