@@ -14,6 +14,14 @@ export function talentSlug(name) {
   return name.replaceAll("/", "-");
 }
 
+function talentSlugFromOfficialUrl(url = "") {
+  try {
+    return new URL(url).pathname.split("/").filter(Boolean).at(-1) || "";
+  } catch {
+    return "";
+  }
+}
+
 function byLatest(a, b) {
   return (b.startAt || "").localeCompare(a.startAt || "");
 }
@@ -100,11 +108,7 @@ function officialAliasMap(officialTalents = []) {
 }
 
 function officialUrlHandle(url = "") {
-  try {
-    return new URL(url).pathname.split("/").filter(Boolean).at(-1) || "";
-  } catch {
-    return "";
-  }
+  return talentSlugFromOfficialUrl(url);
 }
 
 function buildOfficialTalentSearch(officialTalents = [], aliasMap = new Map()) {
@@ -245,6 +249,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
       profile.officialImage = official?.imageUrl || null;
       profile.officialUrl = official?.officialUrl || null;
       profile.officialName = official?.name || null;
+      profile.slug = talentSlugFromOfficialUrl(official?.officialUrl) || profile.slug;
       profile.latestImage ||= profile.streams[0]?.thumbnailUrl || profile.items[0]?.imageUrl || null;
       profile.displayImage = profile.officialImage || profile.latestImage;
       return profile;
