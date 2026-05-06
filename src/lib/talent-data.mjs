@@ -52,10 +52,33 @@ function touchLatest(profile, date, imageUrl) {
   if (!profile.latestImage && imageUrl) profile.latestImage = imageUrl;
 }
 
+function stripOfficialStatus(name = "") {
+  return name.replace(/^【[^】]+】\s*/, "").trim();
+}
+
+function compactTalentTerm(value = "") {
+  return value
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[^\p{Letter}\p{Number}]+/gu, "");
+}
+
+function officialTalentNames(talent) {
+  const names = new Set();
+  for (const name of [talent.name, talent.englishName, ...(talent.canonicalNames || [])]) {
+    const cleaned = name?.trim();
+    if (!cleaned) continue;
+    names.add(cleaned);
+    const stripped = stripOfficialStatus(cleaned);
+    if (stripped) names.add(stripped);
+  }
+  return [...names];
+}
+
 function officialTalentMap(officialTalents = []) {
   const map = new Map();
   for (const talent of officialTalents) {
-    for (const name of [talent.name, talent.englishName, ...(talent.canonicalNames || [])].filter(Boolean)) {
+    for (const name of officialTalentNames(talent)) {
       if (!map.has(name)) map.set(name, talent);
     }
   }
@@ -67,13 +90,72 @@ function officialAliasMap(officialTalents = []) {
   for (const talent of officialTalents) {
     const primary = canonicalTalentName(talent.canonicalNames?.[0] || talent.name || talent.englishName);
     if (!primary) continue;
-    for (const name of [talent.name, talent.englishName, ...(talent.canonicalNames || [])].filter(Boolean)) {
+    for (const name of officialTalentNames(talent)) {
       for (const key of [name, canonicalTalentName(name)].filter(Boolean)) {
         if (!map.has(key)) map.set(key, primary);
       }
     }
   }
   return map;
+}
+
+function officialUrlHandle(url = "") {
+  try {
+    return new URL(url).pathname.split("/").filter(Boolean).at(-1) || "";
+  } catch {
+    return "";
+  }
+}
+
+function buildOfficialTalentSearch(officialTalents = [], aliasMap = new Map()) {
+  return officialTalents
+    .map((talent) => {
+      const primary =
+        aliasMap.get(talent.canonicalNames?.[0]) ||
+        canonicalTalentName(talent.canonicalNames?.[0] || talent.name || talent.englishName);
+      if (!primary) return null;
+      const terms = new Set();
+      for (const name of officialTalentNames(talent)) {
+        for (const term of talentSearchTerms([name])) terms.add(term);
+      }
+      const handle = officialUrlHandle(talent.officialUrl);
+      if (handle) {
+        terms.add(handle);
+        terms.add(handle.replaceAll("-", " "));
+      }
+      const compactTerms = [...terms]
+        .map((term) => compactTalentTerm(term))
+        .filter((term) => term.length >= 5);
+      return {
+        primary,
+        terms: [...terms].filter(Boolean),
+        compactTerms: [...new Set(compactTerms)]
+      };
+    })
+    .filter(Boolean);
+}
+
+function includesOfficialTalentTerm(text, term) {
+  const cleaned = term?.trim();
+  if (!cleaned) return false;
+  if (/^[a-z0-9 '&.-]+$/i.test(cleaned)) {
+    const escaped = cleaned.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+");
+    return new RegExp(`(^|[^a-z0-9])${escaped}(?=$|[^a-z0-9])`, "i").test(text);
+  }
+  return text.toLowerCase().includes(cleaned.toLowerCase());
+}
+
+function officialTalentNamesFromText(text = "", officialSearch = []) {
+  const compactText = compactTalentTerm(text);
+  const names = [];
+  for (const entry of officialSearch) {
+    const matchesTerm = entry.terms.some((term) => includesOfficialTalentTerm(text, term));
+    const matchesCompact = entry.compactTerms.some((term) => compactText.includes(term));
+    if ((matchesTerm || matchesCompact) && !names.includes(entry.primary)) {
+      names.push(entry.primary);
+    }
+  }
+  return names;
 }
 
 function uniqueCanonicalTalentNames(names = []) {
@@ -85,15 +167,22 @@ function uniqueCanonicalTalentNames(names = []) {
   return talents;
 }
 
-function streamTalentNames(stream) {
-  return uniqueCanonicalTalentNames(talentSearchTerms([stream.channelName, ...(stream.talents || [])]));
+function streamTalentNames(stream, officialSearch = []) {
+  const text = `${stream.title || ""} ${stream.channelName || ""} ${stream.topic || ""} ${stream.youtubeUrl || ""} ${(stream.talents || []).join(" ")}`;
+  return uniqueCanonicalTalentNames([
+    ...talentSearchTerms([stream.channelName, ...(stream.talents || [])]),
+    ...talentSearchTermsFromText(text),
+    ...officialTalentNamesFromText(text, officialSearch)
+  ]);
 }
 
-function itemTalentNames(item) {
+function itemTalentNames(item, officialSearch = []) {
+  const text = `${item.title || ""} ${item.summary || ""} ${item.subcategory || ""} ${item.topic || ""} ${item.normalUrl || ""} ${item.officialUrl || ""} ${(item.talents || []).join(" ")}`;
   return uniqueCanonicalTalentNames([
     ...(item.talents || []),
     ...talentSearchTerms(item.talents || []),
-    ...talentSearchTermsFromText(`${item.title || ""} ${item.summary || ""} ${item.subcategory || ""}`)
+    ...talentSearchTermsFromText(text),
+    ...officialTalentNamesFromText(text, officialSearch)
   ]);
 }
 
@@ -101,6 +190,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
   const profiles = new Map();
   const officialMap = officialTalentMap(officialTalents);
   const aliasMap = officialAliasMap(officialTalents);
+  const officialSearch = buildOfficialTalentSearch(officialTalents, aliasMap);
 
   for (const talent of officialTalents) {
     const primaryName = talent.canonicalNames?.[0] || talent.name || talent.englishName;
@@ -116,7 +206,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
 
   for (const stream of streams) {
     const seenNames = new Set();
-    for (const name of streamTalentNames(stream)) {
+    for (const name of streamTalentNames(stream, officialSearch)) {
       const canonical = canonicalTalentName(name);
       if (!canonical || seenNames.has(canonical)) continue;
       seenNames.add(canonical);
@@ -131,7 +221,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
   for (const item of items) {
     if (item.category === "stream") continue;
     const seenNames = new Set();
-    for (const name of itemTalentNames(item)) {
+    for (const name of itemTalentNames(item, officialSearch)) {
       const canonical = canonicalTalentName(name);
       if (!canonical || seenNames.has(canonical)) continue;
       seenNames.add(canonical);

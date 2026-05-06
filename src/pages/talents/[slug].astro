@@ -36,6 +36,7 @@ const goodsItems = profile.items
 const announcementItems = profile.items
   .filter((item) => item.category !== "goods")
   .slice(0, 12);
+const announcementCount = profile.counts.news + profile.counts.events;
 const recentItems = [...profile.streams, ...profile.items]
   .sort((a, b) => (b.startAt || "").localeCompare(a.startAt || ""))
   .slice(0, 8);
@@ -87,11 +88,54 @@ function streamStatusLabel(status) {
     <main>
       <section class="section">
         <div class="shell">
+          <div class="profile-summary">
+            {profile.displayImage && (
+              <div class="profile-image">
+                <img
+                  src={profile.displayImage}
+                  alt={`${profile.name} プロフィール画像`}
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+            )}
+            <div class="profile-summary-body">
+              <div class="date">タレント別まとめ</div>
+              <h1>{profile.name} のまとめ</h1>
+              {profile.aliases.length > 0 && (
+                <p class="summary">{profile.aliases.slice(0, 5).join(" / ")}</p>
+              )}
+              <div class="meta">
+                <span class="pill">合計 {profile.counts.total}件</span>
+                <span class="pill live">配信 {profile.counts.streams}件</span>
+                <span class="pill goods">グッズ {profile.counts.goods}件</span>
+                <span class="pill event">発表 {announcementCount}件</span>
+                {profile.officialUrl && (
+                  <a
+                    class="shop-label"
+                    href={profile.officialUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    公式プロフィール
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
           <div class="section-head">
             <h2>最近の更新</h2>
             <span class="section-note">{recentItems.length}件</span>
           </div>
-          <div class="list">
+          {recentItems.length === 0 && (
+            <div class="empty-state visible">最近の更新はまだありません。</div>
+          )}
+          {recentItems.length > 0 && <div class="list">
             {
               recentItems.map((item) => (
                 <a
@@ -141,12 +185,10 @@ function streamStatusLabel(status) {
                 </a>
               ))
             }
-          </div>
+          </div>}
         </div>
       </section>
 
-      {
-        (liveStreams.length > 0 || upcomingStreams.length > 0) && (
           <section class="section">
             <div class="shell">
               <div class="section-head">
@@ -155,7 +197,10 @@ function streamStatusLabel(status) {
                   {liveStreams.length + upcomingStreams.length}件
                 </span>
               </div>
-              <div class="grid">
+              {liveStreams.length + upcomingStreams.length === 0 && (
+                <div class="empty-state visible">配信中・配信予定はありません。</div>
+              )}
+              {liveStreams.length + upcomingStreams.length > 0 && <div class="grid">
                 {[...liveStreams, ...upcomingStreams].map((stream) => (
                   <a
                     class="card card-link"
@@ -201,21 +246,20 @@ function streamStatusLabel(status) {
                     </div>
                   </a>
                 ))}
-              </div>
+              </div>}
             </div>
           </section>
-        )
-      }
 
-      {
-        goodsItems.length > 0 && (
           <section class="section">
             <div class="shell">
               <div class="section-head">
                 <h2>グッズ</h2>
                 <span class="section-note">{profile.counts.goods}件</span>
               </div>
-              <div class="grid">
+              {goodsItems.length === 0 && (
+                <div class="empty-state visible">グッズはまだありません。</div>
+              )}
+              {goodsItems.length > 0 && <div class="grid">
                 {goodsItems.map((item) => (
                   <a
                     class="card card-link"
@@ -246,21 +290,20 @@ function streamStatusLabel(status) {
                     </div>
                   </a>
                 ))}
-              </div>
+              </div>}
             </div>
           </section>
-        )
-      }
 
-      {
-        announcementItems.length > 0 && (
           <section class="section">
             <div class="shell">
               <div class="section-head">
                 <h2>公式発表</h2>
-                <span class="section-note">{announcementItems.length}件</span>
+                <span class="section-note">{announcementCount}件</span>
               </div>
-              <div class="list">
+              {announcementItems.length === 0 && (
+                <div class="empty-state visible">公式発表はまだありません。</div>
+              )}
+              {announcementItems.length > 0 && <div class="list">
                 {announcementItems.map((item) => (
                   <a
                     class="list-item card-link"
@@ -290,21 +333,20 @@ function streamStatusLabel(status) {
                     <span class="button">公式へ</span>
                   </a>
                 ))}
-              </div>
+              </div>}
             </div>
           </section>
-        )
-      }
 
-      {
-        archiveStreams.length > 0 && (
           <section class="section">
             <div class="shell">
               <div class="section-head">
                 <h2>アーカイブ</h2>
                 <span class="section-note">{archiveStreams.length}件</span>
               </div>
-              <div class="grid">
+              {archiveStreams.length === 0 && (
+                <div class="empty-state visible">アーカイブはまだありません。</div>
+              )}
+              {archiveStreams.length > 0 && <div class="grid">
                 {archiveStreams.map((stream) => (
                   <a
                     class="card card-link"
@@ -339,11 +381,9 @@ function streamStatusLabel(status) {
                     </div>
                   </a>
                 ))}
-              </div>
+              </div>}
             </div>
           </section>
-        )
-      }
     </main>
 
     <footer class="footer">

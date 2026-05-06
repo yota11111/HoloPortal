@@ -1,5 +1,8 @@
 export const talentAliases = {
   "Tokino Sora": "ときのそら",
+  "Aki Rosenthal": "アキ・ローゼンタール",
+  "アキロゼ": "アキ・ローゼンタール",
+  "Akai Haato": "赤井はあと",
   "Roboco": "ロボ子さん",
   "Robocosan": "ロボ子さん",
   "Sakura Miko": "さくらみこ",
@@ -10,6 +13,8 @@ export const talentAliases = {
   "ほしまちすいせい": "星街すいせい",
   "Shirakami Fubuki": "白上フブキ",
   "Natsuiro Matsuri": "夏色まつり",
+  "Nakiri Ayame": "百鬼あやめ",
+  "Yuzuki Choco": "癒月ちょこ",
   "Oozora Subaru": "大空スバル",
   "Ookami Mio": "大神ミオ",
   "Nekomata Okayu": "猫又おかゆ",
