@@ -8,8 +8,10 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "dev:pages": "node scripts/run-pages-base.mjs dev",
     "build": "npm run fetch:data && astro build",
     "preview": "astro preview",
+    "preview:pages": "node scripts/run-pages-base.mjs preview",
     "fetch:data": "node scripts/fetch-data.mjs",
     "health": "node scripts/report-health.mjs",
     "check:data": "node scripts/check-data.mjs",
