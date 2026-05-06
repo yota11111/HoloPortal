@@ -7,17 +7,17 @@ import streams from "../data/generated/streams.json";
 import officialTalents from "../data/generated/official-talents.json";
 import { buildTalentProfiles, formatDate } from "../lib/talent-data.mjs";
 import { talentCategories, talentCategoryLabel, talentCategoryValue } from "../lib/talent-categories.mjs";
-import { talentGroups, talentGroupLabel, talentGroupValue } from "../lib/talent-groups.mjs";
+import { talentGroups, talentGroupLabels, talentGroupValues } from "../lib/talent-groups.mjs";
 
 const talents = buildTalentProfiles(items, streams, officialTalents).map((talent) => {
   const category = talentCategoryValue(talent);
-  const group = talentGroupValue(talent);
+  const groups = talentGroupValues(talent);
   return {
     ...talent,
     category,
     categoryLabel: talentCategoryLabel(category),
-    group,
-    groupLabel: talentGroupLabel(group)
+    groups,
+    groupLabels: talentGroupLabels(groups)
   };
 });
 const categoryCounts = talents.reduce((acc, talent) => {
@@ -25,7 +25,9 @@ const categoryCounts = talents.reduce((acc, talent) => {
   return acc;
 }, {});
 const groupCounts = talents.reduce((acc, talent) => {
-  acc[talent.group] = (acc[talent.group] || 0) + 1;
+  for (const group of talent.groups) {
+    acc[group] = (acc[group] || 0) + 1;
+  }
   return acc;
 }, {});
 const pageDescription = "ホロライブ関連情報をタレント別に整理する非公式ページです。";
@@ -109,7 +111,7 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
               <select class="select-input" data-talent-name>
                 <option value="all" data-branch="all" data-group="all">すべて</option>
                 {talents.map((talent) => (
-                  <option value={talent.name} data-branch={talent.category} data-group={talent.group}>{talent.name}</option>
+                  <option value={talent.name} data-branch={talent.category} data-groups={`|${talent.groups.join("|")}|`}>{talent.name}</option>
                 ))}
               </select>
             </label>
@@ -123,7 +125,7 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
                 href={`./${talent.slug}/`}
                 data-talent-card
                 data-category={talent.category}
-                data-group={talent.group}
+                data-groups={`|${talent.groups.join("|")}|`}
                 data-name={talent.name}
                 data-search={`${talent.name} ${talent.aliases.join(" ")}`.toLowerCase()}
               >
@@ -139,7 +141,7 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
                   {talent.aliases.length > 0 && <p class="summary">{talent.aliases.slice(0, 3).join(" / ")}</p>}
                   <div class="meta">
                     <span class="pill category">{talent.categoryLabel}</span>
-                    <span class="pill">{talent.groupLabel}</span>
+                    {talent.groupLabels.map((label) => <span class="pill">{label}</span>)}
                     {talent.counts.streams > 0 && <span class="pill live">配信 {talent.counts.streams}</span>}
                     {talent.counts.goods > 0 && <span class="pill goods">グッズ {talent.counts.goods}</span>}
                     {talent.counts.events > 0 && <span class="pill event">発表 {talent.counts.events}</span>}
@@ -197,7 +199,7 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
       function syncTalentOptions() {
         for (const option of talentName.options) {
           const branchOk = talentBranch.value === "all" || option.dataset.branch === "all" || option.dataset.branch === talentBranch.value;
-          const groupOk = talentGroup.value === "all" || option.dataset.group === "all" || option.dataset.group === talentGroup.value;
+          const groupOk = option.value === "all" || talentGroup.value === "all" || option.dataset.groups?.includes(`|${talentGroup.value}|`);
           option.hidden = !(branchOk && groupOk);
         }
         if (talentName.selectedOptions[0]?.hidden) talentName.value = "all";
@@ -212,7 +214,7 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
         for (const card of talentCards) {
           const matchesText = !query || card.dataset.search.includes(query);
           const matchesBranch = branch === "all" || card.dataset.category === branch;
-          const matchesGroup = group === "all" || card.dataset.group === group;
+          const matchesGroup = group === "all" || card.dataset.groups.includes(`|${group}|`);
           const matchesTalent = selectedTalent === "all" || card.dataset.name === selectedTalent;
           const show = matchesText && matchesBranch && matchesGroup && matchesTalent;
           card.hidden = !show;

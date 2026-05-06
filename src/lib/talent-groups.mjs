@@ -70,7 +70,7 @@ const groupAliases = [
   ["other", ["春先のどか", "Harusaki Nodoka", "友人A", "Friend-A", "ホロカ公式"]]
 ];
 
-const groupByName = new Map();
+const groupsByName = new Map();
 const groupOrderByName = new Map();
 const groupMeta = Object.fromEntries(talentGroups.map((group) => [group.value, group]));
 
@@ -78,7 +78,9 @@ for (const [group, names] of groupAliases) {
   names.forEach((name, index) => {
     const keys = new Set([name, canonicalTalentName(name)].filter(Boolean));
     for (const key of keys) {
-      if (!groupByName.has(key)) groupByName.set(key, group);
+      const groups = groupsByName.get(key) || [];
+      if (!groups.includes(group)) groups.push(group);
+      groupsByName.set(key, groups);
       if (!groupOrderByName.has(key)) groupOrderByName.set(key, index);
     }
   });
@@ -89,14 +91,21 @@ function profileNames(profile) {
 }
 
 export function talentGroupValue(profileOrName) {
+  return talentGroupValues(profileOrName)[0] || "other";
+}
+
+export function talentGroupValues(profileOrName) {
   const names = typeof profileOrName === "string" ? [profileOrName] : profileNames(profileOrName);
+  const groups = [];
   for (const name of names) {
-    const direct = groupByName.get(name);
-    if (direct) return direct;
-    const canonical = groupByName.get(canonicalTalentName(name));
-    if (canonical) return canonical;
+    for (const group of groupsByName.get(name) || []) {
+      if (!groups.includes(group)) groups.push(group);
+    }
+    for (const group of groupsByName.get(canonicalTalentName(name)) || []) {
+      if (!groups.includes(group)) groups.push(group);
+    }
   }
-  return "other";
+  return groups.length ? groups : ["other"];
 }
 
 export function talentBranchValue(profileOrName) {
@@ -105,6 +114,10 @@ export function talentBranchValue(profileOrName) {
 
 export function talentGroupLabel(value) {
   return groupMeta[value]?.label || groupMeta.other.label;
+}
+
+export function talentGroupLabels(values = []) {
+  return values.map((value) => talentGroupLabel(value));
 }
 
 export function talentBranchLabel(value) {

@@ -18,8 +18,8 @@ function byLatest(a, b) {
   return (b.startAt || "").localeCompare(a.startAt || "");
 }
 
-function ensureProfile(map, name) {
-  const cleaned = canonicalTalentName(name);
+function ensureProfile(map, name, aliasMap = new Map()) {
+  const cleaned = aliasMap.get(name) || aliasMap.get(canonicalTalentName(name)) || canonicalTalentName(name);
   if (!cleaned) return null;
   if (!map.has(cleaned)) {
     map.set(cleaned, {
@@ -55,8 +55,22 @@ function touchLatest(profile, date, imageUrl) {
 function officialTalentMap(officialTalents = []) {
   const map = new Map();
   for (const talent of officialTalents) {
-    for (const name of talent.canonicalNames || []) {
+    for (const name of [talent.name, talent.englishName, ...(talent.canonicalNames || [])].filter(Boolean)) {
       if (!map.has(name)) map.set(name, talent);
+    }
+  }
+  return map;
+}
+
+function officialAliasMap(officialTalents = []) {
+  const map = new Map();
+  for (const talent of officialTalents) {
+    const primary = canonicalTalentName(talent.canonicalNames?.[0] || talent.name || talent.englishName);
+    if (!primary) continue;
+    for (const name of [talent.name, talent.englishName, ...(talent.canonicalNames || [])].filter(Boolean)) {
+      for (const key of [name, canonicalTalentName(name)].filter(Boolean)) {
+        if (!map.has(key)) map.set(key, primary);
+      }
     }
   }
   return map;
@@ -65,6 +79,19 @@ function officialTalentMap(officialTalents = []) {
 export function buildTalentProfiles(items, streams, officialTalents = []) {
   const profiles = new Map();
   const officialMap = officialTalentMap(officialTalents);
+  const aliasMap = officialAliasMap(officialTalents);
+
+  for (const talent of officialTalents) {
+    const primaryName = talent.canonicalNames?.[0] || talent.name || talent.englishName;
+    const profile = ensureProfile(profiles, primaryName, aliasMap);
+    if (!profile) continue;
+    for (const alias of [talent.name, talent.englishName, ...(talent.canonicalNames || [])]) {
+      const cleaned = alias?.trim();
+      if (cleaned && cleaned !== profile.name && !profile.aliases.includes(cleaned)) {
+        profile.aliases.push(cleaned);
+      }
+    }
+  }
 
   for (const stream of streams) {
     const seenNames = new Set();
@@ -72,7 +99,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
       const canonical = canonicalTalentName(name);
       if (!canonical || seenNames.has(canonical)) continue;
       seenNames.add(canonical);
-      const profile = ensureProfile(profiles, name);
+      const profile = ensureProfile(profiles, name, aliasMap);
       if (!profile) continue;
       profile.streams.push(stream);
       profile.counts.streams += 1;
@@ -87,7 +114,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
       const canonical = canonicalTalentName(name);
       if (!canonical || seenNames.has(canonical)) continue;
       seenNames.add(canonical);
-      const profile = ensureProfile(profiles, name);
+      const profile = ensureProfile(profiles, name, aliasMap);
       if (!profile) continue;
       profile.items.push(item);
       if (item.category === "goods") profile.counts.goods += 1;
@@ -111,7 +138,6 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
       profile.displayImage = profile.officialImage || profile.latestImage;
       return profile;
     })
-    .filter((profile) => profile.counts.total > 0)
     .sort((a, b) => talentSortValue(a) - talentSortValue(b) || a.name.localeCompare(b.name, "ja"));
 }
 
