@@ -3,28 +3,17 @@ import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
 import streams from "../data/generated/streams.json";
-import meta from "../data/generated/meta.json";
-import { canonicalTalentName, talentSearchTerms } from "../lib/talent-aliases.mjs";
+import items from "../data/generated/portal-items.json";
+import officialTalents from "../data/generated/official-talents.json";
+import { talentSearchTerms } from "../lib/talent-aliases.mjs";
+import { buildTalentFilterState, dataTokenList, streamTalentFilterData, talentBranches, talentGroups } from "../lib/talent-filter-data.mjs";
 
 const liveStreams = streams.filter((stream) => stream.status === "live");
 const upcomingStreams = streams.filter((stream) => stream.status === "upcoming");
 const pastStreams = streams.filter((stream) => stream.status !== "live" && stream.status !== "upcoming");
 const pageDescription = "ホロジュールとHolodex APIをもとにホロライブのライブ中・配信予定を整理する非公式ページです。";
 const hasStreams = streams.length > 0;
-const holoScheduleStatus = meta.streams?.sources?.holoSchedule?.status || "unknown";
-const holodexStatus = meta.streams?.sources?.holodex?.status || meta.holodex?.status || "unknown";
-const talentOptions = Object.entries(
-  streams.reduce((acc, stream) => {
-    const names = [stream.channelName, ...(stream.talents || [])]
-      .map((name) => canonicalTalentName(name))
-      .filter(Boolean);
-    for (const key of new Set(names)) {
-      acc[key] = (acc[key] || 0) + 1;
-    }
-    return acc;
-  }, {})
-).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ja"));
-
+const talentFilterState = buildTalentFilterState(items, streams, officialTalents);
 const statusFilters = [
   ["all", "すべて"],
   ["live", "配信中"],
@@ -42,10 +31,6 @@ function formatDateTime(value) {
   }).format(new Date(value));
 }
 
-function sourceStatusLabel(status) {
-  return status === "ok" ? "取得中" : "停止";
-}
-
 function streamStatusLabel(status) {
   if (status === "live") return "配信中";
   if (status === "upcoming") return "予定";
@@ -58,11 +43,13 @@ function searchText(stream) {
   return `${stream.title} ${stream.channelName} ${(stream.talents || []).join(" ")} ${talentTerms.join(" ")} ${stream.topic || ""} ${stream.sourceLabel || stream.source}`.toLowerCase();
 }
 
-function talentFilterText(stream) {
-  const talents = talentSearchTerms([stream.channelName, ...(stream.talents || [])])
-    .map((name) => canonicalTalentName(name))
-    .filter(Boolean);
-  return `|${[...new Set(talents)].join("|")}|`;
+function streamFilterDataAttrs(stream) {
+  const data = streamTalentFilterData(stream);
+  return {
+    talents: dataTokenList(data.talents),
+    branches: dataTokenList(data.branches),
+    groups: dataTokenList(data.groups)
+  };
 }
 ---
 
@@ -100,17 +87,6 @@ function talentFilterText(stream) {
     </header>
 
     <main>
-      <section class="hero">
-        <div class="shell hero-grid">
-          <aside class="status-panel">
-            <div class="status-row"><span>配信中</span><strong>{liveStreams.length}</strong></div>
-            <div class="status-row"><span>配信予定</span><strong>{upcomingStreams.length}</strong></div>
-            <div class="status-row"><span>ホロジュール</span><strong>{sourceStatusLabel(holoScheduleStatus)}</strong></div>
-            <div class="status-row"><span>Holodex</span><strong>{sourceStatusLabel(holodexStatus)}</strong></div>
-          </aside>
-        </div>
-      </section>
-
       {!hasStreams ? (
         <section class="section">
           <div class="shell">
@@ -134,11 +110,32 @@ function talentFilterText(stream) {
                   ))}
                 </div>
                 <label class="select-wrap">
+                  <span>所属</span>
+                  <select class="select-input" data-stream-branch>
+                    {talentBranches.map((branch) => (
+                      <option value={branch.value}>
+                        {branch.label} ({branch.value === "all" ? talentFilterState.talents.length : talentFilterState.branchCounts[branch.value] || 0})
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <label class="select-wrap">
+                  <span>グループ</span>
+                  <select class="select-input" data-stream-group>
+                    <option value="all" data-branch="all">すべて ({talentFilterState.talents.length})</option>
+                    {talentGroups.filter((group) => group.value !== "all").map((group) => (
+                      <option value={group.value} data-branch={group.branch}>
+                        {group.label} ({talentFilterState.groupCounts[group.value] || 0})
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <label class="select-wrap">
                   <span>タレント</span>
                   <select class="select-input" data-stream-talent>
-                    <option value="all">すべてのタレント</option>
-                    {talentOptions.map(([talent, count]) => (
-                      <option value={talent}>{talent} ({count})</option>
+                    <option value="all" data-branch="all" data-group="all">すべて</option>
+                    {talentFilterState.talents.map((talent) => (
+                      <option value={talent.name} data-branch={talent.branch} data-groups={`|${talent.groups.join("|")}|`}>{talent.name}</option>
                     ))}
                   </select>
                 </label>
@@ -173,7 +170,9 @@ function talentFilterText(stream) {
                     rel="noopener noreferrer"
                     data-stream-card
                     data-status={stream.status}
-                    data-talents={talentFilterText(stream)}
+                    data-talents={streamFilterDataAttrs(stream).talents}
+                    data-branches={streamFilterDataAttrs(stream).branches}
+                    data-groups={streamFilterDataAttrs(stream).groups}
                     data-search={searchText(stream)}
                   >
                     <div class="thumb-wrap">
@@ -213,7 +212,9 @@ function talentFilterText(stream) {
                     rel="noopener noreferrer"
                     data-stream-card
                     data-status={stream.status}
-                    data-talents={talentFilterText(stream)}
+                    data-talents={streamFilterDataAttrs(stream).talents}
+                    data-branches={streamFilterDataAttrs(stream).branches}
+                    data-groups={streamFilterDataAttrs(stream).groups}
                     data-search={searchText(stream)}
                   >
                     <div class="thumb-wrap">
@@ -253,7 +254,9 @@ function talentFilterText(stream) {
                       rel="noopener noreferrer"
                       data-stream-card
                       data-status={stream.status}
-                      data-talents={talentFilterText(stream)}
+                      data-talents={streamFilterDataAttrs(stream).talents}
+                      data-branches={streamFilterDataAttrs(stream).branches}
+                      data-groups={streamFilterDataAttrs(stream).groups}
                       data-search={searchText(stream)}
                     >
                       <div class="thumb-wrap">
@@ -289,6 +292,8 @@ function talentFilterText(stream) {
     <script>
       const streamSearch = document.querySelector("[data-stream-search]");
       const streamStatusButtons = [...document.querySelectorAll("[data-stream-status]")];
+      const streamBranch = document.querySelector("[data-stream-branch]");
+      const streamGroup = document.querySelector("[data-stream-group]");
       const streamTalent = document.querySelector("[data-stream-talent]");
       const streamCards = [...document.querySelectorAll("[data-stream-card]")];
       const streamSections = [...document.querySelectorAll("[data-stream-section]")];
@@ -308,6 +313,8 @@ function talentFilterText(stream) {
         const url = new URL(window.location.href);
         setQueryParam(url.searchParams, "q", streamSearch.value.trim());
         setQueryParam(url.searchParams, "status", activeStatus, "all");
+        setQueryParam(url.searchParams, "branch", streamBranch.value, "all");
+        setQueryParam(url.searchParams, "group", streamGroup.value, "all");
         setQueryParam(url.searchParams, "talent", streamTalent.value, "all");
         window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
       }
@@ -320,23 +327,43 @@ function talentFilterText(stream) {
         }
       }
 
-      function setTalentFilter(talent) {
-        const hasOption = [...streamTalent.options].some((option) => option.value === talent);
-        streamTalent.value = hasOption ? talent : "all";
+      function setSelectValue(select, value) {
+        const hasOption = [...select.options].some((option) => option.value === value && !option.hidden);
+        select.value = hasOption ? value : "all";
+      }
+
+      function syncGroupOptions() {
+        for (const option of streamGroup.options) {
+          option.hidden = streamBranch.value !== "all" && option.dataset.branch !== "all" && option.dataset.branch !== streamBranch.value;
+        }
+        if (streamGroup.selectedOptions[0]?.hidden) streamGroup.value = "all";
+      }
+
+      function syncTalentOptions() {
+        for (const option of streamTalent.options) {
+          const branchOk = streamBranch.value === "all" || option.dataset.branch === "all" || option.dataset.branch === streamBranch.value;
+          const groupOk = option.value === "all" || streamGroup.value === "all" || option.dataset.groups?.includes(`|${streamGroup.value}|`);
+          option.hidden = !(branchOk && groupOk);
+        }
+        if (streamTalent.selectedOptions[0]?.hidden) streamTalent.value = "all";
       }
 
       function applyStreamFilters() {
         const query = streamSearch.value.trim().toLowerCase();
+        const branch = streamBranch.value;
+        const group = streamGroup.value;
         const talent = streamTalent.value;
-        const filteredMode = Boolean(query) || activeStatus !== "all" || talent !== "all";
+        const filteredMode = Boolean(query) || activeStatus !== "all" || branch !== "all" || group !== "all" || talent !== "all";
         let visible = 0;
         const matchingCards = [];
 
         for (const card of streamCards) {
           const matchesStatus = activeStatus === "all" || card.dataset.status === activeStatus;
+          const matchesBranch = branch === "all" || card.dataset.branches.includes(`|${branch}|`);
+          const matchesGroup = group === "all" || card.dataset.groups.includes(`|${group}|`);
           const matchesTalent = talent === "all" || card.dataset.talents.includes(`|${talent}|`);
           const matchesText = !query || card.dataset.search.includes(query);
-          const show = matchesStatus && matchesTalent && matchesText;
+          const show = matchesStatus && matchesBranch && matchesGroup && matchesTalent && matchesText;
           card.hidden = !show;
           if (show) {
             visible += 1;
@@ -372,7 +399,11 @@ function talentFilterText(stream) {
         const params = new URLSearchParams(window.location.search);
         streamSearch.value = params.get("q") || "";
         setActiveStatus(params.get("status") || "all");
-        setTalentFilter(params.get("talent") || "all");
+        setSelectValue(streamBranch, params.get("branch") || "all");
+        syncGroupOptions();
+        setSelectValue(streamGroup, params.get("group") || "all");
+        syncTalentOptions();
+        setSelectValue(streamTalent, params.get("talent") || "all");
         applyStreamFilters();
       }
 
@@ -381,6 +412,17 @@ function talentFilterText(stream) {
         updateStreamsUrl();
       });
       streamTalent.addEventListener("change", () => {
+        applyStreamFilters();
+        updateStreamsUrl();
+      });
+      streamBranch.addEventListener("change", () => {
+        syncGroupOptions();
+        syncTalentOptions();
+        applyStreamFilters();
+        updateStreamsUrl();
+      });
+      streamGroup.addEventListener("change", () => {
+        syncTalentOptions();
         applyStreamFilters();
         updateStreamsUrl();
       });

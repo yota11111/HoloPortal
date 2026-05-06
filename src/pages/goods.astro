@@ -3,7 +3,11 @@ import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
 import products from "../data/generated/products.json";
-import { canonicalTalentName, talentSearchTerms, talentSearchTermsFromText } from "../lib/talent-aliases.mjs";
+import items from "../data/generated/portal-items.json";
+import streams from "../data/generated/streams.json";
+import officialTalents from "../data/generated/official-talents.json";
+import { talentSearchTerms, talentSearchTermsFromText } from "../lib/talent-aliases.mjs";
+import { buildTalentFilterState, dataTokenList, productTalentFilterData, talentBranches, talentGroups } from "../lib/talent-filter-data.mjs";
 
 const categoryLabels = {
   birthday: "誕生日記念",
@@ -27,8 +31,8 @@ const filterCategories = [
   ["card_book", "カード/書籍"]
 ];
 
-const heroProducts = products.slice(0, 4);
 const pageDescription = "ホロライブ公式ショップの商品情報を月別に整理する非公式ページです。";
+const talentFilterState = buildTalentFilterState(items, streams, officialTalents);
 
 const grouped = Object.entries(
   products.reduce((acc, product) => {
@@ -38,15 +42,6 @@ const grouped = Object.entries(
     return acc;
   }, {})
 ).sort((a, b) => b[0].localeCompare(a[0]));
-
-const talentOptions = Object.entries(
-  products.reduce((acc, product) => {
-    for (const talent of productTalentNames(product)) {
-      acc[talent] = (acc[talent] || 0) + 1;
-    }
-    return acc;
-  }, {})
-).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ja"));
 
 function formatDate(value) {
   return new Intl.DateTimeFormat("ja-JP", {
@@ -68,17 +63,6 @@ function productSearchText(product) {
   return `${product.title} ${(product.talents || []).join(" ")} ${talentTerms.join(" ")} ${textTerms.join(" ")} ${(product.tags || []).join(" ")}`.toLowerCase();
 }
 
-function productTalentNames(product) {
-  const terms = [
-    ...(product.talents || []),
-    ...talentSearchTermsFromText(`${product.title} ${(product.tags || []).join(" ")}`)
-  ];
-  return [...new Set(terms.map((name) => canonicalTalentName(name)).filter(Boolean))].sort((a, b) => a.localeCompare(b, "ja"));
-}
-
-function productTalentFilterText(product) {
-  return `|${productTalentNames(product).join("|")}|`;
-}
 ---
 
 <html lang="ja">
@@ -87,7 +71,7 @@ function productTalentFilterText(product) {
       title="グッズ"
       description={pageDescription}
       path="goods/"
-      image={heroProducts[0]?.imageUrl}
+      image={products[0]?.imageUrl}
       schemaType="CollectionPage"
       jsonLd={{
         about: "hololive official shop goods",
@@ -115,24 +99,6 @@ function productTalentFilterText(product) {
     </header>
 
     <main>
-      <section class="hero hero-catalog">
-        <div class="shell hero-grid">
-          <aside class="hero-showcase" aria-label="最新グッズ画像">
-            <div class="showcase-grid">
-              {heroProducts.map((product, index) => (
-                <a class={`showcase-tile tile-${index + 1}`} href={product.officialUrl} target="_blank" rel="noopener noreferrer">
-                  <img src={product.imageUrl} alt="" loading={index === 0 ? "eager" : "lazy"} referrerpolicy="no-referrer" />
-                </a>
-              ))}
-            </div>
-            <div class="showcase-caption">
-              <span>最新アイテム</span>
-              <strong>{heroProducts[0]?.title}</strong>
-            </div>
-          </aside>
-        </div>
-      </section>
-
       <section class="section">
         <div class="shell">
           <div class="catalog-tools" aria-label="グッズ絞り込み">
@@ -145,11 +111,32 @@ function productTalentFilterText(product) {
               ))}
             </div>
             <label class="select-wrap">
+              <span>所属</span>
+              <select class="select-input" data-product-branch>
+                {talentBranches.map((branch) => (
+                  <option value={branch.value}>
+                    {branch.label} ({branch.value === "all" ? talentFilterState.talents.length : talentFilterState.branchCounts[branch.value] || 0})
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label class="select-wrap">
+              <span>グループ</span>
+              <select class="select-input" data-product-group>
+                <option value="all" data-branch="all">すべて ({talentFilterState.talents.length})</option>
+                {talentGroups.filter((group) => group.value !== "all").map((group) => (
+                  <option value={group.value} data-branch={group.branch}>
+                    {group.label} ({talentFilterState.groupCounts[group.value] || 0})
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label class="select-wrap">
               <span>タレント</span>
               <select class="select-input" data-product-talent>
-                <option value="all">すべてのタレント</option>
-                {talentOptions.map(([talent, count]) => (
-                  <option value={talent}>{talent} ({count})</option>
+                <option value="all" data-branch="all" data-group="all">すべて</option>
+                {talentFilterState.talents.map((talent) => (
+                  <option value={talent.name} data-branch={talent.branch} data-groups={`|${talent.groups.join("|")}|`}>{talent.name}</option>
                 ))}
               </select>
             </label>
@@ -185,7 +172,9 @@ function productTalentFilterText(product) {
                   rel="noopener noreferrer"
                   data-product-card
                   data-category={product.category}
-                  data-talents={productTalentFilterText(product)}
+                  data-talents={dataTokenList(productTalentFilterData(product).talents)}
+                  data-branches={dataTokenList(productTalentFilterData(product).branches)}
+                  data-groups={dataTokenList(productTalentFilterData(product).groups)}
                   data-search={productSearchText(product)}
                 >
                   {product.imageUrl && (
@@ -221,6 +210,8 @@ function productTalentFilterText(product) {
     <script>
       const searchInput = document.querySelector("[data-product-search]");
       const filterButtons = [...document.querySelectorAll("[data-filter]")];
+      const branchSelect = document.querySelector("[data-product-branch]");
+      const groupSelect = document.querySelector("[data-product-group]");
       const talentSelect = document.querySelector("[data-product-talent]");
       const cards = [...document.querySelectorAll("[data-product-card]")];
       const monthSections = [...document.querySelectorAll("[data-month-section]")];
@@ -240,6 +231,8 @@ function productTalentFilterText(product) {
         const url = new URL(window.location.href);
         setQueryParam(url.searchParams, "q", searchInput.value.trim());
         setQueryParam(url.searchParams, "category", activeCategory, "all");
+        setQueryParam(url.searchParams, "branch", branchSelect.value, "all");
+        setQueryParam(url.searchParams, "group", groupSelect.value, "all");
         setQueryParam(url.searchParams, "talent", talentSelect.value, "all");
         window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
       }
@@ -252,18 +245,43 @@ function productTalentFilterText(product) {
         }
       }
 
+      function setSelectValue(select, value) {
+        const hasOption = [...select.options].some((option) => option.value === value && !option.hidden);
+        select.value = hasOption ? value : "all";
+      }
+
+      function syncGroupOptions() {
+        for (const option of groupSelect.options) {
+          option.hidden = branchSelect.value !== "all" && option.dataset.branch !== "all" && option.dataset.branch !== branchSelect.value;
+        }
+        if (groupSelect.selectedOptions[0]?.hidden) groupSelect.value = "all";
+      }
+
+      function syncTalentOptions() {
+        for (const option of talentSelect.options) {
+          const branchOk = branchSelect.value === "all" || option.dataset.branch === "all" || option.dataset.branch === branchSelect.value;
+          const groupOk = option.value === "all" || groupSelect.value === "all" || option.dataset.groups?.includes(`|${groupSelect.value}|`);
+          option.hidden = !(branchOk && groupOk);
+        }
+        if (talentSelect.selectedOptions[0]?.hidden) talentSelect.value = "all";
+      }
+
       function applyFilters() {
         const query = searchInput.value.trim().toLowerCase();
+        const branch = branchSelect.value;
+        const group = groupSelect.value;
         const talent = talentSelect.value;
-        const filteredMode = Boolean(query) || activeCategory !== "all" || talent !== "all";
+        const filteredMode = Boolean(query) || activeCategory !== "all" || branch !== "all" || group !== "all" || talent !== "all";
         let visible = 0;
         const matchingCards = [];
 
         for (const card of cards) {
           const matchesCategory = activeCategory === "all" || card.dataset.category === activeCategory;
+          const matchesBranch = branch === "all" || card.dataset.branches.includes(`|${branch}|`);
+          const matchesGroup = group === "all" || card.dataset.groups.includes(`|${group}|`);
           const matchesTalent = talent === "all" || card.dataset.talents.includes(`|${talent}|`);
           const matchesText = !query || card.dataset.search.includes(query);
-          const show = matchesCategory && matchesTalent && matchesText;
+          const show = matchesCategory && matchesBranch && matchesGroup && matchesTalent && matchesText;
           card.hidden = !show;
           if (show) {
             visible += 1;
@@ -299,8 +317,11 @@ function productTalentFilterText(product) {
         const params = new URLSearchParams(window.location.search);
         searchInput.value = params.get("q") || "";
         setActiveCategory(params.get("category") || "all");
-        const talent = params.get("talent") || "all";
-        talentSelect.value = [...talentSelect.options].some((option) => option.value === talent) ? talent : "all";
+        setSelectValue(branchSelect, params.get("branch") || "all");
+        syncGroupOptions();
+        setSelectValue(groupSelect, params.get("group") || "all");
+        syncTalentOptions();
+        setSelectValue(talentSelect, params.get("talent") || "all");
         applyFilters();
       }
 
@@ -316,6 +337,17 @@ function productTalentFilterText(product) {
         });
       }
       talentSelect.addEventListener("change", () => {
+        applyFilters();
+        updateGoodsUrl();
+      });
+      branchSelect.addEventListener("change", () => {
+        syncGroupOptions();
+        syncTalentOptions();
+        applyFilters();
+        updateGoodsUrl();
+      });
+      groupSelect.addEventListener("change", () => {
+        syncTalentOptions();
         applyFilters();
         updateGoodsUrl();
       });

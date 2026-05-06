@@ -71,22 +71,6 @@ function streamStatusLabel(status) {
     </header>
 
     <main>
-      <section class="hero hero-catalog">
-        <div class="shell hero-grid">
-          <aside class="status-panel">
-            {profile.officialImage && (
-              <div class="profile-image">
-                <img src={profile.officialImage} alt={`${profile.name} 公式プロフィール画像`} loading="lazy" referrerpolicy="no-referrer" />
-                {profile.officialUrl && <a href={profile.officialUrl} target="_blank" rel="noopener noreferrer">公式プロフィール</a>}
-              </div>
-            )}
-            <div class="status-row"><span>配信中</span><strong>{liveStreams.length}</strong></div>
-            <div class="status-row"><span>配信予定</span><strong>{upcomingStreams.length}</strong></div>
-            <div class="status-row"><span>最新更新</span><strong>{formatDate(profile.latestAt)}</strong></div>
-          </aside>
-        </div>
-      </section>
-
       <section class="section">
         <div class="shell">
           <div class="section-head">
