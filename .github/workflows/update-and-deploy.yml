@@ -37,6 +37,14 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Restore fetch cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/holo-portal-fetch
+          key: holo-portal-fetch-${{ github.run_id }}
+          restore-keys: |
+            holo-portal-fetch-
+
       - name: Build
         run: npm run build
         env:

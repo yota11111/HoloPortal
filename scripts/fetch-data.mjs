@@ -3,14 +3,17 @@ import path from "node:path";
 import { canonicalTalentName, talentSearchTermsFromText } from "../src/lib/talent-aliases.mjs";
 
 const outDir = path.join(process.cwd(), "src/data/generated");
+const cacheDir = path.join(process.cwd(), ".cache/holo-portal-fetch");
+const newsCacheFile = path.join(cacheDir, "news-pages.json");
 const NEWS_SITEMAP = "https://hololive.hololivepro.com/wp-sitemap-posts-news-1.xml";
 const SHOP_PRODUCTS = "https://shop.hololivepro.com/products.json?limit=250&page=";
 const HOLODEX_LIVE = "https://holodex.net/api/v2/live?org=Hololive&limit=50&max_upcoming_hours=72";
 const HOLO_SCHEDULE_LIST = "https://schedule.hololive.tv/api/list";
 const OFFICIAL_TALENTS = "https://hololive.hololivepro.com/talents/";
 const FETCH_TIMEOUT_MS = Number(process.env.FETCH_TIMEOUT_MS || 15000);
-const NEWS_LIMIT = Number(process.env.NEWS_LIMIT || 80);
-const PRODUCT_LIMIT = Number(process.env.PRODUCT_LIMIT || 750);
+const NEWS_LIMIT = Number(process.env.NEWS_LIMIT || 0);
+const PRODUCT_LIMIT = Number(process.env.PRODUCT_LIMIT || 0);
+const NEWS_CONCURRENCY = Number(process.env.NEWS_CONCURRENCY || 8);
 
 const talentNames = [
   "ときのそら",
@@ -170,9 +173,20 @@ function productImage(product) {
 }
 
 function productPrices(product) {
-  return (product.variants || [])
-    .map((variant) => Number.parseFloat(String(variant.price ?? "").replace(/,/g, "")))
+  const variantPrices = (product.variants || [])
+    .map((variant) => normalizeShopPrice(variant.price))
     .filter((price) => Number.isFinite(price) && price > 0);
+  const productPrices = [product.price_min, product.price, product.price_max]
+    .map((price) => normalizeShopPrice(price))
+    .filter((price) => Number.isFinite(price) && price > 0);
+  return variantPrices.length ? variantPrices : productPrices;
+}
+
+function normalizeShopPrice(value) {
+  if (value == null || value === "") return null;
+  const numeric = Number.parseFloat(String(value).replace(/,/g, ""));
+  if (!Number.isFinite(numeric) || numeric <= 0) return null;
+  return Math.round(numeric);
 }
 
 function newsDateFromUrl(url) {
@@ -268,6 +282,20 @@ async function fetchWithRetry(url, options = {}, attempts = 3) {
   return lastResponse;
 }
 
+async function readJsonFile(filename, fallback) {
+  try {
+    const body = await readFile(filename, "utf8");
+    return JSON.parse(body);
+  } catch {
+    return fallback;
+  }
+}
+
+async function writeJsonFile(filename, value) {
+  await mkdir(path.dirname(filename), { recursive: true });
+  await writeFile(filename, JSON.stringify(value, null, 2));
+}
+
 async function fetchHolodexJson(url) {
   const apiKey = process.env.HOLODEX_API_KEY;
   if (!apiKey) {
@@ -326,53 +354,73 @@ async function fetchHoloScheduleJson(url) {
 
 async function fetchNews() {
   const sitemap = await fetchText(NEWS_SITEMAP);
-  const urls = [...sitemap.matchAll(/<loc>(https:\/\/hololive\.hololivepro\.com\/news\/[^<]+)<\/loc>/g)]
+  const allUrls = [...sitemap.matchAll(/<loc>(https:\/\/hololive\.hololivepro\.com\/news\/[^<]+)<\/loc>/g)]
     .map((match) => match[1])
     .filter((url) => !url.includes("/en/") && !url.includes("/id/"))
-    .sort((a, b) => newsDateFromUrl(b).localeCompare(newsDateFromUrl(a)))
-    .slice(0, NEWS_LIMIT);
+    .sort((a, b) => newsDateFromUrl(b).localeCompare(newsDateFromUrl(a)));
+  const urls = NEWS_LIMIT > 0 ? allUrls.slice(0, NEWS_LIMIT) : allUrls;
+  const cache = await readJsonFile(newsCacheFile, {});
 
-  const items = [];
-  for (const url of urls) {
-    let html;
-    try {
-      html = await fetchText(url);
-    } catch (error) {
-      console.warn(`Skipping news item: ${url} (${error.message})`);
-      continue;
+  let index = 0;
+  const workers = Array.from({ length: Math.max(1, NEWS_CONCURRENCY) }, async () => {
+    const items = [];
+    while (index < urls.length) {
+      const url = urls[index];
+      index += 1;
+      const item = await fetchNewsItem(url, cache);
+      if (item) items.push(item);
     }
-    const h1 = html.match(/<h1>\s*<span>([^<]+)<\/span>\s*([\s\S]*?)<\/h1>/);
-    const article = html.match(/<article class="single_box">([\s\S]*?)<\/article>/);
-    if (!h1) continue;
+    return items;
+  });
+  const items = (await Promise.all(workers)).flat();
 
-    const date = h1[1].trim();
-    const title = stripTags(h1[2]);
-    const body = stripTags(article ? article[1] : html);
-    const imageUrl = extractMetaImage(html);
-    const summary = body
-      .split("\n")
-      .map((line) => line.trim())
-      .filter((line) => line && line !== date && line !== title)
-      .slice(0, 3)
-      .join(" ")
-      .slice(0, 260);
-
-    items.push({
-      id: makeId("news", url),
-      source: "official_news",
-      categories: classifyNews(title, body),
-      title,
-      summary,
-      imageUrl,
-      talents: extractTalents(`${title} ${body}`),
-      officialUrl: url,
-      publishedAt: toIsoDate(date),
-      month: monthKey(date),
-      fetchedAt: new Date().toISOString()
-    });
-  }
-
+  await writeJsonFile(newsCacheFile, Object.fromEntries(urls.filter((url) => cache[url]).map((url) => [url, cache[url]])));
   return items.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+}
+
+async function fetchNewsItem(url, cache) {
+  if (cache[url]?.item) return cache[url].item;
+  let html;
+  try {
+    html = await fetchText(url);
+  } catch (error) {
+    console.warn(`Skipping news item: ${url} (${error.message})`);
+    return null;
+  }
+  const h1 = html.match(/<h1>\s*<span>([^<]+)<\/span>\s*([\s\S]*?)<\/h1>/);
+  const article = html.match(/<article class="single_box">([\s\S]*?)<\/article>/);
+  if (!h1) return null;
+
+  const date = h1[1].trim();
+  const title = stripTags(h1[2]);
+  const body = stripTags(article ? article[1] : html);
+  const imageUrl = extractMetaImage(html);
+  const summary = body
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line && line !== date && line !== title)
+    .slice(0, 3)
+    .join(" ")
+    .slice(0, 260);
+
+  const item = {
+    id: makeId("news", url),
+    source: "official_news",
+    categories: classifyNews(title, body),
+    title,
+    summary,
+    imageUrl,
+    talents: extractTalents(`${title} ${body}`),
+    officialUrl: url,
+    publishedAt: toIsoDate(date),
+    month: monthKey(date),
+    fetchedAt: new Date().toISOString()
+  };
+  cache[url] = {
+    item,
+    cachedAt: new Date().toISOString()
+  };
+  return item;
 }
 
 async function fetchProducts() {
@@ -386,10 +434,12 @@ async function fetchProducts() {
   }
 
   const unique = new Map(products.map((product) => [product.id, product]));
-  return [...unique.values()]
+  const sortedProducts = [...unique.values()]
     .filter((product) => product.created_at)
-    .sort((a, b) => b.created_at.localeCompare(a.created_at))
-    .slice(0, PRODUCT_LIMIT)
+    .sort((a, b) => b.created_at.localeCompare(a.created_at));
+  const selectedProducts = PRODUCT_LIMIT > 0 ? sortedProducts.slice(0, PRODUCT_LIMIT) : sortedProducts;
+
+  return selectedProducts
     .map((product) => {
       const prices = productPrices(product);
       const title = product.title;
@@ -611,12 +661,7 @@ function priceLabel(product) {
 }
 
 async function readGeneratedJson(filename, fallback) {
-  try {
-    const body = await readFile(path.join(outDir, filename), "utf8");
-    return JSON.parse(body);
-  } catch {
-    return fallback;
-  }
+  return readJsonFile(path.join(outDir, filename), fallback);
 }
 
 async function fetchWithFallback(label, filename, fetcher) {
