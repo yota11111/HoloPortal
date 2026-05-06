@@ -308,9 +308,6 @@ h1 {
 }
 
 .catalog-tools {
-  position: sticky;
-  top: 78px;
-  z-index: 12;
   display: grid;
   grid-template-columns: minmax(220px, 360px) minmax(0, 1fr) auto;
   gap: 10px;
