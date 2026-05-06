@@ -42,6 +42,9 @@ const groupCounts = talents.reduce((acc, talent) => {
 }, {});
 const pageDescription =
   "ホロライブ関連情報をタレント別に整理する非公式ページです。";
+const base = process.env.BASE_PATH || "/";
+const basePath = base.endsWith("/") ? base : `${base}/`;
+const sitePath = (path) => `${basePath}${path.replace(/^\/+/, "")}`;
 ---
 
 <html lang="ja">
@@ -150,7 +153,7 @@ const pageDescription =
               talents.map((talent) => (
                 <a
                   class="card card-link"
-                  href={`./${talent.slug}/`}
+                  href={sitePath(`talents/${talent.slug}/`)}
                   data-talent-card
                   data-category={talent.category}
                   data-groups={`|${talent.groups.join("|")}|`}

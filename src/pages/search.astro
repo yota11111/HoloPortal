@@ -25,6 +25,9 @@ import {
 
 const pageDescription =
   "ホロライブ関連の配信、グッズ、公式発表、タレントを横断検索する非公式ページです。";
+const base = process.env.BASE_PATH || "/";
+const basePath = base.endsWith("/") ? base : `${base}/`;
+const sitePath = (path) => `${basePath}${path.replace(/^\/+/, "")}`;
 
 const typeLabels = {
   all: "すべて",
@@ -142,7 +145,7 @@ const talentResults = buildTalentProfiles(items, streams, officialTalents).map(
       title: profile.name,
       summary: `${profile.counts.total}件 / 配信 ${profile.counts.streams} / グッズ ${profile.counts.goods}`,
       date: profile.latestAt,
-      url: `../talents/${profile.slug}/`,
+      url: sitePath(`talents/${profile.slug}/`),
       external: false,
       image: profile.displayImage,
       branches: [category],
