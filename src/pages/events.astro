@@ -4,21 +4,24 @@ import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
 import items from "../data/generated/portal-items.json";
 
-const eventItems = items.filter((item) => ["live", "event", "music"].includes(item.category));
-const pageDescription = "ホロライブのライブ、イベント、音楽リリース情報を整理する非公式ページです。";
+const eventItems = items.filter((item) =>
+  ["live", "event", "music"].includes(item.category),
+);
+const pageDescription =
+  "ホロライブのライブ、イベント、音楽リリース情報を整理する非公式ページです。";
 
 function formatDate(value) {
   return new Intl.DateTimeFormat("ja-JP", {
     year: "numeric",
     month: "2-digit",
-    day: "2-digit"
+    day: "2-digit",
   }).format(new Date(value));
 }
 
 const labelMap = {
   live: "ライブ",
   event: "イベント",
-  music: "音楽"
+  music: "音楽",
 };
 ---
 
@@ -32,7 +35,7 @@ const labelMap = {
       schemaType="CollectionPage"
       jsonLd={{
         about: "hololive live events and announcements",
-        numberOfItems: eventItems.length
+        numberOfItems: eventItems.length,
       }}
     />
   </head>
@@ -40,7 +43,6 @@ const labelMap = {
     <header class="topbar">
       <div class="shell topbar-inner">
         <a class="brand" href="../">
-          <span class="brand-mark"><img src="../icon.png" alt="" /></span>
           <span>Holo Portal</span>
         </a>
         <nav class="nav" aria-label="主要ナビゲーション">
@@ -59,21 +61,40 @@ const labelMap = {
       <section class="section">
         <div class="shell">
           <div class="list">
-            {eventItems.map((item) => (
-              <a class="list-item card-link" href={item.normalUrl} target="_blank" rel="noopener noreferrer">
-                {item.imageUrl && <img class="list-thumb" src={item.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />}
-                <div class="date">{formatDate(item.startAt)}</div>
-                <div>
-                  <h3 class="title">{item.title}</h3>
-                  <p class="summary">{item.summary}</p>
-                  <div class="meta">
-                    <span class={`pill ${item.category}`}>{labelMap[item.category] || item.category}</span>
-                    {item.talents.slice(0, 3).map((talent) => <span class="pill">{talent}</span>)}
+            {
+              eventItems.map((item) => (
+                <a
+                  class="list-item card-link"
+                  href={item.normalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.imageUrl && (
+                    <img
+                      class="list-thumb"
+                      src={item.imageUrl}
+                      alt=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer"
+                    />
+                  )}
+                  <div class="date">{formatDate(item.startAt)}</div>
+                  <div>
+                    <h3 class="title">{item.title}</h3>
+                    <p class="summary">{item.summary}</p>
+                    <div class="meta">
+                      <span class={`pill ${item.category}`}>
+                        {labelMap[item.category] || item.category}
+                      </span>
+                      {item.talents.slice(0, 3).map((talent) => (
+                        <span class="pill">{talent}</span>
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <span class="shop-label">公式へ</span>
-              </a>
-            ))}
+                  <span class="shop-label">公式へ</span>
+                </a>
+              ))
+            }
           </div>
         </div>
       </section>
@@ -81,7 +102,10 @@ const labelMap = {
 
     <footer class="footer">
       <div class="shell">
-        <p>Holo Portal は非公式ファンサイトです。開催情報・チケット情報は公式発表をご確認ください。</p>
+        <p>
+          Holo Portal
+          は非公式ファンサイトです。開催情報・チケット情報は公式発表をご確認ください。
+        </p>
       </div>
     </footer>
   </body>

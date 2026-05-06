@@ -5,21 +5,44 @@ import ThemeToggle from "../components/ThemeToggle.astro";
 import items from "../data/generated/portal-items.json";
 import streams from "../data/generated/streams.json";
 import officialTalents from "../data/generated/official-talents.json";
-import { buildTalentFilterState, dataTokenList, itemTalentFilterData, streamTalentFilterData, talentBranches, talentGroups } from "../lib/talent-filter-data.mjs";
+import {
+  buildTalentFilterState,
+  dataTokenList,
+  itemTalentFilterData,
+  streamTalentFilterData,
+  talentBranches,
+  talentGroups,
+} from "../lib/talent-filter-data.mjs";
 
 const latest = items.slice(0, 9);
-const liveStreams = streams.filter((stream) => stream.status === "live").slice(0, 6);
-const upcomingStreams = streams.filter((stream) => stream.status === "upcoming").slice(0, 6);
+const liveStreams = streams
+  .filter((stream) => stream.status === "live")
+  .slice(0, 6);
+const upcomingStreams = streams
+  .filter((stream) => stream.status === "upcoming")
+  .slice(0, 6);
 const liveItems = items.filter((item) => item.category === "live").slice(0, 6);
-const goodsItems = items.filter((item) => item.category === "goods").slice(0, 6);
+const goodsItems = items
+  .filter((item) => item.category === "goods")
+  .slice(0, 6);
 const hasStreams = streams.length > 0;
-const talentFilterState = buildTalentFilterState(items, streams, officialTalents);
-const pageDescription = "ホロライブ関連の公式ニュース、ライブ、イベント、グッズ情報を整理する非公式ポータルです。";
-const pageImage = latest.find((item) => item.imageUrl)?.imageUrl || streams.find((stream) => stream.thumbnailUrl)?.thumbnailUrl;
+const talentFilterState = buildTalentFilterState(
+  items,
+  streams,
+  officialTalents,
+);
+const pageDescription =
+  "ホロライブ関連の公式ニュース、ライブ、イベント、グッズ情報を整理する非公式ポータルです。";
+const pageImage =
+  latest.find((item) => item.imageUrl)?.imageUrl ||
+  streams.find((stream) => stream.thumbnailUrl)?.thumbnailUrl;
 const site = Astro.site || new URL("https://example.com");
 const base = process.env.BASE_PATH || "/";
 const cleanBase = base.endsWith("/") ? base : `${base}/`;
-const siteSearchUrl = new URL(`${cleanBase}search/?q={search_term_string}`, site).toString();
+const siteSearchUrl = new URL(
+  `${cleanBase}search/?q={search_term_string}`,
+  site,
+).toString();
 
 const labelMap = {
   live: "ライブ",
@@ -27,7 +50,7 @@ const labelMap = {
   event: "イベント",
   music: "音楽",
   news: "ニュース",
-  stream: "配信"
+  stream: "配信",
 };
 
 function streamStatusLabel(status) {
@@ -40,7 +63,7 @@ function formatDate(value) {
   return new Intl.DateTimeFormat("ja-JP", {
     year: "numeric",
     month: "2-digit",
-    day: "2-digit"
+    day: "2-digit",
   }).format(new Date(value));
 }
 
@@ -49,7 +72,7 @@ function streamFilterDataAttrs(stream) {
   return {
     talents: dataTokenList(data.talents),
     branches: dataTokenList(data.branches),
-    groups: dataTokenList(data.groups)
+    groups: dataTokenList(data.groups),
   };
 }
 
@@ -58,7 +81,7 @@ function itemFilterDataAttrs(item) {
   return {
     talents: dataTokenList(data.talents),
     branches: dataTokenList(data.branches),
-    groups: dataTokenList(data.groups)
+    groups: dataTokenList(data.groups),
   };
 }
 ---
@@ -75,8 +98,8 @@ function itemFilterDataAttrs(item) {
         potentialAction: {
           "@type": "SearchAction",
           target: siteSearchUrl,
-          "query-input": "required name=search_term_string"
-        }
+          "query-input": "required name=search_term_string",
+        },
       }}
     />
   </head>
@@ -84,7 +107,6 @@ function itemFilterDataAttrs(item) {
     <header class="topbar">
       <div class="shell topbar-inner">
         <a class="brand" href="./">
-          <span class="brand-mark"><img src="./icon.png" alt="サイトアイコン" /></span>
           <span>Holo Portal</span>
         </a>
         <nav class="nav" aria-label="主要ナビゲーション">
@@ -103,40 +125,70 @@ function itemFilterDataAttrs(item) {
       <section class="section">
         <div class="shell">
           <div class="catalog-tools home-tools" aria-label="ホーム絞り込み">
-            <input class="search-input" type="search" placeholder="タイトル、タレント、話題で検索" data-home-search />
+            <input
+              class="search-input"
+              type="search"
+              placeholder="タイトル、タレント、話題で検索"
+              data-home-search
+            />
             <label class="select-wrap">
               <span>所属</span>
               <select class="select-input" data-home-branch>
-                {talentBranches.map((branch) => (
-                  <option value={branch.value}>
-                    {branch.label} ({branch.value === "all" ? talentFilterState.talents.length : talentFilterState.branchCounts[branch.value] || 0})
-                  </option>
-                ))}
+                {
+                  talentBranches.map((branch) => (
+                    <option value={branch.value}>
+                      {branch.label} (
+                      {branch.value === "all"
+                        ? talentFilterState.talents.length
+                        : talentFilterState.branchCounts[branch.value] || 0}
+                      )
+                    </option>
+                  ))
+                }
               </select>
             </label>
             <label class="select-wrap">
               <span>グループ</span>
               <select class="select-input" data-home-group>
-                <option value="all" data-branch="all">すべて ({talentFilterState.talents.length})</option>
-                {talentGroups.filter((group) => group.value !== "all").map((group) => (
-                  <option value={group.value} data-branch={group.branch}>
-                    {group.label} ({talentFilterState.groupCounts[group.value] || 0})
-                  </option>
-                ))}
+                <option value="all" data-branch="all"
+                  >すべて ({talentFilterState.talents.length})</option
+                >
+                {
+                  talentGroups
+                    .filter((group) => group.value !== "all")
+                    .map((group) => (
+                      <option value={group.value} data-branch={group.branch}>
+                        {group.label} (
+                        {talentFilterState.groupCounts[group.value] || 0})
+                      </option>
+                    ))
+                }
               </select>
             </label>
             <label class="select-wrap">
               <span>タレント</span>
               <select class="select-input" data-home-talent>
-                <option value="all" data-branch="all" data-group="all">すべて</option>
-                {talentFilterState.talents.map((talent) => (
-                  <option value={talent.name} data-branch={talent.branch} data-groups={`|${talent.groups.join("|")}|`}>{talent.name}</option>
-                ))}
+                <option value="all" data-branch="all" data-group="all"
+                  >すべて</option
+                >
+                {
+                  talentFilterState.talents.map((talent) => (
+                    <option
+                      value={talent.name}
+                      data-branch={talent.branch}
+                      data-groups={`|${talent.groups.join("|")}|`}
+                    >
+                      {talent.name}
+                    </option>
+                  ))
+                }
               </select>
             </label>
             <div class="result-count" data-home-result-count></div>
           </div>
-          <div class="empty-state" data-home-empty-state>該当する情報が見つかりませんでした。</div>
+          <div class="empty-state" data-home-empty-state>
+            該当する情報が見つかりませんでした。
+          </div>
         </div>
       </section>
 
@@ -146,43 +198,64 @@ function itemFilterDataAttrs(item) {
             <h2>配信</h2>
             <a href="./streams/">すべて見る</a>
           </div>
-          {!hasStreams ? (
-            <div class="empty-state visible">
-              配信データを取得できませんでした。Holodex APIキーを設定するか、次回の自動更新後に再確認してください。
-            </div>
-          ) : (
-            <div class="grid">
-              {[...liveStreams, ...upcomingStreams].slice(0, 6).map((stream) => (
-                <a
-                  class="card card-link"
-                  href={stream.youtubeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-home-card
-                  data-branches={streamFilterDataAttrs(stream).branches}
-                  data-groups={streamFilterDataAttrs(stream).groups}
-                  data-talents={streamFilterDataAttrs(stream).talents}
-                  data-search={`${stream.title} ${stream.channelName} ${(stream.talents || []).join(" ")} ${stream.topic || ""}`.toLowerCase()}
-                >
-                  <div class="thumb-wrap">
-                    <img class="thumb" src={stream.thumbnailUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />
-                    <span class={`image-credit ${stream.status === "live" ? "is-live" : ""}`}>{streamStatusLabel(stream.status)}</span>
-                  </div>
-                  <div class="card-body">
-                    <div class="date">{formatDate(stream.startAt)}</div>
-                    <h3 class="title">{stream.title}</h3>
-                    <p class="summary">{stream.channelName}</p>
-                    <div class="meta">
-                      <span class="pill live">{streamStatusLabel(stream.status)}</span>
-                      {stream.topic && <span class="pill">{stream.topic}</span>}
-                      <span class="pill">{stream.sourceLabel || stream.source}</span>
-                      <span class="button">YouTubeで見る</span>
-                    </div>
-                  </div>
-                </a>
-              ))}
-            </div>
-          )}
+          {
+            !hasStreams ? (
+              <div class="empty-state visible">
+                配信データを取得できませんでした。Holodex
+                APIキーを設定するか、次回の自動更新後に再確認してください。
+              </div>
+            ) : (
+              <div class="grid">
+                {[...liveStreams, ...upcomingStreams]
+                  .slice(0, 6)
+                  .map((stream) => (
+                    <a
+                      class="card card-link"
+                      href={stream.youtubeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-home-card
+                      data-branches={streamFilterDataAttrs(stream).branches}
+                      data-groups={streamFilterDataAttrs(stream).groups}
+                      data-talents={streamFilterDataAttrs(stream).talents}
+                      data-search={`${stream.title} ${stream.channelName} ${(stream.talents || []).join(" ")} ${stream.topic || ""}`.toLowerCase()}
+                    >
+                      <div class="thumb-wrap">
+                        <img
+                          class="thumb"
+                          src={stream.thumbnailUrl}
+                          alt=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer"
+                        />
+                        <span
+                          class={`image-credit ${stream.status === "live" ? "is-live" : ""}`}
+                        >
+                          {streamStatusLabel(stream.status)}
+                        </span>
+                      </div>
+                      <div class="card-body">
+                        <div class="date">{formatDate(stream.startAt)}</div>
+                        <h3 class="title">{stream.title}</h3>
+                        <p class="summary">{stream.channelName}</p>
+                        <div class="meta">
+                          <span class="pill live">
+                            {streamStatusLabel(stream.status)}
+                          </span>
+                          {stream.topic && (
+                            <span class="pill">{stream.topic}</span>
+                          )}
+                          <span class="pill">
+                            {stream.sourceLabel || stream.source}
+                          </span>
+                          <span class="button">YouTubeで見る</span>
+                        </div>
+                      </div>
+                    </a>
+                  ))}
+              </div>
+            )
+          }
         </div>
       </section>
 
@@ -192,31 +265,45 @@ function itemFilterDataAttrs(item) {
             <h2>最新情報</h2>
           </div>
           <div class="grid">
-            {latest.map((item) => (
-              <a
-                class="card card-link"
-                href={item.normalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-home-card
-                data-branches={itemFilterDataAttrs(item).branches}
-                data-groups={itemFilterDataAttrs(item).groups}
-                data-talents={itemFilterDataAttrs(item).talents}
-                data-search={`${item.title} ${item.summary || ""} ${(item.talents || []).join(" ")} ${item.category || ""}`.toLowerCase()}
-              >
-                {item.imageUrl && <img class="thumb" src={item.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />}
-                <div class="card-body">
-                  <div class="date">{formatDate(item.startAt)}</div>
-                  <h3 class="title">{item.title}</h3>
-                  <p class="summary">{item.summary}</p>
-                  <div class="meta">
-                    <span class={`pill ${item.category}`}>{labelMap[item.category] || item.category}</span>
-                    {item.talents.slice(0, 2).map((talent) => <span class="pill">{talent}</span>)}
-                    <span class="button">公式へ</span>
+            {
+              latest.map((item) => (
+                <a
+                  class="card card-link"
+                  href={item.normalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-home-card
+                  data-branches={itemFilterDataAttrs(item).branches}
+                  data-groups={itemFilterDataAttrs(item).groups}
+                  data-talents={itemFilterDataAttrs(item).talents}
+                  data-search={`${item.title} ${item.summary || ""} ${(item.talents || []).join(" ")} ${item.category || ""}`.toLowerCase()}
+                >
+                  {item.imageUrl && (
+                    <img
+                      class="thumb"
+                      src={item.imageUrl}
+                      alt=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer"
+                    />
+                  )}
+                  <div class="card-body">
+                    <div class="date">{formatDate(item.startAt)}</div>
+                    <h3 class="title">{item.title}</h3>
+                    <p class="summary">{item.summary}</p>
+                    <div class="meta">
+                      <span class={`pill ${item.category}`}>
+                        {labelMap[item.category] || item.category}
+                      </span>
+                      {item.talents.slice(0, 2).map((talent) => (
+                        <span class="pill">{talent}</span>
+                      ))}
+                      <span class="button">公式へ</span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            ))}
+                </a>
+              ))
+            }
           </div>
         </div>
       </section>
@@ -228,27 +315,37 @@ function itemFilterDataAttrs(item) {
             <a href="./events/">すべて見る</a>
           </div>
           <div class="list">
-            {liveItems.map((item) => (
-              <a
-                class="list-item card-link"
-                href={item.normalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-home-card
-                data-branches={itemFilterDataAttrs(item).branches}
-                data-groups={itemFilterDataAttrs(item).groups}
-                data-talents={itemFilterDataAttrs(item).talents}
-                data-search={`${item.title} ${item.summary || ""} ${(item.talents || []).join(" ")} ${item.category || ""}`.toLowerCase()}
-              >
-                {item.imageUrl && <img class="list-thumb" src={item.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />}
-                <div class="date">{formatDate(item.startAt)}</div>
-                <div>
-                  <h3 class="title">{item.title}</h3>
-                  <p class="summary">{item.summary}</p>
-                </div>
-                <span class="button">公式へ</span>
-              </a>
-            ))}
+            {
+              liveItems.map((item) => (
+                <a
+                  class="list-item card-link"
+                  href={item.normalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-home-card
+                  data-branches={itemFilterDataAttrs(item).branches}
+                  data-groups={itemFilterDataAttrs(item).groups}
+                  data-talents={itemFilterDataAttrs(item).talents}
+                  data-search={`${item.title} ${item.summary || ""} ${(item.talents || []).join(" ")} ${item.category || ""}`.toLowerCase()}
+                >
+                  {item.imageUrl && (
+                    <img
+                      class="list-thumb"
+                      src={item.imageUrl}
+                      alt=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer"
+                    />
+                  )}
+                  <div class="date">{formatDate(item.startAt)}</div>
+                  <div>
+                    <h3 class="title">{item.title}</h3>
+                    <p class="summary">{item.summary}</p>
+                  </div>
+                  <span class="button">公式へ</span>
+                </a>
+              ))
+            }
           </div>
         </div>
       </section>
@@ -260,27 +357,37 @@ function itemFilterDataAttrs(item) {
             <a href="./goods/">すべて見る</a>
           </div>
           <div class="list">
-            {goodsItems.map((item) => (
-              <a
-                class="list-item card-link"
-                href={item.normalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-home-card
-                data-branches={itemFilterDataAttrs(item).branches}
-                data-groups={itemFilterDataAttrs(item).groups}
-                data-talents={itemFilterDataAttrs(item).talents}
-                data-search={`${item.title} ${item.summary || ""} ${(item.talents || []).join(" ")} ${item.category || ""}`.toLowerCase()}
-              >
-                {item.imageUrl && <img class="list-thumb" src={item.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />}
-                <div class="date">{formatDate(item.startAt)}</div>
-                <div>
-                  <h3 class="title">{item.title}</h3>
-                  <p class="summary">{item.summary}</p>
-                </div>
-                <span class="button">公式へ</span>
-              </a>
-            ))}
+            {
+              goodsItems.map((item) => (
+                <a
+                  class="list-item card-link"
+                  href={item.normalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-home-card
+                  data-branches={itemFilterDataAttrs(item).branches}
+                  data-groups={itemFilterDataAttrs(item).groups}
+                  data-talents={itemFilterDataAttrs(item).talents}
+                  data-search={`${item.title} ${item.summary || ""} ${(item.talents || []).join(" ")} ${item.category || ""}`.toLowerCase()}
+                >
+                  {item.imageUrl && (
+                    <img
+                      class="list-thumb"
+                      src={item.imageUrl}
+                      alt=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer"
+                    />
+                  )}
+                  <div class="date">{formatDate(item.startAt)}</div>
+                  <div>
+                    <h3 class="title">{item.title}</h3>
+                    <p class="summary">{item.summary}</p>
+                  </div>
+                  <span class="button">公式へ</span>
+                </a>
+              ))
+            }
           </div>
         </div>
       </section>
@@ -289,7 +396,8 @@ function itemFilterDataAttrs(item) {
     <footer class="footer">
       <div class="shell">
         <p>
-          Holo Portal は非公式ファンサイトです。カバー株式会社およびホロライブプロダクションとは関係ありません。
+          Holo Portal
+          は非公式ファンサイトです。カバー株式会社およびホロライブプロダクションとは関係ありません。
           情報は公式発表をもとに自動整理しており、正確な最新情報は各公式リンクをご確認ください。
         </p>
       </div>
@@ -300,8 +408,12 @@ function itemFilterDataAttrs(item) {
       const homeGroup = document.querySelector("[data-home-group]");
       const homeTalent = document.querySelector("[data-home-talent]");
       const homeCards = [...document.querySelectorAll("[data-home-card]")];
-      const homeSections = [...document.querySelectorAll("[data-home-section]")];
-      const homeResultCount = document.querySelector("[data-home-result-count]");
+      const homeSections = [
+        ...document.querySelectorAll("[data-home-section]"),
+      ];
+      const homeResultCount = document.querySelector(
+        "[data-home-result-count]",
+      );
       const homeEmptyState = document.querySelector("[data-home-empty-state]");
 
       function setQueryParam(params, key, value, defaultValue = "") {
@@ -315,25 +427,40 @@ function itemFilterDataAttrs(item) {
         setQueryParam(url.searchParams, "branch", homeBranch.value, "all");
         setQueryParam(url.searchParams, "group", homeGroup.value, "all");
         setQueryParam(url.searchParams, "talent", homeTalent.value, "all");
-        window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+        window.history.replaceState(
+          {},
+          "",
+          `${url.pathname}${url.search}${url.hash}`,
+        );
       }
 
       function setSelectValue(select, value) {
-        const hasOption = [...select.options].some((option) => option.value === value && !option.hidden);
+        const hasOption = [...select.options].some(
+          (option) => option.value === value && !option.hidden,
+        );
         select.value = hasOption ? value : "all";
       }
 
       function syncGroupOptions() {
         for (const option of homeGroup.options) {
-          option.hidden = homeBranch.value !== "all" && option.dataset.branch !== "all" && option.dataset.branch !== homeBranch.value;
+          option.hidden =
+            homeBranch.value !== "all" &&
+            option.dataset.branch !== "all" &&
+            option.dataset.branch !== homeBranch.value;
         }
         if (homeGroup.selectedOptions[0]?.hidden) homeGroup.value = "all";
       }
 
       function syncTalentOptions() {
         for (const option of homeTalent.options) {
-          const branchOk = homeBranch.value === "all" || option.dataset.branch === "all" || option.dataset.branch === homeBranch.value;
-          const groupOk = option.value === "all" || homeGroup.value === "all" || option.dataset.groups?.includes(`|${homeGroup.value}|`);
+          const branchOk =
+            homeBranch.value === "all" ||
+            option.dataset.branch === "all" ||
+            option.dataset.branch === homeBranch.value;
+          const groupOk =
+            option.value === "all" ||
+            homeGroup.value === "all" ||
+            option.dataset.groups?.includes(`|${homeGroup.value}|`);
           option.hidden = !(branchOk && groupOk);
         }
         if (homeTalent.selectedOptions[0]?.hidden) homeTalent.value = "all";
@@ -348,16 +475,22 @@ function itemFilterDataAttrs(item) {
 
         for (const card of homeCards) {
           const matchesText = !query || card.dataset.search.includes(query);
-          const matchesBranch = branch === "all" || card.dataset.branches.includes(`|${branch}|`);
-          const matchesGroup = group === "all" || card.dataset.groups.includes(`|${group}|`);
-          const matchesTalent = talent === "all" || card.dataset.talents.includes(`|${talent}|`);
-          const show = matchesText && matchesBranch && matchesGroup && matchesTalent;
+          const matchesBranch =
+            branch === "all" || card.dataset.branches.includes(`|${branch}|`);
+          const matchesGroup =
+            group === "all" || card.dataset.groups.includes(`|${group}|`);
+          const matchesTalent =
+            talent === "all" || card.dataset.talents.includes(`|${talent}|`);
+          const show =
+            matchesText && matchesBranch && matchesGroup && matchesTalent;
           card.hidden = !show;
           if (show) visible += 1;
         }
 
         for (const section of homeSections) {
-          section.hidden = section.querySelectorAll("[data-home-card]:not([hidden])").length === 0;
+          section.hidden =
+            section.querySelectorAll("[data-home-card]:not([hidden])")
+              .length === 0;
         }
         homeResultCount.textContent = `${visible}件`;
         homeEmptyState.style.display = visible === 0 ? "block" : "none";

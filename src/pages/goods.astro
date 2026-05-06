@@ -6,8 +6,17 @@ import products from "../data/generated/products.json";
 import items from "../data/generated/portal-items.json";
 import streams from "../data/generated/streams.json";
 import officialTalents from "../data/generated/official-talents.json";
-import { talentSearchTerms, talentSearchTermsFromText } from "../lib/talent-aliases.mjs";
-import { buildTalentFilterState, dataTokenList, productTalentFilterData, talentBranches, talentGroups } from "../lib/talent-filter-data.mjs";
+import {
+  talentSearchTerms,
+  talentSearchTermsFromText,
+} from "../lib/talent-aliases.mjs";
+import {
+  buildTalentFilterState,
+  dataTokenList,
+  productTalentFilterData,
+  talentBranches,
+  talentGroups,
+} from "../lib/talent-filter-data.mjs";
 
 const categoryLabels = {
   birthday: "誕生日記念",
@@ -18,7 +27,7 @@ const categoryLabels = {
   series: "シリーズ/アパレル",
   card_book: "カード/書籍",
   resale: "復刻/再販売",
-  goods: "グッズ"
+  goods: "グッズ",
 };
 
 const filterCategories = [
@@ -28,11 +37,16 @@ const filterCategories = [
   ["live_goods", "ライブ物販"],
   ["voice", "ボイス"],
   ["series", "シリーズ"],
-  ["card_book", "カード/書籍"]
+  ["card_book", "カード/書籍"],
 ];
 
-const pageDescription = "ホロライブ公式ショップの商品情報を月別に整理する非公式ページです。";
-const talentFilterState = buildTalentFilterState(items, streams, officialTalents);
+const pageDescription =
+  "ホロライブ公式ショップの商品情報を月別に整理する非公式ページです。";
+const talentFilterState = buildTalentFilterState(
+  items,
+  streams,
+  officialTalents,
+);
 
 const grouped = Object.entries(
   products.reduce((acc, product) => {
@@ -40,29 +54,31 @@ const grouped = Object.entries(
     acc[key] ||= [];
     acc[key].push(product);
     return acc;
-  }, {})
+  }, {}),
 ).sort((a, b) => b[0].localeCompare(a[0]));
 
 function formatDate(value) {
   return new Intl.DateTimeFormat("ja-JP", {
     year: "numeric",
     month: "2-digit",
-    day: "2-digit"
+    day: "2-digit",
   }).format(new Date(value));
 }
 
 function price(product) {
   if (product.priceMin == null) return "価格情報なし";
-  if (product.priceMin === product.priceMax) return `${product.priceMin.toLocaleString("ja-JP")}円`;
+  if (product.priceMin === product.priceMax)
+    return `${product.priceMin.toLocaleString("ja-JP")}円`;
   return `${product.priceMin.toLocaleString("ja-JP")}円 - ${product.priceMax.toLocaleString("ja-JP")}円`;
 }
 
 function productSearchText(product) {
   const talentTerms = talentSearchTerms(product.talents || []);
-  const textTerms = talentSearchTermsFromText(`${product.title} ${(product.tags || []).join(" ")}`);
+  const textTerms = talentSearchTermsFromText(
+    `${product.title} ${(product.tags || []).join(" ")}`,
+  );
   return `${product.title} ${(product.talents || []).join(" ")} ${talentTerms.join(" ")} ${textTerms.join(" ")} ${(product.tags || []).join(" ")}`.toLowerCase();
 }
-
 ---
 
 <html lang="ja">
@@ -75,7 +91,7 @@ function productSearchText(product) {
       schemaType="CollectionPage"
       jsonLd={{
         about: "hololive official shop goods",
-        numberOfItems: products.length
+        numberOfItems: products.length,
       }}
     />
   </head>
@@ -83,7 +99,6 @@ function productSearchText(product) {
     <header class="topbar">
       <div class="shell topbar-inner">
         <a class="brand" href="../">
-          <span class="brand-mark"><img src="../icon.png" alt="" /></span>
           <span>Holo Portal</span>
         </a>
         <nav class="nav" aria-label="主要ナビゲーション">
@@ -102,51 +117,93 @@ function productSearchText(product) {
       <section class="section">
         <div class="shell">
           <div class="catalog-tools" aria-label="グッズ絞り込み">
-            <input class="search-input" type="search" placeholder="タイトル、タレント、シリーズで検索" data-product-search />
+            <input
+              class="search-input"
+              type="search"
+              placeholder="タイトル、タレント、シリーズで検索"
+              data-product-search
+            />
             <div class="filter-group" aria-label="カテゴリ">
-              {filterCategories.map(([value, label], index) => (
-                <button class={`filter-chip ${index === 0 ? "is-active" : ""}`} type="button" data-filter={value}>
-                  {label}
-                </button>
-              ))}
+              {
+                filterCategories.map(([value, label], index) => (
+                  <button
+                    class={`filter-chip ${index === 0 ? "is-active" : ""}`}
+                    type="button"
+                    data-filter={value}
+                  >
+                    {label}
+                  </button>
+                ))
+              }
             </div>
             <label class="select-wrap">
               <span>所属</span>
               <select class="select-input" data-product-branch>
-                {talentBranches.map((branch) => (
-                  <option value={branch.value}>
-                    {branch.label} ({branch.value === "all" ? talentFilterState.talents.length : talentFilterState.branchCounts[branch.value] || 0})
-                  </option>
-                ))}
+                {
+                  talentBranches.map((branch) => (
+                    <option value={branch.value}>
+                      {branch.label} (
+                      {branch.value === "all"
+                        ? talentFilterState.talents.length
+                        : talentFilterState.branchCounts[branch.value] || 0}
+                      )
+                    </option>
+                  ))
+                }
               </select>
             </label>
             <label class="select-wrap">
               <span>グループ</span>
               <select class="select-input" data-product-group>
-                <option value="all" data-branch="all">すべて ({talentFilterState.talents.length})</option>
-                {talentGroups.filter((group) => group.value !== "all").map((group) => (
-                  <option value={group.value} data-branch={group.branch}>
-                    {group.label} ({talentFilterState.groupCounts[group.value] || 0})
-                  </option>
-                ))}
+                <option value="all" data-branch="all"
+                  >すべて ({talentFilterState.talents.length})</option
+                >
+                {
+                  talentGroups
+                    .filter((group) => group.value !== "all")
+                    .map((group) => (
+                      <option value={group.value} data-branch={group.branch}>
+                        {group.label} (
+                        {talentFilterState.groupCounts[group.value] || 0})
+                      </option>
+                    ))
+                }
               </select>
             </label>
             <label class="select-wrap">
               <span>タレント</span>
               <select class="select-input" data-product-talent>
-                <option value="all" data-branch="all" data-group="all">すべて</option>
-                {talentFilterState.talents.map((talent) => (
-                  <option value={talent.name} data-branch={talent.branch} data-groups={`|${talent.groups.join("|")}|`}>{talent.name}</option>
-                ))}
+                <option value="all" data-branch="all" data-group="all"
+                  >すべて</option
+                >
+                {
+                  talentFilterState.talents.map((talent) => (
+                    <option
+                      value={talent.name}
+                      data-branch={talent.branch}
+                      data-groups={`|${talent.groups.join("|")}|`}
+                    >
+                      {talent.name}
+                    </option>
+                  ))
+                }
               </select>
             </label>
-            <div class="result-count" data-result-count>{products.length}件</div>
+            <div class="result-count" data-result-count>
+              {products.length}件
+            </div>
           </div>
-          <div class="empty-state" data-empty-state>該当するグッズが見つかりませんでした。</div>
+          <div class="empty-state" data-empty-state>
+            該当するグッズが見つかりませんでした。
+          </div>
         </div>
       </section>
 
-      <section class="section search-results-section" data-product-results-section hidden>
+      <section
+        class="section search-results-section"
+        data-product-results-section
+        hidden
+      >
         <div class="shell">
           <div class="section-head">
             <h2>検索結果</h2>
@@ -156,55 +213,76 @@ function productSearchText(product) {
         </div>
       </section>
 
-      {grouped.map(([month, monthProducts]) => (
-        <section class="section" data-month-section>
-          <div class="shell">
-            <div class="section-head">
-              <h2>{month}</h2>
-              <span class="section-note">{monthProducts.length}件</span>
-            </div>
-            <div class="grid">
-              {monthProducts.map((product) => (
-                <a
-                  class="card card-link"
-                  href={product.officialUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-product-card
-                  data-category={product.category}
-                  data-talents={dataTokenList(productTalentFilterData(product).talents)}
-                  data-branches={dataTokenList(productTalentFilterData(product).branches)}
-                  data-groups={dataTokenList(productTalentFilterData(product).groups)}
-                  data-search={productSearchText(product)}
-                >
-                  {product.imageUrl && (
-                    <div class="thumb-wrap">
-                      <img class="thumb" src={product.imageUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />
-                      <span class="image-credit">公式</span>
+      {
+        grouped.map(([month, monthProducts]) => (
+          <section class="section" data-month-section>
+            <div class="shell">
+              <div class="section-head">
+                <h2>{month}</h2>
+                <span class="section-note">{monthProducts.length}件</span>
+              </div>
+              <div class="grid">
+                {monthProducts.map((product) => (
+                  <a
+                    class="card card-link"
+                    href={product.officialUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-product-card
+                    data-category={product.category}
+                    data-talents={dataTokenList(
+                      productTalentFilterData(product).talents,
+                    )}
+                    data-branches={dataTokenList(
+                      productTalentFilterData(product).branches,
+                    )}
+                    data-groups={dataTokenList(
+                      productTalentFilterData(product).groups,
+                    )}
+                    data-search={productSearchText(product)}
+                  >
+                    {product.imageUrl && (
+                      <div class="thumb-wrap">
+                        <img
+                          class="thumb"
+                          src={product.imageUrl}
+                          alt=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer"
+                        />
+                        <span class="image-credit">公式</span>
+                      </div>
+                    )}
+                    <div class="card-body">
+                      <div class="date">{formatDate(product.createdAt)}</div>
+                      <h3 class="title">{product.title}</h3>
+                      <p class="summary">{price(product)}</p>
+                      <div class="meta">
+                        <span class="pill goods">
+                          {categoryLabels[product.category] || product.category}
+                        </span>
+                        {product.talents.slice(0, 1).map((talent) => (
+                          <span class="pill">{talent}</span>
+                        ))}
+                        <span class="pill">{product.variants}種類</span>
+                        <span class="shop-label">公式ショップ</span>
+                      </div>
                     </div>
-                  )}
-                  <div class="card-body">
-                    <div class="date">{formatDate(product.createdAt)}</div>
-                    <h3 class="title">{product.title}</h3>
-                    <p class="summary">{price(product)}</p>
-                    <div class="meta">
-                      <span class="pill goods">{categoryLabels[product.category] || product.category}</span>
-                      {product.talents.slice(0, 1).map((talent) => <span class="pill">{talent}</span>)}
-                      <span class="pill">{product.variants}種類</span>
-                      <span class="shop-label">公式ショップ</span>
-                    </div>
-                  </div>
-                </a>
-              ))}
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      ))}
+          </section>
+        ))
+      }
     </main>
 
     <footer class="footer">
       <div class="shell">
-        <p>Holo Portal は非公式ファンサイトです。商品情報・価格は取得時点のもので、最新情報は公式ショップをご確認ください。</p>
+        <p>
+          Holo Portal
+          は非公式ファンサイトです。商品情報・価格は取得時点のもので、最新情報は公式ショップをご確認ください。
+        </p>
       </div>
     </footer>
     <script>
@@ -214,10 +292,14 @@ function productSearchText(product) {
       const groupSelect = document.querySelector("[data-product-group]");
       const talentSelect = document.querySelector("[data-product-talent]");
       const cards = [...document.querySelectorAll("[data-product-card]")];
-      const monthSections = [...document.querySelectorAll("[data-month-section]")];
+      const monthSections = [
+        ...document.querySelectorAll("[data-month-section]"),
+      ];
       const resultCount = document.querySelector("[data-result-count]");
       const emptyState = document.querySelector("[data-empty-state]");
-      const resultsSection = document.querySelector("[data-product-results-section]");
+      const resultsSection = document.querySelector(
+        "[data-product-results-section]",
+      );
       const resultsGrid = document.querySelector("[data-product-results-grid]");
       const resultsNote = document.querySelector("[data-product-results-note]");
       let activeCategory = "all";
@@ -234,33 +316,55 @@ function productSearchText(product) {
         setQueryParam(url.searchParams, "branch", branchSelect.value, "all");
         setQueryParam(url.searchParams, "group", groupSelect.value, "all");
         setQueryParam(url.searchParams, "talent", talentSelect.value, "all");
-        window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+        window.history.replaceState(
+          {},
+          "",
+          `${url.pathname}${url.search}${url.hash}`,
+        );
       }
 
       function setActiveCategory(category) {
-        const nextCategory = filterButtons.some((button) => button.dataset.filter === category) ? category : "all";
+        const nextCategory = filterButtons.some(
+          (button) => button.dataset.filter === category,
+        )
+          ? category
+          : "all";
         activeCategory = nextCategory;
         for (const current of filterButtons) {
-          current.classList.toggle("is-active", current.dataset.filter === activeCategory);
+          current.classList.toggle(
+            "is-active",
+            current.dataset.filter === activeCategory,
+          );
         }
       }
 
       function setSelectValue(select, value) {
-        const hasOption = [...select.options].some((option) => option.value === value && !option.hidden);
+        const hasOption = [...select.options].some(
+          (option) => option.value === value && !option.hidden,
+        );
         select.value = hasOption ? value : "all";
       }
 
       function syncGroupOptions() {
         for (const option of groupSelect.options) {
-          option.hidden = branchSelect.value !== "all" && option.dataset.branch !== "all" && option.dataset.branch !== branchSelect.value;
+          option.hidden =
+            branchSelect.value !== "all" &&
+            option.dataset.branch !== "all" &&
+            option.dataset.branch !== branchSelect.value;
         }
         if (groupSelect.selectedOptions[0]?.hidden) groupSelect.value = "all";
       }
 
       function syncTalentOptions() {
         for (const option of talentSelect.options) {
-          const branchOk = branchSelect.value === "all" || option.dataset.branch === "all" || option.dataset.branch === branchSelect.value;
-          const groupOk = option.value === "all" || groupSelect.value === "all" || option.dataset.groups?.includes(`|${groupSelect.value}|`);
+          const branchOk =
+            branchSelect.value === "all" ||
+            option.dataset.branch === "all" ||
+            option.dataset.branch === branchSelect.value;
+          const groupOk =
+            option.value === "all" ||
+            groupSelect.value === "all" ||
+            option.dataset.groups?.includes(`|${groupSelect.value}|`);
           option.hidden = !(branchOk && groupOk);
         }
         if (talentSelect.selectedOptions[0]?.hidden) talentSelect.value = "all";
@@ -271,17 +375,32 @@ function productSearchText(product) {
         const branch = branchSelect.value;
         const group = groupSelect.value;
         const talent = talentSelect.value;
-        const filteredMode = Boolean(query) || activeCategory !== "all" || branch !== "all" || group !== "all" || talent !== "all";
+        const filteredMode =
+          Boolean(query) ||
+          activeCategory !== "all" ||
+          branch !== "all" ||
+          group !== "all" ||
+          talent !== "all";
         let visible = 0;
         const matchingCards = [];
 
         for (const card of cards) {
-          const matchesCategory = activeCategory === "all" || card.dataset.category === activeCategory;
-          const matchesBranch = branch === "all" || card.dataset.branches.includes(`|${branch}|`);
-          const matchesGroup = group === "all" || card.dataset.groups.includes(`|${group}|`);
-          const matchesTalent = talent === "all" || card.dataset.talents.includes(`|${talent}|`);
+          const matchesCategory =
+            activeCategory === "all" ||
+            card.dataset.category === activeCategory;
+          const matchesBranch =
+            branch === "all" || card.dataset.branches.includes(`|${branch}|`);
+          const matchesGroup =
+            group === "all" || card.dataset.groups.includes(`|${group}|`);
+          const matchesTalent =
+            talent === "all" || card.dataset.talents.includes(`|${talent}|`);
           const matchesText = !query || card.dataset.search.includes(query);
-          const show = matchesCategory && matchesBranch && matchesGroup && matchesTalent && matchesText;
+          const show =
+            matchesCategory &&
+            matchesBranch &&
+            matchesGroup &&
+            matchesTalent &&
+            matchesText;
           card.hidden = !show;
           if (show) {
             visible += 1;
@@ -295,7 +414,7 @@ function productSearchText(product) {
               const clone = card.cloneNode(true);
               clone.hidden = false;
               return clone;
-            })
+            }),
           );
           resultsSection.hidden = visible === 0;
           resultsNote.textContent = `${visible}件`;
@@ -304,7 +423,9 @@ function productSearchText(product) {
           resultsGrid.replaceChildren();
           resultsSection.hidden = true;
           for (const section of monthSections) {
-            const visibleCards = section.querySelectorAll("[data-product-card]:not([hidden])").length;
+            const visibleCards = section.querySelectorAll(
+              "[data-product-card]:not([hidden])",
+            ).length;
             section.hidden = visibleCards === 0;
           }
         }

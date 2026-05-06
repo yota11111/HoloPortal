@@ -7,11 +7,24 @@ import streams from "../data/generated/streams.json";
 import officialTalents from "../data/generated/official-talents.json";
 import { buildTalentProfiles, formatDate } from "../lib/talent-data.mjs";
 import { talentSearchTerms } from "../lib/talent-aliases.mjs";
-import { talentCategoryLabel, talentCategoryValue } from "../lib/talent-categories.mjs";
-import { talentBranches, talentGroups, talentGroupLabels, talentGroupValues } from "../lib/talent-groups.mjs";
-import { dataTokenList, itemTalentFilterData, streamTalentFilterData } from "../lib/talent-filter-data.mjs";
+import {
+  talentCategoryLabel,
+  talentCategoryValue,
+} from "../lib/talent-categories.mjs";
+import {
+  talentBranches,
+  talentGroups,
+  talentGroupLabels,
+  talentGroupValues,
+} from "../lib/talent-groups.mjs";
+import {
+  dataTokenList,
+  itemTalentFilterData,
+  streamTalentFilterData,
+} from "../lib/talent-filter-data.mjs";
 
-const pageDescription = "ホロライブ関連の配信、グッズ、公式発表、タレントを横断検索する非公式ページです。";
+const pageDescription =
+  "ホロライブ関連の配信、グッズ、公式発表、タレントを横断検索する非公式ページです。";
 
 const typeLabels = {
   all: "すべて",
@@ -21,13 +34,13 @@ const typeLabels = {
   event: "イベント",
   music: "音楽",
   news: "ニュース",
-  talent: "タレント"
+  talent: "タレント",
 };
 
 const streamStatusLabels = {
   live: "配信中",
   upcoming: "予定",
-  past: "アーカイブ"
+  past: "アーカイブ",
 };
 
 function dateLabel(value) {
@@ -67,7 +80,11 @@ const portalResults = items
       branches: talentData.branches,
       groups: talentData.groups,
       talents: talentData.talents,
-      tags: [typeLabels[type], ...(item.talents || []).slice(0, 3), item.source],
+      tags: [
+        typeLabels[type],
+        ...(item.talents || []).slice(0, 3),
+        item.source,
+      ],
       search: compactText([
         item.title,
         item.summary,
@@ -75,8 +92,8 @@ const portalResults = items
         item.subcategory,
         item.source,
         item.talents,
-        talentSearchTerms(item.talents || [])
-      ])
+        talentSearchTerms(item.talents || []),
+      ]),
     };
   });
 
@@ -95,7 +112,11 @@ const streamResults = streams.map((stream) => {
     branches: talentData.branches,
     groups: talentData.groups,
     talents: talentData.talents,
-    tags: [streamStatusLabels[stream.status] || "アーカイブ", stream.channelName, stream.sourceLabel || stream.source],
+    tags: [
+      streamStatusLabels[stream.status] || "アーカイブ",
+      stream.channelName,
+      stream.sourceLabel || stream.source,
+    ],
     search: compactText([
       stream.title,
       stream.channelName,
@@ -104,47 +125,68 @@ const streamResults = streams.map((stream) => {
       stream.sourceLabel,
       stream.source,
       stream.talents,
-      talentSearchTerms([stream.channelName, ...(stream.talents || [])])
-    ])
+      talentSearchTerms([stream.channelName, ...(stream.talents || [])]),
+    ]),
   };
 });
 
-const talentResults = buildTalentProfiles(items, streams, officialTalents).map((profile) => {
-  const category = talentCategoryValue(profile);
-  const groups = talentGroupValues(profile);
-  return {
-    id: `talent-${profile.slug}`,
-    type: "talent",
-    typeLabel: typeLabels.talent,
-    title: profile.name,
-    summary: `${profile.counts.total}件 / 配信 ${profile.counts.streams} / グッズ ${profile.counts.goods}`,
-    date: profile.latestAt,
-    url: `../talents/${profile.slug}/`,
-    external: false,
-    image: profile.displayImage,
-    branches: [category],
-    groups,
-    talents: [profile.name],
-    tags: [talentCategoryLabel(category), ...talentGroupLabels(groups), ...profile.aliases.slice(0, 2)],
-    search: compactText([
-      profile.name,
-      profile.officialName,
-      profile.aliases,
-      talentCategoryLabel(category),
-      talentGroupLabels(groups),
-      category,
+const talentResults = buildTalentProfiles(items, streams, officialTalents).map(
+  (profile) => {
+    const category = talentCategoryValue(profile);
+    const groups = talentGroupValues(profile);
+    return {
+      id: `talent-${profile.slug}`,
+      type: "talent",
+      typeLabel: typeLabels.talent,
+      title: profile.name,
+      summary: `${profile.counts.total}件 / 配信 ${profile.counts.streams} / グッズ ${profile.counts.goods}`,
+      date: profile.latestAt,
+      url: `../talents/${profile.slug}/`,
+      external: false,
+      image: profile.displayImage,
+      branches: [category],
       groups,
-      talentSearchTerms([profile.name, profile.officialName, ...(profile.aliases || [])])
-    ])
-  };
-});
+      talents: [profile.name],
+      tags: [
+        talentCategoryLabel(category),
+        ...talentGroupLabels(groups),
+        ...profile.aliases.slice(0, 2),
+      ],
+      search: compactText([
+        profile.name,
+        profile.officialName,
+        profile.aliases,
+        talentCategoryLabel(category),
+        talentGroupLabels(groups),
+        category,
+        groups,
+        talentSearchTerms([
+          profile.name,
+          profile.officialName,
+          ...(profile.aliases || []),
+        ]),
+      ]),
+    };
+  },
+);
 
-const results = [...streamResults, ...portalResults, ...talentResults].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+const results = [...streamResults, ...portalResults, ...talentResults].sort(
+  (a, b) => (b.date || "").localeCompare(a.date || ""),
+);
 const typeCounts = results.reduce((acc, result) => {
   acc[result.type] = (acc[result.type] || 0) + 1;
   return acc;
 }, {});
-const filterTypes = ["all", "stream", "goods", "live", "event", "music", "news", "talent"].filter((type) => type === "all" || typeCounts[type] > 0);
+const filterTypes = [
+  "all",
+  "stream",
+  "goods",
+  "live",
+  "event",
+  "music",
+  "news",
+  "talent",
+].filter((type) => type === "all" || typeCounts[type] > 0);
 const talentBranchCounts = talentResults.reduce((acc, result) => {
   for (const branch of result.branches) {
     acc[branch] = (acc[branch] || 0) + 1;
@@ -169,7 +211,7 @@ const talentGroupCounts = talentResults.reduce((acc, result) => {
       schemaType="SearchResultsPage"
       jsonLd={{
         about: "hololive portal search",
-        numberOfItems: results.length
+        numberOfItems: results.length,
       }}
     />
   </head>
@@ -177,7 +219,6 @@ const talentGroupCounts = talentResults.reduce((acc, result) => {
     <header class="topbar">
       <div class="shell topbar-inner">
         <a class="brand" href="../">
-          <span class="brand-mark"><img src="../icon.png" alt="" /></span>
           <span>Holo Portal</span>
         </a>
         <nav class="nav" aria-label="主要ナビゲーション">
@@ -196,79 +237,139 @@ const talentGroupCounts = talentResults.reduce((acc, result) => {
       <section class="section">
         <div class="shell">
           <div class="catalog-tools search-tools" aria-label="サイト内検索">
-            <input class="search-input" type="search" placeholder="キーワード、タレント名、カテゴリで検索" data-site-search />
+            <input
+              class="search-input"
+              type="search"
+              placeholder="キーワード、タレント名、カテゴリで検索"
+              data-site-search
+            />
             <label class="select-wrap">
               <span>種類</span>
               <select class="select-input" data-site-type>
-                {filterTypes.map((type) => (
-                  <option value={type}>{typeLabels[type]} ({type === "all" ? results.length : typeCounts[type]})</option>
-                ))}
+                {
+                  filterTypes.map((type) => (
+                    <option value={type}>
+                      {typeLabels[type]} (
+                      {type === "all" ? results.length : typeCounts[type]})
+                    </option>
+                  ))
+                }
               </select>
             </label>
             <label class="select-wrap">
               <span>所属</span>
               <select class="select-input" data-site-branch>
-                {talentBranches.map((branch) => (
-                  <option value={branch.value}>
-                    {branch.label} ({branch.value === "all" ? talentResults.length : talentBranchCounts[branch.value] || 0})
-                  </option>
-                ))}
+                {
+                  talentBranches.map((branch) => (
+                    <option value={branch.value}>
+                      {branch.label} (
+                      {branch.value === "all"
+                        ? talentResults.length
+                        : talentBranchCounts[branch.value] || 0}
+                      )
+                    </option>
+                  ))
+                }
               </select>
             </label>
             <label class="select-wrap">
               <span>グループ</span>
               <select class="select-input" data-site-group>
-                <option value="all" data-branch="all">すべて ({talentResults.length})</option>
-                {talentGroups.filter((group) => group.value !== "all").map((group) => (
-                  <option value={group.value} data-branch={group.branch}>
-                    {group.label} ({talentGroupCounts[group.value] || 0})
-                  </option>
-                ))}
+                <option value="all" data-branch="all"
+                  >すべて ({talentResults.length})</option
+                >
+                {
+                  talentGroups
+                    .filter((group) => group.value !== "all")
+                    .map((group) => (
+                      <option value={group.value} data-branch={group.branch}>
+                        {group.label} ({talentGroupCounts[group.value] || 0})
+                      </option>
+                    ))
+                }
               </select>
             </label>
             <label class="select-wrap">
               <span>タレント</span>
               <select class="select-input" data-site-talent>
-                <option value="all" data-branch="all" data-group="all">すべて</option>
-                {talentResults.map((result) => (
-                  <option value={result.talents[0]} data-branch={result.branches[0]} data-groups={`|${result.groups.join("|")}|`}>{result.talents[0]}</option>
-                ))}
+                <option value="all" data-branch="all" data-group="all"
+                  >すべて</option
+                >
+                {
+                  talentResults.map((result) => (
+                    <option
+                      value={result.talents[0]}
+                      data-branch={result.branches[0]}
+                      data-groups={`|${result.groups.join("|")}|`}
+                    >
+                      {result.talents[0]}
+                    </option>
+                  ))
+                }
               </select>
             </label>
-            <div class="result-count" data-site-result-count>{results.length}件</div>
+            <div class="result-count" data-site-result-count>
+              {results.length}件
+            </div>
           </div>
-          <div class="empty-state" data-site-empty-state>該当する情報が見つかりませんでした。</div>
+          <div class="empty-state" data-site-empty-state>
+            該当する情報が見つかりませんでした。
+          </div>
           <div class="list search-results">
-            {results.map((result) => (
-              <a
-                class="list-item card-link search-result"
-                href={result.url}
-                target={result.external ? "_blank" : undefined}
-                rel={result.external ? "noopener noreferrer" : undefined}
-                data-site-result
-                data-type={result.type}
-                data-branches={dataTokenList(result.branches)}
-                data-groups={result.groups ? `|${result.groups.join("|")}|` : ""}
-                data-talents={dataTokenList(result.talents)}
-                data-search={result.search}
-              >
-                {result.image ? (
-                  <img class="list-thumb" src={result.image} alt="" loading="lazy" referrerpolicy="no-referrer" />
-                ) : (
-                  <span class="list-thumb search-thumb-placeholder" aria-hidden="true">{result.typeLabel.slice(0, 1)}</span>
-                )}
-                <div class="date">{dateLabel(result.date)}</div>
-                <div>
-                  <h2 class="title">{result.title}</h2>
-                  <p class="summary">{result.summary}</p>
-                  <div class="meta">
-                    <span class={`pill ${result.type}`}>{result.typeLabel}</span>
-                    {result.tags.filter(Boolean).slice(0, 4).map((tag) => <span class="pill">{tag}</span>)}
+            {
+              results.map((result) => (
+                <a
+                  class="list-item card-link search-result"
+                  href={result.url}
+                  target={result.external ? "_blank" : undefined}
+                  rel={result.external ? "noopener noreferrer" : undefined}
+                  data-site-result
+                  data-type={result.type}
+                  data-branches={dataTokenList(result.branches)}
+                  data-groups={
+                    result.groups ? `|${result.groups.join("|")}|` : ""
+                  }
+                  data-talents={dataTokenList(result.talents)}
+                  data-search={result.search}
+                >
+                  {result.image ? (
+                    <img
+                      class="list-thumb"
+                      src={result.image}
+                      alt=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer"
+                    />
+                  ) : (
+                    <span
+                      class="list-thumb search-thumb-placeholder"
+                      aria-hidden="true"
+                    >
+                      {result.typeLabel.slice(0, 1)}
+                    </span>
+                  )}
+                  <div class="date">{dateLabel(result.date)}</div>
+                  <div>
+                    <h2 class="title">{result.title}</h2>
+                    <p class="summary">{result.summary}</p>
+                    <div class="meta">
+                      <span class={`pill ${result.type}`}>
+                        {result.typeLabel}
+                      </span>
+                      {result.tags
+                        .filter(Boolean)
+                        .slice(0, 4)
+                        .map((tag) => (
+                          <span class="pill">{tag}</span>
+                        ))}
+                    </div>
                   </div>
-                </div>
-                <span class="shop-label">{result.external ? "公式へ" : "開く"}</span>
-              </a>
-            ))}
+                  <span class="shop-label">
+                    {result.external ? "公式へ" : "開く"}
+                  </span>
+                </a>
+              ))
+            }
           </div>
         </div>
       </section>
@@ -276,7 +377,10 @@ const talentGroupCounts = talentResults.reduce((acc, result) => {
 
     <footer class="footer">
       <div class="shell">
-        <p>Holo Portal は非公式ファンサイトです。検索結果から開く公式情報の内容・販売状況はリンク先で確認してください。</p>
+        <p>
+          Holo Portal
+          は非公式ファンサイトです。検索結果から開く公式情報の内容・販売状況はリンク先で確認してください。
+        </p>
       </div>
     </footer>
     <script>
@@ -290,21 +394,32 @@ const talentGroupCounts = talentResults.reduce((acc, result) => {
       const emptyState = document.querySelector("[data-site-empty-state]");
 
       function setSelectValue(select, value) {
-        const hasOption = [...select.options].some((option) => option.value === value && !option.hidden);
+        const hasOption = [...select.options].some(
+          (option) => option.value === value && !option.hidden,
+        );
         select.value = hasOption ? value : "all";
       }
 
       function syncGroupOptions() {
         for (const option of groupSelect.options) {
-          option.hidden = branchSelect.value !== "all" && option.dataset.branch !== "all" && option.dataset.branch !== branchSelect.value;
+          option.hidden =
+            branchSelect.value !== "all" &&
+            option.dataset.branch !== "all" &&
+            option.dataset.branch !== branchSelect.value;
         }
         if (groupSelect.selectedOptions[0]?.hidden) groupSelect.value = "all";
       }
 
       function syncTalentOptions() {
         for (const option of talentSelect.options) {
-          const branchOk = branchSelect.value === "all" || option.dataset.branch === "all" || option.dataset.branch === branchSelect.value;
-          const groupOk = option.value === "all" || groupSelect.value === "all" || option.dataset.groups?.includes(`|${groupSelect.value}|`);
+          const branchOk =
+            branchSelect.value === "all" ||
+            option.dataset.branch === "all" ||
+            option.dataset.branch === branchSelect.value;
+          const groupOk =
+            option.value === "all" ||
+            groupSelect.value === "all" ||
+            option.dataset.groups?.includes(`|${groupSelect.value}|`);
           option.hidden = !(branchOk && groupOk);
         }
         if (talentSelect.selectedOptions[0]?.hidden) talentSelect.value = "all";
@@ -321,10 +436,18 @@ const talentGroupCounts = talentResults.reduce((acc, result) => {
         for (const card of resultCards) {
           const matchesText = !query || card.dataset.search.includes(query);
           const matchesType = type === "all" || card.dataset.type === type;
-          const matchesBranch = branch === "all" || card.dataset.branches.includes(`|${branch}|`);
-          const matchesGroup = group === "all" || card.dataset.groups.includes(`|${group}|`);
-          const matchesTalent = talent === "all" || card.dataset.talents.includes(`|${talent}|`);
-          const show = matchesText && matchesType && matchesBranch && matchesGroup && matchesTalent;
+          const matchesBranch =
+            branch === "all" || card.dataset.branches.includes(`|${branch}|`);
+          const matchesGroup =
+            group === "all" || card.dataset.groups.includes(`|${group}|`);
+          const matchesTalent =
+            talent === "all" || card.dataset.talents.includes(`|${talent}|`);
+          const show =
+            matchesText &&
+            matchesType &&
+            matchesBranch &&
+            matchesGroup &&
+            matchesTalent;
           card.hidden = !show;
           if (show) visible += 1;
         }
@@ -348,7 +471,9 @@ const talentGroupCounts = talentResults.reduce((acc, result) => {
       const initialQuery = params.get("q") || "";
       const initialType = params.get("type") || "all";
       searchInput.value = initialQuery;
-      if ([...typeSelect.options].some((option) => option.value === initialType)) {
+      if (
+        [...typeSelect.options].some((option) => option.value === initialType)
+      ) {
         typeSelect.value = initialType;
       }
       setSelectValue(branchSelect, params.get("branch") || "all");

@@ -6,19 +6,34 @@ import streams from "../data/generated/streams.json";
 import items from "../data/generated/portal-items.json";
 import officialTalents from "../data/generated/official-talents.json";
 import { talentSearchTerms } from "../lib/talent-aliases.mjs";
-import { buildTalentFilterState, dataTokenList, streamTalentFilterData, talentBranches, talentGroups } from "../lib/talent-filter-data.mjs";
+import {
+  buildTalentFilterState,
+  dataTokenList,
+  streamTalentFilterData,
+  talentBranches,
+  talentGroups,
+} from "../lib/talent-filter-data.mjs";
 
 const liveStreams = streams.filter((stream) => stream.status === "live");
-const upcomingStreams = streams.filter((stream) => stream.status === "upcoming");
-const pastStreams = streams.filter((stream) => stream.status !== "live" && stream.status !== "upcoming");
-const pageDescription = "ホロジュールとHolodex APIをもとにホロライブのライブ中・配信予定を整理する非公式ページです。";
+const upcomingStreams = streams.filter(
+  (stream) => stream.status === "upcoming",
+);
+const pastStreams = streams.filter(
+  (stream) => stream.status !== "live" && stream.status !== "upcoming",
+);
+const pageDescription =
+  "ホロジュールとHolodex APIをもとにホロライブのライブ中・配信予定を整理する非公式ページです。";
 const hasStreams = streams.length > 0;
-const talentFilterState = buildTalentFilterState(items, streams, officialTalents);
+const talentFilterState = buildTalentFilterState(
+  items,
+  streams,
+  officialTalents,
+);
 const statusFilters = [
   ["all", "すべて"],
   ["live", "配信中"],
   ["upcoming", "予定"],
-  ["past", "アーカイブ"]
+  ["past", "アーカイブ"],
 ];
 
 function formatDateTime(value) {
@@ -27,7 +42,7 @@ function formatDateTime(value) {
     month: "2-digit",
     day: "2-digit",
     hour: "2-digit",
-    minute: "2-digit"
+    minute: "2-digit",
   }).format(new Date(value));
 }
 
@@ -39,7 +54,10 @@ function streamStatusLabel(status) {
 }
 
 function searchText(stream) {
-  const talentTerms = talentSearchTerms([stream.channelName, ...(stream.talents || [])]);
+  const talentTerms = talentSearchTerms([
+    stream.channelName,
+    ...(stream.talents || []),
+  ]);
   return `${stream.title} ${stream.channelName} ${(stream.talents || []).join(" ")} ${talentTerms.join(" ")} ${stream.topic || ""} ${stream.sourceLabel || stream.source}`.toLowerCase();
 }
 
@@ -48,7 +66,7 @@ function streamFilterDataAttrs(stream) {
   return {
     talents: dataTokenList(data.talents),
     branches: dataTokenList(data.branches),
-    groups: dataTokenList(data.groups)
+    groups: dataTokenList(data.groups),
   };
 }
 ---
@@ -63,7 +81,7 @@ function streamFilterDataAttrs(stream) {
       schemaType="CollectionPage"
       jsonLd={{
         about: "hololive live streams",
-        numberOfItems: streams.length
+        numberOfItems: streams.length,
       }}
     />
   </head>
@@ -71,7 +89,6 @@ function streamFilterDataAttrs(stream) {
     <header class="topbar">
       <div class="shell topbar-inner">
         <a class="brand" href="../">
-          <span class="brand-mark"><img src="../icon.png" alt="" /></span>
           <span>Holo Portal</span>
         </a>
         <nav class="nav" aria-label="主要ナビゲーション">
@@ -87,166 +104,127 @@ function streamFilterDataAttrs(stream) {
     </header>
 
     <main>
-      {!hasStreams ? (
-        <section class="section">
-          <div class="shell">
-            <div class="empty-state visible">
-              <strong>配信データを取得できませんでした。</strong><br />
-              ホロジュール取得の再試行、または `HOLODEX_API_KEY` の設定で復旧できます。
-            </div>
-          </div>
-        </section>
-      ) : (
-        <>
+      {
+        !hasStreams ? (
           <section class="section">
             <div class="shell">
-              <div class="catalog-tools stream-tools" aria-label="配信絞り込み">
-                <input class="search-input" type="search" placeholder="タイトル、タレント、話題で検索" data-stream-search />
-                <div class="filter-group" aria-label="ステータス">
-                  {statusFilters.map(([value, label], index) => (
-                    <button class={`filter-chip ${index === 0 ? "is-active" : ""}`} type="button" data-stream-status={value}>
-                      {label}
-                    </button>
-                  ))}
+              <div class="empty-state visible">
+                <>
+                  <strong>配信データを取得できませんでした。</strong>
+                  <br />
+                </>
+                ホロジュール取得の再試行、または `HOLODEX_API_KEY`
+                の設定で復旧できます。
+              </div>
+            </div>
+          </section>
+        ) : (
+          <>
+            <section class="section">
+              <div class="shell">
+                <div
+                  class="catalog-tools stream-tools"
+                  aria-label="配信絞り込み"
+                >
+                  <input
+                    class="search-input"
+                    type="search"
+                    placeholder="タイトル、タレント、話題で検索"
+                    data-stream-search
+                  />
+                  <div class="filter-group" aria-label="ステータス">
+                    {statusFilters.map(([value, label], index) => (
+                      <button
+                        class={`filter-chip ${index === 0 ? "is-active" : ""}`}
+                        type="button"
+                        data-stream-status={value}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                  <label class="select-wrap">
+                    <span>所属</span>
+                    <select class="select-input" data-stream-branch>
+                      {talentBranches.map((branch) => (
+                        <option value={branch.value}>
+                          {branch.label} (
+                          {branch.value === "all"
+                            ? talentFilterState.talents.length
+                            : talentFilterState.branchCounts[branch.value] || 0}
+                          )
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <label class="select-wrap">
+                    <span>グループ</span>
+                    <select class="select-input" data-stream-group>
+                      <option value="all" data-branch="all">
+                        すべて ({talentFilterState.talents.length})
+                      </option>
+                      {talentGroups
+                        .filter((group) => group.value !== "all")
+                        .map((group) => (
+                          <option
+                            value={group.value}
+                            data-branch={group.branch}
+                          >
+                            {group.label} (
+                            {talentFilterState.groupCounts[group.value] || 0})
+                          </option>
+                        ))}
+                    </select>
+                  </label>
+                  <label class="select-wrap">
+                    <span>タレント</span>
+                    <select class="select-input" data-stream-talent>
+                      <option value="all" data-branch="all" data-group="all">
+                        すべて
+                      </option>
+                      {talentFilterState.talents.map((talent) => (
+                        <option
+                          value={talent.name}
+                          data-branch={talent.branch}
+                          data-groups={`|${talent.groups.join("|")}|`}
+                        >
+                          {talent.name}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <div class="result-count" data-stream-result-count>
+                    {streams.length}件
+                  </div>
                 </div>
-                <label class="select-wrap">
-                  <span>所属</span>
-                  <select class="select-input" data-stream-branch>
-                    {talentBranches.map((branch) => (
-                      <option value={branch.value}>
-                        {branch.label} ({branch.value === "all" ? talentFilterState.talents.length : talentFilterState.branchCounts[branch.value] || 0})
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label class="select-wrap">
-                  <span>グループ</span>
-                  <select class="select-input" data-stream-group>
-                    <option value="all" data-branch="all">すべて ({talentFilterState.talents.length})</option>
-                    {talentGroups.filter((group) => group.value !== "all").map((group) => (
-                      <option value={group.value} data-branch={group.branch}>
-                        {group.label} ({talentFilterState.groupCounts[group.value] || 0})
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label class="select-wrap">
-                  <span>タレント</span>
-                  <select class="select-input" data-stream-talent>
-                    <option value="all" data-branch="all" data-group="all">すべて</option>
-                    {talentFilterState.talents.map((talent) => (
-                      <option value={talent.name} data-branch={talent.branch} data-groups={`|${talent.groups.join("|")}|`}>{talent.name}</option>
-                    ))}
-                  </select>
-                </label>
-                <div class="result-count" data-stream-result-count>{streams.length}件</div>
+                <div class="empty-state" data-stream-empty-state>
+                  該当する配信が見つかりませんでした。
+                </div>
               </div>
-              <div class="empty-state" data-stream-empty-state>該当する配信が見つかりませんでした。</div>
-            </div>
-          </section>
+            </section>
 
-          <section class="section search-results-section" data-stream-results-section hidden>
-            <div class="shell">
-              <div class="section-head">
-                <h2>検索結果</h2>
-                <span class="section-note" data-stream-results-note></span>
+            <section
+              class="section search-results-section"
+              data-stream-results-section
+              hidden
+            >
+              <div class="shell">
+                <div class="section-head">
+                  <h2>検索結果</h2>
+                  <span class="section-note" data-stream-results-note />
+                </div>
+                <div class="grid" data-stream-results-grid />
               </div>
-              <div class="grid" data-stream-results-grid></div>
-            </div>
-          </section>
+            </section>
 
-          <section class="section" data-stream-section>
-            <div class="shell">
-              <div class="section-head">
-                <h2>配信中</h2>
-                <span class="section-note">{liveStreams.length}件</span>
-              </div>
-              <div class="grid">
-                {liveStreams.map((stream) => (
-                  <a
-                    class="card card-link"
-                    href={stream.youtubeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    data-stream-card
-                    data-status={stream.status}
-                    data-talents={streamFilterDataAttrs(stream).talents}
-                    data-branches={streamFilterDataAttrs(stream).branches}
-                    data-groups={streamFilterDataAttrs(stream).groups}
-                    data-search={searchText(stream)}
-                  >
-                    <div class="thumb-wrap">
-                      <img class="thumb" src={stream.thumbnailUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />
-                      <span class={`image-credit ${stream.status === "live" ? "is-live" : ""}`}>{streamStatusLabel(stream.status)}</span>
-                    </div>
-                    <div class="card-body">
-                      <div class="date">{formatDateTime(stream.startAt)}</div>
-                      <h3 class="title">{stream.title}</h3>
-                      <p class="summary">{stream.channelName}</p>
-                      <div class="meta">
-                        <span class="pill live">配信中</span>
-                        {stream.liveViewers && <span class="pill">{stream.liveViewers.toLocaleString("ja-JP")}人が視聴中</span>}
-                        {stream.topic && <span class="pill">{stream.topic}</span>}
-                        <span class="pill">{stream.sourceLabel || stream.source}</span>
-                        <span class="shop-label">YouTubeで見る</span>
-                      </div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          <section class="section" data-stream-section>
-            <div class="shell">
-              <div class="section-head">
-                <h2>配信予定</h2>
-                <span class="section-note">{upcomingStreams.length}件</span>
-              </div>
-              <div class="grid">
-                {upcomingStreams.map((stream) => (
-                  <a
-                    class="card card-link"
-                    href={stream.youtubeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    data-stream-card
-                    data-status={stream.status}
-                    data-talents={streamFilterDataAttrs(stream).talents}
-                    data-branches={streamFilterDataAttrs(stream).branches}
-                    data-groups={streamFilterDataAttrs(stream).groups}
-                    data-search={searchText(stream)}
-                  >
-                    <div class="thumb-wrap">
-                      <img class="thumb" src={stream.thumbnailUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />
-                      <span class="image-credit">{streamStatusLabel(stream.status)}</span>
-                    </div>
-                    <div class="card-body">
-                      <div class="date">{formatDateTime(stream.startAt)}</div>
-                      <h3 class="title">{stream.title}</h3>
-                      <p class="summary">{stream.channelName}</p>
-                      <div class="meta">
-                        <span class="pill live">予定</span>
-                        {stream.topic && <span class="pill">{stream.topic}</span>}
-                        <span class="pill">{stream.sourceLabel || stream.source}</span>
-                        <span class="shop-label">YouTubeで見る</span>
-                      </div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          {pastStreams.length > 0 && (
             <section class="section" data-stream-section>
               <div class="shell">
                 <div class="section-head">
-                  <h2>その他</h2>
-                  <span class="section-note">{pastStreams.length}件</span>
+                  <h2>配信中</h2>
+                  <span class="section-note">{liveStreams.length}件</span>
                 </div>
                 <div class="grid">
-                  {pastStreams.map((stream) => (
+                  {liveStreams.map((stream) => (
                     <a
                       class="card card-link"
                       href={stream.youtubeUrl}
@@ -260,17 +238,37 @@ function streamFilterDataAttrs(stream) {
                       data-search={searchText(stream)}
                     >
                       <div class="thumb-wrap">
-                        <img class="thumb" src={stream.thumbnailUrl} alt="" loading="lazy" referrerpolicy="no-referrer" />
-                        <span class="image-credit">{streamStatusLabel(stream.status)}</span>
+                        <img
+                          class="thumb"
+                          src={stream.thumbnailUrl}
+                          alt=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer"
+                        />
+                        <span
+                          class={`image-credit ${stream.status === "live" ? "is-live" : ""}`}
+                        >
+                          {streamStatusLabel(stream.status)}
+                        </span>
                       </div>
                       <div class="card-body">
                         <div class="date">{formatDateTime(stream.startAt)}</div>
                         <h3 class="title">{stream.title}</h3>
                         <p class="summary">{stream.channelName}</p>
                         <div class="meta">
-                          <span class="pill">{streamStatusLabel(stream.status)}</span>
-                          {stream.topic && <span class="pill">{stream.topic}</span>}
-                          <span class="pill">{stream.sourceLabel || stream.source}</span>
+                          <span class="pill live">配信中</span>
+                          {stream.liveViewers && (
+                            <span class="pill">
+                              {stream.liveViewers.toLocaleString("ja-JP")}
+                              人が視聴中
+                            </span>
+                          )}
+                          {stream.topic && (
+                            <span class="pill">{stream.topic}</span>
+                          )}
+                          <span class="pill">
+                            {stream.sourceLabel || stream.source}
+                          </span>
                           <span class="shop-label">YouTubeで見る</span>
                         </div>
                       </div>
@@ -279,29 +277,158 @@ function streamFilterDataAttrs(stream) {
                 </div>
               </div>
             </section>
-          )}
-        </>
-      )}
+
+            <section class="section" data-stream-section>
+              <div class="shell">
+                <div class="section-head">
+                  <h2>配信予定</h2>
+                  <span class="section-note">{upcomingStreams.length}件</span>
+                </div>
+                <div class="grid">
+                  {upcomingStreams.map((stream) => (
+                    <a
+                      class="card card-link"
+                      href={stream.youtubeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-stream-card
+                      data-status={stream.status}
+                      data-talents={streamFilterDataAttrs(stream).talents}
+                      data-branches={streamFilterDataAttrs(stream).branches}
+                      data-groups={streamFilterDataAttrs(stream).groups}
+                      data-search={searchText(stream)}
+                    >
+                      <div class="thumb-wrap">
+                        <img
+                          class="thumb"
+                          src={stream.thumbnailUrl}
+                          alt=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer"
+                        />
+                        <span class="image-credit">
+                          {streamStatusLabel(stream.status)}
+                        </span>
+                      </div>
+                      <div class="card-body">
+                        <div class="date">{formatDateTime(stream.startAt)}</div>
+                        <h3 class="title">{stream.title}</h3>
+                        <p class="summary">{stream.channelName}</p>
+                        <div class="meta">
+                          <span class="pill live">予定</span>
+                          {stream.topic && (
+                            <span class="pill">{stream.topic}</span>
+                          )}
+                          <span class="pill">
+                            {stream.sourceLabel || stream.source}
+                          </span>
+                          <span class="shop-label">YouTubeで見る</span>
+                        </div>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {pastStreams.length > 0 && (
+              <section class="section" data-stream-section>
+                <div class="shell">
+                  <div class="section-head">
+                    <h2>その他</h2>
+                    <span class="section-note">{pastStreams.length}件</span>
+                  </div>
+                  <div class="grid">
+                    {pastStreams.map((stream) => (
+                      <a
+                        class="card card-link"
+                        href={stream.youtubeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-stream-card
+                        data-status={stream.status}
+                        data-talents={streamFilterDataAttrs(stream).talents}
+                        data-branches={streamFilterDataAttrs(stream).branches}
+                        data-groups={streamFilterDataAttrs(stream).groups}
+                        data-search={searchText(stream)}
+                      >
+                        <div class="thumb-wrap">
+                          <img
+                            class="thumb"
+                            src={stream.thumbnailUrl}
+                            alt=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer"
+                          />
+                          <span class="image-credit">
+                            {streamStatusLabel(stream.status)}
+                          </span>
+                        </div>
+                        <div class="card-body">
+                          <div class="date">
+                            {formatDateTime(stream.startAt)}
+                          </div>
+                          <h3 class="title">{stream.title}</h3>
+                          <p class="summary">{stream.channelName}</p>
+                          <div class="meta">
+                            <span class="pill">
+                              {streamStatusLabel(stream.status)}
+                            </span>
+                            {stream.topic && (
+                              <span class="pill">{stream.topic}</span>
+                            )}
+                            <span class="pill">
+                              {stream.sourceLabel || stream.source}
+                            </span>
+                            <span class="shop-label">YouTubeで見る</span>
+                          </div>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </section>
+            )}
+          </>
+        )
+      }
     </main>
 
     <footer class="footer">
       <div class="shell">
-        <p>Holo Portal は非公式ファンサイトです。配信情報はホロジュール、Holodex API、YouTubeへのリンクをもとに表示しています。</p>
+        <p>
+          Holo Portal は非公式ファンサイトです。配信情報はホロジュール、Holodex
+          API、YouTubeへのリンクをもとに表示しています。
+        </p>
       </div>
     </footer>
     <script>
       const streamSearch = document.querySelector("[data-stream-search]");
-      const streamStatusButtons = [...document.querySelectorAll("[data-stream-status]")];
+      const streamStatusButtons = [
+        ...document.querySelectorAll("[data-stream-status]"),
+      ];
       const streamBranch = document.querySelector("[data-stream-branch]");
       const streamGroup = document.querySelector("[data-stream-group]");
       const streamTalent = document.querySelector("[data-stream-talent]");
       const streamCards = [...document.querySelectorAll("[data-stream-card]")];
-      const streamSections = [...document.querySelectorAll("[data-stream-section]")];
-      const streamResultCount = document.querySelector("[data-stream-result-count]");
-      const streamEmptyState = document.querySelector("[data-stream-empty-state]");
-      const streamResultsSection = document.querySelector("[data-stream-results-section]");
-      const streamResultsGrid = document.querySelector("[data-stream-results-grid]");
-      const streamResultsNote = document.querySelector("[data-stream-results-note]");
+      const streamSections = [
+        ...document.querySelectorAll("[data-stream-section]"),
+      ];
+      const streamResultCount = document.querySelector(
+        "[data-stream-result-count]",
+      );
+      const streamEmptyState = document.querySelector(
+        "[data-stream-empty-state]",
+      );
+      const streamResultsSection = document.querySelector(
+        "[data-stream-results-section]",
+      );
+      const streamResultsGrid = document.querySelector(
+        "[data-stream-results-grid]",
+      );
+      const streamResultsNote = document.querySelector(
+        "[data-stream-results-note]",
+      );
       let activeStatus = "all";
 
       function setQueryParam(params, key, value, defaultValue = "") {
@@ -316,33 +443,55 @@ function streamFilterDataAttrs(stream) {
         setQueryParam(url.searchParams, "branch", streamBranch.value, "all");
         setQueryParam(url.searchParams, "group", streamGroup.value, "all");
         setQueryParam(url.searchParams, "talent", streamTalent.value, "all");
-        window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+        window.history.replaceState(
+          {},
+          "",
+          `${url.pathname}${url.search}${url.hash}`,
+        );
       }
 
       function setActiveStatus(status) {
-        const nextStatus = streamStatusButtons.some((button) => button.dataset.streamStatus === status) ? status : "all";
+        const nextStatus = streamStatusButtons.some(
+          (button) => button.dataset.streamStatus === status,
+        )
+          ? status
+          : "all";
         activeStatus = nextStatus;
         for (const current of streamStatusButtons) {
-          current.classList.toggle("is-active", current.dataset.streamStatus === activeStatus);
+          current.classList.toggle(
+            "is-active",
+            current.dataset.streamStatus === activeStatus,
+          );
         }
       }
 
       function setSelectValue(select, value) {
-        const hasOption = [...select.options].some((option) => option.value === value && !option.hidden);
+        const hasOption = [...select.options].some(
+          (option) => option.value === value && !option.hidden,
+        );
         select.value = hasOption ? value : "all";
       }
 
       function syncGroupOptions() {
         for (const option of streamGroup.options) {
-          option.hidden = streamBranch.value !== "all" && option.dataset.branch !== "all" && option.dataset.branch !== streamBranch.value;
+          option.hidden =
+            streamBranch.value !== "all" &&
+            option.dataset.branch !== "all" &&
+            option.dataset.branch !== streamBranch.value;
         }
         if (streamGroup.selectedOptions[0]?.hidden) streamGroup.value = "all";
       }
 
       function syncTalentOptions() {
         for (const option of streamTalent.options) {
-          const branchOk = streamBranch.value === "all" || option.dataset.branch === "all" || option.dataset.branch === streamBranch.value;
-          const groupOk = option.value === "all" || streamGroup.value === "all" || option.dataset.groups?.includes(`|${streamGroup.value}|`);
+          const branchOk =
+            streamBranch.value === "all" ||
+            option.dataset.branch === "all" ||
+            option.dataset.branch === streamBranch.value;
+          const groupOk =
+            option.value === "all" ||
+            streamGroup.value === "all" ||
+            option.dataset.groups?.includes(`|${streamGroup.value}|`);
           option.hidden = !(branchOk && groupOk);
         }
         if (streamTalent.selectedOptions[0]?.hidden) streamTalent.value = "all";
@@ -353,17 +502,31 @@ function streamFilterDataAttrs(stream) {
         const branch = streamBranch.value;
         const group = streamGroup.value;
         const talent = streamTalent.value;
-        const filteredMode = Boolean(query) || activeStatus !== "all" || branch !== "all" || group !== "all" || talent !== "all";
+        const filteredMode =
+          Boolean(query) ||
+          activeStatus !== "all" ||
+          branch !== "all" ||
+          group !== "all" ||
+          talent !== "all";
         let visible = 0;
         const matchingCards = [];
 
         for (const card of streamCards) {
-          const matchesStatus = activeStatus === "all" || card.dataset.status === activeStatus;
-          const matchesBranch = branch === "all" || card.dataset.branches.includes(`|${branch}|`);
-          const matchesGroup = group === "all" || card.dataset.groups.includes(`|${group}|`);
-          const matchesTalent = talent === "all" || card.dataset.talents.includes(`|${talent}|`);
+          const matchesStatus =
+            activeStatus === "all" || card.dataset.status === activeStatus;
+          const matchesBranch =
+            branch === "all" || card.dataset.branches.includes(`|${branch}|`);
+          const matchesGroup =
+            group === "all" || card.dataset.groups.includes(`|${group}|`);
+          const matchesTalent =
+            talent === "all" || card.dataset.talents.includes(`|${talent}|`);
           const matchesText = !query || card.dataset.search.includes(query);
-          const show = matchesStatus && matchesBranch && matchesGroup && matchesTalent && matchesText;
+          const show =
+            matchesStatus &&
+            matchesBranch &&
+            matchesGroup &&
+            matchesTalent &&
+            matchesText;
           card.hidden = !show;
           if (show) {
             visible += 1;
@@ -377,7 +540,7 @@ function streamFilterDataAttrs(stream) {
               const clone = card.cloneNode(true);
               clone.hidden = false;
               return clone;
-            })
+            }),
           );
           streamResultsSection.hidden = visible === 0;
           streamResultsNote.textContent = `${visible}件`;
@@ -386,7 +549,9 @@ function streamFilterDataAttrs(stream) {
           streamResultsGrid.replaceChildren();
           streamResultsSection.hidden = true;
           for (const section of streamSections) {
-            const visibleCards = section.querySelectorAll("[data-stream-card]:not([hidden])").length;
+            const visibleCards = section.querySelectorAll(
+              "[data-stream-card]:not([hidden])",
+            ).length;
             section.hidden = visibleCards === 0;
           }
         }
