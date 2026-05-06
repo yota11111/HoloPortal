@@ -184,8 +184,11 @@ function productPrices(product) {
 
 function normalizeShopPrice(value) {
   if (value == null || value === "") return null;
-  const numeric = Number.parseFloat(String(value).replace(/,/g, ""));
+  const rawValue = String(value).replace(/,/g, "").trim();
+  const numeric = Number.parseFloat(rawValue);
   if (!Number.isFinite(numeric) || numeric <= 0) return null;
+  if (rawValue.includes(".")) return Math.round(numeric * 100);
+  if (numeric >= 100000 && numeric % 100 === 0) return Math.round(numeric / 100);
   return Math.round(numeric);
 }
 
