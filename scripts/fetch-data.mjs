@@ -196,6 +196,17 @@ function youtubeIdFromUrl(url) {
   }
 }
 
+function youtubeThumbnailUrl(videoId, quality = "maxresdefault") {
+  return videoId ? `https://i.ytimg.com/vi/${videoId}/${quality}.jpg` : null;
+}
+
+function youtubeThumbnailFallbackUrl(videoId, sourceUrl = null) {
+  if (sourceUrl && !/\/(default|mqdefault|hqdefault|sddefault|maxresdefault)\.jpg$/i.test(sourceUrl)) {
+    return sourceUrl;
+  }
+  return youtubeThumbnailUrl(videoId, "hqdefault");
+}
+
 function scheduleDateToIso(value) {
   if (!value) return null;
   return `${value.replaceAll("/", "-").replace(" ", "T")}+09:00`;
@@ -458,7 +469,8 @@ async function fetchStreams() {
       availableAt: video.available_at || null,
       youtubeUrl: `https://www.youtube.com/watch?v=${video.id}`,
       holodexUrl: `https://holodex.net/watch/${video.id}`,
-      thumbnailUrl: `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`,
+      thumbnailUrl: youtubeThumbnailUrl(video.id),
+      thumbnailFallbackUrl: youtubeThumbnailFallbackUrl(video.id),
       fetchedAt: new Date().toISOString()
     };
   });
@@ -489,7 +501,8 @@ async function fetchStreams() {
         availableAt: null,
         youtubeUrl: video.url,
         holodexUrl: videoId ? `https://holodex.net/watch/${videoId}` : null,
-        thumbnailUrl: video.thumbnail || (videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : null),
+        thumbnailUrl: youtubeThumbnailUrl(videoId) || video.thumbnail || null,
+        thumbnailFallbackUrl: youtubeThumbnailFallbackUrl(videoId, video.thumbnail),
         fetchedAt: new Date().toISOString()
       };
     })

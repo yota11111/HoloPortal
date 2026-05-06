@@ -108,6 +108,8 @@ function streamStatusLabel(status) {
                       src={
                         item.thumbnailUrl || item.imageUrl || item.channelPhoto
                       }
+                      data-fallback-src={item.thumbnailFallbackUrl || item.channelPhoto}
+                      onerror="if (this.dataset.fallbackSrc && this.src !== this.dataset.fallbackSrc) this.src = this.dataset.fallbackSrc"
                       alt=""
                       loading="lazy"
                       referrerpolicy="no-referrer"
@@ -163,8 +165,10 @@ function streamStatusLabel(status) {
                   >
                     <div class="thumb-wrap">
                       <img
-                        class="thumb"
+                        class="thumb stream-thumb"
                         src={stream.thumbnailUrl}
+                        data-fallback-src={stream.thumbnailFallbackUrl}
+                        onerror="if (this.dataset.fallbackSrc && this.src !== this.dataset.fallbackSrc) this.src = this.dataset.fallbackSrc"
                         alt=""
                         loading="lazy"
                         referrerpolicy="no-referrer"
@@ -310,8 +314,10 @@ function streamStatusLabel(status) {
                   >
                     <div class="thumb-wrap">
                       <img
-                        class="thumb"
+                        class="thumb stream-thumb"
                         src={stream.thumbnailUrl}
+                        data-fallback-src={stream.thumbnailFallbackUrl}
+                        onerror="if (this.dataset.fallbackSrc && this.src !== this.dataset.fallbackSrc) this.src = this.dataset.fallbackSrc"
                         alt=""
                         loading="lazy"
                         referrerpolicy="no-referrer"

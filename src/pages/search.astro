@@ -109,6 +109,7 @@ const streamResults = streams.map((stream) => {
     url: stream.youtubeUrl,
     external: true,
     image: stream.thumbnailUrl || stream.channelPhoto,
+    imageFallback: stream.thumbnailFallbackUrl || stream.channelPhoto,
     branches: talentData.branches,
     groups: talentData.groups,
     talents: talentData.talents,
@@ -336,6 +337,8 @@ const talentGroupCounts = talentResults.reduce((acc, result) => {
                     <img
                       class="list-thumb"
                       src={result.image}
+                      data-fallback-src={result.imageFallback}
+                      onerror="if (this.dataset.fallbackSrc && this.src !== this.dataset.fallbackSrc) this.src = this.dataset.fallbackSrc"
                       alt=""
                       loading="lazy"
                       referrerpolicy="no-referrer"
