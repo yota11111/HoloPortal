@@ -40,8 +40,8 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          BASE_PATH: /${{ github.event.repository.name }}/
-          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          BASE_PATH: /
+          SITE_URL: https://holo-portal.com
           HOLODEX_API_KEY: ${{ secrets.HOLODEX_API_KEY }}
 
       - name: Health check and summary
