@@ -547,6 +547,11 @@ h1 {
   object-position: center top;
 }
 
+.stream-thumb {
+  aspect-ratio: 16 / 9;
+  object-position: center;
+}
+
 .talent-thumb {
   aspect-ratio: 1 / 1;
   background: #f4fbfd;
