@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T16:01:24.983Z",
+  "generatedAt": "2026-05-06T16:20:02.558Z",
   "sources": [
     "https://hololive.hololivepro.com/wp-sitemap-posts-news-1.xml",
     "https://shop.hololivepro.com/products.json",
@@ -27,7 +27,7 @@
     "streams": {
       "status": "ok",
       "message": null,
-      "count": 80,
+      "count": 83,
       "source": "Holodex + Holo Schedule"
     },
     "officialTalents": {
@@ -60,7 +60,7 @@
   "counts": {
     "news": 80,
     "products": 750,
-    "streams": 80,
-    "portalItems": 910
+    "streams": 83,
+    "portalItems": 913
   }
 }

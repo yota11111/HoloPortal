@@ -1,5 +1,43 @@
 [
   {
+    "id": "stream-fk6mixfel0i",
+    "source": "holo_schedule",
+    "category": "stream",
+    "subcategory": "upcoming",
+    "title": "【TOMODACHI LIFE】RoonRoon Island Needs More Miis.",
+    "talents": [
+      "Flayon"
+    ],
+    "startAt": "2026-05-08T09:00:00+09:00",
+    "endAt": null,
+    "officialUrl": "https://www.youtube.com/watch?v=fk6mixFEL0I",
+    "normalUrl": "https://www.youtube.com/watch?v=fk6mixFEL0I",
+    "affiliateUrl": null,
+    "isAffiliate": false,
+    "imageUrl": "https://i.ytimg.com/vi/fk6mixFEL0I/maxresdefault.jpg",
+    "summary": "Flayon",
+    "status": "published"
+  },
+  {
+    "id": "stream-n4p9q-sfwas",
+    "source": "holo_schedule",
+    "category": "stream",
+    "subcategory": "upcoming",
+    "title": "#6【初見】『機動戦士ガンダム Zガンダム』同時視聴！！ぺこ！【ホロライブ/兎田ぺこら】",
+    "talents": [
+      "兎田ぺこら"
+    ],
+    "startAt": "2026-05-07T21:00:00+09:00",
+    "endAt": null,
+    "officialUrl": "https://www.youtube.com/watch?v=N4P9Q_sFWas",
+    "normalUrl": "https://www.youtube.com/watch?v=N4P9Q_sFWas",
+    "affiliateUrl": null,
+    "isAffiliate": false,
+    "imageUrl": "https://i.ytimg.com/vi/N4P9Q_sFWas/maxresdefault.jpg",
+    "summary": "兎田ぺこら",
+    "status": "published"
+  },
+  {
     "id": "stream-syzwnehinxs",
     "source": "holo_schedule",
     "category": "stream",
@@ -58,6 +96,25 @@
     "isAffiliate": false,
     "imageUrl": "https://i.ytimg.com/vi/eCsndzM6I_s/maxresdefault.jpg",
     "summary": "Jurard",
+    "status": "published"
+  },
+  {
+    "id": "stream-rb6s6xnwgxk",
+    "source": "holo_schedule",
+    "category": "stream",
+    "subcategory": "upcoming",
+    "title": "【定期配信＃30】木曜のお昼の１２時はリオナとランチ❤【ホロライブ DEV_IS 響咲リオナ】#リオナとランチ",
+    "talents": [
+      "響咲リオナ"
+    ],
+    "startAt": "2026-05-07T12:00:00+09:00",
+    "endAt": null,
+    "officialUrl": "https://www.youtube.com/watch?v=rb6s6xNwGxk",
+    "normalUrl": "https://www.youtube.com/watch?v=rb6s6xNwGxk",
+    "affiliateUrl": null,
+    "isAffiliate": false,
+    "imageUrl": "https://i.ytimg.com/vi/rb6s6xNwGxk/maxresdefault.jpg",
+    "summary": "響咲リオナ",
     "status": "published"
   },
   {
@@ -123,25 +180,6 @@
     "status": "published"
   },
   {
-    "id": "stream-jrohpu2oygo",
-    "source": "holo_schedule",
-    "category": "stream",
-    "subcategory": "upcoming",
-    "title": "【🔫 Counter Strike: 2 🔫】 MY FAVORITE MAP (CACHE) IS BACK!!! ｡ﾟ(TヮT) #AlTogether",
-    "talents": [
-      "Altare"
-    ],
-    "startAt": "2026-05-07T08:00:00+09:00",
-    "endAt": null,
-    "officialUrl": "https://www.youtube.com/watch?v=JROhPU2OYGo",
-    "normalUrl": "https://www.youtube.com/watch?v=JROhPU2OYGo",
-    "affiliateUrl": null,
-    "isAffiliate": false,
-    "imageUrl": "https://i.ytimg.com/vi/JROhPU2OYGo/maxresdefault.jpg",
-    "summary": "Altare",
-    "status": "published"
-  },
-  {
     "id": "stream-bznyc1bg0g8",
     "source": "holo_schedule",
     "category": "stream",
@@ -161,6 +199,25 @@
     "isAffiliate": false,
     "imageUrl": "https://i.ytimg.com/vi/BZNyC1bG0g8/maxresdefault.jpg",
     "summary": "Octavio",
+    "status": "published"
+  },
+  {
+    "id": "stream-jrohpu2oygo",
+    "source": "holo_schedule",
+    "category": "stream",
+    "subcategory": "upcoming",
+    "title": "【🔫 Counter Strike: 2 🔫】 MY FAVORITE MAP (CACHE) IS BACK!!! ｡ﾟ(TヮT) #AlTogether",
+    "talents": [
+      "Altare"
+    ],
+    "startAt": "2026-05-07T08:00:00+09:00",
+    "endAt": null,
+    "officialUrl": "https://www.youtube.com/watch?v=JROhPU2OYGo",
+    "normalUrl": "https://www.youtube.com/watch?v=JROhPU2OYGo",
+    "affiliateUrl": null,
+    "isAffiliate": false,
+    "imageUrl": "https://i.ytimg.com/vi/JROhPU2OYGo/maxresdefault.jpg",
+    "summary": "Altare",
     "status": "published"
   },
   {
