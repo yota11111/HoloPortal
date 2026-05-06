@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { canonicalTalentName } from "../src/lib/talent-aliases.mjs";
+import { canonicalTalentName, talentSearchTermsFromText } from "../src/lib/talent-aliases.mjs";
 
 const outDir = path.join(process.cwd(), "src/data/generated");
 const NEWS_SITEMAP = "https://hololive.hololivepro.com/wp-sitemap-posts-news-1.xml";
@@ -153,7 +153,11 @@ function classifyProduct(title, handle) {
 }
 
 function extractTalents(text) {
-  return talentNames.filter((name) => text.includes(name));
+  const detected = [
+    ...talentNames.filter((name) => text.includes(name)),
+    ...talentSearchTermsFromText(text)
+  ];
+  return [...new Set(detected.map((name) => canonicalTalentName(name)).filter(Boolean))];
 }
 
 function extractMetaImage(html) {

@@ -79,6 +79,25 @@ for (const check of representativeChecks) {
   }
 }
 
+const representativeContentChecks = [
+  { label: "Robocosan goods", names: ["Robocosan"], field: "goods", minimum: 1 },
+  { label: "Amane Kanata goods", names: ["Amane Kanata"], field: "goods", minimum: 1 },
+  { label: "IRyS goods", names: ["IRyS"], field: "goods", minimum: 1 },
+  { label: "Shiori Novella streams", names: ["Shiori Novella"], field: "streams", minimum: 1 },
+  { label: "Fuwawa Abyssgard goods", names: ["Fuwawa Abyssgard", "FUWAMOCO"], field: "goods", minimum: 1 }
+];
+
+for (const check of representativeContentChecks) {
+  const profile = findProfile(profiles, check.names);
+  const count = profile?.counts?.[check.field] || 0;
+  if (!profile || count < check.minimum) {
+    console.error(`${check.label}: ${count}, expected at least ${check.minimum}.`);
+    failed = true;
+  } else {
+    console.log(`${check.label}: ${count}`);
+  }
+}
+
 for (const category of validProfileCategories) {
   console.log(`${talentCategoryLabel(category)}: ${counts[category]} profiles`);
 }

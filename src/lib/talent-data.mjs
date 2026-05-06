@@ -1,4 +1,4 @@
-import { canonicalTalentName } from "./talent-aliases.mjs";
+import { canonicalTalentName, talentSearchTerms, talentSearchTermsFromText } from "./talent-aliases.mjs";
 import { talentSortValue } from "./talent-groups.mjs";
 
 export const itemLabels = {
@@ -76,6 +76,27 @@ function officialAliasMap(officialTalents = []) {
   return map;
 }
 
+function uniqueCanonicalTalentNames(names = []) {
+  const talents = [];
+  for (const name of names) {
+    const canonical = canonicalTalentName(name);
+    if (canonical && !talents.includes(canonical)) talents.push(canonical);
+  }
+  return talents;
+}
+
+function streamTalentNames(stream) {
+  return uniqueCanonicalTalentNames(talentSearchTerms([stream.channelName, ...(stream.talents || [])]));
+}
+
+function itemTalentNames(item) {
+  return uniqueCanonicalTalentNames([
+    ...(item.talents || []),
+    ...talentSearchTerms(item.talents || []),
+    ...talentSearchTermsFromText(`${item.title || ""} ${item.summary || ""} ${item.subcategory || ""}`)
+  ]);
+}
+
 export function buildTalentProfiles(items, streams, officialTalents = []) {
   const profiles = new Map();
   const officialMap = officialTalentMap(officialTalents);
@@ -95,7 +116,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
 
   for (const stream of streams) {
     const seenNames = new Set();
-    for (const name of [stream.channelName, ...(stream.talents || [])]) {
+    for (const name of streamTalentNames(stream)) {
       const canonical = canonicalTalentName(name);
       if (!canonical || seenNames.has(canonical)) continue;
       seenNames.add(canonical);
@@ -110,7 +131,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
   for (const item of items) {
     if (item.category === "stream") continue;
     const seenNames = new Set();
-    for (const name of item.talents || []) {
+    for (const name of itemTalentNames(item)) {
       const canonical = canonicalTalentName(name);
       if (!canonical || seenNames.has(canonical)) continue;
       seenNames.add(canonical);
