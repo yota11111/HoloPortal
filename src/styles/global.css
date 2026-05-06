@@ -924,6 +924,7 @@ h1 {
 
 .profile-summary .profile-image {
   border-bottom: 0;
+  justify-items: center;
   padding-bottom: 0;
 }
 
@@ -1097,10 +1098,6 @@ h1 {
 
   .profile-summary {
     grid-template-columns: 1fr;
-  }
-
-  .profile-summary .profile-image {
-    justify-items: start;
   }
 
 }

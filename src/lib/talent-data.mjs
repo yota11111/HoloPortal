@@ -11,7 +11,7 @@ export const itemLabels = {
 };
 
 export function talentSlug(name) {
-  return name.replaceAll("/", "-");
+  return safeTalentSlug(name);
 }
 
 function talentSlugFromOfficialUrl(url = "") {
@@ -20,6 +20,37 @@ function talentSlugFromOfficialUrl(url = "") {
   } catch {
     return "";
   }
+}
+
+function hashTalentName(value = "") {
+  let hash = 0;
+  for (const char of value) {
+    hash = (hash * 31 + char.codePointAt(0)) >>> 0;
+  }
+  return hash.toString(36);
+}
+
+function safeTalentSlug(value = "") {
+  const slug = value
+    .normalize("NFKD")
+    .toLowerCase()
+    .replace(/['’]/g, "")
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return slug || `talent-${hashTalentName(value)}`;
+}
+
+function uniqueTalentSlug(preferredSlug, name, usedSlugs) {
+  const base = safeTalentSlug(preferredSlug || name);
+  let slug = base;
+  let index = 2;
+  while (usedSlugs.has(slug)) {
+    slug = `${base}-${index}`;
+    index += 1;
+  }
+  usedSlugs.add(slug);
+  return slug;
 }
 
 function byLatest(a, b) {
@@ -239,6 +270,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
     }
   }
 
+  const usedSlugs = new Set();
   return [...profiles.values()]
     .map((profile) => {
       const official = officialMap.get(profile.name);
@@ -249,7 +281,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
       profile.officialImage = official?.imageUrl || null;
       profile.officialUrl = official?.officialUrl || null;
       profile.officialName = official?.name || null;
-      profile.slug = talentSlugFromOfficialUrl(official?.officialUrl) || profile.slug;
+      profile.slug = uniqueTalentSlug(talentSlugFromOfficialUrl(official?.officialUrl), profile.name, usedSlugs);
       profile.latestImage ||= profile.streams[0]?.thumbnailUrl || profile.items[0]?.imageUrl || null;
       profile.displayImage = profile.officialImage || profile.latestImage;
       return profile;
