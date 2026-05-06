@@ -531,12 +531,12 @@ h1 {
 }
 
 .talent-tools {
-  grid-template-columns: minmax(220px, 420px) minmax(180px, 240px) auto;
+  grid-template-columns: minmax(220px, 1fr) repeat(3, minmax(150px, 220px)) auto;
   justify-content: space-between;
 }
 
 .search-tools {
-  grid-template-columns: minmax(240px, 1fr) minmax(180px, 240px) auto;
+  grid-template-columns: minmax(220px, 1fr) repeat(4, minmax(140px, 200px)) auto;
 }
 
 .source-note {
@@ -1083,7 +1083,7 @@ h1 {
   padding-top: 0;
 }
 
-.talent-tools ~ .grid .button {
+.talent-tools ~ .grid .shop-label {
   min-width: 118px;
   margin-left: 10px;
 }
@@ -1232,7 +1232,8 @@ h1 {
   }
 
   .list-item .date,
-  .list-item .button {
+  .list-item .button,
+  .list-item .shop-label {
     grid-column: 2;
   }
 

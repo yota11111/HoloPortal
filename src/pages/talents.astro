@@ -7,17 +7,25 @@ import streams from "../data/generated/streams.json";
 import officialTalents from "../data/generated/official-talents.json";
 import { buildTalentProfiles, formatDate } from "../lib/talent-data.mjs";
 import { talentCategories, talentCategoryLabel, talentCategoryValue } from "../lib/talent-categories.mjs";
+import { talentGroups, talentGroupLabel, talentGroupValue } from "../lib/talent-groups.mjs";
 
 const talents = buildTalentProfiles(items, streams, officialTalents).map((talent) => {
   const category = talentCategoryValue(talent);
+  const group = talentGroupValue(talent);
   return {
     ...talent,
     category,
-    categoryLabel: talentCategoryLabel(category)
+    categoryLabel: talentCategoryLabel(category),
+    group,
+    groupLabel: talentGroupLabel(group)
   };
 });
 const categoryCounts = talents.reduce((acc, talent) => {
   acc[talent.category] = (acc[talent.category] || 0) + 1;
+  return acc;
+}, {});
+const groupCounts = talents.reduce((acc, talent) => {
+  acc[talent.group] = (acc[talent.group] || 0) + 1;
   return acc;
 }, {});
 const pageDescription = "ホロライブ関連情報をタレント別に整理する非公式ページです。";
@@ -76,12 +84,32 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
           <div class="catalog-tools talent-tools" aria-label="タレント検索">
             <input class="search-input" type="search" placeholder="タレント名・チャンネル名で検索" data-talent-search />
             <label class="select-wrap">
-              <span>カテゴリ</span>
-              <select class="select-input" data-talent-category>
+              <span>所属</span>
+              <select class="select-input" data-talent-branch>
                 {talentCategories.map((category) => (
                   <option value={category.value}>
                     {category.label} ({category.value === "all" ? talents.length : categoryCounts[category.value] || 0})
                   </option>
+                ))}
+              </select>
+            </label>
+            <label class="select-wrap">
+              <span>グループ</span>
+              <select class="select-input" data-talent-group>
+                <option value="all" data-branch="all">すべて ({talents.length})</option>
+                {talentGroups.filter((group) => group.value !== "all").map((group) => (
+                  <option value={group.value} data-branch={group.branch}>
+                    {group.label} ({groupCounts[group.value] || 0})
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label class="select-wrap">
+              <span>タレント</span>
+              <select class="select-input" data-talent-name>
+                <option value="all" data-branch="all" data-group="all">すべて</option>
+                {talents.map((talent) => (
+                  <option value={talent.name} data-branch={talent.category} data-group={talent.group}>{talent.name}</option>
                 ))}
               </select>
             </label>
@@ -95,6 +123,8 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
                 href={`./${talent.slug}/`}
                 data-talent-card
                 data-category={talent.category}
+                data-group={talent.group}
+                data-name={talent.name}
                 data-search={`${talent.name} ${talent.aliases.join(" ")}`.toLowerCase()}
               >
                 {talent.displayImage && (
@@ -109,11 +139,12 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
                   {talent.aliases.length > 0 && <p class="summary">{talent.aliases.slice(0, 3).join(" / ")}</p>}
                   <div class="meta">
                     <span class="pill category">{talent.categoryLabel}</span>
+                    <span class="pill">{talent.groupLabel}</span>
                     {talent.counts.streams > 0 && <span class="pill live">配信 {talent.counts.streams}</span>}
                     {talent.counts.goods > 0 && <span class="pill goods">グッズ {talent.counts.goods}</span>}
                     {talent.counts.events > 0 && <span class="pill event">発表 {talent.counts.events}</span>}
                     {talent.counts.news > 0 && <span class="pill">ニュース {talent.counts.news}</span>}
-                    <span class="button">まとめを見る</span>
+                    <span class="shop-label">まとめを見る</span>
                   </div>
                 </div>
               </a>
@@ -130,7 +161,9 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
     </footer>
     <script>
       const talentSearch = document.querySelector("[data-talent-search]");
-      const talentCategory = document.querySelector("[data-talent-category]");
+      const talentBranch = document.querySelector("[data-talent-branch]");
+      const talentGroup = document.querySelector("[data-talent-group]");
+      const talentName = document.querySelector("[data-talent-name]");
       const talentCards = [...document.querySelectorAll("[data-talent-card]")];
       const talentResultCount = document.querySelector("[data-talent-result-count]");
       const talentEmptyState = document.querySelector("[data-talent-empty-state]");
@@ -143,23 +176,45 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
       function updateTalentsUrl() {
         const url = new URL(window.location.href);
         setQueryParam(url.searchParams, "q", talentSearch.value.trim());
-        setQueryParam(url.searchParams, "category", talentCategory.value, "all");
+        setQueryParam(url.searchParams, "branch", talentBranch.value, "all");
+        setQueryParam(url.searchParams, "group", talentGroup.value, "all");
+        setQueryParam(url.searchParams, "talent", talentName.value, "all");
         window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
       }
 
-      function setTalentCategory(category) {
-        const hasOption = [...talentCategory.options].some((option) => option.value === category);
-        talentCategory.value = hasOption ? category : "all";
+      function setSelectValue(select, value) {
+        const hasOption = [...select.options].some((option) => option.value === value && !option.hidden);
+        select.value = hasOption ? value : "all";
+      }
+
+      function syncGroupOptions() {
+        for (const option of talentGroup.options) {
+          option.hidden = talentBranch.value !== "all" && option.dataset.branch !== "all" && option.dataset.branch !== talentBranch.value;
+        }
+        if (talentGroup.selectedOptions[0]?.hidden) talentGroup.value = "all";
+      }
+
+      function syncTalentOptions() {
+        for (const option of talentName.options) {
+          const branchOk = talentBranch.value === "all" || option.dataset.branch === "all" || option.dataset.branch === talentBranch.value;
+          const groupOk = talentGroup.value === "all" || option.dataset.group === "all" || option.dataset.group === talentGroup.value;
+          option.hidden = !(branchOk && groupOk);
+        }
+        if (talentName.selectedOptions[0]?.hidden) talentName.value = "all";
       }
 
       function applyTalentSearch() {
         const query = talentSearch.value.trim().toLowerCase();
-        const category = talentCategory.value;
+        const branch = talentBranch.value;
+        const group = talentGroup.value;
+        const selectedTalent = talentName.value;
         let visible = 0;
         for (const card of talentCards) {
           const matchesText = !query || card.dataset.search.includes(query);
-          const matchesCategory = category === "all" || card.dataset.category === category;
-          const show = matchesText && matchesCategory;
+          const matchesBranch = branch === "all" || card.dataset.category === branch;
+          const matchesGroup = group === "all" || card.dataset.group === group;
+          const matchesTalent = selectedTalent === "all" || card.dataset.name === selectedTalent;
+          const show = matchesText && matchesBranch && matchesGroup && matchesTalent;
           card.hidden = !show;
           if (show) visible += 1;
         }
@@ -170,7 +225,11 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
       function applyTalentStateFromUrl() {
         const params = new URLSearchParams(window.location.search);
         talentSearch.value = params.get("q") || "";
-        setTalentCategory(params.get("category") || "all");
+        setSelectValue(talentBranch, params.get("branch") || params.get("category") || "all");
+        syncGroupOptions();
+        setSelectValue(talentGroup, params.get("group") || "all");
+        syncTalentOptions();
+        setSelectValue(talentName, params.get("talent") || "all");
         applyTalentSearch();
       }
 
@@ -178,7 +237,18 @@ const pageDescription = "ホロライブ関連情報をタレント別に整理�
         applyTalentSearch();
         updateTalentsUrl();
       });
-      talentCategory.addEventListener("change", () => {
+      talentBranch.addEventListener("change", () => {
+        syncGroupOptions();
+        syncTalentOptions();
+        applyTalentSearch();
+        updateTalentsUrl();
+      });
+      talentGroup.addEventListener("change", () => {
+        syncTalentOptions();
+        applyTalentSearch();
+        updateTalentsUrl();
+      });
+      talentName.addEventListener("change", () => {
         applyTalentSearch();
         updateTalentsUrl();
       });

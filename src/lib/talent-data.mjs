@@ -1,4 +1,5 @@
 import { canonicalTalentName } from "./talent-aliases.mjs";
+import { talentSortValue } from "./talent-groups.mjs";
 
 export const itemLabels = {
   stream: "配信",
@@ -111,7 +112,7 @@ export function buildTalentProfiles(items, streams, officialTalents = []) {
       return profile;
     })
     .filter((profile) => profile.counts.total > 0)
-    .sort((a, b) => b.counts.total - a.counts.total || (b.latestAt || "").localeCompare(a.latestAt || "") || a.name.localeCompare(b.name, "ja"));
+    .sort((a, b) => talentSortValue(a) - talentSortValue(b) || a.name.localeCompare(b.name, "ja"));
 }
 
 export function formatDate(value) {

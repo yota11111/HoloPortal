@@ -9,6 +9,7 @@ import officialTalents from "../data/generated/official-talents.json";
 import { buildTalentProfiles, formatDate } from "../lib/talent-data.mjs";
 import { talentSearchTerms } from "../lib/talent-aliases.mjs";
 import { talentCategoryLabel, talentCategoryValue } from "../lib/talent-categories.mjs";
+import { talentBranches, talentGroups, talentGroupLabel, talentGroupValue } from "../lib/talent-groups.mjs";
 
 const pageDescription = "ホロライブ関連の配信、グッズ、公式発表、タレントを横断検索する非公式ページです。";
 
@@ -100,6 +101,7 @@ const streamResults = streams.map((stream) => ({
 
 const talentResults = buildTalentProfiles(items, streams, officialTalents).map((profile) => {
   const category = talentCategoryValue(profile);
+  const group = talentGroupValue(profile);
   return {
     id: `talent-${profile.slug}`,
     type: "talent",
@@ -110,13 +112,18 @@ const talentResults = buildTalentProfiles(items, streams, officialTalents).map((
     url: `../talents/${profile.slug}/`,
     external: false,
     image: profile.displayImage,
-    tags: [talentCategoryLabel(category), ...profile.aliases.slice(0, 2)],
+    branch: category,
+    group,
+    talentName: profile.name,
+    tags: [talentCategoryLabel(category), talentGroupLabel(group), ...profile.aliases.slice(0, 2)],
     search: compactText([
       profile.name,
       profile.officialName,
       profile.aliases,
       talentCategoryLabel(category),
+      talentGroupLabel(group),
       category,
+      group,
       talentSearchTerms([profile.name, profile.officialName, ...(profile.aliases || [])])
     ])
   };
@@ -128,6 +135,14 @@ const typeCounts = results.reduce((acc, result) => {
   return acc;
 }, {});
 const filterTypes = ["all", "stream", "goods", "live", "event", "music", "news", "talent"].filter((type) => type === "all" || typeCounts[type] > 0);
+const talentBranchCounts = talentResults.reduce((acc, result) => {
+  acc[result.branch] = (acc[result.branch] || 0) + 1;
+  return acc;
+}, {});
+const talentGroupCounts = talentResults.reduce((acc, result) => {
+  acc[result.group] = (acc[result.group] || 0) + 1;
+  return acc;
+}, {});
 ---
 
 <html lang="ja">
@@ -193,6 +208,36 @@ const filterTypes = ["all", "stream", "goods", "live", "event", "music", "news",
                 ))}
               </select>
             </label>
+            <label class="select-wrap">
+              <span>所属</span>
+              <select class="select-input" data-site-branch>
+                {talentBranches.map((branch) => (
+                  <option value={branch.value}>
+                    {branch.label} ({branch.value === "all" ? talentResults.length : talentBranchCounts[branch.value] || 0})
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label class="select-wrap">
+              <span>グループ</span>
+              <select class="select-input" data-site-group>
+                <option value="all" data-branch="all">すべて ({talentResults.length})</option>
+                {talentGroups.filter((group) => group.value !== "all").map((group) => (
+                  <option value={group.value} data-branch={group.branch}>
+                    {group.label} ({talentGroupCounts[group.value] || 0})
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label class="select-wrap">
+              <span>タレント</span>
+              <select class="select-input" data-site-talent>
+                <option value="all" data-branch="all" data-group="all">すべて</option>
+                {talentResults.map((result) => (
+                  <option value={result.talentName} data-branch={result.branch} data-group={result.group}>{result.talentName}</option>
+                ))}
+              </select>
+            </label>
             <div class="result-count" data-site-result-count>{results.length}件</div>
           </div>
           <div class="empty-state" data-site-empty-state>該当する情報が見つかりませんでした。</div>
@@ -205,6 +250,9 @@ const filterTypes = ["all", "stream", "goods", "live", "event", "music", "news",
                 rel={result.external ? "noopener noreferrer" : undefined}
                 data-site-result
                 data-type={result.type}
+                data-branch={result.branch || ""}
+                data-group={result.group || ""}
+                data-talent={result.talentName || ""}
                 data-search={result.search}
               >
                 {result.image ? (
@@ -221,7 +269,7 @@ const filterTypes = ["all", "stream", "goods", "live", "event", "music", "news",
                     {result.tags.filter(Boolean).slice(0, 4).map((tag) => <span class="pill">{tag}</span>)}
                   </div>
                 </div>
-                <span class="button">{result.external ? "公式へ" : "開く"}</span>
+                <span class="shop-label">{result.external ? "公式へ" : "開く"}</span>
               </a>
             ))}
           </div>
@@ -237,19 +285,49 @@ const filterTypes = ["all", "stream", "goods", "live", "event", "music", "news",
     <script>
       const searchInput = document.querySelector("[data-site-search]");
       const typeSelect = document.querySelector("[data-site-type]");
+      const branchSelect = document.querySelector("[data-site-branch]");
+      const groupSelect = document.querySelector("[data-site-group]");
+      const talentSelect = document.querySelector("[data-site-talent]");
       const resultCards = [...document.querySelectorAll("[data-site-result]")];
       const resultCount = document.querySelector("[data-site-result-count]");
       const emptyState = document.querySelector("[data-site-empty-state]");
 
+      function setSelectValue(select, value) {
+        const hasOption = [...select.options].some((option) => option.value === value && !option.hidden);
+        select.value = hasOption ? value : "all";
+      }
+
+      function syncGroupOptions() {
+        for (const option of groupSelect.options) {
+          option.hidden = branchSelect.value !== "all" && option.dataset.branch !== "all" && option.dataset.branch !== branchSelect.value;
+        }
+        if (groupSelect.selectedOptions[0]?.hidden) groupSelect.value = "all";
+      }
+
+      function syncTalentOptions() {
+        for (const option of talentSelect.options) {
+          const branchOk = branchSelect.value === "all" || option.dataset.branch === "all" || option.dataset.branch === branchSelect.value;
+          const groupOk = groupSelect.value === "all" || option.dataset.group === "all" || option.dataset.group === groupSelect.value;
+          option.hidden = !(branchOk && groupOk);
+        }
+        if (talentSelect.selectedOptions[0]?.hidden) talentSelect.value = "all";
+      }
+
       function applySearch({ updateUrl = true } = {}) {
         const query = searchInput.value.trim().toLowerCase();
         const type = typeSelect.value;
+        const branch = branchSelect.value;
+        const group = groupSelect.value;
+        const talent = talentSelect.value;
         let visible = 0;
 
         for (const card of resultCards) {
           const matchesText = !query || card.dataset.search.includes(query);
           const matchesType = type === "all" || card.dataset.type === type;
-          const show = matchesText && matchesType;
+          const matchesBranch = branch === "all" || card.dataset.branch === branch;
+          const matchesGroup = group === "all" || card.dataset.group === group;
+          const matchesTalent = talent === "all" || card.dataset.talent === talent;
+          const show = matchesText && matchesType && matchesBranch && matchesGroup && matchesTalent;
           card.hidden = !show;
           if (show) visible += 1;
         }
@@ -261,6 +339,9 @@ const filterTypes = ["all", "stream", "goods", "live", "event", "music", "news",
           const params = new URLSearchParams();
           if (query) params.set("q", query);
           if (type !== "all") params.set("type", type);
+          if (branch !== "all") params.set("branch", branch);
+          if (group !== "all") params.set("group", group);
+          if (talent !== "all") params.set("talent", talent);
           const nextUrl = params.toString() ? `?${params}` : location.pathname;
           history.replaceState(null, "", nextUrl);
         }
@@ -273,10 +354,25 @@ const filterTypes = ["all", "stream", "goods", "live", "event", "music", "news",
       if ([...typeSelect.options].some((option) => option.value === initialType)) {
         typeSelect.value = initialType;
       }
+      setSelectValue(branchSelect, params.get("branch") || "all");
+      syncGroupOptions();
+      setSelectValue(groupSelect, params.get("group") || "all");
+      syncTalentOptions();
+      setSelectValue(talentSelect, params.get("talent") || "all");
       applySearch({ updateUrl: false });
 
       searchInput.addEventListener("input", applySearch);
       typeSelect.addEventListener("change", applySearch);
+      branchSelect.addEventListener("change", () => {
+        syncGroupOptions();
+        syncTalentOptions();
+        applySearch();
+      });
+      groupSelect.addEventListener("change", () => {
+        syncTalentOptions();
+        applySearch();
+      });
+      talentSelect.addEventListener("change", applySearch);
     </script>
   </body>
 </html>
