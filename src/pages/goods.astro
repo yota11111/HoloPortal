@@ -2,7 +2,6 @@
 import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
-import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
 import products from "../data/generated/products.json";
 import { canonicalTalentName, talentSearchTerms, talentSearchTermsFromText } from "../lib/talent-aliases.mjs";
 
@@ -118,18 +117,6 @@ function productTalentFilterText(product) {
     <main>
       <section class="hero hero-catalog">
         <div class="shell hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">グッズ一覧 / 最新</p>
-            <h1>公式グッズを月ごとに眺める。</h1>
-            <p class="lead">
-              販売ページを開く前に、ざっと見比べるための非公式インデックスです。検索とカテゴリで、目的のグッズまで短く辿れます。
-            </p>
-            <div class="hero-actions" aria-label="このページの要点">
-              <span>{products.length}件のグッズ</span>
-              <span>公式ショップ由来</span>
-              <span>アフィリエイト未使用</span>
-            </div>
-          </div>
           <aside class="hero-showcase" aria-label="最新グッズ画像">
             <div class="showcase-grid">
               {heroProducts.map((product, index) => (
@@ -148,7 +135,6 @@ function productTalentFilterText(product) {
 
       <section class="section">
         <div class="shell">
-          <AffiliateDisclosure class="source-note" />
           <div class="catalog-tools" aria-label="グッズ絞り込み">
             <input class="search-input" type="search" placeholder="タイトル、タレント、シリーズで検索" data-product-search />
             <div class="filter-group" aria-label="カテゴリ">

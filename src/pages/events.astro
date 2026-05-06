@@ -2,7 +2,6 @@
 import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
-import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
 import items from "../data/generated/portal-items.json";
 
 const eventItems = items.filter((item) => ["live", "event", "music"].includes(item.category));
@@ -59,14 +58,8 @@ const labelMap = {
     <main>
       <section class="hero">
         <div class="shell hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">公式ニュース整理</p>
-            <h1>ライブ/イベント</h1>
-            <p class="lead">ライブ、イベント、音楽リリース、キャンペーン系の公式発表をまとめています。</p>
-          </div>
           <aside class="status-panel">
             <div class="status-row"><span>掲載件数</span><strong>{eventItems.length}</strong></div>
-            <AffiliateDisclosure />
           </aside>
         </div>
       </section>

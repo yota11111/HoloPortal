@@ -2,7 +2,6 @@
 import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
-import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
 import items from "../data/generated/portal-items.json";
 import streams from "../data/generated/streams.json";
 import officialTalents from "../data/generated/official-talents.json";
@@ -183,17 +182,11 @@ const talentGroupCounts = talentResults.reduce((acc, result) => {
     <main>
       <section class="hero">
         <div class="shell hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">横断検索</p>
-            <h1>配信、グッズ、発表、タレントをまとめて探す。</h1>
-            <p class="lead">公式ニュース、公式ショップ、配信データ、タレント別まとめを同じ検索欄から絞り込めます。</p>
-          </div>
           <aside class="status-panel">
             <div class="status-row"><span>検索対象</span><strong>{results.length}</strong></div>
             <div class="status-row"><span>配信</span><strong>{typeCounts.stream || 0}</strong></div>
             <div class="status-row"><span>グッズ</span><strong>{typeCounts.goods || 0}</strong></div>
             <div class="status-row"><span>タレント</span><strong>{typeCounts.talent || 0}</strong></div>
-            <AffiliateDisclosure />
           </aside>
         </div>
       </section>

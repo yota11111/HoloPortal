@@ -2,7 +2,6 @@
 import "../../styles/global.css";
 import Seo from "../../components/Seo.astro";
 import ThemeToggle from "../../components/ThemeToggle.astro";
-import AffiliateDisclosure from "../../components/AffiliateDisclosure.astro";
 import items from "../../data/generated/portal-items.json";
 import streams from "../../data/generated/streams.json";
 import officialTalents from "../../data/generated/official-talents.json";
@@ -74,17 +73,6 @@ function streamStatusLabel(status) {
     <main>
       <section class="hero hero-catalog">
         <div class="shell hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">タレント別まとめ</p>
-            <h1>{profile.name}</h1>
-            <p class="lead">配信予定、アーカイブ、公式グッズ、公式ニュースをひとつのページに束ねています。</p>
-            <div class="hero-actions" aria-label="掲載件数">
-              <span>配信 {profile.counts.streams}件</span>
-              <span>グッズ {profile.counts.goods}件</span>
-              <span>発表 {profile.counts.events + profile.counts.news}件</span>
-              {profile.aliases.slice(0, 2).map((alias) => <span>{alias}</span>)}
-            </div>
-          </div>
           <aside class="status-panel">
             {profile.officialImage && (
               <div class="profile-image">
@@ -95,7 +83,6 @@ function streamStatusLabel(status) {
             <div class="status-row"><span>配信中</span><strong>{liveStreams.length}</strong></div>
             <div class="status-row"><span>配信予定</span><strong>{upcomingStreams.length}</strong></div>
             <div class="status-row"><span>最新更新</span><strong>{formatDate(profile.latestAt)}</strong></div>
-            <AffiliateDisclosure />
           </aside>
         </div>
       </section>

@@ -2,7 +2,6 @@
 import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
-import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
 import meta from "../data/generated/meta.json";
 import items from "../data/generated/portal-items.json";
 import streams from "../data/generated/streams.json";
@@ -83,20 +82,11 @@ function formatDate(value) {
     <main>
       <section class="hero">
         <div class="shell hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">非公式ファンポータル</p>
-            <h1>ホロライブの予定と販売情報を、追いやすく。</h1>
-            <p class="lead">
-              公式ニュースと公式ショップ情報をもとに、ライブ、イベント、グッズ、音楽リリースを一覧化します。
-              収益化リンクは現在使っていません。
-            </p>
-          </div>
           <aside class="status-panel" aria-label="データ状況">
             <div class="status-row"><span>公式ニュース</span><strong>{meta.counts.news}</strong></div>
             <div class="status-row"><span>公式ショップ商品</span><strong>{meta.counts.products}</strong></div>
             <div class="status-row"><span>配信予定/ライブ</span><strong>{meta.counts.streams}</strong></div>
             <div class="status-row"><span>最終更新</span><strong>{formatDate(meta.generatedAt)}</strong></div>
-            <AffiliateDisclosure />
           </aside>
         </div>
       </section>
