@@ -14,7 +14,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=syZwNEHinxs",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/syZwNEHinxs/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/syZwNEHinxs/maxresdefault.jpg",
     "summary": "輪堂千速",
     "status": "published"
   },
@@ -33,7 +33,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=61SWQgIRZZQ",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/61SWQgIRZZQ/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/61SWQgIRZZQ/maxresdefault.jpg",
     "summary": "姫森ルーナ",
     "status": "published"
   },
@@ -47,7 +47,8 @@
       "Jurard",
       "Goldbullet",
       "Octavio",
-      "Crimzon"
+      "Crimzon",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-05-07T17:00:00+09:00",
     "endAt": null,
@@ -55,7 +56,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=eCsndzM6I_s",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/eCsndzM6I_s/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/eCsndzM6I_s/maxresdefault.jpg",
     "summary": "Jurard",
     "status": "published"
   },
@@ -66,7 +67,8 @@
     "subcategory": "upcoming",
     "title": "Smash or Pass: Australian Bug Edition w/ @HakosBaelz",
     "talents": [
-      "Shiori"
+      "Shiori",
+      "Shiori Novella"
     ],
     "startAt": "2026-05-07T10:00:00+09:00",
     "endAt": null,
@@ -74,7 +76,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=VbUImtn3sLs",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/VbUImtn3sLs/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/VbUImtn3sLs/maxresdefault.jpg",
     "summary": "Shiori",
     "status": "published"
   },
@@ -88,7 +90,8 @@
       "Crimzon",
       "Jurard",
       "Goldbullet",
-      "Octavio"
+      "Octavio",
+      "Crimzon Ruze"
     ],
     "startAt": "2026-05-07T09:00:00+09:00",
     "endAt": null,
@@ -96,7 +99,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=pjocVXl1pT0",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/pjocVXl1pT0/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/pjocVXl1pT0/maxresdefault.jpg",
     "summary": "Crimzon",
     "status": "published"
   },
@@ -115,7 +118,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=JROhPU2OYGo",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/JROhPU2OYGo/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/JROhPU2OYGo/maxresdefault.jpg",
     "summary": "Altare",
     "status": "published"
   },
@@ -137,7 +140,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=BZNyC1bG0g8",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/BZNyC1bG0g8/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/BZNyC1bG0g8/maxresdefault.jpg",
     "summary": "Octavio",
     "status": "published"
   },
@@ -156,15 +159,55 @@
     "normalUrl": "https://www.youtube.com/watch?v=35NwSydkcCk",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/35NwSydkcCk/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/35NwSydkcCk/maxresdefault.jpg",
     "summary": "夕刻ロベル",
+    "status": "published"
+  },
+  {
+    "id": "stream-jrieyyoxgau",
+    "source": "holo_schedule",
+    "category": "stream",
+    "subcategory": "live",
+    "title": "【PRAGMATA】#3  One More Station 【 iofi / hololiveID 】",
+    "talents": [
+      "Iofi",
+      "Airani Iofifteen"
+    ],
+    "startAt": "2026-05-06T23:03:41+09:00",
+    "endAt": null,
+    "officialUrl": "https://www.youtube.com/watch?v=JrIEYYoxGaU",
+    "normalUrl": "https://www.youtube.com/watch?v=JrIEYYoxGaU",
+    "affiliateUrl": null,
+    "isAffiliate": false,
+    "imageUrl": "https://i.ytimg.com/vi/JrIEYYoxGaU/maxresdefault.jpg",
+    "summary": "Iofi / LIVE",
+    "status": "published"
+  },
+  {
+    "id": "stream-w0xacoimlko",
+    "source": "holo_schedule",
+    "category": "stream",
+    "subcategory": "live",
+    "title": "【YAPYAP】We are Professional Yappers after all!!!【JUSTICE JAM!】",
+    "talents": [
+      "Raora",
+      "Raora Panthera"
+    ],
+    "startAt": "2026-05-06T23:00:54+09:00",
+    "endAt": null,
+    "officialUrl": "https://www.youtube.com/watch?v=w0XacOimLKo",
+    "normalUrl": "https://www.youtube.com/watch?v=w0XacOimLKo",
+    "affiliateUrl": null,
+    "isAffiliate": false,
+    "imageUrl": "https://i.ytimg.com/vi/w0XacOimLKo/maxresdefault.jpg",
+    "summary": "Raora / LIVE",
     "status": "published"
   },
   {
     "id": "stream-235h0ffb8xs",
     "source": "holo_schedule",
     "category": "stream",
-    "subcategory": "past",
+    "subcategory": "live",
     "title": "【Cursed Companions】NGワードを言うと仲間にダメージが入るホラゲーやるしゅばああああああああああああああああああ！！！！！！！！【ホロライブ/大空スバル】",
     "talents": [
       "大空スバル",
@@ -173,44 +216,21 @@
       "角巻わため",
       "響咲リオナ"
     ],
-    "startAt": "2026-05-06T23:00:00+09:00",
+    "startAt": "2026-05-06T23:00:18+09:00",
     "endAt": null,
     "officialUrl": "https://www.youtube.com/watch?v=235H0fFb8xs",
     "normalUrl": "https://www.youtube.com/watch?v=235H0fFb8xs",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/235H0fFb8xs/mqdefault.jpg",
-    "summary": "大空スバル",
-    "status": "published"
-  },
-  {
-    "id": "stream-2xyaihrqiai",
-    "source": "holo_schedule",
-    "category": "stream",
-    "subcategory": "past",
-    "title": "【 Cursed Companions 】NGワードを言ってはいけないよ、絶対だよ【角巻わため/ホロライブ４期生】",
-    "talents": [
-      "角巻わため",
-      "夏色まつり",
-      "大空スバル",
-      "猫又おかゆ",
-      "響咲リオナ"
-    ],
-    "startAt": "2026-05-06T23:00:00+09:00",
-    "endAt": null,
-    "officialUrl": "https://www.youtube.com/watch?v=2xyaIHRQIaI",
-    "normalUrl": "https://www.youtube.com/watch?v=2xyaIHRQIaI",
-    "affiliateUrl": null,
-    "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/2xyaIHRQIaI/mqdefault.jpg",
-    "summary": "角巻わため",
+    "imageUrl": "https://i.ytimg.com/vi/235H0fFb8xs/maxresdefault.jpg",
+    "summary": "大空スバル / LIVE",
     "status": "published"
   },
   {
     "id": "stream-5fwfkehwzge",
     "source": "holo_schedule",
     "category": "stream",
-    "subcategory": "past",
+    "subcategory": "live",
     "title": "【Cursed Companions】NGワードで即死！？自滅だけはさけるんだっ！！【ホロライブ DEV_IS 響咲リオナ】",
     "talents": [
       "響咲リオナ",
@@ -219,63 +239,21 @@
       "猫又おかゆ",
       "角巻わため"
     ],
-    "startAt": "2026-05-06T23:00:00+09:00",
+    "startAt": "2026-05-06T23:00:15+09:00",
     "endAt": null,
     "officialUrl": "https://www.youtube.com/watch?v=5fWFKEhWZgE",
     "normalUrl": "https://www.youtube.com/watch?v=5fWFKEhWZgE",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/5fWFKEhWZgE/mqdefault.jpg",
-    "summary": "響咲リオナ",
-    "status": "published"
-  },
-  {
-    "id": "stream-jrieyyoxgau",
-    "source": "holo_schedule",
-    "category": "stream",
-    "subcategory": "past",
-    "title": "【PRAGMATA】#3  One More Station 【 iofi / hololiveID 】",
-    "talents": [
-      "Iofi"
-    ],
-    "startAt": "2026-05-06T23:00:00+09:00",
-    "endAt": null,
-    "officialUrl": "https://www.youtube.com/watch?v=JrIEYYoxGaU",
-    "normalUrl": "https://www.youtube.com/watch?v=JrIEYYoxGaU",
-    "affiliateUrl": null,
-    "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/JrIEYYoxGaU/mqdefault.jpg",
-    "summary": "Iofi",
-    "status": "published"
-  },
-  {
-    "id": "stream-n8mp4n7oxq0",
-    "source": "holo_schedule",
-    "category": "stream",
-    "subcategory": "past",
-    "title": "【Cursed Companions】NGワードで爆破！？異彩コラボで愛をささやけ💓【ホロライブ/夏色まつり】",
-    "talents": [
-      "夏色まつり",
-      "大空スバル",
-      "猫又おかゆ",
-      "角巻わため",
-      "響咲リオナ"
-    ],
-    "startAt": "2026-05-06T23:00:00+09:00",
-    "endAt": null,
-    "officialUrl": "https://www.youtube.com/watch?v=n8Mp4n7oxq0",
-    "normalUrl": "https://www.youtube.com/watch?v=n8Mp4n7oxq0",
-    "affiliateUrl": null,
-    "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/n8Mp4n7oxq0/mqdefault.jpg",
-    "summary": "夏色まつり",
+    "imageUrl": "https://i.ytimg.com/vi/5fWFKEhWZgE/maxresdefault.jpg",
+    "summary": "響咲リオナ / LIVE",
     "status": "published"
   },
   {
     "id": "stream-ubkmgp1jc3m",
     "source": "holo_schedule",
     "category": "stream",
-    "subcategory": "past",
+    "subcategory": "live",
     "title": "【 🟣言っちゃダメ 】禁句を喋ると命取り⁉️Cursed Companionで遊ぼう🤝✦【 猫又おかゆ視点/ホロライブ 】",
     "talents": [
       "猫又おかゆ",
@@ -284,33 +262,60 @@
       "角巻わため",
       "響咲リオナ"
     ],
-    "startAt": "2026-05-06T23:00:00+09:00",
+    "startAt": "2026-05-06T23:00:12+09:00",
     "endAt": null,
     "officialUrl": "https://www.youtube.com/watch?v=ubKmGP1jC3M",
     "normalUrl": "https://www.youtube.com/watch?v=ubKmGP1jC3M",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/ubKmGP1jC3M/mqdefault.jpg",
-    "summary": "猫又おかゆ",
+    "imageUrl": "https://i.ytimg.com/vi/ubKmGP1jC3M/maxresdefault.jpg",
+    "summary": "猫又おかゆ / LIVE",
     "status": "published"
   },
   {
-    "id": "stream-w0xacoimlko",
+    "id": "stream-n8mp4n7oxq0",
     "source": "holo_schedule",
     "category": "stream",
-    "subcategory": "past",
-    "title": "【YAPYAP】We are Professional Yappers after all!!!【JUSTICE JAM!】",
+    "subcategory": "live",
+    "title": "【Cursed Companions】NGワードで爆破！？異彩コラボで愛をささやけ💓【ホロライブ/夏色まつり】",
     "talents": [
-      "Raora"
+      "夏色まつり",
+      "大空スバル",
+      "猫又おかゆ",
+      "角巻わため",
+      "響咲リオナ"
     ],
-    "startAt": "2026-05-06T23:00:00+09:00",
+    "startAt": "2026-05-06T22:59:59+09:00",
     "endAt": null,
-    "officialUrl": "https://www.youtube.com/watch?v=w0XacOimLKo",
-    "normalUrl": "https://www.youtube.com/watch?v=w0XacOimLKo",
+    "officialUrl": "https://www.youtube.com/watch?v=n8Mp4n7oxq0",
+    "normalUrl": "https://www.youtube.com/watch?v=n8Mp4n7oxq0",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/w0XacOimLKo/mqdefault.jpg",
-    "summary": "Raora",
+    "imageUrl": "https://i.ytimg.com/vi/n8Mp4n7oxq0/maxresdefault.jpg",
+    "summary": "夏色まつり / LIVE",
+    "status": "published"
+  },
+  {
+    "id": "stream-2xyaihrqiai",
+    "source": "holo_schedule",
+    "category": "stream",
+    "subcategory": "live",
+    "title": "【 Cursed Companions 】NGワードを言ってはいけないよ、絶対だよ【角巻わため/ホロライブ４期生】",
+    "talents": [
+      "角巻わため",
+      "夏色まつり",
+      "大空スバル",
+      "猫又おかゆ",
+      "響咲リオナ"
+    ],
+    "startAt": "2026-05-06T22:59:48+09:00",
+    "endAt": null,
+    "officialUrl": "https://www.youtube.com/watch?v=2xyaIHRQIaI",
+    "normalUrl": "https://www.youtube.com/watch?v=2xyaIHRQIaI",
+    "affiliateUrl": null,
+    "isAffiliate": false,
+    "imageUrl": "https://i.ytimg.com/vi/2xyaIHRQIaI/maxresdefault.jpg",
+    "summary": "角巻わため / LIVE",
     "status": "published"
   },
   {
@@ -328,7 +333,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=6rCzQEWqNsc",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/6rCzQEWqNsc/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/6rCzQEWqNsc/maxresdefault.jpg",
     "summary": "AZKi / LIVE",
     "status": "published"
   },
@@ -347,7 +352,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=z1T05JD3U9g",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/z1T05JD3U9g/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/z1T05JD3U9g/maxresdefault.jpg",
     "summary": "尾丸ポルカ",
     "status": "published"
   },
@@ -355,7 +360,7 @@
     "id": "stream-xi6dstjo7uk",
     "source": "holo_schedule",
     "category": "stream",
-    "subcategory": "live",
+    "subcategory": "past",
     "title": "5億年ぶりの激レア雑談【ホロライブ/兎田ぺこら】",
     "talents": [
       "兎田ぺこら"
@@ -366,8 +371,8 @@
     "normalUrl": "https://www.youtube.com/watch?v=xi6dStJO7Uk",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/xi6dStJO7Uk/mqdefault.jpg",
-    "summary": "兎田ぺこら / LIVE",
+    "imageUrl": "https://i.ytimg.com/vi/xi6dStJO7Uk/maxresdefault.jpg",
+    "summary": "兎田ぺこら",
     "status": "published"
   },
   {
@@ -385,7 +390,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=fK2Nu1ICSSs",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/fK2Nu1ICSSs/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/fK2Nu1ICSSs/maxresdefault.jpg",
     "summary": "夏色まつり",
     "status": "published"
   },
@@ -404,7 +409,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=RmnYCwprqrQ",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/RmnYCwprqrQ/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/RmnYCwprqrQ/maxresdefault.jpg",
     "summary": "花咲みやび",
     "status": "published"
   },
@@ -428,7 +433,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=EPkpznRWp_Y",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/EPkpznRWp_Y/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/EPkpznRWp_Y/maxresdefault.jpg",
     "summary": "大空スバル",
     "status": "published"
   },
@@ -439,7 +444,8 @@
     "subcategory": "live",
     "title": "【Tomodachi Life】SEASON 2 START: CAN A MIIRRIAGE BE FIXED?【Pavolia Reine/hololiveID】",
     "talents": [
-      "Reine"
+      "Reine",
+      "Pavolia Reine"
     ],
     "startAt": "2026-05-06T21:01:30+09:00",
     "endAt": null,
@@ -447,7 +453,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=LOHQTd7G9Yg",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/LOHQTd7G9Yg/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/LOHQTd7G9Yg/maxresdefault.jpg",
     "summary": "Reine / LIVE",
     "status": "published"
   },
@@ -466,7 +472,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=NIPZ7On8X4Y",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/NIPZ7On8X4Y/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/NIPZ7On8X4Y/maxresdefault.jpg",
     "summary": "白銀ノエル / LIVE",
     "status": "published"
   },
@@ -485,7 +491,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=Jb5eLSBiOKM",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/Jb5eLSBiOKM/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/Jb5eLSBiOKM/maxresdefault.jpg",
     "summary": "星街すいせい",
     "status": "published"
   },
@@ -504,7 +510,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=9pfpsjBsOX4",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/9pfpsjBsOX4/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/9pfpsjBsOX4/maxresdefault.jpg",
     "summary": "虎金妃笑虎",
     "status": "published"
   },
@@ -524,7 +530,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=5poAmvt2SeY",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/5poAmvt2SeY/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/5poAmvt2SeY/maxresdefault.jpg",
     "summary": "一条莉々華 / LIVE",
     "status": "published"
   },
@@ -543,7 +549,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=QJjDt_8phg8",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/QJjDt_8phg8/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/QJjDt_8phg8/maxresdefault.jpg",
     "summary": "虎金妃笑虎",
     "status": "published"
   },
@@ -562,7 +568,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=hA_cmA-Wzvk",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/hA_cmA-Wzvk/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/hA_cmA-Wzvk/maxresdefault.jpg",
     "summary": "猫又おかゆ",
     "status": "published"
   },
@@ -584,7 +590,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=1wJeZPQ5-nw",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/1wJeZPQ5-nw/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/1wJeZPQ5-nw/maxresdefault.jpg",
     "summary": "さくらみこ",
     "status": "published"
   },
@@ -603,7 +609,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=Oo1oq_tOd6A",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/Oo1oq_tOd6A/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/Oo1oq_tOd6A/maxresdefault.jpg",
     "summary": "常闇トワ / LIVE",
     "status": "published"
   },
@@ -622,7 +628,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=QOAlxecPpNA",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/QOAlxecPpNA/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/QOAlxecPpNA/maxresdefault.jpg",
     "summary": "アルランディス / LIVE",
     "status": "published"
   },
@@ -633,7 +639,8 @@
     "subcategory": "live",
     "title": "【PUBG】突然の召喚果たしてどうなるのか！？w./けんきさん,小廻こまちゃん,夜よいち【ホロライブ/アキロゼ】",
     "talents": [
-      "アキロゼ"
+      "アキロゼ",
+      "アキ・ローゼンタール"
     ],
     "startAt": "2026-05-06T19:20:57+09:00",
     "endAt": null,
@@ -641,7 +648,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=tiH7J6GE_uc",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/tiH7J6GE_uc/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/tiH7J6GE_uc/maxresdefault.jpg",
     "summary": "アキロゼ / LIVE",
     "status": "published"
   },
@@ -649,7 +656,7 @@
     "id": "stream-elrsbjaytvo",
     "source": "holo_schedule",
     "category": "stream",
-    "subcategory": "live",
+    "subcategory": "past",
     "title": "【VCC PUBG】チュートリアル終えし男のVCC PUBG配信 / w.すももさん、ズズくん、なずなさん【夕刻ロベル/ホロスターズ】",
     "talents": [
       "夕刻ロベル"
@@ -660,8 +667,8 @@
     "normalUrl": "https://www.youtube.com/watch?v=eLrSBJAytVo",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/eLrSBJAytVo/mqdefault.jpg",
-    "summary": "夕刻ロベル / LIVE",
+    "imageUrl": "https://i.ytimg.com/vi/eLrSBJAytVo/maxresdefault.jpg",
+    "summary": "夕刻ロベル",
     "status": "published"
   },
   {
@@ -683,7 +690,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=d3YAjJsztKY",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/d3YAjJsztKY/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/d3YAjJsztKY/maxresdefault.jpg",
     "summary": "ホロライブ",
     "status": "published"
   },
@@ -702,7 +709,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=7h7nF8NYzYM",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/7h7nF8NYzYM/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/7h7nF8NYzYM/maxresdefault.jpg",
     "summary": "ときのそら",
     "status": "published"
   },
@@ -721,7 +728,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=dhdYq4iXTz0",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/dhdYq4iXTz0/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/dhdYq4iXTz0/maxresdefault.jpg",
     "summary": "奏手イヅル",
     "status": "published"
   },
@@ -740,7 +747,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=W3Gl0bSvwTU",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/W3Gl0bSvwTU/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/W3Gl0bSvwTU/maxresdefault.jpg",
     "summary": "博衣こより",
     "status": "published"
   },
@@ -759,7 +766,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=HM2t8rUOA0s",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/HM2t8rUOA0s/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/HM2t8rUOA0s/maxresdefault.jpg",
     "summary": "鷹嶺ルイ",
     "status": "published"
   },
@@ -778,7 +785,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=6MSPjyahjcM",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/6MSPjyahjcM/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/6MSPjyahjcM/maxresdefault.jpg",
     "summary": "水宮枢",
     "status": "published"
   },
@@ -786,7 +793,7 @@
     "id": "stream-ygqkd7djlr8",
     "source": "holo_schedule",
     "category": "stream",
-    "subcategory": "live",
+    "subcategory": "past",
     "title": "【 スーパーマリオワールド 】最終回！？完全初見！初めてのマリオワールドに挑戦！【#綺々羅々ヴィヴィ #hololiveDEV_IS #FLOWGLOW】",
     "talents": [
       "綺々羅々ヴィヴィ"
@@ -797,8 +804,8 @@
     "normalUrl": "https://www.youtube.com/watch?v=YgQKd7DjLr8",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/YgQKd7DjLr8/mqdefault.jpg",
-    "summary": "綺々羅々ヴィヴィ / LIVE",
+    "imageUrl": "https://i.ytimg.com/vi/YgQKd7DjLr8/maxresdefault.jpg",
+    "summary": "綺々羅々ヴィヴィ",
     "status": "published"
   },
   {
@@ -816,7 +823,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=jvP-FEF8Asw",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/jvP-FEF8Asw/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/jvP-FEF8Asw/maxresdefault.jpg",
     "summary": "兎田ぺこら",
     "status": "published"
   },
@@ -835,7 +842,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=gUkAfwRyzws",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/gUkAfwRyzws/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/gUkAfwRyzws/maxresdefault.jpg",
     "summary": "尾丸ポルカ",
     "status": "published"
   },
@@ -855,7 +862,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=pNIp0kRQah4",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/pNIp0kRQah4/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/pNIp0kRQah4/maxresdefault.jpg",
     "summary": "音乃瀬奏",
     "status": "published"
   },
@@ -874,7 +881,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=XY6hrktr64c",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/XY6hrktr64c/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/XY6hrktr64c/maxresdefault.jpg",
     "summary": "holoAN room",
     "status": "published"
   },
@@ -897,7 +904,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=NuhMWeqDIXQ",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/NuhMWeqDIXQ/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/NuhMWeqDIXQ/maxresdefault.jpg",
     "summary": "ReGLOSS",
     "status": "published"
   },
@@ -921,7 +928,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=UFPC9vVwYUI",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/UFPC9vVwYUI/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/UFPC9vVwYUI/maxresdefault.jpg",
     "summary": "FLOW GLOW",
     "status": "published"
   },
@@ -940,7 +947,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=UTcUiGWWIe4",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/UTcUiGWWIe4/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/UTcUiGWWIe4/maxresdefault.jpg",
     "summary": "風真いろは",
     "status": "published"
   },
@@ -959,7 +966,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=5njq5NJzf_I",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/5njq5NJzf_I/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/5njq5NJzf_I/maxresdefault.jpg",
     "summary": "岸堂天真",
     "status": "published"
   },
@@ -978,7 +985,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=p-DaUUVhOow",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/p-DaUUVhOow/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/p-DaUUVhOow/maxresdefault.jpg",
     "summary": "綺々羅々ヴィヴィ",
     "status": "published"
   },
@@ -997,7 +1004,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=5_iIfZw0DNU",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/5_iIfZw0DNU/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/5_iIfZw0DNU/maxresdefault.jpg",
     "summary": "姫森ルーナ",
     "status": "published"
   },
@@ -1016,7 +1023,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=vek2_IZLRo4",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/vek2_IZLRo4/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/vek2_IZLRo4/maxresdefault.jpg",
     "summary": "ときのそら",
     "status": "published"
   },
@@ -1024,7 +1031,7 @@
     "id": "stream-szlmrb5c2hk",
     "source": "holo_schedule",
     "category": "stream",
-    "subcategory": "live",
+    "subcategory": "past",
     "title": "STREET FIGHTER 6｜GW最終日！ALEXマスター耐久 - 夜十神封魔",
     "talents": [
       "夜十神封魔"
@@ -1035,8 +1042,8 @@
     "normalUrl": "https://www.youtube.com/watch?v=SZlMRB5C2hk",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/SZlMRB5C2hk/mqdefault.jpg",
-    "summary": "夜十神封魔 / LIVE",
+    "imageUrl": "https://i.ytimg.com/vi/SZlMRB5C2hk/maxresdefault.jpg",
+    "summary": "夜十神封魔",
     "status": "published"
   },
   {
@@ -1054,7 +1061,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=A5Q0GpglCEE",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/A5Q0GpglCEE/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/A5Q0GpglCEE/maxresdefault.jpg",
     "summary": "尾丸ポルカ",
     "status": "published"
   },
@@ -1073,7 +1080,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=jfM9ksNmkzw",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/jfM9ksNmkzw/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/jfM9ksNmkzw/maxresdefault.jpg",
     "summary": "IRyS",
     "status": "published"
   },
@@ -1092,7 +1099,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=3WyP7trUfMM",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/3WyP7trUfMM/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/3WyP7trUfMM/maxresdefault.jpg",
     "summary": "輪堂千速",
     "status": "published"
   },
@@ -1113,7 +1120,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=MCcIhzicXkM",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/MCcIhzicXkM/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/MCcIhzicXkM/maxresdefault.jpg",
     "summary": "一条莉々華",
     "status": "published"
   },
@@ -1132,7 +1139,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=aCTlj8HJs6I",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/aCTlj8HJs6I/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/aCTlj8HJs6I/maxresdefault.jpg",
     "summary": "Syrios",
     "status": "published"
   },
@@ -1151,7 +1158,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=gbShhPZnV08",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/gbShhPZnV08/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/gbShhPZnV08/maxresdefault.jpg",
     "summary": "鷹嶺ルイ",
     "status": "published"
   },
@@ -1170,7 +1177,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=kPluH_8MojM",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/kPluH_8MojM/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/kPluH_8MojM/maxresdefault.jpg",
     "summary": "響咲リオナ",
     "status": "published"
   },
@@ -1181,7 +1188,8 @@
     "subcategory": "past",
     "title": "parenting is all about tough love #jurardtrexford #shorts #holoarmis",
     "talents": [
-      "Jurard"
+      "Jurard",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-05-06T12:00:35+09:00",
     "endAt": null,
@@ -1189,7 +1197,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=VE01BK34CsE",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/VE01BK34CsE/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/VE01BK34CsE/maxresdefault.jpg",
     "summary": "Jurard",
     "status": "published"
   },
@@ -1211,7 +1219,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=xy9_QWW0oLw",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/xy9_QWW0oLw/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/xy9_QWW0oLw/maxresdefault.jpg",
     "summary": "獅白ぼたん",
     "status": "published"
   },
@@ -1231,7 +1239,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=Pd_RusdhChI",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/Pd_RusdhChI/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/Pd_RusdhChI/maxresdefault.jpg",
     "summary": "水宮枢",
     "status": "published"
   },
@@ -1253,7 +1261,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=JN3HMhw5bio",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/JN3HMhw5bio/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/JN3HMhw5bio/maxresdefault.jpg",
     "summary": "Octavio",
     "status": "published"
   },
@@ -1272,7 +1280,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=-FGN9SB3Ooc",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/-FGN9SB3Ooc/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/-FGN9SB3Ooc/maxresdefault.jpg",
     "summary": "不知火フレア",
     "status": "published"
   },
@@ -1286,7 +1294,8 @@
       "Jurard",
       "Goldbullet",
       "Octavio",
-      "Crimzon"
+      "Crimzon",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-05-06T11:01:26+09:00",
     "endAt": null,
@@ -1294,7 +1303,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=EtLbl6TzO1A",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/EtLbl6TzO1A/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/EtLbl6TzO1A/maxresdefault.jpg",
     "summary": "Jurard",
     "status": "published"
   },
@@ -1313,7 +1322,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=x_1OYadpwyc",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/x_1OYadpwyc/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/x_1OYadpwyc/maxresdefault.jpg",
     "summary": "博衣こより",
     "status": "published"
   },
@@ -1332,7 +1341,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=mfV3u7ESArU",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/mfV3u7ESArU/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/mfV3u7ESArU/maxresdefault.jpg",
     "summary": "白銀ノエル",
     "status": "published"
   },
@@ -1343,7 +1352,8 @@
     "subcategory": "past",
     "title": "ItemLoss #CoreKeeper #Loss #Ayunda_Risu #hololive",
     "talents": [
-      "Risu"
+      "Risu",
+      "Ayunda Risu"
     ],
     "startAt": "2026-05-06T11:00:05+09:00",
     "endAt": null,
@@ -1351,7 +1361,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=4JCEm0Hej4Y",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/4JCEm0Hej4Y/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/4JCEm0Hej4Y/maxresdefault.jpg",
     "summary": "Risu",
     "status": "published"
   },
@@ -1362,7 +1372,8 @@
     "subcategory": "past",
     "title": "【Resident Evil Requiem】Crying | #2",
     "talents": [
-      "Kronii"
+      "Kronii",
+      "Ouro Kronii"
     ],
     "startAt": "2026-05-06T10:07:15+09:00",
     "endAt": null,
@@ -1370,7 +1381,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=esjpYSrvjB4",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/esjpYSrvjB4/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/esjpYSrvjB4/maxresdefault.jpg",
     "summary": "Kronii",
     "status": "published"
   },
@@ -1384,7 +1395,8 @@
       "Crimzon",
       "Jurard",
       "Goldbullet",
-      "Octavio"
+      "Octavio",
+      "Crimzon Ruze"
     ],
     "startAt": "2026-05-06T09:11:11+09:00",
     "endAt": null,
@@ -1392,7 +1404,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=g_roU3QDUoo",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/g_roU3QDUoo/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/g_roU3QDUoo/maxresdefault.jpg",
     "summary": "Crimzon",
     "status": "published"
   },
@@ -1411,7 +1423,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=X47vD2NDiZc",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/X47vD2NDiZc/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/X47vD2NDiZc/maxresdefault.jpg",
     "summary": "夏色まつり",
     "status": "published"
   },
@@ -1422,7 +1434,8 @@
     "subcategory": "past",
     "title": "【BlackMesa】MAYBE BLACK MESA?",
     "talents": [
-      "Bijou"
+      "Bijou",
+      "Koseki Bijou"
     ],
     "startAt": "2026-05-06T07:56:19+09:00",
     "endAt": null,
@@ -1430,7 +1443,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=XGNUZI-dnmM",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/XGNUZI-dnmM/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/XGNUZI-dnmM/maxresdefault.jpg",
     "summary": "Bijou",
     "status": "published"
   },
@@ -1449,7 +1462,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=ZTfupmtuPPs",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/ZTfupmtuPPs/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/ZTfupmtuPPs/maxresdefault.jpg",
     "summary": "Gigi",
     "status": "published"
   },
@@ -1468,7 +1481,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=iYJQ4-caD2E",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/iYJQ4-caD2E/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/iYJQ4-caD2E/maxresdefault.jpg",
     "summary": "角巻わため",
     "status": "published"
   },
@@ -1479,7 +1492,8 @@
     "subcategory": "past",
     "title": "Hacking Into Your 💳 the Game 【PRAGMATA】 SPOILERS",
     "talents": [
-      "Shiori"
+      "Shiori",
+      "Shiori Novella"
     ],
     "startAt": "2026-05-06T04:59:47+09:00",
     "endAt": null,
@@ -1487,7 +1501,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=DJ1rIYR5R2s",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/DJ1rIYR5R2s/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/DJ1rIYR5R2s/maxresdefault.jpg",
     "summary": "Shiori",
     "status": "published"
   },
@@ -1499,7 +1513,8 @@
     "title": "[#ERBday2026] OTOKONOKO NI NARITAI Cover - FT. Oozora Subaru (Live from COVER Corp. Studio)",
     "talents": [
       "Elizabeth",
-      "大空スバル"
+      "大空スバル",
+      "Elizabeth Rose Bloodflame"
     ],
     "startAt": "2026-05-06T04:00:50+09:00",
     "endAt": null,
@@ -1507,7 +1522,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=z7NC9iRoW-E",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/z7NC9iRoW-E/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/z7NC9iRoW-E/maxresdefault.jpg",
     "summary": "Elizabeth",
     "status": "published"
   },
@@ -1526,7 +1541,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=9ZNTdHZF4z4",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/9ZNTdHZF4z4/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/9ZNTdHZF4z4/maxresdefault.jpg",
     "summary": "白上フブキ",
     "status": "published"
   },
@@ -1537,7 +1552,8 @@
     "subcategory": "past",
     "title": "OKP Cipher - Avantgardey 踊ってみた #OKPサイファー #hakosbaelz #dance #vtuber #hololive",
     "talents": [
-      "Baelz"
+      "Baelz",
+      "Hakos Baelz"
     ],
     "startAt": "2026-05-06T00:00:46+09:00",
     "endAt": null,
@@ -1545,7 +1561,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=QHajIcQpFaQ",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/QHajIcQpFaQ/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/QHajIcQpFaQ/maxresdefault.jpg",
     "summary": "Baelz",
     "status": "published"
   },
@@ -1564,7 +1580,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=5p3DPISYkeA",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/5p3DPISYkeA/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/5p3DPISYkeA/maxresdefault.jpg",
     "summary": "綺々羅々ヴィヴィ",
     "status": "published"
   },
@@ -1583,7 +1599,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=HuVcHc4xd1s",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/HuVcHc4xd1s/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/HuVcHc4xd1s/maxresdefault.jpg",
     "summary": "奏手イヅル",
     "status": "published"
   },
@@ -1602,7 +1618,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=3a0uXjoUHWY",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/3a0uXjoUHWY/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/3a0uXjoUHWY/maxresdefault.jpg",
     "summary": "大神ミオ",
     "status": "published"
   },
@@ -1613,7 +1629,8 @@
     "subcategory": "past",
     "title": "【Pragmata】BIG CAT MEANS BIG RESPONSIBILITIES【Raora Panthera】",
     "talents": [
-      "Raora"
+      "Raora",
+      "Raora Panthera"
     ],
     "startAt": "2026-05-05T23:01:52+09:00",
     "endAt": null,
@@ -1621,7 +1638,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=zc_JRHPep9c",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/zc_JRHPep9c/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/zc_JRHPep9c/maxresdefault.jpg",
     "summary": "Raora",
     "status": "published"
   },
@@ -1632,7 +1649,8 @@
     "subcategory": "past",
     "title": "【very lmao Slay the Spire 2 stream】backseat me hard enough so i can pass this ironclad A0",
     "talents": [
-      "Kaela"
+      "Kaela",
+      "Kaela Kovalskia"
     ],
     "startAt": "2026-05-05T23:00:22+09:00",
     "endAt": null,
@@ -1640,7 +1658,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=SvOR33bAdpk",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/SvOR33bAdpk/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/SvOR33bAdpk/maxresdefault.jpg",
     "summary": "Kaela",
     "status": "published"
   },
@@ -1659,7 +1677,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=Cv4IPLqU2xM",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/Cv4IPLqU2xM/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/Cv4IPLqU2xM/maxresdefault.jpg",
     "summary": "水宮枢",
     "status": "published"
   },
@@ -1678,7 +1696,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=fAcT-LezxAY",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/fAcT-LezxAY/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/fAcT-LezxAY/maxresdefault.jpg",
     "summary": "角巻わため",
     "status": "published"
   },
@@ -1697,7 +1715,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=6V05GDrR0IA",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/6V05GDrR0IA/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/6V05GDrR0IA/maxresdefault.jpg",
     "summary": "尾丸ポルカ",
     "status": "published"
   },
@@ -1708,7 +1726,8 @@
     "subcategory": "past",
     "title": "【holoVillage: Our Cozy Days】going inside the cave and never coming out again",
     "talents": [
-      "Zeta"
+      "Zeta",
+      "Vestia Zeta"
     ],
     "startAt": "2026-05-05T22:00:05+09:00",
     "endAt": null,
@@ -1716,7 +1735,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=wvLEi0HwaHE",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/wvLEi0HwaHE/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/wvLEi0HwaHE/maxresdefault.jpg",
     "summary": "Zeta",
     "status": "published"
   },
@@ -1727,7 +1746,8 @@
     "subcategory": "past",
     "title": "【Tomodachi Life】Active ENID Complete! The rebirth of doomed yuri island【Pavolia Reine/hololiveID】",
     "talents": [
-      "Reine"
+      "Reine",
+      "Pavolia Reine"
     ],
     "startAt": "2026-05-05T21:30:00+09:00",
     "endAt": null,
@@ -1735,7 +1755,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=UIh1DeZP8Bg",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/UIh1DeZP8Bg/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/UIh1DeZP8Bg/maxresdefault.jpg",
     "summary": "Reine",
     "status": "published"
   },
@@ -1754,7 +1774,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=1iCW35RDYjk",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/1iCW35RDYjk/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/1iCW35RDYjk/maxresdefault.jpg",
     "summary": "律可",
     "status": "published"
   },
@@ -1781,7 +1801,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=i_LOysvDaR8",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/i_LOysvDaR8/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/i_LOysvDaR8/maxresdefault.jpg",
     "summary": "猫又おかゆ",
     "status": "published"
   },
@@ -1808,7 +1828,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=XKl0E-rJXNg",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/XKl0E-rJXNg/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/XKl0E-rJXNg/maxresdefault.jpg",
     "summary": "綺々羅々ヴィヴィ",
     "status": "published"
   },
@@ -1836,7 +1856,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=RYuEVKdB_bQ",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/RYuEVKdB_bQ/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/RYuEVKdB_bQ/maxresdefault.jpg",
     "summary": "儒烏風亭らでん",
     "status": "published"
   },
@@ -1863,7 +1883,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=2qhw3zMMsMU",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/2qhw3zMMsMU/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/2qhw3zMMsMU/maxresdefault.jpg",
     "summary": "白上フブキ",
     "status": "published"
   },
@@ -1890,7 +1910,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=0Xeeb24jr08",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/0Xeeb24jr08/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/0Xeeb24jr08/maxresdefault.jpg",
     "summary": "響咲リオナ",
     "status": "published"
   },
@@ -1917,7 +1937,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=r04a_hBwFWU",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/r04a_hBwFWU/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/r04a_hBwFWU/maxresdefault.jpg",
     "summary": "AZKi",
     "status": "published"
   },
@@ -1944,7 +1964,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=Yr4O3ol4Ib4",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/Yr4O3ol4Ib4/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/Yr4O3ol4Ib4/maxresdefault.jpg",
     "summary": "兎田ぺこら",
     "status": "published"
   },
@@ -1963,7 +1983,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=TWP21gC5HYQ",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/TWP21gC5HYQ/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/TWP21gC5HYQ/maxresdefault.jpg",
     "summary": "輪堂千速",
     "status": "published"
   },
@@ -1990,7 +2010,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=N5ijkems8f0",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/N5ijkems8f0/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/N5ijkems8f0/maxresdefault.jpg",
     "summary": "雪花ラミィ",
     "status": "published"
   },
@@ -2010,7 +2030,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=MR_gVtWfB-Y",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/MR_gVtWfB-Y/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/MR_gVtWfB-Y/maxresdefault.jpg",
     "summary": "さくらみこ",
     "status": "published"
   },
@@ -2029,7 +2049,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=oeThYnVfpkY",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/oeThYnVfpkY/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/oeThYnVfpkY/maxresdefault.jpg",
     "summary": "虎金妃笑虎",
     "status": "published"
   },
@@ -2049,7 +2069,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=yOJd3m71nFU",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/yOJd3m71nFU/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/yOJd3m71nFU/maxresdefault.jpg",
     "summary": "一条莉々華",
     "status": "published"
   },
@@ -2068,7 +2088,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=37bvKPtYwSo",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/37bvKPtYwSo/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/37bvKPtYwSo/maxresdefault.jpg",
     "summary": "holoAN room",
     "status": "published"
   },
@@ -2079,7 +2099,8 @@
     "subcategory": "past",
     "title": "BA BO BA BO #shorts #vtuber #kobo #kobokanaeru",
     "talents": [
-      "Kobo"
+      "Kobo",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-05-05T20:00:00+09:00",
     "endAt": null,
@@ -2087,7 +2108,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=IOCf_lEQ94k",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/IOCf_lEQ94k/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/IOCf_lEQ94k/maxresdefault.jpg",
     "summary": "Kobo",
     "status": "published"
   },
@@ -2106,7 +2127,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=RY-E2njoWz0",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/RY-E2njoWz0/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/RY-E2njoWz0/maxresdefault.jpg",
     "summary": "虎金妃笑虎",
     "status": "published"
   },
@@ -2125,7 +2146,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=NKh3YjQAIUc",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/NKh3YjQAIUc/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/NKh3YjQAIUc/maxresdefault.jpg",
     "summary": "鷹嶺ルイ",
     "status": "published"
   },
@@ -2144,7 +2165,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=aGz3HPaEHK0",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/aGz3HPaEHK0/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/aGz3HPaEHK0/maxresdefault.jpg",
     "summary": "アルランディス",
     "status": "published"
   },
@@ -2163,7 +2184,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=Hco85QAF9FA",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/Hco85QAF9FA/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/Hco85QAF9FA/maxresdefault.jpg",
     "summary": "ときのそら",
     "status": "published"
   },
@@ -2182,7 +2203,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=RWI1gEPHrSY",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/RWI1gEPHrSY/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/RWI1gEPHrSY/maxresdefault.jpg",
     "summary": "尾丸ポルカ",
     "status": "published"
   },
@@ -2201,7 +2222,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=5A9QWUg2vnI",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/5A9QWUg2vnI/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/5A9QWUg2vnI/maxresdefault.jpg",
     "summary": "宝鐘マリン",
     "status": "published"
   },
@@ -2224,7 +2245,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=BLNvO-Pu_iE",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/BLNvO-Pu_iE/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/BLNvO-Pu_iE/maxresdefault.jpg",
     "summary": "ReGLOSS",
     "status": "published"
   },
@@ -2243,7 +2264,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=pZ7e866zgiM",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/pZ7e866zgiM/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/pZ7e866zgiM/maxresdefault.jpg",
     "summary": "轟はじめ",
     "status": "published"
   },
@@ -2267,7 +2288,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=Fu0ejtC87x4",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/Fu0ejtC87x4/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/Fu0ejtC87x4/maxresdefault.jpg",
     "summary": "FLOW GLOW",
     "status": "published"
   },
@@ -2286,7 +2307,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=ZpZormuECDc",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/ZpZormuECDc/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/ZpZormuECDc/maxresdefault.jpg",
     "summary": "綺々羅々ヴィヴィ",
     "status": "published"
   },
@@ -2305,7 +2326,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=04cJK01mC10",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/04cJK01mC10/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/04cJK01mC10/maxresdefault.jpg",
     "summary": "響咲リオナ",
     "status": "published"
   },
@@ -2316,7 +2337,8 @@
     "subcategory": "past",
     "title": "【Tomodachi Life: Living the Dream】Continue my play~【hololive | moona】",
     "talents": [
-      "Moona"
+      "Moona",
+      "Moona Hoshinova"
     ],
     "startAt": "2026-05-05T17:08:50+09:00",
     "endAt": null,
@@ -2324,7 +2346,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=cZcnLEma6P0",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/cZcnLEma6P0/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/cZcnLEma6P0/maxresdefault.jpg",
     "summary": "Moona",
     "status": "published"
   },
@@ -2343,7 +2365,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=xqVgZuTz6nw",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/xqVgZuTz6nw/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/xqVgZuTz6nw/maxresdefault.jpg",
     "summary": "影山シエン",
     "status": "published"
   },
@@ -2362,7 +2384,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=kpxmGicJrPU",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/kpxmGicJrPU/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/kpxmGicJrPU/maxresdefault.jpg",
     "summary": "綺々羅々ヴィヴィ",
     "status": "published"
   },
@@ -2381,7 +2403,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=CBlvSHVoeuI",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/CBlvSHVoeuI/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/CBlvSHVoeuI/maxresdefault.jpg",
     "summary": "常闇トワ",
     "status": "published"
   },
@@ -2400,7 +2422,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=BfFmoEEoxco",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/BfFmoEEoxco/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/BfFmoEEoxco/maxresdefault.jpg",
     "summary": "輪堂千速",
     "status": "published"
   },
@@ -2422,7 +2444,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=zr1rzuQ7p_A",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/zr1rzuQ7p_A/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/zr1rzuQ7p_A/maxresdefault.jpg",
     "summary": "Octavio",
     "status": "published"
   },
@@ -2441,7 +2463,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=tDzxPMK5BA4",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/tDzxPMK5BA4/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/tDzxPMK5BA4/maxresdefault.jpg",
     "summary": "アステル・レダ",
     "status": "published"
   },
@@ -2452,7 +2474,9 @@
     "subcategory": "past",
     "title": "Caster PerRoastink #AlterEgoAres #Kobo #Risu #PUBGM",
     "talents": [
-      "Risu"
+      "Risu",
+      "Ayunda Risu",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-05-05T12:00:58+09:00",
     "endAt": null,
@@ -2460,7 +2484,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=jA-G-tOm2JM",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/jA-G-tOm2JM/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/jA-G-tOm2JM/maxresdefault.jpg",
     "summary": "Risu",
     "status": "published"
   },
@@ -2479,7 +2503,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=ciEOEVZSY58",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/ciEOEVZSY58/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/ciEOEVZSY58/maxresdefault.jpg",
     "summary": "鷹嶺ルイ",
     "status": "published"
   },
@@ -2502,7 +2526,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=EV-iyA4g8oU",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/EV-iyA4g8oU/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/EV-iyA4g8oU/maxresdefault.jpg",
     "summary": "holo EN",
     "status": "published"
   },
@@ -2513,7 +2537,8 @@
     "subcategory": "past",
     "title": "Ding Dong Dantes Pose #shorts #holoarmis #jurardtrexford",
     "talents": [
-      "Jurard"
+      "Jurard",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-05-05T12:00:12+09:00",
     "endAt": null,
@@ -2521,7 +2546,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=COSuVWtuvfU",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/COSuVWtuvfU/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/COSuVWtuvfU/maxresdefault.jpg",
     "summary": "Jurard",
     "status": "published"
   },
@@ -2535,7 +2560,8 @@
       "Jurard",
       "Goldbullet",
       "Octavio",
-      "Crimzon"
+      "Crimzon",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-05-05T12:00:10+09:00",
     "endAt": null,
@@ -2543,7 +2569,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=UTIkb-h-eHk",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/UTIkb-h-eHk/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/UTIkb-h-eHk/maxresdefault.jpg",
     "summary": "Jurard",
     "status": "published"
   },
@@ -2565,7 +2591,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=nmdGo_KLZeg",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/nmdGo_KLZeg/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/nmdGo_KLZeg/maxresdefault.jpg",
     "summary": "獅白ぼたん",
     "status": "published"
   },
@@ -2584,7 +2610,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=ihbqJsg8G8A",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/ihbqJsg8G8A/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/ihbqJsg8G8A/maxresdefault.jpg",
     "summary": "水宮枢",
     "status": "published"
   },
@@ -2610,7 +2636,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=J_VqySsby34",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/J_VqySsby34/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/J_VqySsby34/maxresdefault.jpg",
     "summary": "常闇トワ",
     "status": "published"
   },
@@ -2629,7 +2655,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=DX139lPvzv0",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/DX139lPvzv0/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/DX139lPvzv0/maxresdefault.jpg",
     "summary": "夏色まつり",
     "status": "published"
   },
@@ -2651,7 +2677,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=b1E7e4CFn08",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/b1E7e4CFn08/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/b1E7e4CFn08/maxresdefault.jpg",
     "summary": "Octavio",
     "status": "published"
   },
@@ -2664,7 +2690,8 @@
     "talents": [
       "Bijou",
       "Shiori",
-      "Nerissa"
+      "Nerissa",
+      "Koseki Bijou"
     ],
     "startAt": "2026-05-05T10:00:27+09:00",
     "endAt": null,
@@ -2672,7 +2699,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=mKpHQPMkDSE",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/mKpHQPMkDSE/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/mKpHQPMkDSE/maxresdefault.jpg",
     "summary": "Bijou",
     "status": "published"
   },
@@ -2683,7 +2710,8 @@
     "subcategory": "past",
     "title": "ADVENT CAR WASH! + ANNOUNCEMENT | PowerWash Simulator 2",
     "talents": [
-      "Nerissa"
+      "Nerissa",
+      "Nerissa Ravencroft"
     ],
     "startAt": "2026-05-05T10:00:05+09:00",
     "endAt": null,
@@ -2691,7 +2719,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=nG8JZuZF9z8",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/nG8JZuZF9z8/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/nG8JZuZF9z8/maxresdefault.jpg",
     "summary": "Nerissa",
     "status": "published"
   },
@@ -2702,7 +2730,8 @@
     "subcategory": "past",
     "title": "Cleaning Your Ears With a Pressure Washer ASMR 【PowerWash Simulator 2】",
     "talents": [
-      "Shiori"
+      "Shiori",
+      "Shiori Novella"
     ],
     "startAt": "2026-05-05T09:59:52+09:00",
     "endAt": null,
@@ -2710,7 +2739,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=1krRDpCE-J0",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/1krRDpCE-J0/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/1krRDpCE-J0/maxresdefault.jpg",
     "summary": "Shiori",
     "status": "published"
   },
@@ -2721,7 +2750,8 @@
     "subcategory": "past",
     "title": "I FIGURED IT OUT#shorts #holoarmis #crimzonruze",
     "talents": [
-      "Crimzon"
+      "Crimzon",
+      "Crimzon Ruze"
     ],
     "startAt": "2026-05-05T09:00:40+09:00",
     "endAt": null,
@@ -2729,7 +2759,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=ZfvCNn0IExI",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/ZfvCNn0IExI/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/ZfvCNn0IExI/maxresdefault.jpg",
     "summary": "Crimzon",
     "status": "published"
   },
@@ -2748,7 +2778,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=W3f2-1mzGAk",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/W3f2-1mzGAk/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/W3f2-1mzGAk/maxresdefault.jpg",
     "summary": "博衣こより",
     "status": "published"
   },
@@ -2770,7 +2800,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=KD7Z3iztlq0",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/KD7Z3iztlq0/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/KD7Z3iztlq0/maxresdefault.jpg",
     "summary": "Goldbullet",
     "status": "published"
   },
@@ -2791,7 +2821,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=-tx9lixlJe4",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/-tx9lixlJe4/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/-tx9lixlJe4/maxresdefault.jpg",
     "summary": "博衣こより",
     "status": "published"
   },
@@ -2802,7 +2832,8 @@
     "subcategory": "past",
     "title": "【 TOMODACHI LIFE】Join My Island... here's cookies ~! 💄",
     "talents": [
-      "Elizabeth"
+      "Elizabeth",
+      "Elizabeth Rose Bloodflame"
     ],
     "startAt": "2026-05-05T06:44:15+09:00",
     "endAt": null,
@@ -2810,7 +2841,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=Y9eiIQRNwNY",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/Y9eiIQRNwNY/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/Y9eiIQRNwNY/maxresdefault.jpg",
     "summary": "Elizabeth",
     "status": "published"
   },
@@ -2829,7 +2860,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=Ob00YKIZ4Ow",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/Ob00YKIZ4Ow/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/Ob00YKIZ4Ow/maxresdefault.jpg",
     "summary": "角巻わため",
     "status": "published"
   },
@@ -2840,7 +2871,8 @@
     "subcategory": "past",
     "title": "【Tomodachi Life】Never Too Late For New Beginnings【Pavolia Reine/hololiveID】",
     "talents": [
-      "Reine"
+      "Reine",
+      "Pavolia Reine"
     ],
     "startAt": "2026-05-05T01:01:40+09:00",
     "endAt": null,
@@ -2848,7 +2880,7 @@
     "normalUrl": "https://www.youtube.com/watch?v=SVvqOKTNk08",
     "affiliateUrl": null,
     "isAffiliate": false,
-    "imageUrl": "https://img.youtube.com/vi/SVvqOKTNk08/mqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/SVvqOKTNk08/maxresdefault.jpg",
     "summary": "Reine",
     "status": "published"
   },
@@ -2858,7 +2890,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "ねんどろいど さくらみこ 私服衣装Ver.",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2026-04-27T13:32:50+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_casualoutfit_nendoroid",
@@ -2919,7 +2953,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2026-04-20",
     "endAt": null,
@@ -2952,7 +2987,10 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "百鬼あやめ",
+      "癒月ちょこ"
     ],
     "startAt": "2026-04-13T12:33:39+09:00",
     "endAt": null,
@@ -3026,7 +3064,12 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-04-09T11:20:00+09:00",
     "endAt": null,
@@ -3085,7 +3128,9 @@
     "category": "goods",
     "subcategory": "live_goods",
     "title": "hololive OFFICIAL CARD GAME ライブスタートデッキ「大空スバル」",
-    "talents": [],
+    "talents": [
+      "大空スバル"
+    ],
     "startAt": "2026-04-06T14:30:28+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololiveofficialcardgame_hsd19",
@@ -3138,7 +3183,9 @@
     "category": "goods",
     "subcategory": "live_goods",
     "title": "hololive OFFICIAL CARD GAME ライブスタートデッキ「さくらみこ」",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2026-04-06T14:29:59+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololiveofficialcardgame_hsd16",
@@ -3176,7 +3223,8 @@
     "title": "ホロライブ 日常ささやき「やさしく教えてくれる」ボイス 5月カレンダーブロマイド",
     "talents": [
       "儒烏風亭らでん",
-      "ReGLOSS"
+      "ReGLOSS",
+      "癒月ちょこ"
     ],
     "startAt": "2026-04-03T16:22:33+09:00",
     "endAt": null,
@@ -3269,7 +3317,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "Pop! Animation: hololive- さくらみこ",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2026-03-27T18:14:28+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_popanimation",
@@ -3305,7 +3355,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "大空スバル 活動7周年記念",
-    "talents": [],
+    "talents": [
+      "大空スバル"
+    ],
     "startAt": "2026-03-26T12:48:33+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/oozorasubaru_anniversary_7th",
@@ -3411,7 +3463,8 @@
     "subcategory": "anniversary",
     "title": "ホロライブインドネシア3期生 4周年記念",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-03-25T11:01:52+09:00",
     "endAt": null,
@@ -3429,7 +3482,9 @@
     "category": "live",
     "subcategory": "live,event,music",
     "title": "Mori Calliope、Apple創立50周年記念東京ライブイベント出演決定！本日より先着受付開始",
-    "talents": [],
+    "talents": [
+      "Mori Calliope"
+    ],
     "startAt": "2026-03-25",
     "endAt": null,
     "officialUrl": "https://hololive.hololivepro.com/news/20260325-01-382/",
@@ -3508,7 +3563,10 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "夏色まつり",
+      "姫森ルーナ"
     ],
     "startAt": "2026-03-24T09:22:35+09:00",
     "endAt": null,
@@ -3548,7 +3606,11 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "赤井はあと",
+      "ロボ子さん",
+      "百鬼あやめ",
+      "癒月ちょこ"
     ],
     "startAt": "2026-03-23T16:43:31+09:00",
     "endAt": null,
@@ -3584,7 +3646,12 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "IRyS",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-03-23T11:03:53+09:00",
     "endAt": null,
@@ -3606,7 +3673,8 @@
       "宝鐘マリン",
       "風真いろは",
       "秘密結社holoX",
-      "ホロライブ3期生"
+      "ホロライブ3期生",
+      "大空スバル"
     ],
     "startAt": "2026-03-23T09:55:40+09:00",
     "endAt": null,
@@ -3662,7 +3730,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "アルランディス 新衣装記念2026",
-    "talents": [],
+    "talents": [
+      "アルランディス"
+    ],
     "startAt": "2026-03-18T09:36:07+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/arurandeisu_newoutfit_2026",
@@ -3763,7 +3833,8 @@
     "subcategory": "birthday",
     "title": "IRyS 誕生日記念2026",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2026-03-16T12:59:32+09:00",
     "endAt": null,
@@ -3782,7 +3853,8 @@
     "subcategory": "goods",
     "title": "IRyS 1st Album『DANGERyS』LP Edition",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2026-03-16T10:38:50+09:00",
     "endAt": null,
@@ -3801,7 +3873,8 @@
     "subcategory": "goods",
     "title": "IRyS 1st Album『DANGERyS』CD Edition",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2026-03-16T10:16:51+09:00",
     "endAt": null,
@@ -3821,7 +3894,8 @@
     "title": "いろはにほへっと あやふぶみ ボイスドラマ 「あやふぶみのちょっと不思議な？ 癒し旅行」",
     "talents": [
       "白上フブキ",
-      "大神ミオ"
+      "大神ミオ",
+      "百鬼あやめ"
     ],
     "startAt": "2026-03-16T09:28:39+09:00",
     "endAt": null,
@@ -3844,7 +3918,9 @@
       "星街すいせい",
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "AZKi"
+      "AZKi",
+      "ロボ子さん",
+      "さくらみこ"
     ],
     "startAt": "2026-03-13",
     "endAt": null,
@@ -3882,7 +3958,8 @@
     "subcategory": "goods",
     "title": "FUWAMOCO 新衣装記念2026",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "FUWAMOCO"
     ],
     "startAt": "2026-03-12T13:59:57+09:00",
     "endAt": null,
@@ -3947,7 +4024,10 @@
       "博衣こより",
       "風真いろは",
       "秘密結社holoX",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "アキ・ローゼンタール",
+      "夏色まつり",
+      "大空スバル"
     ],
     "startAt": "2026-03-11T12:56:14+09:00",
     "endAt": null,
@@ -3981,7 +4061,10 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "百鬼あやめ",
+      "癒月ちょこ"
     ],
     "startAt": "2026-03-11T10:02:14+09:00",
     "endAt": null,
@@ -4001,7 +4084,8 @@
     "title": "いろはにほへっと あやふぶみ 新曲リリース記念",
     "talents": [
       "白上フブキ",
-      "大神ミオ"
+      "大神ミオ",
+      "百鬼あやめ"
     ],
     "startAt": "2026-03-10T16:22:11+09:00",
     "endAt": null,
@@ -4162,7 +4246,10 @@
       "尾丸ポルカ",
       "鷹嶺ルイ",
       "博衣こより",
-      "一伊那尓栖"
+      "一伊那尓栖",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-03-06",
     "endAt": null,
@@ -4197,7 +4284,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "ロボ子さん 活動8周年記念",
-    "talents": [],
+    "talents": [
+      "ロボ子さん"
+    ],
     "startAt": "2026-03-05T17:17:15+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/robocosan_anniversary_8th",
@@ -4221,7 +4310,10 @@
       "博衣こより",
       "風真いろは",
       "秘密結社holoX",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "アキ・ローゼンタール",
+      "夏色まつり",
+      "大空スバル"
     ],
     "startAt": "2026-03-05T11:47:25+09:00",
     "endAt": null,
@@ -4257,7 +4349,8 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん"
     ],
     "startAt": "2026-03-04T16:58:05+09:00",
     "endAt": null,
@@ -4378,7 +4471,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-03-03T15:02:01+09:00",
     "endAt": null,
@@ -4468,7 +4582,18 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-03-03T13:30:39+09:00",
     "endAt": null,
@@ -4521,7 +4646,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-03-03T11:15:15+09:00",
     "endAt": null,
@@ -4574,7 +4720,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-03-03T11:03:12+09:00",
     "endAt": null,
@@ -4627,7 +4794,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-03-03T10:39:52+09:00",
     "endAt": null,
@@ -4645,7 +4833,17 @@
     "category": "goods",
     "subcategory": "live_goods",
     "title": "【事後通販】hololive SUPER EXPO 2026 ホロスターズ マルチポーチ & クリアカードセット",
-    "talents": [],
+    "talents": [
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
+    ],
     "startAt": "2026-03-03T09:47:59+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololive_superexpo2026_holostarsmultipouch",
@@ -4670,7 +4868,9 @@
       "虎金妃笑虎",
       "水宮枢",
       "輪堂千速",
-      "綺々羅々ヴィヴィ"
+      "綺々羅々ヴィヴィ",
+      "IRyS",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-03-03",
     "endAt": null,
@@ -4689,7 +4889,8 @@
     "subcategory": "series",
     "title": "hololive closet モココ・アビスガード FUWAMOCOパジャマ衣装",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "FUWAMOCO"
     ],
     "startAt": "2026-03-02T18:00:23+09:00",
     "endAt": null,
@@ -4708,7 +4909,8 @@
     "subcategory": "series",
     "title": "hololive closet フワワ・アビスガード FUWAMOCOパジャマ衣装",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "FUWAMOCO"
     ],
     "startAt": "2026-03-02T17:58:07+09:00",
     "endAt": null,
@@ -4857,7 +5059,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-03-02T17:04:00+09:00",
     "endAt": null,
@@ -4909,7 +5132,18 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-03-02T16:41:31+09:00",
     "endAt": null,
@@ -4961,7 +5195,18 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-03-02T15:11:14+09:00",
     "endAt": null,
@@ -5013,7 +5258,18 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-03-02T14:39:50+09:00",
     "endAt": null,
@@ -5065,7 +5321,18 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-03-02T13:38:42+09:00",
     "endAt": null,
@@ -5083,7 +5350,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "さくらみこ 誕生日記念2026",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2026-03-02T13:15:56+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_birthday_2026",
@@ -5297,7 +5566,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2026-02-25T17:46:31+09:00",
     "endAt": null,
@@ -5318,7 +5588,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2026-02-25T17:09:30+09:00",
     "endAt": null,
@@ -5336,7 +5607,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "夜十神封魔 活動4周年記念",
-    "talents": [],
+    "talents": [
+      "夜十神封魔"
+    ],
     "startAt": "2026-02-25T16:57:32+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/yatogamifuma_anniversary_4th",
@@ -5353,7 +5626,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "花咲みやび 誕生日記念2026",
-    "talents": [],
+    "talents": [
+      "花咲みやび"
+    ],
     "startAt": "2026-02-25T12:34:17+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hanasakimiyabi_birthday_2026",
@@ -5492,7 +5767,13 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "癒月ちょこ",
+      "IRyS"
     ],
     "startAt": "2026-02-20T12:58:12+09:00",
     "endAt": null,
@@ -5530,7 +5811,8 @@
     "talents": [
       "兎田ぺこら",
       "AZKi",
-      "ホロライブ3期生"
+      "ホロライブ3期生",
+      "夏色まつり"
     ],
     "startAt": "2026-02-19T12:29:54+09:00",
     "endAt": null,
@@ -5628,7 +5910,16 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "ホロスターズ ホワイトデーボイス2026 -Milky Veil-",
-    "talents": [],
+    "talents": [
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2026-02-16T17:39:20+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostars_whitedayvoice_2026",
@@ -5667,7 +5958,9 @@
     "talents": [
       "尾丸ポルカ",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "さくらみこ",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-02-16",
     "endAt": null,
@@ -5704,7 +5997,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "アキ・ローゼンタール 誕生日記念2026",
-    "talents": [],
+    "talents": [
+      "アキ・ローゼンタール"
+    ],
     "startAt": "2026-02-13T13:45:47+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/akirosenthal_birthday_2026",
@@ -5837,7 +6132,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "癒月ちょこ 誕生日記念2026",
-    "talents": [],
+    "talents": [
+      "癒月ちょこ"
+    ],
     "startAt": "2026-02-10T10:37:14+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/yuzukichoco_birthday_2026",
@@ -5868,7 +6165,9 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "百鬼あやめ"
     ],
     "startAt": "2026-02-10T09:41:21+09:00",
     "endAt": null,
@@ -6106,7 +6405,8 @@
     "talents": [
       "博衣こより",
       "水宮枢",
-      "秘密結社holoX"
+      "秘密結社holoX",
+      "姫森ルーナ"
     ],
     "startAt": "2026-02-03T16:18:48+09:00",
     "endAt": null,
@@ -6124,7 +6424,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "ジュラルド・ティー・レクスフォード 誕生日記念2026",
-    "talents": [],
+    "talents": [
+      "Jurard T Rexford"
+    ],
     "startAt": "2026-02-03T13:48:40+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/jurardtrexford_birthday_2026",
@@ -6177,7 +6479,14 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "夏色まつり",
+      "癒月ちょこ",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine"
     ],
     "startAt": "2026-02-02T09:59:24+09:00",
     "endAt": null,
@@ -6235,7 +6544,9 @@
     "category": "goods",
     "subcategory": "resale",
     "title": "百鬼あやめ グッズ 復刻販売",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ"
+    ],
     "startAt": "2026-01-30T11:23:51+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/nakiriayame_rereleasededitionmerch",
@@ -6286,7 +6597,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "「さくらみこ」初の絵本が3月5日（木）に発売決定！",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2026-01-30",
     "endAt": null,
     "officialUrl": "https://hololive.hololivepro.com/news/20260130-01-372/",
@@ -6398,7 +6711,9 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "百鬼あやめ"
     ],
     "startAt": "2026-01-27T17:26:35+09:00",
     "endAt": null,
@@ -6491,7 +6806,14 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "癒月ちょこ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-01-26T20:42:15+09:00",
     "endAt": null,
@@ -6525,7 +6847,11 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "IRyS"
     ],
     "startAt": "2026-01-26T14:39:56+09:00",
     "endAt": null,
@@ -6637,7 +6963,18 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-01-22T09:00:30+09:00",
     "endAt": null,
@@ -6700,7 +7037,9 @@
       "ラプラス・ダークネス",
       "AZKi",
       "秘密結社holoX",
-      "ホロライブ3期生"
+      "ホロライブ3期生",
+      "アキ・ローゼンタール",
+      "癒月ちょこ"
     ],
     "startAt": "2026-01-20T13:52:52+09:00",
     "endAt": null,
@@ -6738,7 +7077,13 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "癒月ちょこ",
+      "Pavolia Reine"
     ],
     "startAt": "2026-01-19T10:29:48+09:00",
     "endAt": null,
@@ -6787,7 +7132,10 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "百鬼あやめ",
+      "癒月ちょこ"
     ],
     "startAt": "2026-01-15T15:47:03+09:00",
     "endAt": null,
@@ -6880,7 +7228,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2026-01-13T17:20:46+09:00",
     "endAt": null,
@@ -6932,7 +7301,18 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2026-01-13T16:21:57+09:00",
     "endAt": null,
@@ -6950,7 +7330,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "荒咬オウガ 誕生日記念2026",
-    "talents": [],
+    "talents": [
+      "荒咬オウガ"
+    ],
     "startAt": "2026-01-09T16:26:23+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/aragamioga_birthday_2026",
@@ -6970,7 +7352,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2026-01-09T13:42:04+09:00",
     "endAt": null,
@@ -7123,7 +7506,10 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "百鬼あやめ",
+      "癒月ちょこ"
     ],
     "startAt": "2026-01-07T17:45:38+09:00",
     "endAt": null,
@@ -7316,7 +7702,8 @@
     "title": "hololive 4th Generation Anniversary Parade",
     "talents": [
       "角巻わため",
-      "常闇トワ"
+      "常闇トワ",
+      "姫森ルーナ"
     ],
     "startAt": "2025-12-25T15:30:45+09:00",
     "endAt": null,
@@ -7658,7 +8045,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "さくらみこ ルームウェア衣装お披露目記念",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2025-12-22T12:55:25+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_roomwearoutfitcelebration",
@@ -7733,7 +8122,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "夕刻ロベル 活動6周年記念",
-    "talents": [],
+    "talents": [
+      "夕刻ロベル"
+    ],
     "startAt": "2025-12-19T14:31:26+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/yukokuroberu_anniversary_6th",
@@ -7864,7 +8255,12 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "Pavolia Reine"
     ],
     "startAt": "2025-12-18T15:22:53+09:00",
     "endAt": null,
@@ -7908,7 +8304,19 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-12-18T11:39:38+09:00",
     "endAt": null,
@@ -7947,7 +8355,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "大空スバル おこもりグッズ",
-    "talents": [],
+    "talents": [
+      "大空スバル"
+    ],
     "startAt": "2025-12-18T09:52:26+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/oozorasubaru_cozymerchandise",
@@ -8046,7 +8456,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "羽継烏有 お絵かきグッズ",
-    "talents": [],
+    "talents": [
+      "羽継烏有"
+    ],
     "startAt": "2025-12-17T09:49:53+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/utsugiuyu_artistiquemerch",
@@ -8063,7 +8475,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "アキ・ローゼンタール 100万人記念",
-    "talents": [],
+    "talents": [
+      "アキ・ローゼンタール"
+    ],
     "startAt": "2025-12-16T14:09:26+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/akirosenthal_subscribers_1m",
@@ -8083,7 +8497,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-12-15T16:40:08+09:00",
     "endAt": null,
@@ -8200,7 +8615,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "百鬼あやめ 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ"
+    ],
     "startAt": "2025-12-11T14:53:17+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/nakiriayame_birthday_2025",
@@ -8240,7 +8657,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "岸堂天真 活動6周年記念",
-    "talents": [],
+    "talents": [
+      "岸堂天真"
+    ],
     "startAt": "2025-12-10T14:53:09+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/kishidotemma_anniversary_6th",
@@ -8278,7 +8697,8 @@
     "subcategory": "birthday",
     "title": "こぼ・かなえる 誕生日記念2025",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-12-10T08:48:09+09:00",
     "endAt": null,
@@ -8327,7 +8747,18 @@
       "AZKi",
       "ReGLOSS",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-12-10",
     "endAt": null,
@@ -8367,7 +8798,8 @@
     "subcategory": "anniversary",
     "title": "ホロライブインドネシア2期生 5周年記念",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine"
     ],
     "startAt": "2025-12-09T09:20:22+09:00",
     "endAt": null,
@@ -8441,7 +8873,11 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ"
     ],
     "startAt": "2025-12-08T16:31:11+09:00",
     "endAt": null,
@@ -8481,7 +8917,11 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "赤井はあと",
+      "ロボ子さん",
+      "百鬼あやめ",
+      "癒月ちょこ"
     ],
     "startAt": "2025-12-08T08:51:05+09:00",
     "endAt": null,
@@ -8523,7 +8963,9 @@
       "一伊那尓栖",
       "AZKi",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "さくらみこ"
     ],
     "startAt": "2025-12-08",
     "endAt": null,
@@ -8620,7 +9062,9 @@
     "category": "goods",
     "subcategory": "friends",
     "title": "hololive friends poutique Fun!ハット 百鬼あやめ",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ"
+    ],
     "startAt": "2025-12-05T14:52:09+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/nakiriayame_hololivefriendspoutique_funhat",
@@ -8676,7 +9120,8 @@
     "subcategory": "anniversary",
     "title": "パヴォリア・レイネ 活動5周年記念",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine"
     ],
     "startAt": "2025-12-04T13:13:27+09:00",
     "endAt": null,
@@ -8821,7 +9266,9 @@
       "ときのそら",
       "宝鐘マリン",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "さくらみこ",
+      "夏色まつり"
     ],
     "startAt": "2025-12-01T17:27:54+09:00",
     "endAt": null,
@@ -8858,7 +9305,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "HELLO! GOOD SMILE さくらみこ",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2025-12-01T13:03:05+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_hellogoodsmile",
@@ -9141,7 +9590,9 @@
     "category": "goods",
     "subcategory": "card_book",
     "title": "hololive OFFICIAL CARD GAME English Edition Start Deck \"Green - Kazama Iroha\"",
-    "talents": [],
+    "talents": [
+      "風真いろは"
+    ],
     "startAt": "2025-11-25T15:51:40+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololiveofficialcardgame_hsd06e",
@@ -9158,7 +9609,9 @@
     "category": "goods",
     "subcategory": "card_book",
     "title": "hololive OFFICIAL CARD GAME English Edition Start Deck \"White - Todoroki Hajime\"",
-    "talents": [],
+    "talents": [
+      "轟はじめ"
+    ],
     "startAt": "2025-11-25T15:44:41+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololiveofficialcardgame_hsd05e",
@@ -9193,7 +9646,8 @@
     "subcategory": "goods",
     "title": "ホロライブEnglish「Happy Winter Holidays」",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-11-25T12:48:48+09:00",
     "endAt": null,
@@ -9350,7 +9804,9 @@
     "category": "goods",
     "subcategory": "resale",
     "title": "【再販】ねんどろいど 百鬼あやめ",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ"
+    ],
     "startAt": "2025-11-20T09:51:21+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/nakiriayame_nendoroid_rerelease",
@@ -9367,7 +9823,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "ホロスターズ『White Night Stories』クリスマスボイス",
-    "talents": [],
+    "talents": [
+      "夕刻ロベル"
+    ],
     "startAt": "2025-11-19T11:06:05+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostars_datenightatthechristmasmarket",
@@ -9425,7 +9883,9 @@
     "subcategory": "anniversary",
     "title": "hololive Indonesia 5th Anniversary LIVE, “Chromatic Future”",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-11-17T13:28:12+09:00",
     "endAt": null,
@@ -9443,7 +9903,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "ジュラルド・ティー・レクスフォード 活動2周年記念",
-    "talents": [],
+    "talents": [
+      "Jurard T Rexford"
+    ],
     "startAt": "2025-11-17T11:15:42+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/jurardtrexford_anniversary_2nd",
@@ -9479,7 +9941,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "ホロスターズEnglish -ARMIS- 2周年記念",
-    "talents": [],
+    "talents": [
+      "Jurard T Rexford"
+    ],
     "startAt": "2025-11-14T14:11:08+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarsenarmis_anniversary_2nd",
@@ -9607,7 +10071,10 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "癒月ちょこ"
     ],
     "startAt": "2025-11-14T10:49:10+09:00",
     "endAt": null,
@@ -9857,7 +10324,16 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "ホロスターズ AGF2025 GANGSTARS",
-    "talents": [],
+    "talents": [
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-11-07T15:20:53+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostars_agf2025",
@@ -9874,7 +10350,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "アルランディス 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "アルランディス"
+    ],
     "startAt": "2025-11-06T10:34:47+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/arurandeisu_birthday_2025",
@@ -10078,7 +10556,8 @@
     "subcategory": "series",
     "title": "hololive Connect CARRIZZMA",
     "talents": [
-      "星街すいせい"
+      "星街すいせい",
+      "百鬼あやめ"
     ],
     "startAt": "2025-10-31T09:35:14+09:00",
     "endAt": null,
@@ -10152,7 +10631,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "夏色まつり 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "夏色まつり"
+    ],
     "startAt": "2025-10-28T16:57:42+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/natsuiromatsuri_birthday_2025",
@@ -10188,7 +10669,10 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "百鬼あやめ",
+      "Pavolia Reine"
     ],
     "startAt": "2025-10-28T11:31:42+09:00",
     "endAt": null,
@@ -10254,7 +10738,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "夏色まつり 1st Album『Chasing the Dream 〜スポットライトは放課後に〜』通常盤",
-    "talents": [],
+    "talents": [
+      "夏色まつり"
+    ],
     "startAt": "2025-10-27T16:02:41+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/natsuiromatsuri_1stalbum_chasingthedream_afterschoolspotlight_regular",
@@ -10271,7 +10757,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "夏色まつり 1st Album『Chasing the Dream 〜スポットライトは放課後に〜』完全生産限定盤",
-    "talents": [],
+    "talents": [
+      "夏色まつり"
+    ],
     "startAt": "2025-10-27T15:30:58+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/natsuiromatsuri_1stalbum_chasingthedream_afterschoolspotlight_limited",
@@ -10331,7 +10819,9 @@
       "宝鐘マリン",
       "天音かなた",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "さくらみこ",
+      "姫森ルーナ"
     ],
     "startAt": "2025-10-23T11:05:44+09:00",
     "endAt": null,
@@ -10632,7 +11122,9 @@
       "宝鐘マリン",
       "天音かなた",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "さくらみこ",
+      "姫森ルーナ"
     ],
     "startAt": "2025-10-14T16:21:36+09:00",
     "endAt": null,
@@ -10743,7 +11235,11 @@
       "AZKi",
       "ReGLOSS",
       "秘密結社holoX",
-      "ホロライブ3期生"
+      "ホロライブ3期生",
+      "アキ・ローゼンタール",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ"
     ],
     "startAt": "2025-10-08T10:18:14+09:00",
     "endAt": null,
@@ -10800,7 +11296,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "姫森ルーナ 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "姫森ルーナ"
+    ],
     "startAt": "2025-10-07T14:20:13+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/himemoriluna_birthday_2025",
@@ -10878,7 +11376,13 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "赤井はあと",
+      "ロボ子さん",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "Pavolia Reine"
     ],
     "startAt": "2025-10-03T12:37:50+09:00",
     "endAt": null,
@@ -10897,7 +11401,8 @@
     "subcategory": "anniversary",
     "title": "ホロライブEnglish -Promise- 2周年記念",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-10-03T10:15:12+09:00",
     "endAt": null,
@@ -10934,7 +11439,16 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "ホロスターズ 『GANGSTARS』ボイスドラマ",
-    "talents": [],
+    "talents": [
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-10-01T11:41:30+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostars_agf2025_voice",
@@ -11046,7 +11560,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】大空スバル ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "大空スバル"
+    ],
     "startAt": "2025-09-29T11:56:56+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/oozorasubaru_voicearchive",
@@ -11123,7 +11639,8 @@
     "subcategory": "goods",
     "title": "miComet 新衣装記念2025",
     "talents": [
-      "星街すいせい"
+      "星街すいせい",
+      "さくらみこ"
     ],
     "startAt": "2025-09-26T15:21:03+09:00",
     "endAt": null,
@@ -11183,7 +11700,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】百鬼あやめ ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ"
+    ],
     "startAt": "2025-09-25T19:33:50+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/nakiriayame_voicearchive",
@@ -11200,7 +11719,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】夏色まつり ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "夏色まつり"
+    ],
     "startAt": "2025-09-25T19:30:21+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/natsuiromatsuri_voicearchive",
@@ -11236,7 +11757,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】さくらみこ ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2025-09-25T19:27:24+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_voicearchive",
@@ -11253,7 +11776,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】ロボ子さん ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "ロボ子さん"
+    ],
     "startAt": "2025-09-25T19:24:35+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/robocosan_voicearchive",
@@ -11270,7 +11795,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】姫森ルーナ ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "姫森ルーナ"
+    ],
     "startAt": "2025-09-25T17:26:13+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/himemoriluna_voicearchive",
@@ -11403,7 +11930,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "夕刻ロベル 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "夕刻ロベル"
+    ],
     "startAt": "2025-09-24T16:10:53+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/yukokuroberu_birthday_2025",
@@ -11440,7 +11969,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】荒咬オウガ ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "荒咬オウガ"
+    ],
     "startAt": "2025-09-24T15:42:52+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/aragamioga_voicearchive",
@@ -11475,7 +12006,8 @@
     "subcategory": "voice",
     "title": "【再販】ホロライブインドネシア2期生 ボイスアーカイブ",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine"
     ],
     "startAt": "2025-09-24T14:32:51+09:00",
     "endAt": null,
@@ -11494,7 +12026,8 @@
     "subcategory": "voice",
     "title": "【再販】パヴォリア・レイネ ボイスアーカイブ",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine"
     ],
     "startAt": "2025-09-24T14:31:17+09:00",
     "endAt": null,
@@ -11548,7 +12081,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】夕刻ロベル ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "夕刻ロベル"
+    ],
     "startAt": "2025-09-24T11:58:50+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/yukokuroberu_voicearchive",
@@ -11565,7 +12100,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】岸堂天真 ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "岸堂天真"
+    ],
     "startAt": "2025-09-24T11:22:17+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/kishidotemma_voicearchive",
@@ -11638,7 +12175,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】アキ・ローゼンタール ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "アキ・ローゼンタール"
+    ],
     "startAt": "2025-09-22T19:40:02+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/akirosenthal_voicearchive",
@@ -11655,7 +12194,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】赤井はあと ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "赤井はあと"
+    ],
     "startAt": "2025-09-22T19:02:19+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/akaihaato_voicearchive",
@@ -11727,7 +12268,9 @@
     "category": "goods",
     "subcategory": "card_book",
     "title": "hololive OFFICIAL CARD GAME English Edition Start Deck \"Red - Nakiri Ayame\"",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ"
+    ],
     "startAt": "2025-09-22T09:44:30+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololiveofficialcardgame_hsd02e",
@@ -11744,7 +12287,9 @@
     "category": "goods",
     "subcategory": "card_book",
     "title": "hololive OFFICIAL CARD GAME English Edition Start Deck \"Blue - Nekomata Okayu\"",
-    "talents": [],
+    "talents": [
+      "猫又おかゆ"
+    ],
     "startAt": "2025-09-22T09:36:59+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololiveofficialcardgame_hsd03e",
@@ -11761,7 +12306,9 @@
     "category": "goods",
     "subcategory": "card_book",
     "title": "hololive OFFICIAL CARD GAME English Edition Start Deck \"Purple - Yuzuki Choco\"",
-    "talents": [],
+    "talents": [
+      "癒月ちょこ"
+    ],
     "startAt": "2025-09-19T16:58:54+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololiveofficialcardgame_hsd04e",
@@ -11812,7 +12359,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】花咲みやび ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "花咲みやび"
+    ],
     "startAt": "2025-09-19T12:03:19+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hanasakimiyabi_voicearchive",
@@ -11829,7 +12378,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】癒月ちょこ ボイスアーカイブ",
-    "talents": [],
+    "talents": [
+      "癒月ちょこ"
+    ],
     "startAt": "2025-09-19T11:48:48+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/yuzukichoco_voicearchive",
@@ -12043,7 +12594,9 @@
     "title": "hololive Seasonal Days オータムスクールダイアリー",
     "talents": [
       "猫又おかゆ",
-      "角巻わため"
+      "角巻わため",
+      "アキ・ローゼンタール",
+      "赤井はあと"
     ],
     "startAt": "2025-09-16T09:45:29+09:00",
     "endAt": null,
@@ -12084,7 +12637,11 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "hololive 2nd Generation Anniversary Parade",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル"
+    ],
     "startAt": "2025-09-12T12:12:28+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololivegen2_anniversary_2025",
@@ -12274,7 +12831,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "hololive closet 百鬼あやめ  かわ余ジャージ衣装",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ"
+    ],
     "startAt": "2025-09-11T13:42:23+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/nakiriayame_hololivecloset_cutiejerseyoutfit",
@@ -12383,7 +12942,11 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "夏色まつり",
+      "百鬼あやめ"
     ],
     "startAt": "2025-09-10T10:24:01+09:00",
     "endAt": null,
@@ -12572,7 +13135,8 @@
     "subcategory": "birthday",
     "title": "パヴォリア・レイネ 誕生日記念2025",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine"
     ],
     "startAt": "2025-09-05T10:59:47+09:00",
     "endAt": null,
@@ -12679,7 +13243,19 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-09-03T16:38:48+09:00",
     "endAt": null,
@@ -12753,7 +13329,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2025-09-02T16:40:42+09:00",
     "endAt": null,
@@ -12774,7 +13371,9 @@
     "talents": [
       "ときのそら",
       "星街すいせい",
-      "AZKi"
+      "AZKi",
+      "ロボ子さん",
+      "さくらみこ"
     ],
     "startAt": "2025-09-02T14:42:44+09:00",
     "endAt": null,
@@ -12814,7 +13413,16 @@
       "AZKi",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ"
     ],
     "startAt": "2025-09-01T18:00:00+09:00",
     "endAt": null,
@@ -12832,7 +13440,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "百鬼あやめ 活動7周年記念",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ"
+    ],
     "startAt": "2025-09-01T16:02:06+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/nakiriayame_anniversary_7th",
@@ -13011,7 +13621,12 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "癒月ちょこ",
+      "姫森ルーナ"
     ],
     "startAt": "2025-08-26T07:22:40+09:00",
     "endAt": null,
@@ -13034,7 +13649,9 @@
       "宝鐘マリン",
       "天音かなた",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "さくらみこ",
+      "姫森ルーナ"
     ],
     "startAt": "2025-08-25T17:44:24+09:00",
     "endAt": null,
@@ -13143,7 +13760,13 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "癒月ちょこ",
+      "Pavolia Reine"
     ],
     "startAt": "2025-08-22T13:35:47+09:00",
     "endAt": null,
@@ -13162,7 +13785,9 @@
     "subcategory": "live",
     "title": "ホロライブインドネシア 現地初ライブ 『hololive Indonesia 5th Anniversary LIVE Chromatic Future』情報解禁！",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-08-20",
     "endAt": null,
@@ -13295,7 +13920,16 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "ホロスターズ ぼくらの夏休み〜SUMMER VACATION〜コンテンツブロマイド",
-    "talents": [],
+    "talents": [
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-08-12T22:21:20+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostars_oursummervacation_photoprints",
@@ -13595,7 +14229,10 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "夏色まつり",
+      "癒月ちょこ"
     ],
     "startAt": "2025-08-06T09:05:49+09:00",
     "endAt": null,
@@ -13630,7 +14267,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "赤井はあと 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "赤井はあと"
+    ],
     "startAt": "2025-08-05T09:22:10+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/akaihaato_birthday_2025",
@@ -13744,7 +14383,11 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "赤井はあと",
+      "ロボ子さん",
+      "癒月ちょこ",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-08-01T09:43:30+09:00",
     "endAt": null,
@@ -13786,7 +14429,8 @@
     "title": "2025年7月開催「ロサンゼルス・ドジャース」とのコラボ企画「hololive night」イベントレポート",
     "talents": [
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-07-31",
     "endAt": null,
@@ -13804,7 +14448,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "さくらみこ 活動7周年記念",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2025-07-30T09:13:29+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_anniversary_7th",
@@ -13824,7 +14470,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-07-29T17:45:11+09:00",
     "endAt": null,
@@ -13843,7 +14490,8 @@
     "subcategory": "anniversary",
     "title": "FUWAMOCO 活動2周年記念",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "FUWAMOCO"
     ],
     "startAt": "2025-07-29T09:28:03+09:00",
     "endAt": null,
@@ -13987,7 +14635,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "水無世燐央 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "水無世燐央"
+    ],
     "startAt": "2025-07-23T11:01:36+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/minaserio_birthday_2025",
@@ -14004,7 +14654,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "ロボ子さん「はろー、わーるど！ 月曜のロボ子、スマイル起動中！」ボイス",
-    "talents": [],
+    "talents": [
+      "ロボ子さん"
+    ],
     "startAt": "2025-07-23T09:27:04+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/robocosan_helloworldnowinitializingrobocomondaysmiles_voice",
@@ -14058,7 +14710,19 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-07-22T22:46:05+09:00",
     "endAt": null,
@@ -14113,7 +14777,19 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-07-22T22:05:08+09:00",
     "endAt": null,
@@ -14168,7 +14844,19 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-07-22T18:06:04+09:00",
     "endAt": null,
@@ -14200,7 +14888,12 @@
       "AZKi",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "夏色まつり",
+      "癒月ちょこ",
+      "大空スバル"
     ],
     "startAt": "2025-07-22T15:24:34+09:00",
     "endAt": null,
@@ -14390,7 +15083,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "hololive closet 癒月ちょこ ナース衣装",
-    "talents": [],
+    "talents": [
+      "癒月ちょこ"
+    ],
     "startAt": "2025-07-16T13:43:56+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/yuzukichoco_hololivecloset_nurseoutfit",
@@ -14407,7 +15102,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "hololive closet 赤井はあと 部屋着衣装",
-    "talents": [],
+    "talents": [
+      "赤井はあと"
+    ],
     "startAt": "2025-07-16T12:49:38+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/akaihaato_hololivecloset_loungewearoutfit",
@@ -14443,7 +15140,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "hololive closet さくらみこ セーラー服衣装",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2025-07-16T11:28:53+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_hololivecloset_sailoruniformoutfit",
@@ -14460,7 +15159,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "hololive closet ロボ子さん オーバーサイズアウター衣装",
-    "talents": [],
+    "talents": [
+      "ロボ子さん"
+    ],
     "startAt": "2025-07-16T11:10:52+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/robocosan_hololivecloset_oversizedouterwearoutfit",
@@ -14497,7 +15198,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-07-15T14:46:12+09:00",
     "endAt": null,
@@ -14538,7 +15240,8 @@
     "talents": [
       "ときのそら",
       "尾丸ポルカ",
-      "一伊那尓栖"
+      "一伊那尓栖",
+      "夏色まつり"
     ],
     "startAt": "2025-07-14",
     "endAt": null,
@@ -14613,7 +15316,9 @@
     "category": "goods",
     "subcategory": "friends",
     "title": "hololive friends with u 赤井はあと ゴスロリ衣装",
-    "talents": [],
+    "talents": [
+      "赤井はあと"
+    ],
     "startAt": "2025-07-11T15:07:45+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/akaihaato_hololivefriendswithu_gothiclolitaoutfit",
@@ -14649,7 +15354,16 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "ホロスターズ大運動会2025 デジタルメッセージボード",
-    "talents": [],
+    "talents": [
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-07-11T09:23:21+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostars_bigfieldday2025_digitalmessageboard",
@@ -14712,7 +15426,11 @@
       "AZKi",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ"
     ],
     "startAt": "2025-07-10T15:38:11+09:00",
     "endAt": null,
@@ -14749,7 +15467,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "夜十神封魔 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "夜十神封魔"
+    ],
     "startAt": "2025-07-09T15:28:28+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/yatogamifuma_birthday_2025",
@@ -14767,7 +15487,8 @@
     "subcategory": "anniversary",
     "title": "IRyS 活動4周年記念",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-07-09T11:17:32+09:00",
     "endAt": null,
@@ -14858,7 +15579,8 @@
     "talents": [
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "IRyS"
     ],
     "startAt": "2025-07-04T17:11:32+09:00",
     "endAt": null,
@@ -14876,7 +15598,16 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "ホロスターズ大運動会2025 事前販売",
-    "talents": [],
+    "talents": [
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-07-04T12:53:40+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostars_bigfieldday_advancedorder",
@@ -14949,7 +15680,19 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-07-03T16:43:56+09:00",
     "endAt": null,
@@ -15010,7 +15753,14 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "夏色まつり",
+      "癒月ちょこ",
+      "IRyS",
+      "Pavolia Reine"
     ],
     "startAt": "2025-07-01T22:47:06+09:00",
     "endAt": null,
@@ -15068,7 +15818,15 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "癒月ちょこ",
+      "姫森ルーナ",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-06-30T15:53:10+09:00",
     "endAt": null,
@@ -15105,7 +15863,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "大空スバル 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "大空スバル"
+    ],
     "startAt": "2025-06-30T09:29:17+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/oozorasubaru_birthday_2025",
@@ -15170,7 +15930,9 @@
       "獅白ぼたん",
       "ラプラス・ダークネス",
       "風真いろは",
-      "水宮枢"
+      "水宮枢",
+      "ロボ子さん",
+      "姫森ルーナ"
     ],
     "startAt": "2025-06-27",
     "endAt": null,
@@ -15264,7 +16026,8 @@
     "title": "hololive production US Edition",
     "talents": [
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-06-25T15:30:50+09:00",
     "endAt": null,
@@ -15303,7 +16066,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "癒月ちょこ 新衣装記念2025",
-    "talents": [],
+    "talents": [
+      "癒月ちょこ"
+    ],
     "startAt": "2025-06-24T17:42:57+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/yuzukichoco_newoutfit_2025",
@@ -15321,7 +16086,8 @@
     "subcategory": "voice",
     "title": "パヴォリア・レイネ「世話焼きお姉さんのシャンプーはいかが？」ASMRボイス",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine"
     ],
     "startAt": "2025-06-24T13:17:55+09:00",
     "endAt": null,
@@ -15358,7 +16124,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "さくらみこ「JKみこちと雨宿り」ASMRボイス",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2025-06-24T12:33:21+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_asmr_shelterfromtherain",
@@ -15453,7 +16221,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-06-23T12:09:55+09:00",
     "endAt": null,
@@ -15471,7 +16240,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "姫森ルーナ 100万人記念＆新衣装記念2025",
-    "talents": [],
+    "talents": [
+      "姫森ルーナ"
+    ],
     "startAt": "2025-06-23T10:09:06+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/himemoriluna_subscribers1mandnewoutfit2025",
@@ -15555,7 +16326,12 @@
       "AZKi",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "癒月ちょこ"
     ],
     "startAt": "2025-06-17T14:26:48+09:00",
     "endAt": null,
@@ -15642,7 +16418,8 @@
     "subcategory": "card_book",
     "title": "hololive OFFICIAL CARD GAME English Edition Start Deck \"Tokino Sora & AZKi\"",
     "talents": [
-      "AZKi"
+      "AZKi",
+      "ときのそら"
     ],
     "startAt": "2025-06-17T10:37:41+09:00",
     "endAt": null,
@@ -15819,7 +16596,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-06-16",
     "endAt": null,
@@ -15895,7 +16673,16 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "ホロスターズ マルチエンドボイス「Make your Story」",
-    "talents": [],
+    "talents": [
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-06-10T22:17:22+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostars_makeyourstory",
@@ -15931,7 +16718,16 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "【再販】ホロスターズ『ようこそCLUB HOLOSTARSへ』ボイス",
-    "talents": [],
+    "talents": [
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-06-10T12:38:45+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostars_agf2023_voice_rerun",
@@ -16011,7 +16807,8 @@
     "title": "「ロサンゼルス・ドジャース」と 「ホロライブプロダクション」の第2回コラボレーション企画「hololive night」開催決定！MLB史上初、ドジャースタジアムからのVTuber生配信企画も",
     "talents": [
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-06-09",
     "endAt": null,
@@ -16043,7 +16840,9 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "癒月ちょこ"
     ],
     "startAt": "2025-06-06T10:12:43+09:00",
     "endAt": null,
@@ -16099,7 +16898,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "花咲みやび 活動6周年記念",
-    "talents": [],
+    "talents": [
+      "花咲みやび"
+    ],
     "startAt": "2025-06-04T18:05:07+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hanasakimiyabi_anniversary_6th",
@@ -16175,7 +16976,8 @@
       "星街すいせい",
       "獅白ぼたん",
       "尾丸ポルカ",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "さくらみこ"
     ],
     "startAt": "2025-06-02T11:38:19+09:00",
     "endAt": null,
@@ -16235,7 +17037,8 @@
     "talents": [
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "IRyS"
     ],
     "startAt": "2025-05-30T16:20:03+09:00",
     "endAt": null,
@@ -16257,7 +17060,8 @@
       "白上フブキ",
       "宝鐘マリン",
       "獅白ぼたん",
-      "綺々羅々ヴィヴィ"
+      "綺々羅々ヴィヴィ",
+      "百鬼あやめ"
     ],
     "startAt": "2025-05-29",
     "endAt": null,
@@ -16335,7 +17139,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "夏色まつり 活動7周年記念",
-    "talents": [],
+    "talents": [
+      "夏色まつり"
+    ],
     "startAt": "2025-05-27T16:10:43+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/natsuiromatsuri_anniversary_7th",
@@ -16403,7 +17209,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "赤井はあと 活動7周年記念",
-    "talents": [],
+    "talents": [
+      "赤井はあと"
+    ],
     "startAt": "2025-05-26T21:47:24+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/akaihaato_anniversary_7th",
@@ -16439,7 +17247,12 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "IRyS",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-05-26T16:57:08+09:00",
     "endAt": null,
@@ -16496,7 +17309,10 @@
     "subcategory": "anniversary",
     "title": "hololive 1st Generation Anniversary Parade",
     "talents": [
-      "白上フブキ"
+      "白上フブキ",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "夏色まつり"
     ],
     "startAt": "2025-05-26T09:41:48+09:00",
     "endAt": null,
@@ -16553,7 +17369,8 @@
     "subcategory": "goods",
     "title": "hololive Magazine Series -Spotlight- vol.5",
     "talents": [
-      "星街すいせい"
+      "星街すいせい",
+      "さくらみこ"
     ],
     "startAt": "2025-05-21T15:06:54+09:00",
     "endAt": null,
@@ -16610,7 +17427,9 @@
     "category": "goods",
     "subcategory": "friends",
     "title": "hololive friends Meets 姫森ルーナ/モンスターハンター カイザーα装備",
-    "talents": [],
+    "talents": [
+      "姫森ルーナ"
+    ],
     "startAt": "2025-05-20T10:44:02+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/himemoriluna_hololivefriendsmeets_monsterhunter",
@@ -16707,7 +17526,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "ロボ子さん 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "ロボ子さん"
+    ],
     "startAt": "2025-05-16T10:18:55+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/robocosan_birthday_2025",
@@ -16748,7 +17569,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-05-15T14:19:46+09:00",
     "endAt": null,
@@ -16877,7 +17699,9 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "癒月ちょこ"
     ],
     "startAt": "2025-05-08T22:47:17+09:00",
     "endAt": null,
@@ -16918,7 +17742,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-05-08T13:09:27+09:00",
     "endAt": null,
@@ -16994,7 +17819,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "羽継烏有 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "羽継烏有"
+    ],
     "startAt": "2025-05-02T09:55:35+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/utsugiuyu_birthday_2025",
@@ -17016,7 +17843,10 @@
       "天音かなた",
       "獅白ぼたん",
       "ラプラス・ダークネス",
-      "鷹嶺ルイ"
+      "鷹嶺ルイ",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "さくらみこ"
     ],
     "startAt": "2025-05-02",
     "endAt": null,
@@ -17073,7 +17903,9 @@
     "category": "goods",
     "subcategory": "friends",
     "title": "hololive friends with u 癒月ちょこ お忍び衣装",
-    "talents": [],
+    "talents": [
+      "癒月ちょこ"
+    ],
     "startAt": "2025-05-01T12:50:01+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/yuzukichoco_hololivefriendswithu_secretdayoffoutfit",
@@ -17090,7 +17922,9 @@
     "category": "goods",
     "subcategory": "friends",
     "title": "hololive friends with u 百鬼あやめ ガーリー衣装",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ"
+    ],
     "startAt": "2025-05-01T12:40:10+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/nakiriayame_hololivefriendswithu_girlyoutfit",
@@ -17107,7 +17941,9 @@
     "category": "goods",
     "subcategory": "friends",
     "title": "hololive friends with u 夏色まつり セットアップ私服衣装",
-    "talents": [],
+    "talents": [
+      "夏色まつり"
+    ],
     "startAt": "2025-05-01T12:27:56+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/natsuiromatsuri_hololivefriendswithu_semiformaloutfit",
@@ -17158,7 +17994,12 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-04-30T21:16:26+09:00",
     "endAt": null,
@@ -17239,7 +18080,8 @@
     "title": "戌神ころね、白銀ノエル、姫森ルーナによる「スター・ウォーズ」のスペシャル応援プロジェクトが実施決定！特別番組や展示イベントなど盛りだくさん",
     "talents": [
       "戌神ころね",
-      "白銀ノエル"
+      "白銀ノエル",
+      "姫森ルーナ"
     ],
     "startAt": "2025-04-29",
     "endAt": null,
@@ -17275,7 +18117,8 @@
     "subcategory": "goods",
     "title": "ホロライブEnglish「ENigmatic Recollection」2章記念グッズ",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-04-27T23:39:19+09:00",
     "endAt": null,
@@ -17349,7 +18192,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "さくらみこ1st Live “flower fantasista!” Blu-ray",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2025-04-25T11:38:46+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_1stlive_flowerfantasista_bluray",
@@ -17367,7 +18212,8 @@
     "subcategory": "goods",
     "title": "hololive Magazine Series -Spotlight- vol.4",
     "talents": [
-      "常闇トワ"
+      "常闇トワ",
+      "大空スバル"
     ],
     "startAt": "2025-04-24T09:49:57+09:00",
     "endAt": null,
@@ -17386,7 +18232,8 @@
     "subcategory": "goods",
     "title": "FUWAMOCO 100万人記念",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "FUWAMOCO"
     ],
     "startAt": "2025-04-23T23:12:04+09:00",
     "endAt": null,
@@ -17404,7 +18251,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "荒咬オウガ 活動5周年記念",
-    "talents": [],
+    "talents": [
+      "荒咬オウガ"
+    ],
     "startAt": "2025-04-23T17:16:03+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/aragamioga_anniversary_5th",
@@ -17441,7 +18290,9 @@
     "talents": [
       "ときのそら",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "さくらみこ",
+      "IRyS"
     ],
     "startAt": "2025-04-23",
     "endAt": null,
@@ -17673,7 +18524,8 @@
     "title": "Lovely Okaburi Mascot Series vol.3",
     "talents": [
       "獅白ぼたん",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "さくらみこ"
     ],
     "startAt": "2025-04-14T16:33:53+09:00",
     "endAt": null,
@@ -17765,7 +18617,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "岸堂天真 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "岸堂天真"
+    ],
     "startAt": "2025-04-10T22:49:11+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/kishidotemma_birthday_2025",
@@ -17785,7 +18639,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-04-10T22:27:23+09:00",
     "endAt": null,
@@ -17812,7 +18667,8 @@
       "ラプラス・ダークネス",
       "鷹嶺ルイ",
       "博衣こより",
-      "風真いろは"
+      "風真いろは",
+      "姫森ルーナ"
     ],
     "startAt": "2025-04-10",
     "endAt": null,
@@ -17850,7 +18706,8 @@
     "subcategory": "goods",
     "title": "ホロmini ボーカルシリーズ ホロライブインドネシア3期生",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-04-09T09:14:38+09:00",
     "endAt": null,
@@ -17885,7 +18742,9 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "癒月ちょこ"
     ],
     "startAt": "2025-04-08T15:23:08+09:00",
     "endAt": null,
@@ -18001,7 +18860,9 @@
     "category": "goods",
     "subcategory": "friends",
     "title": "hololive friends poutique Fun!ハット 癒月ちょこ",
-    "talents": [],
+    "talents": [
+      "癒月ちょこ"
+    ],
     "startAt": "2025-04-07T14:47:31+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololivefriends_poutique_funhat_yuzukichoco",
@@ -18018,7 +18879,9 @@
     "category": "goods",
     "subcategory": "friends",
     "title": "hololive friends poutique Fun!ハット 赤井はあと",
-    "talents": [],
+    "talents": [
+      "赤井はあと"
+    ],
     "startAt": "2025-04-07T14:46:48+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololivefriends_poutique_funhat_akaihaato",
@@ -18035,7 +18898,9 @@
     "category": "goods",
     "subcategory": "friends",
     "title": "hololive friends poutique Fun!ハット さくらみこ",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2025-04-07T14:44:30+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/hololivefriends_poutique_funhat_sakuramiko",
@@ -18151,7 +19016,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "夏色まつり「ねぇ、からかわれるのと膝枕、どっちが好きなの？」ASMRボイス",
-    "talents": [],
+    "talents": [
+      "夏色まつり"
+    ],
     "startAt": "2025-04-03T09:29:07+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/natsuiromatsuri_asmr_betweenateaseandalappillowwhichonedoyoulike",
@@ -18207,7 +19074,16 @@
       "AZKi",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ"
     ],
     "startAt": "2025-04-02T16:33:18+09:00",
     "endAt": null,
@@ -18259,7 +19135,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "HOLOSTARS CLOSET 水無世燐央 放課後衣装 ver.",
-    "talents": [],
+    "talents": [
+      "水無世燐央"
+    ],
     "startAt": "2025-03-31T18:21:10+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarscloset_minaserio_afterschooloutfit",
@@ -18276,7 +19154,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "HOLOSTARS CLOSET 羽継烏有 放課後衣装 ver.",
-    "talents": [],
+    "talents": [
+      "羽継烏有"
+    ],
     "startAt": "2025-03-31T18:21:09+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarscloset_utsugiuyu_afterschooloutfit",
@@ -18293,7 +19173,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "HOLOSTARS CLOSET 夜十神封魔 放課後衣装 ver.",
-    "talents": [],
+    "talents": [
+      "夜十神封魔"
+    ],
     "startAt": "2025-03-31T18:21:09+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarscloset_yatogamifuma_afterschooloutfit",
@@ -18310,7 +19192,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "HOLOSTARS CLOSET 荒咬オウガ 魔界の貴族衣装 ver.",
-    "talents": [],
+    "talents": [
+      "荒咬オウガ"
+    ],
     "startAt": "2025-03-31T18:21:09+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarscloset_aragamioga_underworldaristocracyoutfit",
@@ -18344,7 +19228,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "HOLOSTARS CLOSET 夕刻ロベル 秋冬衣装 ver.",
-    "talents": [],
+    "talents": [
+      "夕刻ロベル"
+    ],
     "startAt": "2025-03-31T18:21:07+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarscloset_yukokuroberu_fallwinteroutfit",
@@ -18361,7 +19247,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "HOLOSTARS CLOSET 岸堂天真 秋冬衣装 ver.",
-    "talents": [],
+    "talents": [
+      "岸堂天真"
+    ],
     "startAt": "2025-03-31T18:21:07+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarscloset_kishidotemma_fallwinteroutfit",
@@ -18412,7 +19300,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "HOLOSTARS CLOSET アルランディス 継承衣装 ver.",
-    "talents": [],
+    "talents": [
+      "アルランディス"
+    ],
     "startAt": "2025-03-31T18:21:04+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarscloset_arurandeisu_accessionoutfit",
@@ -18446,7 +19336,9 @@
     "category": "goods",
     "subcategory": "series",
     "title": "HOLOSTARS CLOSET 花咲みやび 秋冬衣装 ver.",
-    "talents": [],
+    "talents": [
+      "花咲みやび"
+    ],
     "startAt": "2025-03-31T18:21:04+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarscloset_hanasakimiyabi_fallwinteroutfit",
@@ -18464,7 +19356,9 @@
     "subcategory": "goods",
     "title": "ホロライブインドネシア 5周年記念「5yukuran」",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-03-31T15:27:10+09:00",
     "endAt": null,
@@ -18501,7 +19395,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "ホロスターズEnglish -ARMIS- 3Dお披露目記念",
-    "talents": [],
+    "talents": [
+      "Jurard T Rexford"
+    ],
     "startAt": "2025-03-31T10:56:46+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarsen_armis_3d2025",
@@ -18518,7 +19414,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "ホロスターズEnglish -ARMIS- 3Dアクリルスタンド",
-    "talents": [],
+    "talents": [
+      "Jurard T Rexford"
+    ],
     "startAt": "2025-03-31T10:34:45+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarsen_armis_3dacrylicstand",
@@ -18601,7 +19499,8 @@
     "talents": [
       "天音かなた",
       "角巻わため",
-      "常闇トワ"
+      "常闇トワ",
+      "姫森ルーナ"
     ],
     "startAt": "2025-03-28T10:16:59+09:00",
     "endAt": null,
@@ -18635,7 +19534,10 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "夏色まつり",
+      "IRyS"
     ],
     "startAt": "2025-03-27T16:10:36+09:00",
     "endAt": null,
@@ -18653,7 +19555,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "ホロスターズEnglish「LILSTARS」スターティングボイス",
-    "talents": [],
+    "talents": [
+      "Jurard T Rexford"
+    ],
     "startAt": "2025-03-27T13:57:35+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostarsen_startingvoice_lilstars",
@@ -18780,7 +19684,11 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "UPROAR!!活動3周年記念",
-    "talents": [],
+    "talents": [
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-03-24T14:39:42+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/uproar_an3rd",
@@ -18798,7 +19706,8 @@
     "subcategory": "anniversary",
     "title": "こぼ・かなえる 活動3周年記念",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-03-21T15:28:25+09:00",
     "endAt": null,
@@ -18816,7 +19725,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "アルランディス 新衣装記念2025",
-    "talents": [],
+    "talents": [
+      "アルランディス"
+    ],
     "startAt": "2025-03-21T10:13:16+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/arurandeisu_no2025",
@@ -18932,7 +19843,11 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "UPROAR!! 活動3周年記念ボイス『カミフェス!!! ~after~』",
-    "talents": [],
+    "talents": [
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-03-18T11:39:48+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/uproar_an3rd_voice",
@@ -18950,7 +19865,8 @@
     "subcategory": "goods",
     "title": "ホロライブインドネシア3期生 3周年記念",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-03-18T10:37:56+09:00",
     "endAt": null,
@@ -19005,7 +19921,9 @@
     "subcategory": "goods",
     "title": "ホロライブこれくしょん vol.4",
     "talents": [
-      "天音かなた"
+      "天音かなた",
+      "さくらみこ",
+      "姫森ルーナ"
     ],
     "startAt": "2025-03-17T10:44:01+09:00",
     "endAt": null,
@@ -19050,7 +19968,11 @@
       "天音かなた",
       "角巻わため",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "さくらみこ",
+      "百鬼あやめ",
+      "大空スバル",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-03-17",
     "endAt": null,
@@ -19109,7 +20031,8 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-03-14T09:38:59+09:00",
     "endAt": null,
@@ -19170,7 +20093,13 @@
       "AZKi",
       "ReGLOSS",
       "秘密結社holoX",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "赤井はあと",
+      "夏色まつり",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-03-13",
     "endAt": null,
@@ -19205,7 +20134,15 @@
       "博衣こより",
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "AZKi"
+      "AZKi",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "IRyS",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-03-13",
     "endAt": null,
@@ -19224,7 +20161,8 @@
     "subcategory": "birthday",
     "title": "IRyS 誕生日記念2025",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-03-12T23:49:04+09:00",
     "endAt": null,
@@ -19242,7 +20180,11 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "ホロmini ボーカルシリーズ ホロスターズ UPROAR!!",
-    "talents": [],
+    "talents": [
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-03-12T15:31:53+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holomini_vocal_uproar",
@@ -19359,7 +20301,13 @@
       "小鳥遊キアラ",
       "AZKi",
       "ReGLOSS",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "赤井はあと",
+      "夏色まつり",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-03-08",
     "endAt": null,
@@ -19419,7 +20367,8 @@
       "星街すいせい",
       "宝鐘マリン",
       "小鳥遊キアラ",
-      "ReGLOSS"
+      "ReGLOSS",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-03-07",
     "endAt": null,
@@ -19481,7 +20430,10 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "癒月ちょこ",
+      "IRyS"
     ],
     "startAt": "2025-03-06T13:25:12+09:00",
     "endAt": null,
@@ -19499,7 +20451,9 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "百鬼あやめ「鬼の温泉郷でひと休み」ASMRボイス",
-    "talents": [],
+    "talents": [
+      "百鬼あやめ"
+    ],
     "startAt": "2025-03-06T10:36:09+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/nakiriayame_asmr_restingattheonishotspring",
@@ -19517,7 +20471,8 @@
     "subcategory": "goods",
     "title": "IRyS EP『YaBAI』",
     "talents": [
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "startAt": "2025-03-04T17:24:40+09:00",
     "endAt": null,
@@ -19553,7 +20508,9 @@
       "ReGLOSS",
       "秘密結社holoX",
       "ホロライブ3期生",
-      "ホロライブ5期生"
+      "ホロライブ5期生",
+      "ロボ子さん",
+      "癒月ちょこ"
     ],
     "startAt": "2025-03-03T22:47:57+09:00",
     "endAt": null,
@@ -19692,7 +20649,19 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-03-03T13:22:53+09:00",
     "endAt": null,
@@ -19747,7 +20716,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2025-03-03T12:43:44+09:00",
     "endAt": null,
@@ -19802,7 +20792,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2025-03-03T11:50:50+09:00",
     "endAt": null,
@@ -19857,7 +20868,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2025-03-03T10:36:16+09:00",
     "endAt": null,
@@ -19912,7 +20944,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2025-03-03T10:07:23+09:00",
     "endAt": null,
@@ -19967,7 +21020,28 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru",
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央",
+      "Jurard T Rexford"
     ],
     "startAt": "2025-03-03T09:39:38+09:00",
     "endAt": null,
@@ -20017,7 +21091,19 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-02-28T18:36:31+09:00",
     "endAt": null,
@@ -20036,7 +21122,8 @@
     "subcategory": "goods",
     "title": "パヴォリア・レイネ メラッキャツの日2025",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine"
     ],
     "startAt": "2025-02-28T17:40:48+09:00",
     "endAt": null,
@@ -20086,7 +21173,19 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-02-28T14:54:20+09:00",
     "endAt": null,
@@ -20123,7 +21222,9 @@
     "category": "goods",
     "subcategory": "birthday",
     "title": "さくらみこ 誕生日記念2025",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "startAt": "2025-02-26T16:09:05+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/sakuramiko_bd2025",
@@ -20140,7 +21241,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "大空スバル 活動6周年記念",
-    "talents": [],
+    "talents": [
+      "大空スバル"
+    ],
     "startAt": "2025-02-26T15:43:02+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/oozorasubaru_an6th",
@@ -20217,7 +21320,9 @@
     "category": "goods",
     "subcategory": "goods",
     "title": "大空スバル 1st Album『Pleiades』",
-    "talents": [],
+    "talents": [
+      "大空スバル"
+    ],
     "startAt": "2025-02-26T08:43:52+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/oozorasubaru_1stal_pleiades",
@@ -20253,7 +21358,11 @@
       "ホロライブ3期生",
       "ホロライブ5期生",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "夏色まつり",
+      "癒月ちょこ"
     ],
     "startAt": "2025-02-26T00:36:35+09:00",
     "endAt": null,
@@ -20271,7 +21380,16 @@
     "category": "goods",
     "subcategory": "voice",
     "title": "ホロスターズ ホワイトデーボイス2025",
-    "talents": [],
+    "talents": [
+      "花咲みやび",
+      "岸堂天真",
+      "夕刻ロベル",
+      "アルランディス",
+      "荒咬オウガ",
+      "夜十神封魔",
+      "羽継烏有",
+      "水無世燐央"
+    ],
     "startAt": "2025-02-26T00:00:48+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/holostars_whitedayvoice2025",
@@ -20288,7 +21406,9 @@
     "category": "goods",
     "subcategory": "anniversary",
     "title": "ロボ子さん 活動7周年記念",
-    "talents": [],
+    "talents": [
+      "ロボ子さん"
+    ],
     "startAt": "2025-02-25T23:27:14+09:00",
     "endAt": null,
     "officialUrl": "https://shop.hololivepro.com/products/robocosan_an7th",
@@ -20330,7 +21450,9 @@
       "轟はじめ",
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "姫森ルーナ",
+      "IRyS"
     ],
     "startAt": "2025-02-20",
     "endAt": null,
@@ -20395,7 +21517,8 @@
       "角巻わため",
       "小鳥遊キアラ",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Kobo Kanaeru"
     ],
     "startAt": "2025-01-22",
     "endAt": null,
@@ -20416,7 +21539,10 @@
     "talents": [
       "兎田ぺこら",
       "白銀ノエル",
-      "宝鐘マリン"
+      "宝鐘マリン",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル"
     ],
     "startAt": "2025-01-17",
     "endAt": null,

@@ -1,77 +1,5 @@
 [
   {
-    "id": "stream-szlmrb5c2hk",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "live",
-    "title": "STREET FIGHTER 6｜GW最終日！ALEXマスター耐久 - 夜十神封魔",
-    "channelId": null,
-    "channelName": "夜十神封魔",
-    "channelPhoto": "https://yt3.ggpht.com/mtWfNstoxFmQrInOC7ZcIkOvzoMzDHUchDNpKTRR5ujOtI6bJD0YNFgKHqJpHPOmw2UDqjCu=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "夜十神封魔"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T13:58:12+09:00",
-    "startedAt": "2026-05-06T13:58:12+09:00",
-    "scheduledAt": "2026-05-06T13:58:12+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=SZlMRB5C2hk",
-    "holodexUrl": "https://holodex.net/watch/SZlMRB5C2hk",
-    "thumbnailUrl": "https://img.youtube.com/vi/SZlMRB5C2hk/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
-  },
-  {
-    "id": "stream-ygqkd7djlr8",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "live",
-    "title": "【 スーパーマリオワールド 】最終回！？完全初見！初めてのマリオワールドに挑戦！【#綺々羅々ヴィヴィ #hololiveDEV_IS #FLOWGLOW】",
-    "channelId": null,
-    "channelName": "綺々羅々ヴィヴィ",
-    "channelPhoto": "https://yt3.ggpht.com/1gNTfXSUE6ua7RJw0F-zV9kzFiSfQG4F2Nuj4_zUFfbDEXfbZUxki8kmOfZagS9n4EdxAZ9_-A=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "綺々羅々ヴィヴィ"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T18:03:00+09:00",
-    "startedAt": "2026-05-06T18:03:00+09:00",
-    "scheduledAt": "2026-05-06T18:03:00+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=YgQKd7DjLr8",
-    "holodexUrl": "https://holodex.net/watch/YgQKd7DjLr8",
-    "thumbnailUrl": "https://img.youtube.com/vi/YgQKd7DjLr8/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
-  },
-  {
-    "id": "stream-elrsbjaytvo",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "live",
-    "title": "【VCC PUBG】チュートリアル終えし男のVCC PUBG配信 / w.すももさん、ズズくん、なずなさん【夕刻ロベル/ホロスターズ】",
-    "channelId": null,
-    "channelName": "夕刻ロベル",
-    "channelPhoto": "https://yt3.ggpht.com/087yj2idU-aFOILEg1aycYQopvTOEQw4oILbI4p0u5jjSwauZRzfQkNvIhcKeUdLK-4owPQa4w=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "夕刻ロベル"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T19:02:37+09:00",
-    "startedAt": "2026-05-06T19:02:37+09:00",
-    "scheduledAt": "2026-05-06T19:02:37+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=eLrSBJAytVo",
-    "holodexUrl": "https://holodex.net/watch/eLrSBJAytVo",
-    "thumbnailUrl": "https://img.youtube.com/vi/eLrSBJAytVo/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
-  },
-  {
     "id": "stream-tih7j6ge-uc",
     "source": "holo_schedule",
     "sourceLabel": "ホロジュール",
@@ -81,7 +9,8 @@
     "channelName": "アキロゼ",
     "channelPhoto": "https://yt3.ggpht.com/0Nx9jWdjiUrkizCVCDZg_MasdF6b85DAsQATmAkNC2A8b3Y89vXlnSDZ_v1fM_X4w3088sJnmA=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "アキロゼ"
+      "アキロゼ",
+      "アキ・ローゼンタール"
     ],
     "topic": null,
     "liveViewers": null,
@@ -92,8 +21,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=tiH7J6GE_uc",
     "holodexUrl": "https://holodex.net/watch/tiH7J6GE_uc",
-    "thumbnailUrl": "https://img.youtube.com/vi/tiH7J6GE_uc/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/tiH7J6GE_uc/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/tiH7J6GE_uc/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.205Z"
   },
   {
     "id": "stream-qoalxecppna",
@@ -116,8 +46,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=QOAlxecPpNA",
     "holodexUrl": "https://holodex.net/watch/QOAlxecPpNA",
-    "thumbnailUrl": "https://img.youtube.com/vi/QOAlxecPpNA/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/QOAlxecPpNA/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/QOAlxecPpNA/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.205Z"
   },
   {
     "id": "stream-oo1oq-tod6a",
@@ -140,8 +71,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=Oo1oq_tOd6A",
     "holodexUrl": "https://holodex.net/watch/Oo1oq_tOd6A",
-    "thumbnailUrl": "https://img.youtube.com/vi/Oo1oq_tOd6A/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/Oo1oq_tOd6A/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/Oo1oq_tOd6A/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.205Z"
   },
   {
     "id": "stream-5poamvt2sey",
@@ -165,8 +97,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=5poAmvt2SeY",
     "holodexUrl": "https://holodex.net/watch/5poAmvt2SeY",
-    "thumbnailUrl": "https://img.youtube.com/vi/5poAmvt2SeY/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/5poAmvt2SeY/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/5poAmvt2SeY/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.206Z"
   },
   {
     "id": "stream-nipz7on8x4y",
@@ -189,8 +122,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=NIPZ7On8X4Y",
     "holodexUrl": "https://holodex.net/watch/NIPZ7On8X4Y",
-    "thumbnailUrl": "https://img.youtube.com/vi/NIPZ7On8X4Y/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/NIPZ7On8X4Y/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/NIPZ7On8X4Y/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.207Z"
   },
   {
     "id": "stream-lohqtd7g9yg",
@@ -202,7 +136,8 @@
     "channelName": "Reine",
     "channelPhoto": "https://yt3.ggpht.com/gV1Zr_UQCBsmfyqaJhgj46qud_7HkvdqDNobqz-GSY7cQ4GNSltNxAyc1Y1-9HXXvSoORbzc=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Reine"
+      "Reine",
+      "Pavolia Reine"
     ],
     "topic": null,
     "liveViewers": null,
@@ -213,32 +148,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=LOHQTd7G9Yg",
     "holodexUrl": "https://holodex.net/watch/LOHQTd7G9Yg",
-    "thumbnailUrl": "https://img.youtube.com/vi/LOHQTd7G9Yg/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
-  },
-  {
-    "id": "stream-xi6dstjo7uk",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "live",
-    "title": "5億年ぶりの激レア雑談【ホロライブ/兎田ぺこら】",
-    "channelId": null,
-    "channelName": "兎田ぺこら",
-    "channelPhoto": "https://yt3.ggpht.com/B-5Iau5CJVDiUOeCvCzHiwdkUijqoi2n0tNwfgIv_yDAvMbLHS4vq1IvK2RxL8y69BxTwmPhow=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "兎田ぺこら"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T22:01:46+09:00",
-    "startedAt": "2026-05-06T22:01:46+09:00",
-    "scheduledAt": "2026-05-06T22:01:46+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=xi6dStJO7Uk",
-    "holodexUrl": "https://holodex.net/watch/xi6dStJO7Uk",
-    "thumbnailUrl": "https://img.youtube.com/vi/xi6dStJO7Uk/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/LOHQTd7G9Yg/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/LOHQTd7G9Yg/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.207Z"
   },
   {
     "id": "stream-6rczqewqnsc",
@@ -261,8 +173,206 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=6rCzQEWqNsc",
     "holodexUrl": "https://holodex.net/watch/6rCzQEWqNsc",
-    "thumbnailUrl": "https://img.youtube.com/vi/6rCzQEWqNsc/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/6rCzQEWqNsc/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/6rCzQEWqNsc/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.208Z"
+  },
+  {
+    "id": "stream-2xyaihrqiai",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "live",
+    "title": "【 Cursed Companions 】NGワードを言ってはいけないよ、絶対だよ【角巻わため/ホロライブ４期生】",
+    "channelId": null,
+    "channelName": "角巻わため",
+    "channelPhoto": "https://yt3.ggpht.com/XJYar8ZAQ59ce0nFlf-Dl6V16Dwznu5xfh3XnMW_JE-nCVLHLiRTS-x1gB_eR4_CJY3KDfKxsVo=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "角巻わため",
+      "夏色まつり",
+      "大空スバル",
+      "猫又おかゆ",
+      "響咲リオナ"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T22:59:48+09:00",
+    "startedAt": "2026-05-06T22:59:48+09:00",
+    "scheduledAt": "2026-05-06T22:59:48+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=2xyaIHRQIaI",
+    "holodexUrl": "https://holodex.net/watch/2xyaIHRQIaI",
+    "thumbnailUrl": "https://i.ytimg.com/vi/2xyaIHRQIaI/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/2xyaIHRQIaI/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.209Z"
+  },
+  {
+    "id": "stream-n8mp4n7oxq0",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "live",
+    "title": "【Cursed Companions】NGワードで爆破！？異彩コラボで愛をささやけ💓【ホロライブ/夏色まつり】",
+    "channelId": null,
+    "channelName": "夏色まつり",
+    "channelPhoto": "https://yt3.ggpht.com/LZBvU0s_S-xi7fHmeab_iA8ztfGimxzisUBMODGKaIEx3r3R-tIDReiX3SlmbH2showigElJ=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "夏色まつり",
+      "大空スバル",
+      "猫又おかゆ",
+      "角巻わため",
+      "響咲リオナ"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T22:59:59+09:00",
+    "startedAt": "2026-05-06T22:59:59+09:00",
+    "scheduledAt": "2026-05-06T22:59:59+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=n8Mp4n7oxq0",
+    "holodexUrl": "https://holodex.net/watch/n8Mp4n7oxq0",
+    "thumbnailUrl": "https://i.ytimg.com/vi/n8Mp4n7oxq0/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/n8Mp4n7oxq0/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.209Z"
+  },
+  {
+    "id": "stream-ubkmgp1jc3m",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "live",
+    "title": "【 🟣言っちゃダメ 】禁句を喋ると命取り⁉️Cursed Companionで遊ぼう🤝✦【 猫又おかゆ視点/ホロライブ 】",
+    "channelId": null,
+    "channelName": "猫又おかゆ",
+    "channelPhoto": "https://yt3.ggpht.com/oD8ISaA35737mg-lt5mYSfOIXmjCeHYcSFFpTQn4AVMkqiyzrMle_THvX6NdfSxbjUO6fQ6_wg=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "猫又おかゆ",
+      "夏色まつり",
+      "大空スバル",
+      "角巻わため",
+      "響咲リオナ"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T23:00:12+09:00",
+    "startedAt": "2026-05-06T23:00:12+09:00",
+    "scheduledAt": "2026-05-06T23:00:12+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=ubKmGP1jC3M",
+    "holodexUrl": "https://holodex.net/watch/ubKmGP1jC3M",
+    "thumbnailUrl": "https://i.ytimg.com/vi/ubKmGP1jC3M/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/ubKmGP1jC3M/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.209Z"
+  },
+  {
+    "id": "stream-5fwfkehwzge",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "live",
+    "title": "【Cursed Companions】NGワードで即死！？自滅だけはさけるんだっ！！【ホロライブ DEV_IS 響咲リオナ】",
+    "channelId": null,
+    "channelName": "響咲リオナ",
+    "channelPhoto": "https://yt3.ggpht.com/Nd6K_cman-Bdkl_pv4_3UNpijyb7t5RXjhsso5IreKu0pwigFrc2f5KIM9aGrciqYeHZoJwVUDE=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "響咲リオナ",
+      "夏色まつり",
+      "大空スバル",
+      "猫又おかゆ",
+      "角巻わため"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T23:00:15+09:00",
+    "startedAt": "2026-05-06T23:00:15+09:00",
+    "scheduledAt": "2026-05-06T23:00:15+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=5fWFKEhWZgE",
+    "holodexUrl": "https://holodex.net/watch/5fWFKEhWZgE",
+    "thumbnailUrl": "https://i.ytimg.com/vi/5fWFKEhWZgE/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/5fWFKEhWZgE/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.209Z"
+  },
+  {
+    "id": "stream-235h0ffb8xs",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "live",
+    "title": "【Cursed Companions】NGワードを言うと仲間にダメージが入るホラゲーやるしゅばああああああああああああああああああ！！！！！！！！【ホロライブ/大空スバル】",
+    "channelId": null,
+    "channelName": "大空スバル",
+    "channelPhoto": "https://yt3.ggpht.com/ytc/AIdro_k5mjdt1wcbaYCXKwmDpVXmSGtOc-LH3WjIyUHVC4soP28=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "大空スバル",
+      "夏色まつり",
+      "猫又おかゆ",
+      "角巻わため",
+      "響咲リオナ"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T23:00:18+09:00",
+    "startedAt": "2026-05-06T23:00:18+09:00",
+    "scheduledAt": "2026-05-06T23:00:18+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=235H0fFb8xs",
+    "holodexUrl": "https://holodex.net/watch/235H0fFb8xs",
+    "thumbnailUrl": "https://i.ytimg.com/vi/235H0fFb8xs/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/235H0fFb8xs/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.209Z"
+  },
+  {
+    "id": "stream-w0xacoimlko",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "live",
+    "title": "【YAPYAP】We are Professional Yappers after all!!!【JUSTICE JAM!】",
+    "channelId": null,
+    "channelName": "Raora",
+    "channelPhoto": "https://yt3.ggpht.com/HKYI1ENbRIVyDgLVtpxOKyLAOEdOHWH__-JQu6Kj2dq0S9U-wTccKoZT0-4DBd21O0Cpo6NnlA=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "Raora",
+      "Raora Panthera"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T23:00:54+09:00",
+    "startedAt": "2026-05-06T23:00:54+09:00",
+    "scheduledAt": "2026-05-06T23:00:54+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=w0XacOimLKo",
+    "holodexUrl": "https://holodex.net/watch/w0XacOimLKo",
+    "thumbnailUrl": "https://i.ytimg.com/vi/w0XacOimLKo/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/w0XacOimLKo/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.210Z"
+  },
+  {
+    "id": "stream-jrieyyoxgau",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "live",
+    "title": "【PRAGMATA】#3  One More Station 【 iofi / hololiveID 】",
+    "channelId": null,
+    "channelName": "Iofi",
+    "channelPhoto": "https://yt3.ggpht.com/ghhBoD-8O908tlUkF45A49D5jbEOkzYR7dgxweO-sOdtlOvE21BLtVSpn6w4sapj4YEtAVoc=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "Iofi",
+      "Airani Iofifteen"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T23:03:41+09:00",
+    "startedAt": "2026-05-06T23:03:41+09:00",
+    "scheduledAt": "2026-05-06T23:03:41+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=JrIEYYoxGaU",
+    "holodexUrl": "https://holodex.net/watch/JrIEYYoxGaU",
+    "thumbnailUrl": "https://i.ytimg.com/vi/JrIEYYoxGaU/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/JrIEYYoxGaU/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.210Z"
   },
   {
     "id": "stream-35nwsydkcck",
@@ -285,8 +395,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=35NwSydkcCk",
     "holodexUrl": "https://holodex.net/watch/35NwSydkcCk",
-    "thumbnailUrl": "https://img.youtube.com/vi/35NwSydkcCk/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/35NwSydkcCk/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/35NwSydkcCk/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.210Z"
   },
   {
     "id": "stream-jrohpu2oygo",
@@ -309,8 +420,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=JROhPU2OYGo",
     "holodexUrl": "https://holodex.net/watch/JROhPU2OYGo",
-    "thumbnailUrl": "https://img.youtube.com/vi/JROhPU2OYGo/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/JROhPU2OYGo/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/JROhPU2OYGo/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.210Z"
   },
   {
     "id": "stream-bznyc1bg0g8",
@@ -336,8 +448,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=BZNyC1bG0g8",
     "holodexUrl": "https://holodex.net/watch/BZNyC1bG0g8",
-    "thumbnailUrl": "https://img.youtube.com/vi/BZNyC1bG0g8/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/BZNyC1bG0g8/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/BZNyC1bG0g8/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.211Z"
   },
   {
     "id": "stream-pjocvxl1pt0",
@@ -352,7 +465,8 @@
       "Crimzon",
       "Jurard",
       "Goldbullet",
-      "Octavio"
+      "Octavio",
+      "Crimzon Ruze"
     ],
     "topic": null,
     "liveViewers": null,
@@ -363,8 +477,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=pjocVXl1pT0",
     "holodexUrl": "https://holodex.net/watch/pjocVXl1pT0",
-    "thumbnailUrl": "https://img.youtube.com/vi/pjocVXl1pT0/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/pjocVXl1pT0/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/pjocVXl1pT0/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.211Z"
   },
   {
     "id": "stream-vbuimtn3sls",
@@ -376,7 +491,8 @@
     "channelName": "Shiori",
     "channelPhoto": "https://yt3.ggpht.com/q23ZTL-eIurUV4sMNtq5pJpFXWKI7dr-XuScFGVtSiDhTR_jrs4v1BpsWX1WP51sP4jjlmA=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Shiori"
+      "Shiori",
+      "Shiori Novella"
     ],
     "topic": null,
     "liveViewers": null,
@@ -387,8 +503,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=VbUImtn3sLs",
     "holodexUrl": "https://holodex.net/watch/VbUImtn3sLs",
-    "thumbnailUrl": "https://img.youtube.com/vi/VbUImtn3sLs/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/VbUImtn3sLs/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/VbUImtn3sLs/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.211Z"
   },
   {
     "id": "stream-ecsndzm6i-s",
@@ -403,7 +520,8 @@
       "Jurard",
       "Goldbullet",
       "Octavio",
-      "Crimzon"
+      "Crimzon",
+      "Jurard T Rexford"
     ],
     "topic": null,
     "liveViewers": null,
@@ -414,8 +532,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=eCsndzM6I_s",
     "holodexUrl": "https://holodex.net/watch/eCsndzM6I_s",
-    "thumbnailUrl": "https://img.youtube.com/vi/eCsndzM6I_s/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/eCsndzM6I_s/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/eCsndzM6I_s/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.211Z"
   },
   {
     "id": "stream-61swqgirzzq",
@@ -438,8 +557,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=61SWQgIRZZQ",
     "holodexUrl": "https://holodex.net/watch/61SWQgIRZZQ",
-    "thumbnailUrl": "https://img.youtube.com/vi/61SWQgIRZZQ/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/61SWQgIRZZQ/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/61SWQgIRZZQ/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.211Z"
   },
   {
     "id": "stream-syzwnehinxs",
@@ -462,196 +582,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=syZwNEHinxs",
     "holodexUrl": "https://holodex.net/watch/syZwNEHinxs",
-    "thumbnailUrl": "https://img.youtube.com/vi/syZwNEHinxs/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
-  },
-  {
-    "id": "stream-235h0ffb8xs",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "past",
-    "title": "【Cursed Companions】NGワードを言うと仲間にダメージが入るホラゲーやるしゅばああああああああああああああああああ！！！！！！！！【ホロライブ/大空スバル】",
-    "channelId": null,
-    "channelName": "大空スバル",
-    "channelPhoto": "https://yt3.ggpht.com/ytc/AIdro_k5mjdt1wcbaYCXKwmDpVXmSGtOc-LH3WjIyUHVC4soP28=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "大空スバル",
-      "夏色まつり",
-      "猫又おかゆ",
-      "角巻わため",
-      "響咲リオナ"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T23:00:00+09:00",
-    "startedAt": null,
-    "scheduledAt": "2026-05-06T23:00:00+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=235H0fFb8xs",
-    "holodexUrl": "https://holodex.net/watch/235H0fFb8xs",
-    "thumbnailUrl": "https://img.youtube.com/vi/235H0fFb8xs/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
-  },
-  {
-    "id": "stream-2xyaihrqiai",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "past",
-    "title": "【 Cursed Companions 】NGワードを言ってはいけないよ、絶対だよ【角巻わため/ホロライブ４期生】",
-    "channelId": null,
-    "channelName": "角巻わため",
-    "channelPhoto": "https://yt3.ggpht.com/XJYar8ZAQ59ce0nFlf-Dl6V16Dwznu5xfh3XnMW_JE-nCVLHLiRTS-x1gB_eR4_CJY3KDfKxsVo=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "角巻わため",
-      "夏色まつり",
-      "大空スバル",
-      "猫又おかゆ",
-      "響咲リオナ"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T23:00:00+09:00",
-    "startedAt": null,
-    "scheduledAt": "2026-05-06T23:00:00+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=2xyaIHRQIaI",
-    "holodexUrl": "https://holodex.net/watch/2xyaIHRQIaI",
-    "thumbnailUrl": "https://img.youtube.com/vi/2xyaIHRQIaI/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
-  },
-  {
-    "id": "stream-5fwfkehwzge",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "past",
-    "title": "【Cursed Companions】NGワードで即死！？自滅だけはさけるんだっ！！【ホロライブ DEV_IS 響咲リオナ】",
-    "channelId": null,
-    "channelName": "響咲リオナ",
-    "channelPhoto": "https://yt3.ggpht.com/Nd6K_cman-Bdkl_pv4_3UNpijyb7t5RXjhsso5IreKu0pwigFrc2f5KIM9aGrciqYeHZoJwVUDE=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "響咲リオナ",
-      "夏色まつり",
-      "大空スバル",
-      "猫又おかゆ",
-      "角巻わため"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T23:00:00+09:00",
-    "startedAt": null,
-    "scheduledAt": "2026-05-06T23:00:00+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=5fWFKEhWZgE",
-    "holodexUrl": "https://holodex.net/watch/5fWFKEhWZgE",
-    "thumbnailUrl": "https://img.youtube.com/vi/5fWFKEhWZgE/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
-  },
-  {
-    "id": "stream-jrieyyoxgau",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "past",
-    "title": "【PRAGMATA】#3  One More Station 【 iofi / hololiveID 】",
-    "channelId": null,
-    "channelName": "Iofi",
-    "channelPhoto": "https://yt3.ggpht.com/ghhBoD-8O908tlUkF45A49D5jbEOkzYR7dgxweO-sOdtlOvE21BLtVSpn6w4sapj4YEtAVoc=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "Iofi"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T23:00:00+09:00",
-    "startedAt": null,
-    "scheduledAt": "2026-05-06T23:00:00+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=JrIEYYoxGaU",
-    "holodexUrl": "https://holodex.net/watch/JrIEYYoxGaU",
-    "thumbnailUrl": "https://img.youtube.com/vi/JrIEYYoxGaU/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
-  },
-  {
-    "id": "stream-n8mp4n7oxq0",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "past",
-    "title": "【Cursed Companions】NGワードで爆破！？異彩コラボで愛をささやけ💓【ホロライブ/夏色まつり】",
-    "channelId": null,
-    "channelName": "夏色まつり",
-    "channelPhoto": "https://yt3.ggpht.com/LZBvU0s_S-xi7fHmeab_iA8ztfGimxzisUBMODGKaIEx3r3R-tIDReiX3SlmbH2showigElJ=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "夏色まつり",
-      "大空スバル",
-      "猫又おかゆ",
-      "角巻わため",
-      "響咲リオナ"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T23:00:00+09:00",
-    "startedAt": null,
-    "scheduledAt": "2026-05-06T23:00:00+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=n8Mp4n7oxq0",
-    "holodexUrl": "https://holodex.net/watch/n8Mp4n7oxq0",
-    "thumbnailUrl": "https://img.youtube.com/vi/n8Mp4n7oxq0/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
-  },
-  {
-    "id": "stream-ubkmgp1jc3m",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "past",
-    "title": "【 🟣言っちゃダメ 】禁句を喋ると命取り⁉️Cursed Companionで遊ぼう🤝✦【 猫又おかゆ視点/ホロライブ 】",
-    "channelId": null,
-    "channelName": "猫又おかゆ",
-    "channelPhoto": "https://yt3.ggpht.com/oD8ISaA35737mg-lt5mYSfOIXmjCeHYcSFFpTQn4AVMkqiyzrMle_THvX6NdfSxbjUO6fQ6_wg=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "猫又おかゆ",
-      "夏色まつり",
-      "大空スバル",
-      "角巻わため",
-      "響咲リオナ"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T23:00:00+09:00",
-    "startedAt": null,
-    "scheduledAt": "2026-05-06T23:00:00+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=ubKmGP1jC3M",
-    "holodexUrl": "https://holodex.net/watch/ubKmGP1jC3M",
-    "thumbnailUrl": "https://img.youtube.com/vi/ubKmGP1jC3M/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
-  },
-  {
-    "id": "stream-w0xacoimlko",
-    "source": "holo_schedule",
-    "sourceLabel": "ホロジュール",
-    "status": "past",
-    "title": "【YAPYAP】We are Professional Yappers after all!!!【JUSTICE JAM!】",
-    "channelId": null,
-    "channelName": "Raora",
-    "channelPhoto": "https://yt3.ggpht.com/HKYI1ENbRIVyDgLVtpxOKyLAOEdOHWH__-JQu6Kj2dq0S9U-wTccKoZT0-4DBd21O0Cpo6NnlA=s88-c-k-c0x00ffffff-no-rj",
-    "talents": [
-      "Raora"
-    ],
-    "topic": null,
-    "liveViewers": null,
-    "startAt": "2026-05-06T23:00:00+09:00",
-    "startedAt": null,
-    "scheduledAt": "2026-05-06T23:00:00+09:00",
-    "publishedAt": null,
-    "availableAt": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=w0XacOimLKo",
-    "holodexUrl": "https://holodex.net/watch/w0XacOimLKo",
-    "thumbnailUrl": "https://img.youtube.com/vi/w0XacOimLKo/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/syZwNEHinxs/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/syZwNEHinxs/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.212Z"
   },
   {
     "id": "stream-z1t05jd3u9g",
@@ -674,8 +607,34 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=z1T05JD3U9g",
     "holodexUrl": "https://holodex.net/watch/z1T05JD3U9g",
-    "thumbnailUrl": "https://img.youtube.com/vi/z1T05JD3U9g/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/z1T05JD3U9g/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/z1T05JD3U9g/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.208Z"
+  },
+  {
+    "id": "stream-xi6dstjo7uk",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "past",
+    "title": "5億年ぶりの激レア雑談【ホロライブ/兎田ぺこら】",
+    "channelId": null,
+    "channelName": "兎田ぺこら",
+    "channelPhoto": "https://yt3.ggpht.com/B-5Iau5CJVDiUOeCvCzHiwdkUijqoi2n0tNwfgIv_yDAvMbLHS4vq1IvK2RxL8y69BxTwmPhow=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "兎田ぺこら"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T22:01:46+09:00",
+    "startedAt": null,
+    "scheduledAt": "2026-05-06T22:01:46+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=xi6dStJO7Uk",
+    "holodexUrl": "https://holodex.net/watch/xi6dStJO7Uk",
+    "thumbnailUrl": "https://i.ytimg.com/vi/xi6dStJO7Uk/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/xi6dStJO7Uk/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.208Z"
   },
   {
     "id": "stream-fk2nu1icsss",
@@ -698,8 +657,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=fK2Nu1ICSSs",
     "holodexUrl": "https://holodex.net/watch/fK2Nu1ICSSs",
-    "thumbnailUrl": "https://img.youtube.com/vi/fK2Nu1ICSSs/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/fK2Nu1ICSSs/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/fK2Nu1ICSSs/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.208Z"
   },
   {
     "id": "stream-rmnycwprqrq",
@@ -722,8 +682,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=RmnYCwprqrQ",
     "holodexUrl": "https://holodex.net/watch/RmnYCwprqrQ",
-    "thumbnailUrl": "https://img.youtube.com/vi/RmnYCwprqrQ/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/RmnYCwprqrQ/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/RmnYCwprqrQ/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.208Z"
   },
   {
     "id": "stream-epkpznrwp-y",
@@ -751,8 +712,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=EPkpznRWp_Y",
     "holodexUrl": "https://holodex.net/watch/EPkpznRWp_Y",
-    "thumbnailUrl": "https://img.youtube.com/vi/EPkpznRWp_Y/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/EPkpznRWp_Y/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/EPkpznRWp_Y/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.207Z"
   },
   {
     "id": "stream-jb5elsbiokm",
@@ -775,8 +737,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=Jb5eLSBiOKM",
     "holodexUrl": "https://holodex.net/watch/Jb5eLSBiOKM",
-    "thumbnailUrl": "https://img.youtube.com/vi/Jb5eLSBiOKM/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/Jb5eLSBiOKM/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/Jb5eLSBiOKM/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.207Z"
   },
   {
     "id": "stream-9pfpsjbsox4",
@@ -799,8 +762,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=9pfpsjBsOX4",
     "holodexUrl": "https://holodex.net/watch/9pfpsjBsOX4",
-    "thumbnailUrl": "https://img.youtube.com/vi/9pfpsjBsOX4/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/9pfpsjBsOX4/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/9pfpsjBsOX4/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.207Z"
   },
   {
     "id": "stream-qjjdt-8phg8",
@@ -823,8 +787,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=QJjDt_8phg8",
     "holodexUrl": "https://holodex.net/watch/QJjDt_8phg8",
-    "thumbnailUrl": "https://img.youtube.com/vi/QJjDt_8phg8/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/QJjDt_8phg8/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/QJjDt_8phg8/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.206Z"
   },
   {
     "id": "stream-ha-cma-wzvk",
@@ -847,8 +812,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=hA_cmA-Wzvk",
     "holodexUrl": "https://holodex.net/watch/hA_cmA-Wzvk",
-    "thumbnailUrl": "https://img.youtube.com/vi/hA_cmA-Wzvk/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/hA_cmA-Wzvk/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/hA_cmA-Wzvk/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.206Z"
   },
   {
     "id": "stream-1wjezpq5-nw",
@@ -874,8 +840,34 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=1wJeZPQ5-nw",
     "holodexUrl": "https://holodex.net/watch/1wJeZPQ5-nw",
-    "thumbnailUrl": "https://img.youtube.com/vi/1wJeZPQ5-nw/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/1wJeZPQ5-nw/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/1wJeZPQ5-nw/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.206Z"
+  },
+  {
+    "id": "stream-elrsbjaytvo",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "past",
+    "title": "【VCC PUBG】チュートリアル終えし男のVCC PUBG配信 / w.すももさん、ズズくん、なずなさん【夕刻ロベル/ホロスターズ】",
+    "channelId": null,
+    "channelName": "夕刻ロベル",
+    "channelPhoto": "https://yt3.ggpht.com/087yj2idU-aFOILEg1aycYQopvTOEQw4oILbI4p0u5jjSwauZRzfQkNvIhcKeUdLK-4owPQa4w=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "夕刻ロベル"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T19:02:37+09:00",
+    "startedAt": null,
+    "scheduledAt": "2026-05-06T19:02:37+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=eLrSBJAytVo",
+    "holodexUrl": "https://holodex.net/watch/eLrSBJAytVo",
+    "thumbnailUrl": "https://i.ytimg.com/vi/eLrSBJAytVo/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/eLrSBJAytVo/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.204Z"
   },
   {
     "id": "stream-d3yajjsztky",
@@ -902,8 +894,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=d3YAjJsztKY",
     "holodexUrl": "https://holodex.net/watch/d3YAjJsztKY",
-    "thumbnailUrl": "https://img.youtube.com/vi/d3YAjJsztKY/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/d3YAjJsztKY/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/d3YAjJsztKY/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.204Z"
   },
   {
     "id": "stream-7h7nf8nyzym",
@@ -926,8 +919,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=7h7nF8NYzYM",
     "holodexUrl": "https://holodex.net/watch/7h7nF8NYzYM",
-    "thumbnailUrl": "https://img.youtube.com/vi/7h7nF8NYzYM/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/7h7nF8NYzYM/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/7h7nF8NYzYM/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.204Z"
   },
   {
     "id": "stream-dhdyq4ixtz0",
@@ -950,8 +944,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=dhdYq4iXTz0",
     "holodexUrl": "https://holodex.net/watch/dhdYq4iXTz0",
-    "thumbnailUrl": "https://img.youtube.com/vi/dhdYq4iXTz0/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/dhdYq4iXTz0/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/dhdYq4iXTz0/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.204Z"
   },
   {
     "id": "stream-w3gl0bsvwtu",
@@ -974,8 +969,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=W3Gl0bSvwTU",
     "holodexUrl": "https://holodex.net/watch/W3Gl0bSvwTU",
-    "thumbnailUrl": "https://img.youtube.com/vi/W3Gl0bSvwTU/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/W3Gl0bSvwTU/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/W3Gl0bSvwTU/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.203Z"
   },
   {
     "id": "stream-hm2t8ruoa0s",
@@ -998,8 +994,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=HM2t8rUOA0s",
     "holodexUrl": "https://holodex.net/watch/HM2t8rUOA0s",
-    "thumbnailUrl": "https://img.youtube.com/vi/HM2t8rUOA0s/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/HM2t8rUOA0s/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/HM2t8rUOA0s/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.203Z"
   },
   {
     "id": "stream-6mspjyahjcm",
@@ -1022,8 +1019,34 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=6MSPjyahjcM",
     "holodexUrl": "https://holodex.net/watch/6MSPjyahjcM",
-    "thumbnailUrl": "https://img.youtube.com/vi/6MSPjyahjcM/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/6MSPjyahjcM/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/6MSPjyahjcM/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.203Z"
+  },
+  {
+    "id": "stream-ygqkd7djlr8",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "past",
+    "title": "【 スーパーマリオワールド 】最終回！？完全初見！初めてのマリオワールドに挑戦！【#綺々羅々ヴィヴィ #hololiveDEV_IS #FLOWGLOW】",
+    "channelId": null,
+    "channelName": "綺々羅々ヴィヴィ",
+    "channelPhoto": "https://yt3.ggpht.com/1gNTfXSUE6ua7RJw0F-zV9kzFiSfQG4F2Nuj4_zUFfbDEXfbZUxki8kmOfZagS9n4EdxAZ9_-A=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "綺々羅々ヴィヴィ"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T18:03:00+09:00",
+    "startedAt": null,
+    "scheduledAt": "2026-05-06T18:03:00+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=YgQKd7DjLr8",
+    "holodexUrl": "https://holodex.net/watch/YgQKd7DjLr8",
+    "thumbnailUrl": "https://i.ytimg.com/vi/YgQKd7DjLr8/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/YgQKd7DjLr8/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.203Z"
   },
   {
     "id": "stream-jvp-fef8asw",
@@ -1046,8 +1069,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=jvP-FEF8Asw",
     "holodexUrl": "https://holodex.net/watch/jvP-FEF8Asw",
-    "thumbnailUrl": "https://img.youtube.com/vi/jvP-FEF8Asw/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/jvP-FEF8Asw/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/jvP-FEF8Asw/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.203Z"
   },
   {
     "id": "stream-gukafwryzws",
@@ -1070,8 +1094,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=gUkAfwRyzws",
     "holodexUrl": "https://holodex.net/watch/gUkAfwRyzws",
-    "thumbnailUrl": "https://img.youtube.com/vi/gUkAfwRyzws/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/gUkAfwRyzws/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/gUkAfwRyzws/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.202Z"
   },
   {
     "id": "stream-pnip0krqah4",
@@ -1095,8 +1120,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=pNIp0kRQah4",
     "holodexUrl": "https://holodex.net/watch/pNIp0kRQah4",
-    "thumbnailUrl": "https://img.youtube.com/vi/pNIp0kRQah4/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/pNIp0kRQah4/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/pNIp0kRQah4/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.202Z"
   },
   {
     "id": "stream-xy6hrktr64c",
@@ -1119,8 +1145,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=XY6hrktr64c",
     "holodexUrl": "https://holodex.net/watch/XY6hrktr64c",
-    "thumbnailUrl": "https://img.youtube.com/vi/XY6hrktr64c/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/XY6hrktr64c/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/XY6hrktr64c/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.202Z"
   },
   {
     "id": "stream-nuhmweqdixq",
@@ -1147,8 +1174,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=NuhMWeqDIXQ",
     "holodexUrl": "https://holodex.net/watch/NuhMWeqDIXQ",
-    "thumbnailUrl": "https://img.youtube.com/vi/NuhMWeqDIXQ/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/NuhMWeqDIXQ/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/NuhMWeqDIXQ/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.202Z"
   },
   {
     "id": "stream-ufpc9vvwyui",
@@ -1176,8 +1204,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=UFPC9vVwYUI",
     "holodexUrl": "https://holodex.net/watch/UFPC9vVwYUI",
-    "thumbnailUrl": "https://img.youtube.com/vi/UFPC9vVwYUI/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/UFPC9vVwYUI/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/UFPC9vVwYUI/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.201Z"
   },
   {
     "id": "stream-utcuigwwie4",
@@ -1200,8 +1229,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=UTcUiGWWIe4",
     "holodexUrl": "https://holodex.net/watch/UTcUiGWWIe4",
-    "thumbnailUrl": "https://img.youtube.com/vi/UTcUiGWWIe4/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/UTcUiGWWIe4/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/UTcUiGWWIe4/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.201Z"
   },
   {
     "id": "stream-5njq5njzf-i",
@@ -1224,8 +1254,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=5njq5NJzf_I",
     "holodexUrl": "https://holodex.net/watch/5njq5NJzf_I",
-    "thumbnailUrl": "https://img.youtube.com/vi/5njq5NJzf_I/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/5njq5NJzf_I/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/5njq5NJzf_I/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.201Z"
   },
   {
     "id": "stream-p-dauuvhoow",
@@ -1248,8 +1279,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=p-DaUUVhOow",
     "holodexUrl": "https://holodex.net/watch/p-DaUUVhOow",
-    "thumbnailUrl": "https://img.youtube.com/vi/p-DaUUVhOow/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.512Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/p-DaUUVhOow/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/p-DaUUVhOow/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.201Z"
   },
   {
     "id": "stream-5-iifzw0dnu",
@@ -1272,8 +1304,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=5_iIfZw0DNU",
     "holodexUrl": "https://holodex.net/watch/5_iIfZw0DNU",
-    "thumbnailUrl": "https://img.youtube.com/vi/5_iIfZw0DNU/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/5_iIfZw0DNU/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/5_iIfZw0DNU/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.201Z"
   },
   {
     "id": "stream-vek2-izlro4",
@@ -1296,8 +1329,34 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=vek2_IZLRo4",
     "holodexUrl": "https://holodex.net/watch/vek2_IZLRo4",
-    "thumbnailUrl": "https://img.youtube.com/vi/vek2_IZLRo4/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/vek2_IZLRo4/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/vek2_IZLRo4/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.200Z"
+  },
+  {
+    "id": "stream-szlmrb5c2hk",
+    "source": "holo_schedule",
+    "sourceLabel": "ホロジュール",
+    "status": "past",
+    "title": "STREET FIGHTER 6｜GW最終日！ALEXマスター耐久 - 夜十神封魔",
+    "channelId": null,
+    "channelName": "夜十神封魔",
+    "channelPhoto": "https://yt3.ggpht.com/mtWfNstoxFmQrInOC7ZcIkOvzoMzDHUchDNpKTRR5ujOtI6bJD0YNFgKHqJpHPOmw2UDqjCu=s88-c-k-c0x00ffffff-no-rj",
+    "talents": [
+      "夜十神封魔"
+    ],
+    "topic": null,
+    "liveViewers": null,
+    "startAt": "2026-05-06T13:58:12+09:00",
+    "startedAt": null,
+    "scheduledAt": "2026-05-06T13:58:12+09:00",
+    "publishedAt": null,
+    "availableAt": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=SZlMRB5C2hk",
+    "holodexUrl": "https://holodex.net/watch/SZlMRB5C2hk",
+    "thumbnailUrl": "https://i.ytimg.com/vi/SZlMRB5C2hk/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/SZlMRB5C2hk/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.200Z"
   },
   {
     "id": "stream-a5q0gpglcee",
@@ -1320,8 +1379,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=A5Q0GpglCEE",
     "holodexUrl": "https://holodex.net/watch/A5Q0GpglCEE",
-    "thumbnailUrl": "https://img.youtube.com/vi/A5Q0GpglCEE/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/A5Q0GpglCEE/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/A5Q0GpglCEE/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.200Z"
   },
   {
     "id": "stream-jfm9ksnmkzw",
@@ -1344,8 +1404,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=jfM9ksNmkzw",
     "holodexUrl": "https://holodex.net/watch/jfM9ksNmkzw",
-    "thumbnailUrl": "https://img.youtube.com/vi/jfM9ksNmkzw/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/jfM9ksNmkzw/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/jfM9ksNmkzw/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.200Z"
   },
   {
     "id": "stream-3wyp7trufmm",
@@ -1368,8 +1429,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=3WyP7trUfMM",
     "holodexUrl": "https://holodex.net/watch/3WyP7trUfMM",
-    "thumbnailUrl": "https://img.youtube.com/vi/3WyP7trUfMM/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/3WyP7trUfMM/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/3WyP7trUfMM/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.199Z"
   },
   {
     "id": "stream-mccihzicxkm",
@@ -1394,8 +1456,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=MCcIhzicXkM",
     "holodexUrl": "https://holodex.net/watch/MCcIhzicXkM",
-    "thumbnailUrl": "https://img.youtube.com/vi/MCcIhzicXkM/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/MCcIhzicXkM/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/MCcIhzicXkM/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.199Z"
   },
   {
     "id": "stream-actlj8hjs6i",
@@ -1418,8 +1481,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=aCTlj8HJs6I",
     "holodexUrl": "https://holodex.net/watch/aCTlj8HJs6I",
-    "thumbnailUrl": "https://img.youtube.com/vi/aCTlj8HJs6I/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/aCTlj8HJs6I/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/aCTlj8HJs6I/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.199Z"
   },
   {
     "id": "stream-gbshhpznv08",
@@ -1442,8 +1506,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=gbShhPZnV08",
     "holodexUrl": "https://holodex.net/watch/gbShhPZnV08",
-    "thumbnailUrl": "https://img.youtube.com/vi/gbShhPZnV08/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/gbShhPZnV08/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/gbShhPZnV08/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.198Z"
   },
   {
     "id": "stream-kpluh-8mojm",
@@ -1466,8 +1531,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=kPluH_8MojM",
     "holodexUrl": "https://holodex.net/watch/kPluH_8MojM",
-    "thumbnailUrl": "https://img.youtube.com/vi/kPluH_8MojM/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/kPluH_8MojM/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/kPluH_8MojM/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.198Z"
   },
   {
     "id": "stream-ve01bk34cse",
@@ -1479,7 +1545,8 @@
     "channelName": "Jurard",
     "channelPhoto": "https://yt3.ggpht.com/SlCos_lnLDMWGDChJ7do9xTh4LsfXM6oKPGJqOmueHk8JMaHxxc2Y6-axY9ddMik95ATJgp5EQ=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Jurard"
+      "Jurard",
+      "Jurard T Rexford"
     ],
     "topic": null,
     "liveViewers": null,
@@ -1490,8 +1557,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=VE01BK34CsE",
     "holodexUrl": "https://holodex.net/watch/VE01BK34CsE",
-    "thumbnailUrl": "https://img.youtube.com/vi/VE01BK34CsE/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/VE01BK34CsE/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/VE01BK34CsE/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.198Z"
   },
   {
     "id": "stream-xy9-qww0olw",
@@ -1517,8 +1585,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=xy9_QWW0oLw",
     "holodexUrl": "https://holodex.net/watch/xy9_QWW0oLw",
-    "thumbnailUrl": "https://img.youtube.com/vi/xy9_QWW0oLw/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/xy9_QWW0oLw/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/xy9_QWW0oLw/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.198Z"
   },
   {
     "id": "stream-pd-rusdhchi",
@@ -1542,8 +1611,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=Pd_RusdhChI",
     "holodexUrl": "https://holodex.net/watch/Pd_RusdhChI",
-    "thumbnailUrl": "https://img.youtube.com/vi/Pd_RusdhChI/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/Pd_RusdhChI/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/Pd_RusdhChI/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.198Z"
   },
   {
     "id": "stream-jn3hmhw5bio",
@@ -1569,8 +1639,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=JN3HMhw5bio",
     "holodexUrl": "https://holodex.net/watch/JN3HMhw5bio",
-    "thumbnailUrl": "https://img.youtube.com/vi/JN3HMhw5bio/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/JN3HMhw5bio/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/JN3HMhw5bio/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.197Z"
   },
   {
     "id": "stream-fgn9sb3ooc",
@@ -1593,8 +1664,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=-FGN9SB3Ooc",
     "holodexUrl": "https://holodex.net/watch/-FGN9SB3Ooc",
-    "thumbnailUrl": "https://img.youtube.com/vi/-FGN9SB3Ooc/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/-FGN9SB3Ooc/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/-FGN9SB3Ooc/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.197Z"
   },
   {
     "id": "stream-etlbl6tzo1a",
@@ -1609,7 +1681,8 @@
       "Jurard",
       "Goldbullet",
       "Octavio",
-      "Crimzon"
+      "Crimzon",
+      "Jurard T Rexford"
     ],
     "topic": null,
     "liveViewers": null,
@@ -1620,8 +1693,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=EtLbl6TzO1A",
     "holodexUrl": "https://holodex.net/watch/EtLbl6TzO1A",
-    "thumbnailUrl": "https://img.youtube.com/vi/EtLbl6TzO1A/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/EtLbl6TzO1A/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/EtLbl6TzO1A/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.197Z"
   },
   {
     "id": "stream-x-1oyadpwyc",
@@ -1644,8 +1718,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=x_1OYadpwyc",
     "holodexUrl": "https://holodex.net/watch/x_1OYadpwyc",
-    "thumbnailUrl": "https://img.youtube.com/vi/x_1OYadpwyc/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/x_1OYadpwyc/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/x_1OYadpwyc/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.197Z"
   },
   {
     "id": "stream-mfv3u7esaru",
@@ -1668,8 +1743,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=mfV3u7ESArU",
     "holodexUrl": "https://holodex.net/watch/mfV3u7ESArU",
-    "thumbnailUrl": "https://img.youtube.com/vi/mfV3u7ESArU/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/mfV3u7ESArU/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/mfV3u7ESArU/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.197Z"
   },
   {
     "id": "stream-4jcem0hej4y",
@@ -1681,7 +1757,8 @@
     "channelName": "Risu",
     "channelPhoto": "https://yt3.ggpht.com/8dYniYG0Fm49TBxwOW39wDzM25P3aAU7r-wecNaOz5a3I1t8dsYbS5OPZXFeHYQpmVRrY9KrSg=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Risu"
+      "Risu",
+      "Ayunda Risu"
     ],
     "topic": null,
     "liveViewers": null,
@@ -1692,8 +1769,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=4JCEm0Hej4Y",
     "holodexUrl": "https://holodex.net/watch/4JCEm0Hej4Y",
-    "thumbnailUrl": "https://img.youtube.com/vi/4JCEm0Hej4Y/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/4JCEm0Hej4Y/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/4JCEm0Hej4Y/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.196Z"
   },
   {
     "id": "stream-esjpysrvjb4",
@@ -1705,7 +1783,8 @@
     "channelName": "Kronii",
     "channelPhoto": "https://yt3.ggpht.com/XxF6c2VtpdbRdLcldz5jp05FQY_JTfOXeVd8osfAZsxODIanpt0ymcn_6nitwydHNGek46cfZ04=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Kronii"
+      "Kronii",
+      "Ouro Kronii"
     ],
     "topic": null,
     "liveViewers": null,
@@ -1716,8 +1795,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=esjpYSrvjB4",
     "holodexUrl": "https://holodex.net/watch/esjpYSrvjB4",
-    "thumbnailUrl": "https://img.youtube.com/vi/esjpYSrvjB4/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/esjpYSrvjB4/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/esjpYSrvjB4/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.196Z"
   },
   {
     "id": "stream-g-rou3qduoo",
@@ -1732,7 +1812,8 @@
       "Crimzon",
       "Jurard",
       "Goldbullet",
-      "Octavio"
+      "Octavio",
+      "Crimzon Ruze"
     ],
     "topic": null,
     "liveViewers": null,
@@ -1743,8 +1824,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=g_roU3QDUoo",
     "holodexUrl": "https://holodex.net/watch/g_roU3QDUoo",
-    "thumbnailUrl": "https://img.youtube.com/vi/g_roU3QDUoo/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/g_roU3QDUoo/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/g_roU3QDUoo/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.196Z"
   },
   {
     "id": "stream-x47vd2ndizc",
@@ -1767,8 +1849,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=X47vD2NDiZc",
     "holodexUrl": "https://holodex.net/watch/X47vD2NDiZc",
-    "thumbnailUrl": "https://img.youtube.com/vi/X47vD2NDiZc/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/X47vD2NDiZc/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/X47vD2NDiZc/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.195Z"
   },
   {
     "id": "stream-xgnuzi-dnmm",
@@ -1780,7 +1863,8 @@
     "channelName": "Bijou",
     "channelPhoto": "https://yt3.ggpht.com/Wk5Mbh-5z_dbHTp7Hyz7OSd70Cz4GknlZOqiI2J_sIsnbm_YjWN2vb39XyrXBYj-uiMsOi-95w=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Bijou"
+      "Bijou",
+      "Koseki Bijou"
     ],
     "topic": null,
     "liveViewers": null,
@@ -1791,8 +1875,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=XGNUZI-dnmM",
     "holodexUrl": "https://holodex.net/watch/XGNUZI-dnmM",
-    "thumbnailUrl": "https://img.youtube.com/vi/XGNUZI-dnmM/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/XGNUZI-dnmM/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/XGNUZI-dnmM/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.195Z"
   },
   {
     "id": "stream-ztfupmtupps",
@@ -1815,8 +1900,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=ZTfupmtuPPs",
     "holodexUrl": "https://holodex.net/watch/ZTfupmtuPPs",
-    "thumbnailUrl": "https://img.youtube.com/vi/ZTfupmtuPPs/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/ZTfupmtuPPs/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/ZTfupmtuPPs/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.195Z"
   },
   {
     "id": "stream-iyjq4-cad2e",
@@ -1839,8 +1925,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=iYJQ4-caD2E",
     "holodexUrl": "https://holodex.net/watch/iYJQ4-caD2E",
-    "thumbnailUrl": "https://img.youtube.com/vi/iYJQ4-caD2E/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/iYJQ4-caD2E/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/iYJQ4-caD2E/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.195Z"
   },
   {
     "id": "stream-dj1riyr5r2s",
@@ -1852,7 +1939,8 @@
     "channelName": "Shiori",
     "channelPhoto": "https://yt3.ggpht.com/q23ZTL-eIurUV4sMNtq5pJpFXWKI7dr-XuScFGVtSiDhTR_jrs4v1BpsWX1WP51sP4jjlmA=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Shiori"
+      "Shiori",
+      "Shiori Novella"
     ],
     "topic": null,
     "liveViewers": null,
@@ -1863,8 +1951,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=DJ1rIYR5R2s",
     "holodexUrl": "https://holodex.net/watch/DJ1rIYR5R2s",
-    "thumbnailUrl": "https://img.youtube.com/vi/DJ1rIYR5R2s/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/DJ1rIYR5R2s/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/DJ1rIYR5R2s/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.194Z"
   },
   {
     "id": "stream-z7nc9irow-e",
@@ -1877,7 +1966,8 @@
     "channelPhoto": "https://yt3.ggpht.com/1aoKeoCGzuD7XK2U8nUIHfpynIOLecHxF7Adh09XshlrL9kne2uKGOllFcoA2iXBVVe51_V6E48=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
       "Elizabeth",
-      "大空スバル"
+      "大空スバル",
+      "Elizabeth Rose Bloodflame"
     ],
     "topic": null,
     "liveViewers": null,
@@ -1888,8 +1978,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=z7NC9iRoW-E",
     "holodexUrl": "https://holodex.net/watch/z7NC9iRoW-E",
-    "thumbnailUrl": "https://img.youtube.com/vi/z7NC9iRoW-E/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/z7NC9iRoW-E/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/z7NC9iRoW-E/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.194Z"
   },
   {
     "id": "stream-9zntdhzf4z4",
@@ -1912,8 +2003,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=9ZNTdHZF4z4",
     "holodexUrl": "https://holodex.net/watch/9ZNTdHZF4z4",
-    "thumbnailUrl": "https://img.youtube.com/vi/9ZNTdHZF4z4/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/9ZNTdHZF4z4/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/9ZNTdHZF4z4/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.193Z"
   },
   {
     "id": "stream-qhajicqpfaq",
@@ -1925,7 +2017,8 @@
     "channelName": "Baelz",
     "channelPhoto": "https://yt3.ggpht.com/sFBVGkudEnu_MCH23nJdS2oTnOzd9M7e6Mgki5JBhbj4PnjWGgG2hNmW2Vozw5rr8-K0s-DpaPs=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Baelz"
+      "Baelz",
+      "Hakos Baelz"
     ],
     "topic": null,
     "liveViewers": null,
@@ -1936,8 +2029,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=QHajIcQpFaQ",
     "holodexUrl": "https://holodex.net/watch/QHajIcQpFaQ",
-    "thumbnailUrl": "https://img.youtube.com/vi/QHajIcQpFaQ/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/QHajIcQpFaQ/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/QHajIcQpFaQ/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.193Z"
   },
   {
     "id": "stream-5p3dpisykea",
@@ -1960,8 +2054,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=5p3DPISYkeA",
     "holodexUrl": "https://holodex.net/watch/5p3DPISYkeA",
-    "thumbnailUrl": "https://img.youtube.com/vi/5p3DPISYkeA/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/5p3DPISYkeA/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/5p3DPISYkeA/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.193Z"
   },
   {
     "id": "stream-huvchc4xd1s",
@@ -1984,8 +2079,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=HuVcHc4xd1s",
     "holodexUrl": "https://holodex.net/watch/HuVcHc4xd1s",
-    "thumbnailUrl": "https://img.youtube.com/vi/HuVcHc4xd1s/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/HuVcHc4xd1s/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/HuVcHc4xd1s/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.193Z"
   },
   {
     "id": "stream-3a0uxjouhwy",
@@ -2008,8 +2104,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=3a0uXjoUHWY",
     "holodexUrl": "https://holodex.net/watch/3a0uXjoUHWY",
-    "thumbnailUrl": "https://img.youtube.com/vi/3a0uXjoUHWY/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/3a0uXjoUHWY/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/3a0uXjoUHWY/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.192Z"
   },
   {
     "id": "stream-zc-jrhpep9c",
@@ -2021,7 +2118,8 @@
     "channelName": "Raora",
     "channelPhoto": "https://yt3.ggpht.com/HKYI1ENbRIVyDgLVtpxOKyLAOEdOHWH__-JQu6Kj2dq0S9U-wTccKoZT0-4DBd21O0Cpo6NnlA=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Raora"
+      "Raora",
+      "Raora Panthera"
     ],
     "topic": null,
     "liveViewers": null,
@@ -2032,8 +2130,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=zc_JRHPep9c",
     "holodexUrl": "https://holodex.net/watch/zc_JRHPep9c",
-    "thumbnailUrl": "https://img.youtube.com/vi/zc_JRHPep9c/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/zc_JRHPep9c/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/zc_JRHPep9c/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.192Z"
   },
   {
     "id": "stream-svor33badpk",
@@ -2045,7 +2144,8 @@
     "channelName": "Kaela",
     "channelPhoto": "https://yt3.ggpht.com/2jGAglj5aTcUWO7WRNfq54KV3ipKblUzxI6fAKSjAfMw6J9Qqb6NbzbJA2i0t4cKgUR7SPdWC_w=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Kaela"
+      "Kaela",
+      "Kaela Kovalskia"
     ],
     "topic": null,
     "liveViewers": null,
@@ -2056,8 +2156,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=SvOR33bAdpk",
     "holodexUrl": "https://holodex.net/watch/SvOR33bAdpk",
-    "thumbnailUrl": "https://img.youtube.com/vi/SvOR33bAdpk/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/SvOR33bAdpk/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/SvOR33bAdpk/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.192Z"
   },
   {
     "id": "stream-cv4iplqu2xm",
@@ -2080,8 +2181,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=Cv4IPLqU2xM",
     "holodexUrl": "https://holodex.net/watch/Cv4IPLqU2xM",
-    "thumbnailUrl": "https://img.youtube.com/vi/Cv4IPLqU2xM/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/Cv4IPLqU2xM/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/Cv4IPLqU2xM/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.192Z"
   },
   {
     "id": "stream-fact-lezxay",
@@ -2104,8 +2206,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=fAcT-LezxAY",
     "holodexUrl": "https://holodex.net/watch/fAcT-LezxAY",
-    "thumbnailUrl": "https://img.youtube.com/vi/fAcT-LezxAY/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/fAcT-LezxAY/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/fAcT-LezxAY/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.191Z"
   },
   {
     "id": "stream-6v05gdrr0ia",
@@ -2128,8 +2231,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=6V05GDrR0IA",
     "holodexUrl": "https://holodex.net/watch/6V05GDrR0IA",
-    "thumbnailUrl": "https://img.youtube.com/vi/6V05GDrR0IA/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/6V05GDrR0IA/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/6V05GDrR0IA/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.191Z"
   },
   {
     "id": "stream-wvlei0hwahe",
@@ -2141,7 +2245,8 @@
     "channelName": "Zeta",
     "channelPhoto": "https://yt3.ggpht.com/0pxwGbJZbeMVkF9wGW4FNE2vJERPo0zUkzSEFWj6IHio-uiLWMSJKdjhkqwRkWwDHNu0dXiynw=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Zeta"
+      "Zeta",
+      "Vestia Zeta"
     ],
     "topic": null,
     "liveViewers": null,
@@ -2152,8 +2257,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=wvLEi0HwaHE",
     "holodexUrl": "https://holodex.net/watch/wvLEi0HwaHE",
-    "thumbnailUrl": "https://img.youtube.com/vi/wvLEi0HwaHE/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/wvLEi0HwaHE/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/wvLEi0HwaHE/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.191Z"
   },
   {
     "id": "stream-uih1dezp8bg",
@@ -2165,7 +2271,8 @@
     "channelName": "Reine",
     "channelPhoto": "https://yt3.ggpht.com/gV1Zr_UQCBsmfyqaJhgj46qud_7HkvdqDNobqz-GSY7cQ4GNSltNxAyc1Y1-9HXXvSoORbzc=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Reine"
+      "Reine",
+      "Pavolia Reine"
     ],
     "topic": null,
     "liveViewers": null,
@@ -2176,8 +2283,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=UIh1DeZP8Bg",
     "holodexUrl": "https://holodex.net/watch/UIh1DeZP8Bg",
-    "thumbnailUrl": "https://img.youtube.com/vi/UIh1DeZP8Bg/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/UIh1DeZP8Bg/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/UIh1DeZP8Bg/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.191Z"
   },
   {
     "id": "stream-1icw35rdyjk",
@@ -2200,8 +2308,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=1iCW35RDYjk",
     "holodexUrl": "https://holodex.net/watch/1iCW35RDYjk",
-    "thumbnailUrl": "https://img.youtube.com/vi/1iCW35RDYjk/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/1iCW35RDYjk/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/1iCW35RDYjk/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.190Z"
   },
   {
     "id": "stream-i-loysvdar8",
@@ -2232,8 +2341,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=i_LOysvDaR8",
     "holodexUrl": "https://holodex.net/watch/i_LOysvDaR8",
-    "thumbnailUrl": "https://img.youtube.com/vi/i_LOysvDaR8/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/i_LOysvDaR8/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/i_LOysvDaR8/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.190Z"
   },
   {
     "id": "stream-xkl0e-rjxng",
@@ -2264,8 +2374,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=XKl0E-rJXNg",
     "holodexUrl": "https://holodex.net/watch/XKl0E-rJXNg",
-    "thumbnailUrl": "https://img.youtube.com/vi/XKl0E-rJXNg/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/XKl0E-rJXNg/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/XKl0E-rJXNg/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.190Z"
   },
   {
     "id": "stream-ryuevkdb-bq",
@@ -2297,8 +2408,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=RYuEVKdB_bQ",
     "holodexUrl": "https://holodex.net/watch/RYuEVKdB_bQ",
-    "thumbnailUrl": "https://img.youtube.com/vi/RYuEVKdB_bQ/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/RYuEVKdB_bQ/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/RYuEVKdB_bQ/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.190Z"
   },
   {
     "id": "stream-2qhw3zmmsmu",
@@ -2329,8 +2441,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=2qhw3zMMsMU",
     "holodexUrl": "https://holodex.net/watch/2qhw3zMMsMU",
-    "thumbnailUrl": "https://img.youtube.com/vi/2qhw3zMMsMU/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/2qhw3zMMsMU/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/2qhw3zMMsMU/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.189Z"
   },
   {
     "id": "stream-0xeeb24jr08",
@@ -2361,8 +2474,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=0Xeeb24jr08",
     "holodexUrl": "https://holodex.net/watch/0Xeeb24jr08",
-    "thumbnailUrl": "https://img.youtube.com/vi/0Xeeb24jr08/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/0Xeeb24jr08/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/0Xeeb24jr08/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.189Z"
   },
   {
     "id": "stream-r04a-hbwfwu",
@@ -2393,8 +2507,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=r04a_hBwFWU",
     "holodexUrl": "https://holodex.net/watch/r04a_hBwFWU",
-    "thumbnailUrl": "https://img.youtube.com/vi/r04a_hBwFWU/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/r04a_hBwFWU/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/r04a_hBwFWU/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.189Z"
   },
   {
     "id": "stream-yr4o3ol4ib4",
@@ -2425,8 +2540,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=Yr4O3ol4Ib4",
     "holodexUrl": "https://holodex.net/watch/Yr4O3ol4Ib4",
-    "thumbnailUrl": "https://img.youtube.com/vi/Yr4O3ol4Ib4/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/Yr4O3ol4Ib4/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/Yr4O3ol4Ib4/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.189Z"
   },
   {
     "id": "stream-twp21gc5hyq",
@@ -2449,8 +2565,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=TWP21gC5HYQ",
     "holodexUrl": "https://holodex.net/watch/TWP21gC5HYQ",
-    "thumbnailUrl": "https://img.youtube.com/vi/TWP21gC5HYQ/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/TWP21gC5HYQ/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/TWP21gC5HYQ/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.188Z"
   },
   {
     "id": "stream-n5ijkems8f0",
@@ -2481,8 +2598,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=N5ijkems8f0",
     "holodexUrl": "https://holodex.net/watch/N5ijkems8f0",
-    "thumbnailUrl": "https://img.youtube.com/vi/N5ijkems8f0/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/N5ijkems8f0/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/N5ijkems8f0/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.188Z"
   },
   {
     "id": "stream-mr-gvtwfb-y",
@@ -2506,8 +2624,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=MR_gVtWfB-Y",
     "holodexUrl": "https://holodex.net/watch/MR_gVtWfB-Y",
-    "thumbnailUrl": "https://img.youtube.com/vi/MR_gVtWfB-Y/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/MR_gVtWfB-Y/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/MR_gVtWfB-Y/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.188Z"
   },
   {
     "id": "stream-oethynvfpky",
@@ -2530,8 +2649,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=oeThYnVfpkY",
     "holodexUrl": "https://holodex.net/watch/oeThYnVfpkY",
-    "thumbnailUrl": "https://img.youtube.com/vi/oeThYnVfpkY/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/oeThYnVfpkY/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/oeThYnVfpkY/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.188Z"
   },
   {
     "id": "stream-yojd3m71nfu",
@@ -2555,8 +2675,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=yOJd3m71nFU",
     "holodexUrl": "https://holodex.net/watch/yOJd3m71nFU",
-    "thumbnailUrl": "https://img.youtube.com/vi/yOJd3m71nFU/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/yOJd3m71nFU/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/yOJd3m71nFU/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.187Z"
   },
   {
     "id": "stream-37bvkptywso",
@@ -2579,8 +2700,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=37bvKPtYwSo",
     "holodexUrl": "https://holodex.net/watch/37bvKPtYwSo",
-    "thumbnailUrl": "https://img.youtube.com/vi/37bvKPtYwSo/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/37bvKPtYwSo/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/37bvKPtYwSo/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.187Z"
   },
   {
     "id": "stream-iocf-leq94k",
@@ -2592,7 +2714,8 @@
     "channelName": "Kobo",
     "channelPhoto": "https://yt3.ggpht.com/XRCP2PC-lvvielp04Eq8KyBzgd3_bFc_DNfptN5s-ftd1v6SadGuMChY6Jm3elaqaK7xwE1B=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Kobo"
+      "Kobo",
+      "Kobo Kanaeru"
     ],
     "topic": null,
     "liveViewers": null,
@@ -2603,8 +2726,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=IOCf_lEQ94k",
     "holodexUrl": "https://holodex.net/watch/IOCf_lEQ94k",
-    "thumbnailUrl": "https://img.youtube.com/vi/IOCf_lEQ94k/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/IOCf_lEQ94k/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/IOCf_lEQ94k/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.187Z"
   },
   {
     "id": "stream-ry-e2njowz0",
@@ -2627,8 +2751,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=RY-E2njoWz0",
     "holodexUrl": "https://holodex.net/watch/RY-E2njoWz0",
-    "thumbnailUrl": "https://img.youtube.com/vi/RY-E2njoWz0/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/RY-E2njoWz0/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/RY-E2njoWz0/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.186Z"
   },
   {
     "id": "stream-nkh3yjqaiuc",
@@ -2651,8 +2776,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=NKh3YjQAIUc",
     "holodexUrl": "https://holodex.net/watch/NKh3YjQAIUc",
-    "thumbnailUrl": "https://img.youtube.com/vi/NKh3YjQAIUc/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/NKh3YjQAIUc/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/NKh3YjQAIUc/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.186Z"
   },
   {
     "id": "stream-agz3hpaehk0",
@@ -2675,8 +2801,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=aGz3HPaEHK0",
     "holodexUrl": "https://holodex.net/watch/aGz3HPaEHK0",
-    "thumbnailUrl": "https://img.youtube.com/vi/aGz3HPaEHK0/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/aGz3HPaEHK0/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/aGz3HPaEHK0/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.186Z"
   },
   {
     "id": "stream-hco85qaf9fa",
@@ -2699,8 +2826,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=Hco85QAF9FA",
     "holodexUrl": "https://holodex.net/watch/Hco85QAF9FA",
-    "thumbnailUrl": "https://img.youtube.com/vi/Hco85QAF9FA/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/Hco85QAF9FA/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/Hco85QAF9FA/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.186Z"
   },
   {
     "id": "stream-rwi1gephrsy",
@@ -2723,8 +2851,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=RWI1gEPHrSY",
     "holodexUrl": "https://holodex.net/watch/RWI1gEPHrSY",
-    "thumbnailUrl": "https://img.youtube.com/vi/RWI1gEPHrSY/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/RWI1gEPHrSY/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/RWI1gEPHrSY/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.185Z"
   },
   {
     "id": "stream-5a9qwug2vni",
@@ -2747,8 +2876,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=5A9QWUg2vnI",
     "holodexUrl": "https://holodex.net/watch/5A9QWUg2vnI",
-    "thumbnailUrl": "https://img.youtube.com/vi/5A9QWUg2vnI/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/5A9QWUg2vnI/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/5A9QWUg2vnI/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.185Z"
   },
   {
     "id": "stream-blnvo-pu-ie",
@@ -2775,8 +2905,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=BLNvO-Pu_iE",
     "holodexUrl": "https://holodex.net/watch/BLNvO-Pu_iE",
-    "thumbnailUrl": "https://img.youtube.com/vi/BLNvO-Pu_iE/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/BLNvO-Pu_iE/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/BLNvO-Pu_iE/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.185Z"
   },
   {
     "id": "stream-pz7e866zgim",
@@ -2799,8 +2930,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=pZ7e866zgiM",
     "holodexUrl": "https://holodex.net/watch/pZ7e866zgiM",
-    "thumbnailUrl": "https://img.youtube.com/vi/pZ7e866zgiM/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/pZ7e866zgiM/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/pZ7e866zgiM/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.185Z"
   },
   {
     "id": "stream-fu0ejtc87x4",
@@ -2828,8 +2960,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=Fu0ejtC87x4",
     "holodexUrl": "https://holodex.net/watch/Fu0ejtC87x4",
-    "thumbnailUrl": "https://img.youtube.com/vi/Fu0ejtC87x4/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/Fu0ejtC87x4/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/Fu0ejtC87x4/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.185Z"
   },
   {
     "id": "stream-zpzormuecdc",
@@ -2852,8 +2985,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=ZpZormuECDc",
     "holodexUrl": "https://holodex.net/watch/ZpZormuECDc",
-    "thumbnailUrl": "https://img.youtube.com/vi/ZpZormuECDc/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/ZpZormuECDc/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/ZpZormuECDc/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.184Z"
   },
   {
     "id": "stream-04cjk01mc10",
@@ -2876,8 +3010,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=04cJK01mC10",
     "holodexUrl": "https://holodex.net/watch/04cJK01mC10",
-    "thumbnailUrl": "https://img.youtube.com/vi/04cJK01mC10/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/04cJK01mC10/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/04cJK01mC10/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.184Z"
   },
   {
     "id": "stream-czcnlema6p0",
@@ -2889,7 +3024,8 @@
     "channelName": "Moona",
     "channelPhoto": "https://yt3.ggpht.com/ArbwGFqxm01MKe6qhEnAqIQCro0MUSyI8BVIu-7Ijr3OBw5z86Y1348DTTDFDstWD-uwpIO3=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Moona"
+      "Moona",
+      "Moona Hoshinova"
     ],
     "topic": null,
     "liveViewers": null,
@@ -2900,8 +3036,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=cZcnLEma6P0",
     "holodexUrl": "https://holodex.net/watch/cZcnLEma6P0",
-    "thumbnailUrl": "https://img.youtube.com/vi/cZcnLEma6P0/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/cZcnLEma6P0/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/cZcnLEma6P0/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.184Z"
   },
   {
     "id": "stream-xqvgzutz6nw",
@@ -2924,8 +3061,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=xqVgZuTz6nw",
     "holodexUrl": "https://holodex.net/watch/xqVgZuTz6nw",
-    "thumbnailUrl": "https://img.youtube.com/vi/xqVgZuTz6nw/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/xqVgZuTz6nw/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/xqVgZuTz6nw/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.184Z"
   },
   {
     "id": "stream-kpxmgicjrpu",
@@ -2948,8 +3086,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=kpxmGicJrPU",
     "holodexUrl": "https://holodex.net/watch/kpxmGicJrPU",
-    "thumbnailUrl": "https://img.youtube.com/vi/kpxmGicJrPU/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/kpxmGicJrPU/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/kpxmGicJrPU/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.184Z"
   },
   {
     "id": "stream-cblvshvoeui",
@@ -2972,8 +3111,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=CBlvSHVoeuI",
     "holodexUrl": "https://holodex.net/watch/CBlvSHVoeuI",
-    "thumbnailUrl": "https://img.youtube.com/vi/CBlvSHVoeuI/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/CBlvSHVoeuI/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/CBlvSHVoeuI/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.183Z"
   },
   {
     "id": "stream-bffmoeeoxco",
@@ -2996,8 +3136,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=BfFmoEEoxco",
     "holodexUrl": "https://holodex.net/watch/BfFmoEEoxco",
-    "thumbnailUrl": "https://img.youtube.com/vi/BfFmoEEoxco/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/BfFmoEEoxco/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/BfFmoEEoxco/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.182Z"
   },
   {
     "id": "stream-zr1rzuq7p-a",
@@ -3023,8 +3164,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=zr1rzuQ7p_A",
     "holodexUrl": "https://holodex.net/watch/zr1rzuQ7p_A",
-    "thumbnailUrl": "https://img.youtube.com/vi/zr1rzuQ7p_A/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/zr1rzuQ7p_A/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/zr1rzuQ7p_A/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.182Z"
   },
   {
     "id": "stream-tdzxpmk5ba4",
@@ -3047,8 +3189,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=tDzxPMK5BA4",
     "holodexUrl": "https://holodex.net/watch/tDzxPMK5BA4",
-    "thumbnailUrl": "https://img.youtube.com/vi/tDzxPMK5BA4/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/tDzxPMK5BA4/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/tDzxPMK5BA4/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.182Z"
   },
   {
     "id": "stream-ja-g-tom2jm",
@@ -3060,7 +3203,9 @@
     "channelName": "Risu",
     "channelPhoto": "https://yt3.ggpht.com/8dYniYG0Fm49TBxwOW39wDzM25P3aAU7r-wecNaOz5a3I1t8dsYbS5OPZXFeHYQpmVRrY9KrSg=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Risu"
+      "Risu",
+      "Ayunda Risu",
+      "Kobo Kanaeru"
     ],
     "topic": null,
     "liveViewers": null,
@@ -3071,8 +3216,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=jA-G-tOm2JM",
     "holodexUrl": "https://holodex.net/watch/jA-G-tOm2JM",
-    "thumbnailUrl": "https://img.youtube.com/vi/jA-G-tOm2JM/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/jA-G-tOm2JM/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/jA-G-tOm2JM/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.182Z"
   },
   {
     "id": "stream-cieoevzsy58",
@@ -3095,8 +3241,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=ciEOEVZSY58",
     "holodexUrl": "https://holodex.net/watch/ciEOEVZSY58",
-    "thumbnailUrl": "https://img.youtube.com/vi/ciEOEVZSY58/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/ciEOEVZSY58/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/ciEOEVZSY58/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.182Z"
   },
   {
     "id": "stream-ev-iya4g8ou",
@@ -3123,8 +3270,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=EV-iyA4g8oU",
     "holodexUrl": "https://holodex.net/watch/EV-iyA4g8oU",
-    "thumbnailUrl": "https://img.youtube.com/vi/EV-iyA4g8oU/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/EV-iyA4g8oU/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/EV-iyA4g8oU/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.181Z"
   },
   {
     "id": "stream-cosuvwtuvfu",
@@ -3136,7 +3284,8 @@
     "channelName": "Jurard",
     "channelPhoto": "https://yt3.ggpht.com/SlCos_lnLDMWGDChJ7do9xTh4LsfXM6oKPGJqOmueHk8JMaHxxc2Y6-axY9ddMik95ATJgp5EQ=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Jurard"
+      "Jurard",
+      "Jurard T Rexford"
     ],
     "topic": null,
     "liveViewers": null,
@@ -3147,8 +3296,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=COSuVWtuvfU",
     "holodexUrl": "https://holodex.net/watch/COSuVWtuvfU",
-    "thumbnailUrl": "https://img.youtube.com/vi/COSuVWtuvfU/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/COSuVWtuvfU/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/COSuVWtuvfU/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.181Z"
   },
   {
     "id": "stream-utikb-h-ehk",
@@ -3163,7 +3313,8 @@
       "Jurard",
       "Goldbullet",
       "Octavio",
-      "Crimzon"
+      "Crimzon",
+      "Jurard T Rexford"
     ],
     "topic": null,
     "liveViewers": null,
@@ -3174,8 +3325,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=UTIkb-h-eHk",
     "holodexUrl": "https://holodex.net/watch/UTIkb-h-eHk",
-    "thumbnailUrl": "https://img.youtube.com/vi/UTIkb-h-eHk/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/UTIkb-h-eHk/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/UTIkb-h-eHk/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.181Z"
   },
   {
     "id": "stream-nmdgo-klzeg",
@@ -3201,8 +3353,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=nmdGo_KLZeg",
     "holodexUrl": "https://holodex.net/watch/nmdGo_KLZeg",
-    "thumbnailUrl": "https://img.youtube.com/vi/nmdGo_KLZeg/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/nmdGo_KLZeg/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/nmdGo_KLZeg/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.180Z"
   },
   {
     "id": "stream-ihbqjsg8g8a",
@@ -3225,8 +3378,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=ihbqJsg8G8A",
     "holodexUrl": "https://holodex.net/watch/ihbqJsg8G8A",
-    "thumbnailUrl": "https://img.youtube.com/vi/ihbqJsg8G8A/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/ihbqJsg8G8A/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/ihbqJsg8G8A/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.180Z"
   },
   {
     "id": "stream-j-vqyssby34",
@@ -3256,8 +3410,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=J_VqySsby34",
     "holodexUrl": "https://holodex.net/watch/J_VqySsby34",
-    "thumbnailUrl": "https://img.youtube.com/vi/J_VqySsby34/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/J_VqySsby34/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/J_VqySsby34/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.180Z"
   },
   {
     "id": "stream-dx139lpvzv0",
@@ -3280,8 +3435,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=DX139lPvzv0",
     "holodexUrl": "https://holodex.net/watch/DX139lPvzv0",
-    "thumbnailUrl": "https://img.youtube.com/vi/DX139lPvzv0/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/DX139lPvzv0/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/DX139lPvzv0/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.180Z"
   },
   {
     "id": "stream-b1e7e4cfn08",
@@ -3307,8 +3463,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=b1E7e4CFn08",
     "holodexUrl": "https://holodex.net/watch/b1E7e4CFn08",
-    "thumbnailUrl": "https://img.youtube.com/vi/b1E7e4CFn08/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/b1E7e4CFn08/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/b1E7e4CFn08/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.179Z"
   },
   {
     "id": "stream-mkphqpmkdse",
@@ -3322,7 +3479,8 @@
     "talents": [
       "Bijou",
       "Shiori",
-      "Nerissa"
+      "Nerissa",
+      "Koseki Bijou"
     ],
     "topic": null,
     "liveViewers": null,
@@ -3333,8 +3491,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=mKpHQPMkDSE",
     "holodexUrl": "https://holodex.net/watch/mKpHQPMkDSE",
-    "thumbnailUrl": "https://img.youtube.com/vi/mKpHQPMkDSE/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/mKpHQPMkDSE/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/mKpHQPMkDSE/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.178Z"
   },
   {
     "id": "stream-ng8jzuzf9z8",
@@ -3346,7 +3505,8 @@
     "channelName": "Nerissa",
     "channelPhoto": "https://yt3.ggpht.com/V1Ow-KEzUUTOpE6dp3oQzxRAH1t-zwkfnlG8lGG6TbJ5SLPyfNXCSH3xAGVmaDEZfNA4xe4kJQ=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Nerissa"
+      "Nerissa",
+      "Nerissa Ravencroft"
     ],
     "topic": null,
     "liveViewers": null,
@@ -3357,8 +3517,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=nG8JZuZF9z8",
     "holodexUrl": "https://holodex.net/watch/nG8JZuZF9z8",
-    "thumbnailUrl": "https://img.youtube.com/vi/nG8JZuZF9z8/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/nG8JZuZF9z8/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/nG8JZuZF9z8/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.178Z"
   },
   {
     "id": "stream-1krrdpce-j0",
@@ -3370,7 +3531,8 @@
     "channelName": "Shiori",
     "channelPhoto": "https://yt3.ggpht.com/q23ZTL-eIurUV4sMNtq5pJpFXWKI7dr-XuScFGVtSiDhTR_jrs4v1BpsWX1WP51sP4jjlmA=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Shiori"
+      "Shiori",
+      "Shiori Novella"
     ],
     "topic": null,
     "liveViewers": null,
@@ -3381,8 +3543,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=1krRDpCE-J0",
     "holodexUrl": "https://holodex.net/watch/1krRDpCE-J0",
-    "thumbnailUrl": "https://img.youtube.com/vi/1krRDpCE-J0/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/1krRDpCE-J0/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/1krRDpCE-J0/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.178Z"
   },
   {
     "id": "stream-zfvcnn0iexi",
@@ -3394,7 +3557,8 @@
     "channelName": "Crimzon",
     "channelPhoto": "https://yt3.ggpht.com/oOudWIrMa-vuBgBZmxfD-ckb9F8indUDW_aoRF5Ikm2wOFitakpZITg4a7QsO5vwam_bH2xd=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Crimzon"
+      "Crimzon",
+      "Crimzon Ruze"
     ],
     "topic": null,
     "liveViewers": null,
@@ -3405,8 +3569,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=ZfvCNn0IExI",
     "holodexUrl": "https://holodex.net/watch/ZfvCNn0IExI",
-    "thumbnailUrl": "https://img.youtube.com/vi/ZfvCNn0IExI/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/ZfvCNn0IExI/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/ZfvCNn0IExI/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.177Z"
   },
   {
     "id": "stream-w3f2-1mzgak",
@@ -3429,8 +3594,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=W3f2-1mzGAk",
     "holodexUrl": "https://holodex.net/watch/W3f2-1mzGAk",
-    "thumbnailUrl": "https://img.youtube.com/vi/W3f2-1mzGAk/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/W3f2-1mzGAk/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/W3f2-1mzGAk/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.177Z"
   },
   {
     "id": "stream-kd7z3iztlq0",
@@ -3456,8 +3622,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=KD7Z3iztlq0",
     "holodexUrl": "https://holodex.net/watch/KD7Z3iztlq0",
-    "thumbnailUrl": "https://img.youtube.com/vi/KD7Z3iztlq0/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/KD7Z3iztlq0/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/KD7Z3iztlq0/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.177Z"
   },
   {
     "id": "stream-tx9lixlje4",
@@ -3482,8 +3649,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=-tx9lixlJe4",
     "holodexUrl": "https://holodex.net/watch/-tx9lixlJe4",
-    "thumbnailUrl": "https://img.youtube.com/vi/-tx9lixlJe4/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/-tx9lixlJe4/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/-tx9lixlJe4/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.174Z"
   },
   {
     "id": "stream-y9eiiqrnwny",
@@ -3495,7 +3663,8 @@
     "channelName": "Elizabeth",
     "channelPhoto": "https://yt3.ggpht.com/1aoKeoCGzuD7XK2U8nUIHfpynIOLecHxF7Adh09XshlrL9kne2uKGOllFcoA2iXBVVe51_V6E48=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Elizabeth"
+      "Elizabeth",
+      "Elizabeth Rose Bloodflame"
     ],
     "topic": null,
     "liveViewers": null,
@@ -3506,8 +3675,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=Y9eiIQRNwNY",
     "holodexUrl": "https://holodex.net/watch/Y9eiIQRNwNY",
-    "thumbnailUrl": "https://img.youtube.com/vi/Y9eiIQRNwNY/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/Y9eiIQRNwNY/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/Y9eiIQRNwNY/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.173Z"
   },
   {
     "id": "stream-ob00ykiz4ow",
@@ -3530,8 +3700,9 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=Ob00YKIZ4Ow",
     "holodexUrl": "https://holodex.net/watch/Ob00YKIZ4Ow",
-    "thumbnailUrl": "https://img.youtube.com/vi/Ob00YKIZ4Ow/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/Ob00YKIZ4Ow/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/Ob00YKIZ4Ow/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.173Z"
   },
   {
     "id": "stream-svvqoktnk08",
@@ -3543,7 +3714,8 @@
     "channelName": "Reine",
     "channelPhoto": "https://yt3.ggpht.com/gV1Zr_UQCBsmfyqaJhgj46qud_7HkvdqDNobqz-GSY7cQ4GNSltNxAyc1Y1-9HXXvSoORbzc=s88-c-k-c0x00ffffff-no-rj",
     "talents": [
-      "Reine"
+      "Reine",
+      "Pavolia Reine"
     ],
     "topic": null,
     "liveViewers": null,
@@ -3554,7 +3726,8 @@
     "availableAt": null,
     "youtubeUrl": "https://www.youtube.com/watch?v=SVvqOKTNk08",
     "holodexUrl": "https://holodex.net/watch/SVvqOKTNk08",
-    "thumbnailUrl": "https://img.youtube.com/vi/SVvqOKTNk08/mqdefault.jpg",
-    "fetchedAt": "2026-05-06T14:01:50.511Z"
+    "thumbnailUrl": "https://i.ytimg.com/vi/SVvqOKTNk08/maxresdefault.jpg",
+    "thumbnailFallbackUrl": "https://i.ytimg.com/vi/SVvqOKTNk08/hqdefault.jpg",
+    "fetchedAt": "2026-05-06T14:57:14.169Z"
   }
 ]

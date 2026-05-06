@@ -17,7 +17,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260427-01-386/",
     "publishedAt": "2026-04-27",
     "month": "2026-04",
-    "fetchedAt": "2026-05-06T14:01:49.861Z"
+    "fetchedAt": "2026-05-06T14:57:14.245Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260420-01-385",
@@ -33,12 +33,13 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20260420-01-385/",
     "publishedAt": "2026-04-20",
     "month": "2026-04",
-    "fetchedAt": "2026-05-06T14:01:49.866Z"
+    "fetchedAt": "2026-05-06T14:57:14.252Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260402-01-384",
@@ -55,7 +56,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260402-01-384/",
     "publishedAt": "2026-04-02",
     "month": "2026-04",
-    "fetchedAt": "2026-05-06T14:01:49.872Z"
+    "fetchedAt": "2026-05-06T14:57:14.257Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260326-01-383",
@@ -73,7 +74,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260326-01-383/",
     "publishedAt": "2026-03-26",
     "month": "2026-03",
-    "fetchedAt": "2026-05-06T14:01:49.877Z"
+    "fetchedAt": "2026-05-06T14:57:14.264Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260325-01-382",
@@ -86,11 +87,13 @@
     "title": "Mori Calliope、Apple創立50周年記念東京ライブイベント出演決定！本日より先着受付開始",
     "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、当社が運営するグループ「hololive English -Myth-」所属のタレント「Mori Calliope」が、Apple創立50周年を世界中で祝う「Apple 50th Anniversary Celebrations」の東京イベントに出演することをお知らせいたします。 「Apple 50th Anniversary Celebrations」は、Appleが1976年の創業から50周年を迎えることを記念し、ニューヨーク、東京、ロンドン、シド",
     "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/03/260325_main2.webp",
-    "talents": [],
+    "talents": [
+      "Mori Calliope"
+    ],
     "officialUrl": "https://hololive.hololivepro.com/news/20260325-01-382/",
     "publishedAt": "2026-03-25",
     "month": "2026-03",
-    "fetchedAt": "2026-05-06T14:01:49.883Z"
+    "fetchedAt": "2026-05-06T14:57:14.270Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260322-01-381",
@@ -107,7 +110,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260322-01-381/",
     "publishedAt": "2026-03-22",
     "month": "2026-03",
-    "fetchedAt": "2026-05-06T14:01:49.888Z"
+    "fetchedAt": "2026-05-06T14:57:14.276Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260313-01-380",
@@ -124,12 +127,14 @@
       "星街すいせい",
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "AZKi"
+      "AZKi",
+      "ロボ子さん",
+      "さくらみこ"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20260313-01-380/",
     "publishedAt": "2026-03-13",
     "month": "2026-03",
-    "fetchedAt": "2026-05-06T14:01:52.177Z"
+    "fetchedAt": "2026-05-06T14:57:14.282Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260306-01-379",
@@ -149,12 +154,15 @@
       "尾丸ポルカ",
       "鷹嶺ルイ",
       "博衣こより",
-      "一伊那尓栖"
+      "一伊那尓栖",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20260306-01-379/",
     "publishedAt": "2026-03-06",
     "month": "2026-03",
-    "fetchedAt": "2026-05-06T14:01:54.502Z"
+    "fetchedAt": "2026-05-06T14:57:14.289Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260306-02-80",
@@ -169,7 +177,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260306-02-80/",
     "publishedAt": "2026-03-06",
     "month": "2026-03",
-    "fetchedAt": "2026-05-06T14:01:54.507Z"
+    "fetchedAt": "2026-05-06T14:57:14.295Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260304-01-378",
@@ -184,7 +192,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260304-01-378/",
     "publishedAt": "2026-03-04",
     "month": "2026-03",
-    "fetchedAt": "2026-05-06T14:01:54.514Z"
+    "fetchedAt": "2026-05-06T14:57:14.302Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260303-01-376",
@@ -203,12 +211,14 @@
       "虎金妃笑虎",
       "水宮枢",
       "輪堂千速",
-      "綺々羅々ヴィヴィ"
+      "綺々羅々ヴィヴィ",
+      "IRyS",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20260303-01-376/",
     "publishedAt": "2026-03-03",
     "month": "2026-03",
-    "fetchedAt": "2026-05-06T14:01:54.521Z"
+    "fetchedAt": "2026-05-06T14:57:14.308Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260302-01-377",
@@ -225,7 +235,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260302-01-377/",
     "publishedAt": "2026-03-02",
     "month": "2026-03",
-    "fetchedAt": "2026-05-06T14:01:54.536Z"
+    "fetchedAt": "2026-05-06T14:57:14.315Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260216-01-375",
@@ -239,12 +249,14 @@
     "talents": [
       "尾丸ポルカ",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "さくらみこ",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20260216-01-375/",
     "publishedAt": "2026-02-16",
     "month": "2026-02",
-    "fetchedAt": "2026-05-06T14:01:57.020Z"
+    "fetchedAt": "2026-05-06T14:57:14.321Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260212-01-374",
@@ -266,7 +278,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260212-01-374/",
     "publishedAt": "2026-02-12",
     "month": "2026-02",
-    "fetchedAt": "2026-05-06T14:01:59.034Z"
+    "fetchedAt": "2026-05-06T14:57:14.327Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260206-02-79",
@@ -282,7 +294,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260206-02-79/",
     "publishedAt": "2026-02-06",
     "month": "2026-02",
-    "fetchedAt": "2026-05-06T14:01:59.042Z"
+    "fetchedAt": "2026-05-06T14:57:14.333Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260202-01-373",
@@ -300,7 +312,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260202-01-373/",
     "publishedAt": "2026-02-02",
     "month": "2026-02",
-    "fetchedAt": "2026-05-06T14:01:59.047Z"
+    "fetchedAt": "2026-05-06T14:57:14.352Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260130-01-372",
@@ -311,11 +323,13 @@
     "title": "「さくらみこ」初の絵本が3月5日（木）に発売決定！",
     "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、弊社が運営する「ホロライブプロダクション」傘下の女性VTuberグループ「ホロライブ」所属の「さくらみこ」が、株式会社フレーベル館より初の絵本を2026年3月5日（木）より発売することをお知らせいたします。 女性VTuberグループ「ホロライブ」所属の「さくらみこ」初の絵本が、3月5日（木）に発売することが決定いたしました。 「さくらみこ」がずっと抱き続けてきた「絵本をつくりたい」という夢が、フレーベル館とのタッグによりついに実現。本人が描く、優しくも",
     "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/02/260130_main.webp",
-    "talents": [],
+    "talents": [
+      "さくらみこ"
+    ],
     "officialUrl": "https://hololive.hololivepro.com/news/20260130-01-372/",
     "publishedAt": "2026-01-30",
     "month": "2026-01",
-    "fetchedAt": "2026-05-06T14:01:59.052Z"
+    "fetchedAt": "2026-05-06T14:57:14.358Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260116-01-371",
@@ -332,7 +346,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260116-01-371/",
     "publishedAt": "2026-01-16",
     "month": "2026-01",
-    "fetchedAt": "2026-05-06T14:01:59.057Z"
+    "fetchedAt": "2026-05-06T14:57:14.364Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260108-01-370",
@@ -347,7 +361,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260108-01-370/",
     "publishedAt": "2026-01-08",
     "month": "2026-01",
-    "fetchedAt": "2026-05-06T14:01:59.063Z"
+    "fetchedAt": "2026-05-06T14:57:14.370Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20260103-01-369",
@@ -364,7 +378,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20260103-01-369/",
     "publishedAt": "2026-01-03",
     "month": "2026-01",
-    "fetchedAt": "2026-05-06T14:01:59.068Z"
+    "fetchedAt": "2026-05-06T14:57:14.376Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251215-01-367",
@@ -382,7 +396,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251215-01-367/",
     "publishedAt": "2025-12-15",
     "month": "2025-12",
-    "fetchedAt": "2026-05-06T14:01:59.073Z"
+    "fetchedAt": "2026-05-06T14:57:14.381Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251212-01-368",
@@ -402,7 +416,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251212-01-368/",
     "publishedAt": "2025-12-12",
     "month": "2025-12",
-    "fetchedAt": "2026-05-06T14:01:59.078Z"
+    "fetchedAt": "2026-05-06T14:57:14.388Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251212-02-78",
@@ -423,7 +437,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251212-02-78/",
     "publishedAt": "2025-12-12",
     "month": "2025-12",
-    "fetchedAt": "2026-05-06T14:01:59.083Z"
+    "fetchedAt": "2026-05-06T14:57:14.393Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251210-01-365",
@@ -465,12 +479,23 @@
       "AZKi",
       "ReGLOSS",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "ロボ子さん",
+      "さくらみこ",
+      "夏色まつり",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20251210-01-365/",
     "publishedAt": "2025-12-10",
     "month": "2025-12",
-    "fetchedAt": "2026-05-06T14:01:59.089Z"
+    "fetchedAt": "2026-05-06T14:57:14.401Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251208-02-77",
@@ -486,7 +511,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251208-02-77/",
     "publishedAt": "2025-12-08",
     "month": "2025-12",
-    "fetchedAt": "2026-05-06T14:01:59.095Z"
+    "fetchedAt": "2026-05-06T14:57:14.410Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251208-01-366",
@@ -505,12 +530,14 @@
       "一伊那尓栖",
       "AZKi",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "ロボ子さん",
+      "さくらみこ"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20251208-01-366/",
     "publishedAt": "2025-12-08",
     "month": "2025-12",
-    "fetchedAt": "2026-05-06T14:01:59.100Z"
+    "fetchedAt": "2026-05-06T14:57:14.415Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251201-01-364",
@@ -528,7 +555,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251201-01-364/",
     "publishedAt": "2025-12-01",
     "month": "2025-12",
-    "fetchedAt": "2026-05-06T14:01:59.105Z"
+    "fetchedAt": "2026-05-06T14:57:14.422Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251127-01-363",
@@ -547,7 +574,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251127-01-363/",
     "publishedAt": "2025-11-27",
     "month": "2025-11",
-    "fetchedAt": "2026-05-06T14:01:59.110Z"
+    "fetchedAt": "2026-05-06T14:57:14.429Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251124-01-362",
@@ -567,7 +594,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251124-01-362/",
     "publishedAt": "2025-11-24",
     "month": "2025-11",
-    "fetchedAt": "2026-05-06T14:01:59.115Z"
+    "fetchedAt": "2026-05-06T14:57:14.435Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251114-01-361",
@@ -585,7 +612,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251114-01-361/",
     "publishedAt": "2025-11-14",
     "month": "2025-11",
-    "fetchedAt": "2026-05-06T14:01:59.121Z"
+    "fetchedAt": "2026-05-06T14:57:14.443Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20251019-01-360",
@@ -607,7 +634,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20251019-01-360/",
     "publishedAt": "2025-10-19",
     "month": "2025-10",
-    "fetchedAt": "2026-05-06T14:01:59.126Z"
+    "fetchedAt": "2026-05-06T14:57:14.450Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250924-01-359",
@@ -622,7 +649,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250924-01-359/",
     "publishedAt": "2025-09-24",
     "month": "2025-09",
-    "fetchedAt": "2026-05-06T14:01:59.131Z"
+    "fetchedAt": "2026-05-06T14:57:14.458Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250924-02-76",
@@ -639,7 +666,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250924-02-76/",
     "publishedAt": "2025-09-24",
     "month": "2025-09",
-    "fetchedAt": "2026-05-06T14:01:59.136Z"
+    "fetchedAt": "2026-05-06T14:57:14.463Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250913-01-358",
@@ -661,7 +688,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250913-01-358/",
     "publishedAt": "2025-09-13",
     "month": "2025-09",
-    "fetchedAt": "2026-05-06T14:01:59.142Z"
+    "fetchedAt": "2026-05-06T14:57:14.470Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250912-01-357",
@@ -679,7 +706,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250912-01-357/",
     "publishedAt": "2025-09-12",
     "month": "2025-09",
-    "fetchedAt": "2026-05-06T14:01:59.147Z"
+    "fetchedAt": "2026-05-06T14:57:14.475Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250829-01-356",
@@ -698,7 +725,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250829-01-356/",
     "publishedAt": "2025-08-29",
     "month": "2025-08",
-    "fetchedAt": "2026-05-06T14:01:59.152Z"
+    "fetchedAt": "2026-05-06T14:57:14.482Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250820-01-355",
@@ -710,12 +737,14 @@
     "summary": "カバー株式会社（本社：東京都港区、代表取締役社長：谷郷元昭）は、弊社が運営するVTuberグループ「ホロライブインドネシア」の5周年を記念した現地ライブ『hololive Indonesia 5th Anniversary LIVE Chromatic Future 』が2025年11月15日（土）に「COMIC FRONTIER 21 ICE BSD ホール6」での開催が決定したことをお知らせいたします。 本ライブは、「ホロライブインドネシア」の5周年を記念した初の現地ライブです。 現地チケット情報などイベントの",
     "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2025/08/250817_main.webp",
     "talents": [
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250820-01-355/",
     "publishedAt": "2025-08-20",
     "month": "2025-08",
-    "fetchedAt": "2026-05-06T14:01:59.157Z"
+    "fetchedAt": "2026-05-06T14:57:14.488Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250808-01-354",
@@ -733,7 +762,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250808-01-354/",
     "publishedAt": "2025-08-08",
     "month": "2025-08",
-    "fetchedAt": "2026-05-06T14:01:59.162Z"
+    "fetchedAt": "2026-05-06T14:57:14.495Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250807-01-352",
@@ -751,7 +780,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250807-01-352/",
     "publishedAt": "2025-08-07",
     "month": "2025-08",
-    "fetchedAt": "2026-05-06T14:01:59.167Z"
+    "fetchedAt": "2026-05-06T14:57:14.501Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250807-02-75",
@@ -768,7 +797,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250807-02-75/",
     "publishedAt": "2025-08-07",
     "month": "2025-08",
-    "fetchedAt": "2026-05-06T14:01:59.172Z"
+    "fetchedAt": "2026-05-06T14:57:14.507Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250731-01-353",
@@ -781,12 +810,13 @@
     "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2025/07/250731_main.jpg",
     "talents": [
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250731-01-353/",
     "publishedAt": "2025-07-31",
     "month": "2025-07",
-    "fetchedAt": "2026-05-06T14:01:59.177Z"
+    "fetchedAt": "2026-05-06T14:57:14.513Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250716-01-351",
@@ -801,7 +831,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250716-01-351/",
     "publishedAt": "2025-07-16",
     "month": "2025-07",
-    "fetchedAt": "2026-05-06T14:01:59.182Z"
+    "fetchedAt": "2026-05-06T14:57:14.518Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250714-01-350",
@@ -815,12 +845,13 @@
     "talents": [
       "ときのそら",
       "尾丸ポルカ",
-      "一伊那尓栖"
+      "一伊那尓栖",
+      "夏色まつり"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250714-01-350/",
     "publishedAt": "2025-07-14",
     "month": "2025-07",
-    "fetchedAt": "2026-05-06T14:01:59.187Z"
+    "fetchedAt": "2026-05-06T14:57:14.525Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250711-01-349",
@@ -836,7 +867,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250711-01-349/",
     "publishedAt": "2025-07-11",
     "month": "2025-07",
-    "fetchedAt": "2026-05-06T14:01:59.192Z"
+    "fetchedAt": "2026-05-06T14:57:14.531Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250711-02-74",
@@ -852,7 +883,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250711-02-74/",
     "publishedAt": "2025-07-11",
     "month": "2025-07",
-    "fetchedAt": "2026-05-06T14:01:59.197Z"
+    "fetchedAt": "2026-05-06T14:57:14.545Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250709-01-345",
@@ -868,7 +899,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250709-01-345/",
     "publishedAt": "2025-07-09",
     "month": "2025-07",
-    "fetchedAt": "2026-05-06T14:01:59.203Z"
+    "fetchedAt": "2026-05-06T14:57:14.551Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250701-01-348",
@@ -886,7 +917,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250701-01-348/",
     "publishedAt": "2025-07-01",
     "month": "2025-07",
-    "fetchedAt": "2026-05-06T14:01:59.208Z"
+    "fetchedAt": "2026-05-06T14:57:14.557Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250628-01-346",
@@ -904,7 +935,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250628-01-346/",
     "publishedAt": "2025-06-28",
     "month": "2025-06",
-    "fetchedAt": "2026-05-06T14:01:59.213Z"
+    "fetchedAt": "2026-05-06T14:57:14.563Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250627-01-347",
@@ -923,12 +954,14 @@
       "獅白ぼたん",
       "ラプラス・ダークネス",
       "風真いろは",
-      "水宮枢"
+      "水宮枢",
+      "ロボ子さん",
+      "姫森ルーナ"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250627-01-347/",
     "publishedAt": "2025-06-27",
     "month": "2025-06",
-    "fetchedAt": "2026-05-06T14:01:59.218Z"
+    "fetchedAt": "2026-05-06T14:57:14.569Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250620-01-344",
@@ -945,7 +978,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250620-01-344/",
     "publishedAt": "2025-06-20",
     "month": "2025-06",
-    "fetchedAt": "2026-05-06T14:01:59.223Z"
+    "fetchedAt": "2026-05-06T14:57:14.574Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250617-01-343",
@@ -960,7 +993,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250617-01-343/",
     "publishedAt": "2025-06-17",
     "month": "2025-06",
-    "fetchedAt": "2026-05-06T14:01:59.229Z"
+    "fetchedAt": "2026-05-06T14:57:14.579Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250616-02-73",
@@ -977,7 +1010,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250616-02-73/",
     "publishedAt": "2025-06-16",
     "month": "2025-06",
-    "fetchedAt": "2026-05-06T14:01:59.234Z"
+    "fetchedAt": "2026-05-06T14:57:14.584Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250616-01-342",
@@ -992,12 +1025,13 @@
     "talents": [
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250616-01-342/",
     "publishedAt": "2025-06-16",
     "month": "2025-06",
-    "fetchedAt": "2026-05-06T14:01:59.240Z"
+    "fetchedAt": "2026-05-06T14:57:14.589Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250609-01-341",
@@ -1011,12 +1045,13 @@
     "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2025/06/Dodgers_2025_0000.jpg",
     "talents": [
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "IRyS"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250609-01-341/",
     "publishedAt": "2025-06-09",
     "month": "2025-06",
-    "fetchedAt": "2026-05-06T14:01:59.245Z"
+    "fetchedAt": "2026-05-06T14:57:14.595Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250531-01-340",
@@ -1034,7 +1069,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250531-01-340/",
     "publishedAt": "2025-05-31",
     "month": "2025-05",
-    "fetchedAt": "2026-05-06T14:01:59.250Z"
+    "fetchedAt": "2026-05-06T14:57:14.601Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250529-01-339",
@@ -1049,12 +1084,13 @@
       "白上フブキ",
       "宝鐘マリン",
       "獅白ぼたん",
-      "綺々羅々ヴィヴィ"
+      "綺々羅々ヴィヴィ",
+      "百鬼あやめ"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250529-01-339/",
     "publishedAt": "2025-05-29",
     "month": "2025-05",
-    "fetchedAt": "2026-05-06T14:01:59.254Z"
+    "fetchedAt": "2026-05-06T14:57:14.608Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250504-01-338",
@@ -1072,7 +1108,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250504-01-338/",
     "publishedAt": "2025-05-04",
     "month": "2025-05",
-    "fetchedAt": "2026-05-06T14:02:01.297Z"
+    "fetchedAt": "2026-05-06T14:57:14.614Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250502-01-337",
@@ -1088,12 +1124,15 @@
       "天音かなた",
       "獅白ぼたん",
       "ラプラス・ダークネス",
-      "鷹嶺ルイ"
+      "鷹嶺ルイ",
+      "アキ・ローゼンタール",
+      "赤井はあと",
+      "さくらみこ"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250502-01-337/",
     "publishedAt": "2025-05-02",
     "month": "2025-05",
-    "fetchedAt": "2026-05-06T14:02:01.302Z"
+    "fetchedAt": "2026-05-06T14:57:14.619Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250430-01-336",
@@ -1111,7 +1150,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250430-01-336/",
     "publishedAt": "2025-04-30",
     "month": "2025-04",
-    "fetchedAt": "2026-05-06T14:02:01.308Z"
+    "fetchedAt": "2026-05-06T14:57:14.626Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250429-01-335",
@@ -1124,12 +1163,13 @@
     "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2025/04/20250429_main-scaled.webp",
     "talents": [
       "戌神ころね",
-      "白銀ノエル"
+      "白銀ノエル",
+      "姫森ルーナ"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250429-01-335/",
     "publishedAt": "2025-04-29",
     "month": "2025-04",
-    "fetchedAt": "2026-05-06T14:02:01.313Z"
+    "fetchedAt": "2026-05-06T14:57:14.632Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250423-01-333",
@@ -1143,12 +1183,14 @@
     "talents": [
       "ときのそら",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "さくらみこ",
+      "IRyS"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250423-01-333/",
     "publishedAt": "2025-04-23",
     "month": "2025-04",
-    "fetchedAt": "2026-05-06T14:02:01.318Z"
+    "fetchedAt": "2026-05-06T14:57:14.637Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250422-01-334",
@@ -1166,7 +1208,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250422-01-334/",
     "publishedAt": "2025-04-22",
     "month": "2025-04",
-    "fetchedAt": "2026-05-06T14:02:01.323Z"
+    "fetchedAt": "2026-05-06T14:57:14.644Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250410-01-332",
@@ -1186,12 +1228,13 @@
       "ラプラス・ダークネス",
       "鷹嶺ルイ",
       "博衣こより",
-      "風真いろは"
+      "風真いろは",
+      "姫森ルーナ"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250410-01-332/",
     "publishedAt": "2025-04-10",
     "month": "2025-04",
-    "fetchedAt": "2026-05-06T14:02:01.328Z"
+    "fetchedAt": "2026-05-06T14:57:14.650Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250320-01-331",
@@ -1209,7 +1252,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250320-01-331/",
     "publishedAt": "2025-03-20",
     "month": "2025-03",
-    "fetchedAt": "2026-05-06T14:02:01.334Z"
+    "fetchedAt": "2026-05-06T14:57:14.656Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250317-01-329",
@@ -1228,12 +1271,16 @@
       "天音かなた",
       "角巻わため",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "さくらみこ",
+      "百鬼あやめ",
+      "大空スバル",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250317-01-329/",
     "publishedAt": "2025-03-17",
     "month": "2025-03",
-    "fetchedAt": "2026-05-06T14:02:01.339Z"
+    "fetchedAt": "2026-05-06T14:57:14.661Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250314-01-330",
@@ -1252,7 +1299,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250314-01-330/",
     "publishedAt": "2025-03-14",
     "month": "2025-03",
-    "fetchedAt": "2026-05-06T14:02:01.344Z"
+    "fetchedAt": "2026-05-06T14:57:14.667Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250313-01-328",
@@ -1286,12 +1333,18 @@
       "AZKi",
       "ReGLOSS",
       "秘密結社holoX",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "赤井はあと",
+      "夏色まつり",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250313-01-328/",
     "publishedAt": "2025-03-13",
     "month": "2025-03",
-    "fetchedAt": "2026-05-06T14:02:01.349Z"
+    "fetchedAt": "2026-05-06T14:57:14.675Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250313-02-72",
@@ -1321,12 +1374,20 @@
       "博衣こより",
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "AZKi"
+      "AZKi",
+      "アキ・ローゼンタール",
+      "ロボ子さん",
+      "さくらみこ",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル",
+      "IRyS",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250313-02-72/",
     "publishedAt": "2025-03-13",
     "month": "2025-03",
-    "fetchedAt": "2026-05-06T14:02:01.355Z"
+    "fetchedAt": "2026-05-06T14:57:14.683Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250308-01-327",
@@ -1359,12 +1420,18 @@
       "小鳥遊キアラ",
       "AZKi",
       "ReGLOSS",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "赤井はあと",
+      "夏色まつり",
+      "姫森ルーナ",
+      "IRyS",
+      "Pavolia Reine",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250308-01-327/",
     "publishedAt": "2025-03-08",
     "month": "2025-03",
-    "fetchedAt": "2026-05-06T14:02:01.360Z"
+    "fetchedAt": "2026-05-06T14:57:14.689Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250307-01-326",
@@ -1379,12 +1446,13 @@
       "星街すいせい",
       "宝鐘マリン",
       "小鳥遊キアラ",
-      "ReGLOSS"
+      "ReGLOSS",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250307-01-326/",
     "publishedAt": "2025-03-07",
     "month": "2025-03",
-    "fetchedAt": "2026-05-06T14:02:01.366Z"
+    "fetchedAt": "2026-05-06T14:57:14.695Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250228-01-325",
@@ -1401,7 +1469,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250228-01-325/",
     "publishedAt": "2025-02-28",
     "month": "2025-02",
-    "fetchedAt": "2026-05-06T14:02:01.371Z"
+    "fetchedAt": "2026-05-06T14:57:14.700Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250222-01-324",
@@ -1419,7 +1487,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250222-01-324/",
     "publishedAt": "2025-02-22",
     "month": "2025-02",
-    "fetchedAt": "2026-05-06T14:02:01.376Z"
+    "fetchedAt": "2026-05-06T14:57:14.715Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250220-01-323",
@@ -1437,12 +1505,14 @@
       "轟はじめ",
       "小鳥遊キアラ",
       "一伊那尓栖",
-      "ホロライブEnglish"
+      "ホロライブEnglish",
+      "姫森ルーナ",
+      "IRyS"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250220-01-323/",
     "publishedAt": "2025-02-20",
     "month": "2025-02",
-    "fetchedAt": "2026-05-06T14:02:01.383Z"
+    "fetchedAt": "2026-05-06T14:57:14.721Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250212-01-322",
@@ -1461,7 +1531,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250212-01-322/",
     "publishedAt": "2025-02-12",
     "month": "2025-02",
-    "fetchedAt": "2026-05-06T14:02:01.388Z"
+    "fetchedAt": "2026-05-06T14:57:14.727Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250124-02-71",
@@ -1481,7 +1551,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250124-02-71/",
     "publishedAt": "2025-01-24",
     "month": "2025-01",
-    "fetchedAt": "2026-05-06T14:02:01.394Z"
+    "fetchedAt": "2026-05-06T14:57:14.733Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250122-01-321",
@@ -1499,12 +1569,13 @@
       "角巻わため",
       "小鳥遊キアラ",
       "ホロライブEnglish",
-      "ホロライブインドネシア"
+      "ホロライブインドネシア",
+      "Kobo Kanaeru"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250122-01-321/",
     "publishedAt": "2025-01-22",
     "month": "2025-01",
-    "fetchedAt": "2026-05-06T14:02:03.641Z"
+    "fetchedAt": "2026-05-06T14:57:14.739Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250117-01-319",
@@ -1518,12 +1589,15 @@
     "talents": [
       "兎田ぺこら",
       "白銀ノエル",
-      "宝鐘マリン"
+      "宝鐘マリン",
+      "百鬼あやめ",
+      "癒月ちょこ",
+      "大空スバル"
     ],
     "officialUrl": "https://hololive.hololivepro.com/news/20250117-01-319/",
     "publishedAt": "2025-01-17",
     "month": "2025-01",
-    "fetchedAt": "2026-05-06T14:02:03.646Z"
+    "fetchedAt": "2026-05-06T14:57:14.745Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250117-01-320",
@@ -1540,7 +1614,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250117-01-320/",
     "publishedAt": "2025-01-17",
     "month": "2025-01",
-    "fetchedAt": "2026-05-06T14:02:03.651Z"
+    "fetchedAt": "2026-05-06T14:57:14.751Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20250116-01-318",
@@ -1563,7 +1637,7 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20250116-01-318/",
     "publishedAt": "2025-01-16",
     "month": "2025-01",
-    "fetchedAt": "2026-05-06T14:02:03.656Z"
+    "fetchedAt": "2026-05-06T14:57:14.759Z"
   },
   {
     "id": "news-https-hololive-hololivepro-com-news-20241217-01-317",
@@ -1581,6 +1655,6 @@
     "officialUrl": "https://hololive.hololivepro.com/news/20241217-01-317/",
     "publishedAt": "2024-12-17",
     "month": "2024-12",
-    "fetchedAt": "2026-05-06T14:02:03.661Z"
+    "fetchedAt": "2026-05-06T14:57:14.764Z"
   }
 ]
