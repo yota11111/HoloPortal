@@ -288,7 +288,7 @@ function itemLinkLabel(item) {
                 >
                   {item.imageUrl && (
                     <img
-                      class="thumb"
+                      class={`thumb ${item.category === "stream" ? "stream-thumb" : ""}`}
                       src={item.imageUrl}
                       alt=""
                       loading="lazy"
