@@ -84,6 +84,12 @@ function itemFilterDataAttrs(item) {
     groups: dataTokenList(data.groups),
   };
 }
+
+function itemLinkLabel(item) {
+  if (item.category === "goods") return "公式ショップ";
+  if (item.category === "stream") return "YouTubeで見る";
+  return "公式発表";
+}
 ---
 
 <html lang="ja">
@@ -250,7 +256,7 @@ function itemFilterDataAttrs(item) {
                           <span class="pill">
                             {stream.sourceLabel || stream.source}
                           </span>
-                          <span class="button">YouTubeで見る</span>
+                          <span class="shop-label">YouTubeで見る</span>
                         </div>
                       </div>
                     </a>
@@ -300,7 +306,7 @@ function itemFilterDataAttrs(item) {
                       {item.talents.slice(0, 2).map((talent) => (
                         <span class="pill">{talent}</span>
                       ))}
-                      <span class="button">公式へ</span>
+                      <span class="shop-label">{itemLinkLabel(item)}</span>
                     </div>
                   </div>
                 </a>
@@ -344,7 +350,7 @@ function itemFilterDataAttrs(item) {
                     <h3 class="title">{item.title}</h3>
                     <p class="summary">{item.summary}</p>
                   </div>
-                  <span class="button">公式へ</span>
+                  <span class="shop-label">{itemLinkLabel(item)}</span>
                 </a>
               ))
             }
@@ -386,7 +392,7 @@ function itemFilterDataAttrs(item) {
                     <h3 class="title">{item.title}</h3>
                     <p class="summary">{item.summary}</p>
                   </div>
-                  <span class="button">公式へ</span>
+                  <span class="shop-label">{itemLinkLabel(item)}</span>
                 </a>
               ))
             }
