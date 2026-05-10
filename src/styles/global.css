@@ -589,6 +589,34 @@ h1 {
   min-height: auto;
 }
 
+.title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  color: var(--blue-deep);
+}
+
+.music-list .music-item {
+  grid-template-columns: 88px 116px minmax(0, 1fr) auto;
+}
+
+.music-item[hidden] {
+  display: none;
+}
+
+.service-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.service-links .shop-label {
+  margin-left: 0;
+}
+
 .search-result[hidden] {
   display: none;
 }

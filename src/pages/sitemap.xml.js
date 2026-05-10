@@ -9,6 +9,7 @@ const staticPages = [
   { path: "streams/", priority: "0.9", changefreq: "hourly" },
   { path: "goods/", priority: "0.8", changefreq: "daily" },
   { path: "events/", priority: "0.8", changefreq: "daily" },
+  { path: "music/", priority: "0.8", changefreq: "daily" },
   { path: "talents/", priority: "0.8", changefreq: "daily" },
   { path: "search/", priority: "0.7", changefreq: "daily" }
 ];

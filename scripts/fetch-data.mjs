@@ -5,6 +5,7 @@ import { canonicalTalentName, talentSearchTermsFromText } from "../src/lib/talen
 const outDir = path.join(process.cwd(), "src/data/generated");
 const cacheDir = path.join(process.cwd(), ".cache/holo-portal-fetch");
 const newsCacheFile = path.join(cacheDir, "news-pages.json");
+const NEWS_CACHE_VERSION = 3;
 const NEWS_SITEMAP = "https://hololive.hololivepro.com/wp-sitemap-posts-news-1.xml";
 const SHOP_PRODUCTS = "https://shop.hololivepro.com/products.json?limit=250&page=";
 const HOLODEX_LIVE = "https://holodex.net/api/v2/live?org=Hololive&limit=50&max_upcoming_hours=72";
@@ -161,6 +162,67 @@ function extractTalents(text) {
     ...talentSearchTermsFromText(text)
   ];
   return [...new Set(detected.map((name) => canonicalTalentName(name)).filter(Boolean))];
+}
+
+function extractLinks(html, baseUrl) {
+  return [...html.matchAll(/<a\s+[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)]
+    .map((match) => {
+      try {
+        const url = new URL(decodeHtml(match[1]), baseUrl).toString();
+        const label = stripTags(match[2]) || new URL(url).hostname.replace(/^www\./, "");
+        return { label, url };
+      } catch {
+        return null;
+      }
+    })
+    .filter(Boolean);
+}
+
+function musicPlatform(link) {
+  let hostname;
+  try {
+    hostname = new URL(link.url).hostname.replace(/^www\./, "").toLowerCase();
+  } catch {
+    return null;
+  }
+  const text = `${hostname} ${link.label}`.toLowerCase();
+  if (hostname.includes("spotify.com") || hostname.includes("spotify.link")) return "Spotify";
+  if (hostname.includes("music.apple.com") || text.includes("apple music")) return "Apple Music";
+  if (hostname.includes("music.youtube.com")) return "YouTube Music";
+  if (hostname.includes("lnk.to") || hostname.includes("linkfire") || hostname.includes("cover.lnk.to")) return "配信リンク";
+  if (hostname.includes("amazon.") && text.includes("music")) return "Amazon Music";
+  if (hostname.includes("line.me") || hostname.includes("lin.ee")) return "LINE MUSIC";
+  if (hostname.includes("awa.fm")) return "AWA";
+  if (hostname.includes("recochoku.jp")) return "レコチョク";
+  if (hostname.includes("mora.jp")) return "mora";
+  return null;
+}
+
+function extractMusicLinks(links) {
+  const seen = new Set();
+  return links
+    .map((link) => ({ ...link, platform: musicPlatform(link) }))
+    .filter((link) => link.platform)
+    .filter((link) => {
+      const key = `${link.platform}:${link.url}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+}
+
+function japaneseDateToIso(year, month, day) {
+  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
+function extractReleaseDate(text, fallbackDate) {
+  const releasePattern = /(\d{4})年\s*(\d{1,2})月\s*(\d{1,2})日(?:（[^）]+）)?[^。\n]{0,48}(リリース|発売|配信|公開)/;
+  const releaseMatch = text.match(releasePattern);
+  if (releaseMatch) return japaneseDateToIso(releaseMatch[1], releaseMatch[2], releaseMatch[3]);
+  const datePattern = /(\d{4})年\s*(\d{1,2})月\s*(\d{1,2})日/;
+  const dateMatch = text.match(datePattern);
+  if (dateMatch) return japaneseDateToIso(dateMatch[1], dateMatch[2], dateMatch[3]);
+  return fallbackDate;
 }
 
 function extractMetaImage(html) {
@@ -382,7 +444,7 @@ async function fetchNews() {
 }
 
 async function fetchNewsItem(url, cache) {
-  if (cache[url]?.item) return cache[url].item;
+  if (cache[url]?.version === NEWS_CACHE_VERSION && cache[url]?.item) return cache[url].item;
   let html;
   try {
     html = await fetchText(url);
@@ -394,9 +456,13 @@ async function fetchNewsItem(url, cache) {
   const article = html.match(/<article class="single_box">([\s\S]*?)<\/article>/);
   if (!h1) return null;
 
+  const articleHtml = article ? article[1] : html;
   const date = h1[1].trim();
   const title = stripTags(h1[2]);
-  const body = stripTags(article ? article[1] : html);
+  const body = stripTags(articleHtml);
+  const links = extractLinks(articleHtml, url);
+  const musicLinks = extractMusicLinks(links);
+  const categories = classifyNews(title, body);
   const imageUrl = extractMetaImage(html);
   const summary = body
     .split("\n")
@@ -409,17 +475,23 @@ async function fetchNewsItem(url, cache) {
   const item = {
     id: makeId("news", url),
     source: "official_news",
-    categories: classifyNews(title, body),
+    categories,
     title,
     summary,
     imageUrl,
     talents: extractTalents(`${title} ${body}`),
+    links,
+    musicLinks,
+    releaseDate: musicLinks.length || categories.includes("music")
+      ? extractReleaseDate(`${title}\n${body}`, toIsoDate(date))
+      : null,
     officialUrl: url,
     publishedAt: toIsoDate(date),
     month: monthKey(date),
     fetchedAt: new Date().toISOString()
   };
   cache[url] = {
+    version: NEWS_CACHE_VERSION,
     item,
     cachedAt: new Date().toISOString()
   };
@@ -651,6 +723,8 @@ function buildPortalItems(news, products, streams) {
     isAffiliate: false,
     imageUrl: item.imageUrl,
     summary: item.summary,
+    releaseDate: item.releaseDate,
+    musicLinks: item.musicLinks || [],
     status: "published"
   }));
 

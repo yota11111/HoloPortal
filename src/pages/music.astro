@@ -1,0 +1,306 @@
+---
+import "../styles/global.css";
+import Seo from "../components/Seo.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import items from "../data/generated/portal-items.json";
+import streams from "../data/generated/streams.json";
+import officialTalents from "../data/generated/official-talents.json";
+import {
+  buildTalentFilterState,
+  dataTokenList,
+  itemTalentFilterData,
+  talentBranches,
+  talentGroups,
+} from "../lib/talent-filter-data.mjs";
+
+const musicItems = items
+  .filter((item) => item.category === "music" || item.musicLinks?.length)
+  .sort((a, b) => (b.releaseDate || b.startAt || "").localeCompare(a.releaseDate || a.startAt || ""));
+
+const talentFilterState = buildTalentFilterState(items, streams, officialTalents);
+const pageDescription =
+  "ホロライブ関連の楽曲リリース、アルバム、MV、音楽配信リンクをまとめる非公式ページです。";
+
+function formatDate(value) {
+  if (!value) return "日付未定";
+  return new Intl.DateTimeFormat("ja-JP", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date(value));
+}
+
+function linkLabel(item) {
+  return item.musicLinks?.length ? "配信リンク" : "公式発表";
+}
+
+function serviceLinks(item) {
+  return (item.musicLinks || []).slice(0, 5);
+}
+
+function itemFilterDataAttrs(item) {
+  const data = itemTalentFilterData(item);
+  return {
+    talents: dataTokenList(data.talents),
+    branches: dataTokenList(data.branches),
+    groups: dataTokenList(data.groups),
+  };
+}
+
+function musicSearchText(item) {
+  return `${item.title} ${item.summary || ""} ${(item.talents || []).join(" ")} ${(item.musicLinks || [])
+    .map((link) => `${link.platform} ${link.label}`)
+    .join(" ")}`.toLowerCase();
+}
+---
+
+<html lang="ja">
+  <head>
+    <Seo
+      title="音楽"
+      description={pageDescription}
+      path="music/"
+      image={musicItems.find((item) => item.imageUrl)?.imageUrl}
+      schemaType="CollectionPage"
+      jsonLd={{
+        about: "hololive music releases and streaming links",
+        numberOfItems: musicItems.length,
+      }}
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="../">
+          <span>Holo Portal</span>
+        </a>
+        <nav class="nav" aria-label="主要ナビゲーション">
+          <a href="../">ホーム</a>
+          <a href="../streams/">配信</a>
+          <a href="../goods/">グッズ</a>
+          <a href="../events/">ライブ/イベント</a>
+          <a href="../music/" aria-current="page">音楽</a>
+          <a href="../talents/">タレント</a>
+          <a href="../search/">検索</a>
+        </nav>
+        <ThemeToggle />
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="shell">
+          <div class="catalog-tools" aria-label="音楽情報の絞り込み">
+            <input
+              class="search-input"
+              type="search"
+              placeholder="楽曲、アルバム、タレント、サービスで検索"
+              data-music-search
+            />
+            <label class="select-wrap">
+              <span>所属</span>
+              <select class="select-input" data-music-branch>
+                {
+                  talentBranches.map((branch) => (
+                    <option value={branch.value}>
+                      {branch.label} (
+                      {branch.value === "all"
+                        ? talentFilterState.talents.length
+                        : talentFilterState.branchCounts[branch.value] || 0}
+                      )
+                    </option>
+                  ))
+                }
+              </select>
+            </label>
+            <label class="select-wrap">
+              <span>グループ</span>
+              <select class="select-input" data-music-group>
+                <option value="all" data-branch="all"
+                  >すべて ({talentFilterState.talents.length})</option
+                >
+                {
+                  talentGroups
+                    .filter((group) => group.value !== "all")
+                    .map((group) => (
+                      <option value={group.value} data-branch={group.branch}>
+                        {group.label} (
+                        {talentFilterState.groupCounts[group.value] || 0})
+                      </option>
+                    ))
+                }
+              </select>
+            </label>
+            <label class="select-wrap">
+              <span>タレント</span>
+              <select class="select-input" data-music-talent>
+                <option value="all" data-branch="all" data-group="all"
+                  >すべて</option
+                >
+                {
+                  talentFilterState.talents.map((talent) => (
+                    <option
+                      value={talent.name}
+                      data-branch={talent.branch}
+                      data-groups={`|${talent.groups.join("|")}|`}
+                    >
+                      {talent.name}
+                    </option>
+                  ))
+                }
+              </select>
+            </label>
+            <div class="result-count" data-music-result-count>
+              {musicItems.length}件
+            </div>
+          </div>
+          <div class="empty-state" data-music-empty-state>
+            該当する音楽情報が見つかりませんでした。
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="list music-list">
+            {
+              musicItems.map((item) => (
+                <article
+                  class="list-item music-item"
+                  data-music-card
+                  data-branches={itemFilterDataAttrs(item).branches}
+                  data-groups={itemFilterDataAttrs(item).groups}
+                  data-talents={itemFilterDataAttrs(item).talents}
+                  data-search={musicSearchText(item)}
+                >
+                  {item.imageUrl && (
+                    <img
+                      class="list-thumb"
+                      src={item.imageUrl}
+                      alt=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer"
+                    />
+                  )}
+                  <div class="date">
+                    {formatDate(item.releaseDate || item.startAt)}
+                  </div>
+                  <div>
+                    <a
+                      class="title title-link"
+                      href={item.normalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.title}
+                    </a>
+                    <p class="summary">{item.summary}</p>
+                    <div class="meta">
+                      <span class="pill music">音楽</span>
+                      {item.releaseDate && (
+                        <span class="pill">リリース {formatDate(item.releaseDate)}</span>
+                      )}
+                      {item.talents.slice(0, 3).map((talent) => (
+                        <span class="pill">{talent}</span>
+                      ))}
+                    </div>
+                    <div class="service-links">
+                      {serviceLinks(item).map((link) => (
+                        <a
+                          class="shop-label"
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {link.platform}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                  <a
+                    class="shop-label"
+                    href={item.normalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {linkLabel(item)}
+                  </a>
+                </article>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <p>
+          Holo Portal は非公式ファンサイトです。音楽配信リンクやリリース情報は公式発表をもとに自動整理しています。
+        </p>
+      </div>
+    </footer>
+    <script>
+      const musicSearch = document.querySelector("[data-music-search]");
+      const musicBranch = document.querySelector("[data-music-branch]");
+      const musicGroup = document.querySelector("[data-music-group]");
+      const musicTalent = document.querySelector("[data-music-talent]");
+      const musicCards = [...document.querySelectorAll("[data-music-card]")];
+      const musicResultCount = document.querySelector("[data-music-result-count]");
+      const musicEmptyState = document.querySelector("[data-music-empty-state]");
+
+      function syncGroupOptions() {
+        for (const option of musicGroup.options) {
+          option.hidden =
+            musicBranch.value !== "all" &&
+            option.dataset.branch !== "all" &&
+            option.dataset.branch !== musicBranch.value;
+        }
+        if (musicGroup.selectedOptions[0]?.hidden) musicGroup.value = "all";
+      }
+
+      function syncTalentOptions() {
+        for (const option of musicTalent.options) {
+          const branchOk =
+            musicBranch.value === "all" ||
+            option.dataset.branch === "all" ||
+            option.dataset.branch === musicBranch.value;
+          const groupOk =
+            option.value === "all" ||
+            musicGroup.value === "all" ||
+            (option.dataset.groups || "").includes(`|${musicGroup.value}|`);
+          option.hidden = !branchOk || !groupOk;
+        }
+        if (musicTalent.selectedOptions[0]?.hidden) musicTalent.value = "all";
+      }
+
+      function matchesToken(cardValue, selectedValue) {
+        return selectedValue === "all" || (cardValue || "").includes(`|${selectedValue}|`);
+      }
+
+      function applyMusicFilters() {
+        syncGroupOptions();
+        syncTalentOptions();
+        const query = musicSearch.value.trim().toLowerCase();
+        let visible = 0;
+        for (const card of musicCards) {
+          const matches =
+            (!query || card.dataset.search.includes(query)) &&
+            matchesToken(card.dataset.branches, musicBranch.value) &&
+            matchesToken(card.dataset.groups, musicGroup.value) &&
+            matchesToken(card.dataset.talents, musicTalent.value);
+          card.hidden = !matches;
+          if (matches) visible += 1;
+        }
+        musicResultCount.textContent = `${visible}件`;
+        musicEmptyState.classList.toggle("visible", visible === 0);
+      }
+
+      musicSearch.addEventListener("input", applyMusicFilters);
+      musicBranch.addEventListener("change", applyMusicFilters);
+      musicGroup.addEventListener("change", applyMusicFilters);
+      musicTalent.addEventListener("change", applyMusicFilters);
+      applyMusicFilters();
+    </script>
+  </body>
+</html>
