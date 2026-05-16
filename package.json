@@ -14,6 +14,7 @@
     "preview:pages": "node scripts/run-pages-base.mjs preview",
     "fetch:data": "node scripts/fetch-data.mjs",
     "health": "node scripts/report-health.mjs",
+    "post:x": "node scripts/post-x-digest.mjs",
     "check:data": "node scripts/check-data.mjs",
     "check:search": "node scripts/check-search.mjs",
     "check:category": "node scripts/check-category.mjs",
