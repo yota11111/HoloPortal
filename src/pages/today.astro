@@ -1,0 +1,240 @@
+---
+import "../styles/global.css";
+import Seo from "../components/Seo.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import items from "../data/generated/portal-items.json";
+import streams from "../data/generated/streams.json";
+
+const todayKey = dateKeyJst(new Date());
+const todayLabel = new Intl.DateTimeFormat("ja-JP", {
+  timeZone: "Asia/Tokyo",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  weekday: "short",
+}).format(new Date());
+
+const todayStreams = streams
+  .filter((stream) => dateKeyJst(stream.startAt) === todayKey)
+  .sort((a, b) => (a.startAt || "").localeCompare(b.startAt || ""));
+const todayItems = items
+  .filter((item) => item.category !== "stream" && dateKeyJst(item.startAt) === todayKey)
+  .sort((a, b) => (b.startAt || "").localeCompare(a.startAt || ""));
+const nextStreams = streams
+  .filter((stream) => stream.status === "upcoming" && dateKeyJst(stream.startAt) > todayKey)
+  .sort((a, b) => (a.startAt || "").localeCompare(b.startAt || ""))
+  .slice(0, 6);
+const latestItems = items
+  .filter((item) => item.category !== "stream")
+  .slice(0, 6);
+const visibleStreams = todayStreams.length ? todayStreams : nextStreams;
+const visibleItems = todayItems.length ? todayItems : latestItems;
+const pageDescription = "今日チェックしたいホロライブ関連の配信、グッズ、イベント、音楽リリースをまとめるページです。";
+
+const labelMap = {
+  live: "ライブ",
+  goods: "グッズ",
+  event: "イベント",
+  music: "音楽",
+  news: "ニュース",
+};
+
+function dateKeyJst(value) {
+  if (!value) return "";
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(new Date(value));
+  const map = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${map.year}-${map.month}-${map.day}`;
+}
+
+function timeLabel(value) {
+  if (!value) return "時刻未定";
+  return new Intl.DateTimeFormat("ja-JP", {
+    timeZone: "Asia/Tokyo",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(new Date(value));
+}
+
+function dateLabel(value) {
+  if (!value) return "日付未定";
+  return new Intl.DateTimeFormat("ja-JP", {
+    timeZone: "Asia/Tokyo",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date(value));
+}
+
+function streamStatusLabel(status) {
+  if (status === "live") return "配信中";
+  if (status === "upcoming") return "予定";
+  return "アーカイブ";
+}
+
+function itemLinkLabel(item) {
+  if (item.category === "goods") return "公式ショップ";
+  if (item.category === "music") return item.musicLinks?.length ? "配信リンク" : "公式発表";
+  return "公式発表";
+}
+---
+
+<html lang="ja">
+  <head>
+    <Seo
+      title="今日見る"
+      description={pageDescription}
+      path="today/"
+      image={visibleStreams.find((stream) => stream.thumbnailUrl)?.thumbnailUrl || visibleItems.find((item) => item.imageUrl)?.imageUrl}
+      schemaType="CollectionPage"
+      jsonLd={{
+        about: "hololive today digest",
+        datePublished: todayKey,
+        numberOfItems: todayStreams.length + todayItems.length,
+      }}
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="../">
+          <span>Holo Portal</span>
+        </a>
+        <nav class="nav" aria-label="主要ナビゲーション">
+          <a href="../">ホーム</a>
+          <a href="../today/" aria-current="page">今日</a>
+          <a href="../streams/">配信</a>
+          <a href="../goods/">グッズ</a>
+          <a href="../events/">ライブ/イベント</a>
+          <a href="../music/">音楽</a>
+          <a href="../talents/">タレント</a>
+          <a href="../search/">検索</a>
+        </nav>
+        <ThemeToggle />
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="shell">
+          <div class="today-summary">
+            <div>
+              <div class="date">{todayLabel}</div>
+              <h1>今日見る</h1>
+            </div>
+            <div class="today-counts" aria-label="今日の件数">
+              <span class="pill live">配信 {todayStreams.length}件</span>
+              <span class="pill goods">発表 {todayItems.length}件</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <h2>{todayStreams.length ? "今日の配信" : "次の配信予定"}</h2>
+            <a href="../streams/">すべて見る</a>
+          </div>
+          {
+            visibleStreams.length ? (
+              <div class="grid">
+                {visibleStreams.map((stream) => (
+                  <a
+                    class="card card-link"
+                    href={stream.youtubeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="thumb-wrap">
+                      <img
+                        class="thumb stream-thumb"
+                        src={stream.thumbnailUrl}
+                        data-fallback-src={stream.thumbnailFallbackUrl}
+                        onerror="if (this.dataset.fallbackSrc && this.src !== this.dataset.fallbackSrc) this.src = this.dataset.fallbackSrc"
+                        alt=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer"
+                      />
+                      <span class={`image-credit ${stream.status === "live" ? "is-live" : ""}`}>
+                        {streamStatusLabel(stream.status)}
+                      </span>
+                    </div>
+                    <div class="card-body">
+                      <div class="date">{dateLabel(stream.startAt)} {timeLabel(stream.startAt)}</div>
+                      <h3 class="title">{stream.title}</h3>
+                      <p class="summary">{stream.channelName}</p>
+                      <div class="meta">
+                        <span class="pill live">{streamStatusLabel(stream.status)}</span>
+                        {stream.topic && <span class="pill">{stream.topic}</span>}
+                        <span class="shop-label">YouTubeで見る</span>
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            ) : (
+              <div class="empty-state visible">配信予定を取得できませんでした。</div>
+            )
+          }
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <h2>{todayItems.length ? "今日の発表" : "最近の発表"}</h2>
+            <a href="../search/">検索で見る</a>
+          </div>
+          <div class="list">
+            {
+              visibleItems.map((item) => (
+                <a
+                  class="list-item card-link"
+                  href={item.normalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.imageUrl && (
+                    <img
+                      class="list-thumb"
+                      src={item.imageUrl}
+                      alt=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer"
+                    />
+                  )}
+                  <div class="date">{dateLabel(item.startAt)}</div>
+                  <div>
+                    <h3 class="title">{item.title}</h3>
+                    <p class="summary">{item.summary}</p>
+                    <div class="meta">
+                      <span class={`pill ${item.category}`}>
+                        {labelMap[item.category] || item.category}
+                      </span>
+                      {item.talents.slice(0, 3).map((talent) => (
+                        <span class="pill">{talent}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <span class="shop-label">{itemLinkLabel(item)}</span>
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <p>
+          Holo Portal は非公式ファンサイトです。今日の情報は自動取得データをもとに整理しています。
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

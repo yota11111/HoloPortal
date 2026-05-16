@@ -6,6 +6,7 @@ import { absoluteUrl, escapeXml, responseXml } from "../lib/feed-utils.mjs";
 
 const staticPages = [
   { path: "", priority: "1.0", changefreq: "hourly" },
+  { path: "today/", priority: "0.9", changefreq: "hourly" },
   { path: "streams/", priority: "0.9", changefreq: "hourly" },
   { path: "goods/", priority: "0.8", changefreq: "daily" },
   { path: "events/", priority: "0.8", changefreq: "daily" },
