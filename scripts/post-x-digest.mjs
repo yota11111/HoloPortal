@@ -17,13 +17,12 @@ const todayUrl = buildUrl(siteUrl, "/today/", {
   utm_campaign: `daily_digest_${todayKey.replaceAll("-", "")}`
 });
 
-const [portalItems, streams, meta] = await Promise.all([
+const [portalItems, streams] = await Promise.all([
   readGeneratedJson("portal-items.json", []),
-  readGeneratedJson("streams.json", []),
-  readGeneratedJson("meta.json", {})
+  readGeneratedJson("streams.json", [])
 ]);
 
-const digest = buildDigest({ portalItems, streams, meta, todayKey, todayUrl });
+const digest = buildDigest({ portalItems, streams, todayKey, todayUrl, now: new Date() });
 
 if (process.env.X_POST_ENABLED !== "true") {
   console.log("X posting is disabled. Dry-run digest:");
@@ -102,11 +101,11 @@ async function readGeneratedJson(fileName, fallback) {
   }
 }
 
-function buildDigest({ portalItems, streams, meta, todayKey, todayUrl }) {
+function buildDigest({ portalItems, streams, todayKey, todayUrl, now }) {
   const todaysStreams = uniqueBy(
     streams.filter((stream) => dateKeyJst(stream.startAt || stream.scheduledAt) === todayKey),
     (stream) => stream.youtubeUrl || stream.holodexUrl || stream.id
-  );
+  ).sort(compareStreamTime);
 
   const todaysAnnouncements = portalItems.filter((item) => {
     if (item.category === "stream") return false;
@@ -114,27 +113,84 @@ function buildDigest({ portalItems, streams, meta, todayKey, todayUrl }) {
     return dateKeyJst(itemDate) === todayKey;
   });
 
-  const counts = [
-    `Streams ${todaysStreams.length}`,
-    `Announcements ${todaysAnnouncements.length}`
-  ];
-
-  const highlights = [
-    todaysStreams[0]?.title && `Live: ${todaysStreams[0].title}`,
-    todaysAnnouncements[0]?.title && `News: ${todaysAnnouncements[0].title}`
-  ].filter(Boolean);
-
-  const generatedDate = meta.generatedAt ? dateKeyJst(meta.generatedAt) : todayKey;
+  const categorySummary = summarizeAnnouncements(todaysAnnouncements);
+  const featuredStream = pickFeaturedStream(todaysStreams, now);
+  const featuredAnnouncement = todaysAnnouncements[0];
+  const dateLabel = formatJstDateLabel(todayKey);
   const lines = [
-    "Holo Portal daily digest",
-    todayKey,
-    counts.join(" / "),
-    ...highlights.slice(0, 2),
-    `Updated ${generatedDate}`,
+    `Holo Portal ${dateLabel}のホロライブまとめ`,
+    "",
+    `本日の配信予定: ${todaysStreams.length}件`,
+    todaysAnnouncements.length > 0
+      ? `公式発表: ${todaysAnnouncements.length}件${categorySummary ? ` (${categorySummary})` : ""}`
+      : null,
+    featuredStream ? formatFeaturedStream(featuredStream, now) : null,
+    !featuredStream && featuredAnnouncement ? `注目: ${featuredAnnouncement.title}` : null,
+    "",
+    "配信・グッズ・イベント・音楽を一覧で確認できます。",
+    "#ホロライブ #HoloPortal",
     todayUrl
-  ];
+  ].filter((line) => line !== null);
 
   return truncatePost(lines.join("\n"), MAX_POST_LENGTH);
+}
+
+function compareStreamTime(left, right) {
+  return streamTime(left) - streamTime(right);
+}
+
+function streamTime(stream) {
+  const value = stream.startAt || stream.scheduledAt;
+  const date = value ? new Date(value) : null;
+  return date && !Number.isNaN(date.getTime()) ? date.getTime() : Number.MAX_SAFE_INTEGER;
+}
+
+function summarizeAnnouncements(items) {
+  const labels = {
+    goods: "グッズ",
+    event: "イベント",
+    live: "ライブ",
+    music: "音楽",
+    news: "ニュース"
+  };
+  const counts = new Map();
+
+  for (const item of items) {
+    const label = labels[item.category] || "その他";
+    counts.set(label, (counts.get(label) || 0) + 1);
+  }
+
+  return [...counts.entries()]
+    .map(([label, count]) => `${label}${count}`)
+    .join(" / ");
+}
+
+function pickFeaturedStream(streams, now) {
+  const nowTime = now.getTime();
+  return streams.find((stream) => streamTime(stream) >= nowTime) || streams[0] || null;
+}
+
+function formatFeaturedStream(stream, now) {
+  const startsAt = streamTime(stream);
+  const prefix = startsAt >= now.getTime()
+    ? `このあと ${formatJstTime(startsAt)}`
+    : "注目の配信";
+
+  return `${prefix}: ${stream.title}`;
+}
+
+function formatJstDateLabel(dateKey) {
+  const [, month, day] = dateKey.split("-");
+  return `${Number(month)}/${Number(day)}`;
+}
+
+function formatJstTime(value) {
+  return new Intl.DateTimeFormat("ja-JP", {
+    timeZone: "Asia/Tokyo",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  }).format(new Date(value));
 }
 
 function truncatePost(text, maxLength) {

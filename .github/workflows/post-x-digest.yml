@@ -1,4 +1,4 @@
-name: Post X daily digest
+name: Post X fan digest
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: post-x-digest
+  group: post-x-fan-digest
   cancel-in-progress: false
 
 jobs:
@@ -41,7 +41,7 @@ jobs:
         env:
           HOLODEX_API_KEY: ${{ secrets.HOLODEX_API_KEY }}
 
-      - name: Post X digest
+      - name: Post fan-friendly X digest
         run: npm run post:x
         env:
           SITE_URL: https://holo-portal.com
