@@ -17,12 +17,21 @@ const todayUrl = buildUrl(siteUrl, "/today/", {
   utm_campaign: `daily_digest_${todayKey.replaceAll("-", "")}`
 });
 
-const [portalItems, streams] = await Promise.all([
+const [portalItems, streams, meta] = await Promise.all([
   readGeneratedJson("portal-items.json", []),
-  readGeneratedJson("streams.json", [])
+  readGeneratedJson("streams.json", []),
+  readGeneratedJson("meta.json", null)
 ]);
 
-const digest = buildDigest({ portalItems, streams, todayKey, todayUrl, now: new Date() });
+const digestResult = buildDigest({ portalItems, streams, meta, todayKey, todayUrl, now: new Date() });
+
+if (digestResult.skipReason) {
+  console.log(`X digest skipped: ${digestResult.skipReason}`);
+  console.log(todayUrl);
+  process.exit(0);
+}
+
+const digest = digestResult.text;
 
 if (process.env.X_POST_ENABLED !== "true") {
   console.log("X posting is disabled. Dry-run digest:");
@@ -101,7 +110,7 @@ async function readGeneratedJson(fileName, fallback) {
   }
 }
 
-function buildDigest({ portalItems, streams, todayKey, todayUrl, now }) {
+function buildDigest({ portalItems, streams, meta, todayKey, todayUrl, now }) {
   const todaysStreams = uniqueBy(
     streams.filter((stream) => dateKeyJst(stream.startAt || stream.scheduledAt) === todayKey),
     (stream) => stream.youtubeUrl || stream.holodexUrl || stream.id
@@ -116,6 +125,21 @@ function buildDigest({ portalItems, streams, todayKey, todayUrl, now }) {
   const categorySummary = summarizeAnnouncements(todaysAnnouncements);
   const featuredStream = pickFeaturedStream(todaysStreams, now);
   const featuredAnnouncement = todaysAnnouncements[0];
+  const staleData = hasStaleData(meta);
+  const latestContentKey = latestDateKey([...portalItems, ...streams]);
+
+  if (staleData && todaysStreams.length === 0 && todaysAnnouncements.length === 0) {
+    return {
+      skipReason: "latest fetch reused stale data and no same-day items were found"
+    };
+  }
+
+  if (latestContentKey && latestContentKey < todayKey && todaysStreams.length === 0 && todaysAnnouncements.length === 0) {
+    return {
+      skipReason: `newest generated item is ${latestContentKey}, so same-day digest would be empty`
+    };
+  }
+
   const dateLabel = formatJstDateLabel(todayKey);
   const lines = [
     `Holo Portal ${dateLabel}のホロライブまとめ`,
@@ -132,7 +156,25 @@ function buildDigest({ portalItems, streams, todayKey, todayUrl, now }) {
     todayUrl
   ].filter((line) => line !== null);
 
-  return truncatePost(lines.join("\n"), MAX_POST_LENGTH);
+  return {
+    text: truncatePost(lines.join("\n"), MAX_POST_LENGTH)
+  };
+}
+
+function hasStaleData(meta) {
+  if (!meta) return false;
+  const datasetStatuses = Object.values(meta.datasets || {}).map((dataset) => dataset?.status);
+  return datasetStatuses.some((status) => status && status !== "ok") || meta.streams?.status === "stale";
+}
+
+function latestDateKey(values) {
+  return values
+    .map((value) => value?.startAt || value?.scheduledAt || value?.createdAt || value?.publishedAt)
+    .filter(Boolean)
+    .map(dateKeyJst)
+    .filter(Boolean)
+    .sort()
+    .at(-1);
 }
 
 function compareStreamTime(left, right) {

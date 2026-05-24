@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
 import items from "../data/generated/portal-items.json";
+import meta from "../data/generated/meta.json";
 import streams from "../data/generated/streams.json";
 
 const todayKey = dateKeyJst(new Date());
@@ -29,7 +30,21 @@ const latestItems = items
   .slice(0, 6);
 const visibleStreams = todayStreams.length ? todayStreams : nextStreams;
 const visibleItems = todayItems.length ? todayItems : latestItems;
+const datasetStatuses = Object.entries(meta.datasets || {});
+const staleDatasets = datasetStatuses.filter(([, dataset]) => dataset.status && dataset.status !== "ok");
+const latestContentAt = latestDataDate([...items, ...streams]);
+const latestContentKey = latestContentAt ? dateKeyJst(latestContentAt) : "";
+const showFreshnessNotice = staleDatasets.length > 0 || (latestContentKey && latestContentKey < todayKey);
+const freshnessLabel = staleDatasets.length > 0
+  ? "一部データ更新待ち"
+  : "データ取得済み";
 const pageDescription = "今日チェックしたいホロライブ関連の配信、グッズ、イベント、音楽リリースをまとめるページです。";
+const quickLinks = [
+  ["配信を確認", "../streams/"],
+  ["グッズを探す", "../goods/"],
+  ["音楽を見る", "../music/"],
+  ["推しで検索", "../search/"],
+];
 
 const labelMap = {
   live: "ライブ",
@@ -67,6 +82,27 @@ function dateLabel(value) {
     month: "2-digit",
     day: "2-digit",
   }).format(new Date(value));
+}
+
+function fullDateTimeLabel(value) {
+  if (!value) return "未取得";
+  return new Intl.DateTimeFormat("ja-JP", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(new Date(value));
+}
+
+function latestDataDate(values) {
+  const latest = values
+    .map((value) => value?.startAt || value?.createdAt || value?.publishedAt)
+    .filter(Boolean)
+    .sort()
+    .at(-1);
+  return latest || null;
 }
 
 function streamStatusLabel(status) {
@@ -130,6 +166,27 @@ function itemLinkLabel(item) {
               <span class="pill goods">発表 {todayItems.length}件</span>
             </div>
           </div>
+          <div class="today-actions" aria-label="今日の確認導線">
+            {
+              quickLinks.map(([label, href]) => (
+                <a class="filter-chip today-action" href={href}>{label}</a>
+              ))
+            }
+          </div>
+          {
+            showFreshnessNotice && (
+              <div class="notice today-data-notice">
+                <strong>{freshnessLabel}</strong>
+                <span>
+                  最終生成: {fullDateTimeLabel(meta.generatedAt)}
+                  {latestContentAt && ` / 最新掲載: ${fullDateTimeLabel(latestContentAt)}`}
+                </span>
+                <span>
+                  今日の件数が少ない場合は、各カードの公式リンクや配信ページもあわせて確認してください。
+                </span>
+              </div>
+            )
+          }
         </div>
       </section>
 

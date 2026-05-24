@@ -486,6 +486,25 @@ h1 {
   gap: 8px;
 }
 
+.today-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.today-action {
+  color: var(--blue-deep);
+  text-decoration: none;
+}
+
+.today-data-notice {
+  display: grid;
+  gap: 4px;
+  margin-top: 14px;
+  text-align: left;
+}
+
 @media (max-width: 720px) {
   .today-summary {
     align-items: flex-start;
